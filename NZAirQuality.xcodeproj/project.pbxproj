@@ -14,6 +14,8 @@
 		0522E2941F0BC61200A155AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0522E2931F0BC61200A155AB /* Assets.xcassets */; };
 		0522E2971F0BC61200A155AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0522E2951F0BC61200A155AB /* LaunchScreen.storyboard */; };
 		0522E2A21F0BC61300A155AB /* NZAirQualityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522E2A11F0BC61300A155AB /* NZAirQualityTests.swift */; };
+		0572D7551F0BD0130026E4E1 /* AirData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572D7541F0BD0130026E4E1 /* AirData.swift */; };
+		0572D7571F0BD0210026E4E1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572D7561F0BD0210026E4E1 /* API.swift */; };
 		1262288940B380A191BA804C /* Pods_NZAirQualityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82C87E037FC534FE9CC1FF6 /* Pods_NZAirQualityTests.framework */; };
 		BA94B7334F1A0B4EABE39E4B /* Pods_NZAirQuality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01830C9123423CF94BF080A6 /* Pods_NZAirQuality.framework */; };
 /* End PBXBuildFile section */
@@ -41,6 +43,8 @@
 		0522E29D1F0BC61300A155AB /* NZAirQualityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NZAirQualityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0522E2A11F0BC61300A155AB /* NZAirQualityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NZAirQualityTests.swift; sourceTree = "<group>"; };
 		0522E2A31F0BC61300A155AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0572D7541F0BD0130026E4E1 /* AirData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirData.swift; sourceTree = "<group>"; };
+		0572D7561F0BD0210026E4E1 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		0DAA50EA11F35164955D48CE /* Pods-NZAirQuality.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NZAirQuality.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NZAirQuality/Pods-NZAirQuality.debug.xcconfig"; sourceTree = "<group>"; };
 		88273C58A65C6B09899368EB /* Pods-NZAirQualityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NZAirQualityTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NZAirQualityTests/Pods-NZAirQualityTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8DC0A91D382E1F975572A3D1 /* Pods-NZAirQuality.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NZAirQuality.release.xcconfig"; path = "Pods/Target Support Files/Pods-NZAirQuality/Pods-NZAirQuality.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +95,9 @@
 		0522E2881F0BC61200A155AB /* NZAirQuality */ = {
 			isa = PBXGroup;
 			children = (
+				05557B201F0BC85F00579BE7 /* Module */,
+				05557B211F0BC85F00579BE7 /* View */,
+				05557B1F1F0BC85F00579BE7 /* Controller */,
 				0522E2891F0BC61200A155AB /* AppDelegate.swift */,
 				0522E28B1F0BC61200A155AB /* ViewController.swift */,
 				0522E28D1F0BC61200A155AB /* Main.storyboard */,
@@ -109,6 +116,29 @@
 				0522E2A31F0BC61300A155AB /* Info.plist */,
 			);
 			path = NZAirQualityTests;
+			sourceTree = "<group>";
+		};
+		05557B1F1F0BC85F00579BE7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		05557B201F0BC85F00579BE7 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				0572D7541F0BD0130026E4E1 /* AirData.swift */,
+				0572D7561F0BD0210026E4E1 /* API.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		05557B211F0BC85F00579BE7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		5E1F87C4D997B28B51330BC5 /* Frameworks */ = {
@@ -337,7 +367,9 @@
 			files = (
 				0522E2921F0BC61200A155AB /* NZAirQuality.xcdatamodeld in Sources */,
 				0522E28C1F0BC61200A155AB /* ViewController.swift in Sources */,
+				0572D7551F0BD0130026E4E1 /* AirData.swift in Sources */,
 				0522E28A1F0BC61200A155AB /* AppDelegate.swift in Sources */,
+				0572D7571F0BD0210026E4E1 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +583,7 @@
 				0522E2A81F0BC61300A155AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0522E2A91F0BC61300A155AB /* Build configuration list for PBXNativeTarget "NZAirQualityTests" */ = {
 			isa = XCConfigurationList;
@@ -559,6 +592,7 @@
 				0522E2AB1F0BC61300A155AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
