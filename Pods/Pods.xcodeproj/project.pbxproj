@@ -1,0 +1,895 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0324E5EF2BC3991C25C01E22740F3C23 /* FSLineChart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD81F23F4E95AB1762A560AAE4508281 /* FSLineChart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B2315A20864C1C78757696E87EC98FA /* TaniwhaTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E59CDD18C2E985DF943054DC49D36E94 /* TaniwhaTextField-dummy.m */; };
+		2B677AA5812D07E8D851280BFABA0E22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		33B22D8BD3AA284CC183C9AFDD8CFFDF /* TaniwhaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A997F0E87D0AA10F6BBADF0C1DF70D2 /* TaniwhaTextField.swift */; };
+		3FABB83D3FE3A89BFF6067ACD5FF2306 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		5F49CEE86E7C4BF8A24AC41F827FBE89 /* TaniwhaTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 529D7FC98E9E5205DC22C11526690D7D /* TaniwhaTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97D0A74BBDD3F07681818DAE58FFE340 /* Pods-NZAirQuality-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 447B056EA79F4865A27E7E5DE1111B9A /* Pods-NZAirQuality-dummy.m */; };
+		A9C6B54A2C57384EB0EF1C3A2D6DD59A /* Pods-NZAirQuality-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE8057525D2ADA23FB6F0AEE9ADC7159 /* Pods-NZAirQuality-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5681307560DC6583E47930833596B2 /* FSLineChart.h in Headers */ = {isa = PBXBuildFile; fileRef = FD0FA4B0C63C12F169EB9D29E9F51422 /* FSLineChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B197787A06F2B4124BC1FF82F6975F2F /* FSLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78BD1D81A19705C969F1E6915B238D /* FSLineChart.m */; };
+		B82B202B01BA07258DF6DAF14E91DB87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		C0F7388159B48FE00EC70346DC660373 /* UIColor+FSPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B4D57981DFE014561491A0086E79D8 /* UIColor+FSPalette.m */; };
+		C8E8C2665083E83738D7C70FF5BC2BF8 /* Pods-NZAirQualityTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 102B83558E42C0C96C5CAE920CFD8501 /* Pods-NZAirQualityTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D50155264DD77773512299F1D838451B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		E7D02745D202B5B2967D24897874AA6C /* FSLineChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5615A5079C020DED273A5DBA4EB93339 /* FSLineChart-dummy.m */; };
+		ECC1B4498CF2090AB8FFE12869388A6D /* Pods-NZAirQualityTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FE9247F1A8A18CA90EA25D2E07546B /* Pods-NZAirQualityTests-dummy.m */; };
+		FC5DE94578765F701B6E09EA3D9DB1F1 /* UIColor+FSPalette.h in Headers */ = {isa = PBXBuildFile; fileRef = 29C900C62835789B855A4E5CBF6BA51B /* UIColor+FSPalette.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE0045AB2069DFE39C26F853B7AA20E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1372B19C9FEF96E46ED3E7D48F60F09F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 809463219ED0A00088BB0753D65348EB;
+			remoteInfo = FSLineChart;
+		};
+		D2EE6F97713FCF8F2BE52B714A6E0DF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91F734ECFDB667D3EF3387D89D7C40AD;
+			remoteInfo = TaniwhaTextField;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A997F0E87D0AA10F6BBADF0C1DF70D2 /* TaniwhaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaniwhaTextField.swift; path = TaniwhaTextField/Classes/TaniwhaTextField.swift; sourceTree = "<group>"; };
+		0B5895E7807335E289EBC28751CA23FF /* Pods-NZAirQuality-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NZAirQuality-resources.sh"; sourceTree = "<group>"; };
+		102B83558E42C0C96C5CAE920CFD8501 /* Pods-NZAirQualityTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NZAirQualityTests-umbrella.h"; sourceTree = "<group>"; };
+		116D2415BC1091FD6E247FDB9737D9D7 /* Pods-NZAirQuality-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NZAirQuality-acknowledgements.plist"; sourceTree = "<group>"; };
+		29C900C62835789B855A4E5CBF6BA51B /* UIColor+FSPalette.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+FSPalette.h"; path = "FSLineChart/FSLineChart/UIColor+FSPalette.h"; sourceTree = "<group>"; };
+		2BA00A759E1BC07617EE0D8473FC8C1F /* Pods_NZAirQuality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NZAirQuality.framework; path = "Pods-NZAirQuality.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39B4D57981DFE014561491A0086E79D8 /* UIColor+FSPalette.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+FSPalette.m"; path = "FSLineChart/FSLineChart/UIColor+FSPalette.m"; sourceTree = "<group>"; };
+		3FC70E3B53DD138719696CF681B3CA65 /* Pods-NZAirQuality.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NZAirQuality.modulemap"; sourceTree = "<group>"; };
+		44019C09FAC383B5DDFEDFA633BD3F43 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		447B056EA79F4865A27E7E5DE1111B9A /* Pods-NZAirQuality-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NZAirQuality-dummy.m"; sourceTree = "<group>"; };
+		529D7FC98E9E5205DC22C11526690D7D /* TaniwhaTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TaniwhaTextField-umbrella.h"; sourceTree = "<group>"; };
+		5615A5079C020DED273A5DBA4EB93339 /* FSLineChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSLineChart-dummy.m"; sourceTree = "<group>"; };
+		60958988963E978475EE6B55E9BC3F21 /* FSLineChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FSLineChart.framework; path = FSLineChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68545295A86C365A2ABA23B4A80CF6B6 /* TaniwhaTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TaniwhaTextField-prefix.pch"; sourceTree = "<group>"; };
+		6D2BF6E3B26E24380EF60463DE776C56 /* Pods-NZAirQuality.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NZAirQuality.debug.xcconfig"; sourceTree = "<group>"; };
+		6D78BD1D81A19705C969F1E6915B238D /* FSLineChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSLineChart.m; path = FSLineChart/FSLineChart/FSLineChart.m; sourceTree = "<group>"; };
+		6EF75ED55CC73DBFBA175D06204C410C /* TaniwhaTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TaniwhaTextField.modulemap; sourceTree = "<group>"; };
+		795B2B54E1D3349550ACFC1D11C352D6 /* Pods-NZAirQuality.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NZAirQuality.release.xcconfig"; sourceTree = "<group>"; };
+		847514125898F0E8042518E2EFCE1C1C /* Pods-NZAirQualityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NZAirQualityTests.release.xcconfig"; sourceTree = "<group>"; };
+		86944A6F226E61F39C6685820A5B8CD6 /* Pods-NZAirQualityTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NZAirQualityTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		928675C6283334BEC1F05F04B5E2CBEA /* TaniwhaTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TaniwhaTextField.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AE8057525D2ADA23FB6F0AEE9ADC7159 /* Pods-NZAirQuality-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NZAirQuality-umbrella.h"; sourceTree = "<group>"; };
+		B01675AF7F404F2F5DB74293B7BF0409 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3CA0AB8E3CC309E1FFB56F3CEDA1F8B /* Pods-NZAirQualityTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NZAirQualityTests-frameworks.sh"; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BB7F49BF496FD51F178CECBF707C7D40 /* FSLineChart.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSLineChart.xcconfig; sourceTree = "<group>"; };
+		BCA5D48B77998F2A44D090103EB589A4 /* Pods-NZAirQuality-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NZAirQuality-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C448D60025E5114F809B0854092820AB /* Pods-NZAirQualityTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NZAirQualityTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C6C756C3FA71DEC91DCAEFCA78417B78 /* Pods_NZAirQualityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NZAirQualityTests.framework; path = "Pods-NZAirQualityTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD7EC1C7EFE77C84477F5A7064E9E1BC /* FSLineChart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FSLineChart.modulemap; sourceTree = "<group>"; };
+		CF552DCAA212BE1BF71F4064BD4E88DE /* TaniwhaTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TaniwhaTextField.framework; path = TaniwhaTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF7C767C1128AFF84FEAD8DBF0334A94 /* Pods-NZAirQualityTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NZAirQualityTests-resources.sh"; sourceTree = "<group>"; };
+		CFEAB8DF322FDF9BF4F0971EB7FF89EC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6FE9247F1A8A18CA90EA25D2E07546B /* Pods-NZAirQualityTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NZAirQualityTests-dummy.m"; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DD81F23F4E95AB1762A560AAE4508281 /* FSLineChart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSLineChart-umbrella.h"; sourceTree = "<group>"; };
+		DF1637F36905508E487AD0383B4E673A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3871AF705A2DB3F0C4AA13414302BD9 /* Pods-NZAirQuality-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NZAirQuality-frameworks.sh"; sourceTree = "<group>"; };
+		E59CDD18C2E985DF943054DC49D36E94 /* TaniwhaTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TaniwhaTextField-dummy.m"; sourceTree = "<group>"; };
+		E5ADE703846B2ACD5E53BB55D22FC049 /* FSLineChart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSLineChart-prefix.pch"; sourceTree = "<group>"; };
+		E75B9861A63D05EEB1F0D0FE93BDEC2B /* Pods-NZAirQualityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NZAirQualityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EAF227CFCAD9BA09C90D26AB94A4427F /* Pods-NZAirQualityTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NZAirQualityTests.modulemap"; sourceTree = "<group>"; };
+		FD0FA4B0C63C12F169EB9D29E9F51422 /* FSLineChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSLineChart.h; path = FSLineChart/FSLineChart/FSLineChart.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3340F2364FAD640A31E15E34C2447F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50155264DD77773512299F1D838451B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46EF1D090812E54B48DFBFC387401D3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B82B202B01BA07258DF6DAF14E91DB87 /* Foundation.framework in Frameworks */,
+				3FABB83D3FE3A89BFF6067ACD5FF2306 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDD054761312C8D252EDEFC7ADFFF00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B677AA5812D07E8D851280BFABA0E22 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF6CC4BA942D02C123EA6C8AEFEE9CCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE0045AB2069DFE39C26F853B7AA20E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0ED507B85A74A2441899438B21B55576 /* Pods-NZAirQualityTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF1637F36905508E487AD0383B4E673A /* Info.plist */,
+				EAF227CFCAD9BA09C90D26AB94A4427F /* Pods-NZAirQualityTests.modulemap */,
+				C448D60025E5114F809B0854092820AB /* Pods-NZAirQualityTests-acknowledgements.markdown */,
+				86944A6F226E61F39C6685820A5B8CD6 /* Pods-NZAirQualityTests-acknowledgements.plist */,
+				D6FE9247F1A8A18CA90EA25D2E07546B /* Pods-NZAirQualityTests-dummy.m */,
+				B3CA0AB8E3CC309E1FFB56F3CEDA1F8B /* Pods-NZAirQualityTests-frameworks.sh */,
+				CF7C767C1128AFF84FEAD8DBF0334A94 /* Pods-NZAirQualityTests-resources.sh */,
+				102B83558E42C0C96C5CAE920CFD8501 /* Pods-NZAirQualityTests-umbrella.h */,
+				E75B9861A63D05EEB1F0D0FE93BDEC2B /* Pods-NZAirQualityTests.debug.xcconfig */,
+				847514125898F0E8042518E2EFCE1C1C /* Pods-NZAirQualityTests.release.xcconfig */,
+			);
+			name = "Pods-NZAirQualityTests";
+			path = "Target Support Files/Pods-NZAirQualityTests";
+			sourceTree = "<group>";
+		};
+		1E44753C06DE05025E44E84F10D551AB /* TaniwhaTextField */ = {
+			isa = PBXGroup;
+			children = (
+				0A997F0E87D0AA10F6BBADF0C1DF70D2 /* TaniwhaTextField.swift */,
+				6168AF3794883F3E0D73FAB6DA31E210 /* Support Files */,
+			);
+			name = TaniwhaTextField;
+			path = TaniwhaTextField;
+			sourceTree = "<group>";
+		};
+		3FDBAF801E505FA9E442D8AD1F7F15FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60958988963E978475EE6B55E9BC3F21 /* FSLineChart.framework */,
+				2BA00A759E1BC07617EE0D8473FC8C1F /* Pods_NZAirQuality.framework */,
+				C6C756C3FA71DEC91DCAEFCA78417B78 /* Pods_NZAirQualityTests.framework */,
+				CF552DCAA212BE1BF71F4064BD4E88DE /* TaniwhaTextField.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5D084B2182776775CF2FCA821FB94B10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6FFB708C3EFDDA73A0111834DF70B6DE /* FSLineChart */,
+				1E44753C06DE05025E44E84F10D551AB /* TaniwhaTextField */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6168AF3794883F3E0D73FAB6DA31E210 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFEAB8DF322FDF9BF4F0971EB7FF89EC /* Info.plist */,
+				6EF75ED55CC73DBFBA175D06204C410C /* TaniwhaTextField.modulemap */,
+				928675C6283334BEC1F05F04B5E2CBEA /* TaniwhaTextField.xcconfig */,
+				E59CDD18C2E985DF943054DC49D36E94 /* TaniwhaTextField-dummy.m */,
+				68545295A86C365A2ABA23B4A80CF6B6 /* TaniwhaTextField-prefix.pch */,
+				529D7FC98E9E5205DC22C11526690D7D /* TaniwhaTextField-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TaniwhaTextField";
+			sourceTree = "<group>";
+		};
+		6FFB708C3EFDDA73A0111834DF70B6DE /* FSLineChart */ = {
+			isa = PBXGroup;
+			children = (
+				FD0FA4B0C63C12F169EB9D29E9F51422 /* FSLineChart.h */,
+				6D78BD1D81A19705C969F1E6915B238D /* FSLineChart.m */,
+				29C900C62835789B855A4E5CBF6BA51B /* UIColor+FSPalette.h */,
+				39B4D57981DFE014561491A0086E79D8 /* UIColor+FSPalette.m */,
+				97B2686C60312C4762D9A69CEA468CF3 /* Support Files */,
+			);
+			name = FSLineChart;
+			path = FSLineChart;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				5D084B2182776775CF2FCA821FB94B10 /* Pods */,
+				3FDBAF801E505FA9E442D8AD1F7F15FF /* Products */,
+				AEDEAEEE407463C99FF18E83A679590C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		819AB8025EDB3CE102B6A0FE03B3724A /* Pods-NZAirQuality */ = {
+			isa = PBXGroup;
+			children = (
+				B01675AF7F404F2F5DB74293B7BF0409 /* Info.plist */,
+				3FC70E3B53DD138719696CF681B3CA65 /* Pods-NZAirQuality.modulemap */,
+				BCA5D48B77998F2A44D090103EB589A4 /* Pods-NZAirQuality-acknowledgements.markdown */,
+				116D2415BC1091FD6E247FDB9737D9D7 /* Pods-NZAirQuality-acknowledgements.plist */,
+				447B056EA79F4865A27E7E5DE1111B9A /* Pods-NZAirQuality-dummy.m */,
+				E3871AF705A2DB3F0C4AA13414302BD9 /* Pods-NZAirQuality-frameworks.sh */,
+				0B5895E7807335E289EBC28751CA23FF /* Pods-NZAirQuality-resources.sh */,
+				AE8057525D2ADA23FB6F0AEE9ADC7159 /* Pods-NZAirQuality-umbrella.h */,
+				6D2BF6E3B26E24380EF60463DE776C56 /* Pods-NZAirQuality.debug.xcconfig */,
+				795B2B54E1D3349550ACFC1D11C352D6 /* Pods-NZAirQuality.release.xcconfig */,
+			);
+			name = "Pods-NZAirQuality";
+			path = "Target Support Files/Pods-NZAirQuality";
+			sourceTree = "<group>";
+		};
+		97B2686C60312C4762D9A69CEA468CF3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD7EC1C7EFE77C84477F5A7064E9E1BC /* FSLineChart.modulemap */,
+				BB7F49BF496FD51F178CECBF707C7D40 /* FSLineChart.xcconfig */,
+				5615A5079C020DED273A5DBA4EB93339 /* FSLineChart-dummy.m */,
+				E5ADE703846B2ACD5E53BB55D22FC049 /* FSLineChart-prefix.pch */,
+				DD81F23F4E95AB1762A560AAE4508281 /* FSLineChart-umbrella.h */,
+				44019C09FAC383B5DDFEDFA633BD3F43 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FSLineChart";
+			sourceTree = "<group>";
+		};
+		AEDEAEEE407463C99FF18E83A679590C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				819AB8025EDB3CE102B6A0FE03B3724A /* Pods-NZAirQuality */,
+				0ED507B85A74A2441899438B21B55576 /* Pods-NZAirQualityTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		20B490A81BAC02CA670E493A2609AE1C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8E8C2665083E83738D7C70FF5BC2BF8 /* Pods-NZAirQualityTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C4A16B0DAA8DFE1E081E385E245A71 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C6B54A2C57384EB0EF1C3A2D6DD59A /* Pods-NZAirQuality-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BFF526059B8B4E6EE8B77C52CE84DA1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F49CEE86E7C4BF8A24AC41F827FBE89 /* TaniwhaTextField-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95DE14B8D24D9BB482AE7F43145F1510 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0324E5EF2BC3991C25C01E22740F3C23 /* FSLineChart-umbrella.h in Headers */,
+				AD5681307560DC6583E47930833596B2 /* FSLineChart.h in Headers */,
+				FC5DE94578765F701B6E09EA3D9DB1F1 /* UIColor+FSPalette.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		195F31C13FA035E626244646FF4A96AA /* Pods-NZAirQualityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA87A7195750DC287A42AF4280036AC1 /* Build configuration list for PBXNativeTarget "Pods-NZAirQualityTests" */;
+			buildPhases = (
+				0A7A772D49F810231495AE68B6D15854 /* Sources */,
+				4DDD054761312C8D252EDEFC7ADFFF00 /* Frameworks */,
+				20B490A81BAC02CA670E493A2609AE1C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-NZAirQualityTests";
+			productName = "Pods-NZAirQualityTests";
+			productReference = C6C756C3FA71DEC91DCAEFCA78417B78 /* Pods_NZAirQualityTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4802A21EEBEF5FE90CB792FC6471875A /* Pods-NZAirQuality */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D74036BF8B6DB76BF4CBD2EAB826B3EE /* Build configuration list for PBXNativeTarget "Pods-NZAirQuality" */;
+			buildPhases = (
+				993477195EA4AFEA1A564725DAEF5FA5 /* Sources */,
+				BF6CC4BA942D02C123EA6C8AEFEE9CCB /* Frameworks */,
+				83C4A16B0DAA8DFE1E081E385E245A71 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE3BE77D1721E01634545CB5F01163BE /* PBXTargetDependency */,
+				9129CAD892933F551720476A272CBA03 /* PBXTargetDependency */,
+			);
+			name = "Pods-NZAirQuality";
+			productName = "Pods-NZAirQuality";
+			productReference = 2BA00A759E1BC07617EE0D8473FC8C1F /* Pods_NZAirQuality.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		809463219ED0A00088BB0753D65348EB /* FSLineChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 407EC161763408383D6DF8D997BC827F /* Build configuration list for PBXNativeTarget "FSLineChart" */;
+			buildPhases = (
+				F4D5E8DFAC0A5E3FE2F0039F334A6472 /* Sources */,
+				3340F2364FAD640A31E15E34C2447F04 /* Frameworks */,
+				95DE14B8D24D9BB482AE7F43145F1510 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSLineChart;
+			productName = FSLineChart;
+			productReference = 60958988963E978475EE6B55E9BC3F21 /* FSLineChart.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		91F734ECFDB667D3EF3387D89D7C40AD /* TaniwhaTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6B5031AC5BD27A67067419F311196FC /* Build configuration list for PBXNativeTarget "TaniwhaTextField" */;
+			buildPhases = (
+				99DB67BA3AA6FF1805BAB80FDDE4A8C1 /* Sources */,
+				46EF1D090812E54B48DFBFC387401D3F /* Frameworks */,
+				8BFF526059B8B4E6EE8B77C52CE84DA1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaniwhaTextField;
+			productName = TaniwhaTextField;
+			productReference = CF552DCAA212BE1BF71F4064BD4E88DE /* TaniwhaTextField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3FDBAF801E505FA9E442D8AD1F7F15FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				809463219ED0A00088BB0753D65348EB /* FSLineChart */,
+				4802A21EEBEF5FE90CB792FC6471875A /* Pods-NZAirQuality */,
+				195F31C13FA035E626244646FF4A96AA /* Pods-NZAirQualityTests */,
+				91F734ECFDB667D3EF3387D89D7C40AD /* TaniwhaTextField */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A7A772D49F810231495AE68B6D15854 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC1B4498CF2090AB8FFE12869388A6D /* Pods-NZAirQualityTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		993477195EA4AFEA1A564725DAEF5FA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97D0A74BBDD3F07681818DAE58FFE340 /* Pods-NZAirQuality-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99DB67BA3AA6FF1805BAB80FDDE4A8C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B2315A20864C1C78757696E87EC98FA /* TaniwhaTextField-dummy.m in Sources */,
+				33B22D8BD3AA284CC183C9AFDD8CFFDF /* TaniwhaTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4D5E8DFAC0A5E3FE2F0039F334A6472 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7D02745D202B5B2967D24897874AA6C /* FSLineChart-dummy.m in Sources */,
+				B197787A06F2B4124BC1FF82F6975F2F /* FSLineChart.m in Sources */,
+				C0F7388159B48FE00EC70346DC660373 /* UIColor+FSPalette.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9129CAD892933F551720476A272CBA03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TaniwhaTextField;
+			target = 91F734ECFDB667D3EF3387D89D7C40AD /* TaniwhaTextField */;
+			targetProxy = D2EE6F97713FCF8F2BE52B714A6E0DF2 /* PBXContainerItemProxy */;
+		};
+		DE3BE77D1721E01634545CB5F01163BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FSLineChart;
+			target = 809463219ED0A00088BB0753D65348EB /* FSLineChart */;
+			targetProxy = 1372B19C9FEF96E46ED3E7D48F60F09F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		163D87BE96A63549B0EACF1CC31A2E90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2429B149942E355B10E32A6B7BA5632C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E75B9861A63D05EEB1F0D0FE93BDEC2B /* Pods-NZAirQualityTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NZAirQualityTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NZAirQualityTests/Pods-NZAirQualityTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NZAirQualityTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3D255A0A008510A1B0F02C7931F6EAFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 928675C6283334BEC1F05F04B5E2CBEA /* TaniwhaTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TaniwhaTextField/TaniwhaTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TaniwhaTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TaniwhaTextField/TaniwhaTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TaniwhaTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6547E18F6D073D71474B3AF002E33268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D2BF6E3B26E24380EF60463DE776C56 /* Pods-NZAirQuality.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NZAirQuality/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NZAirQuality/Pods-NZAirQuality.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NZAirQuality;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		707B86CFB21B645E37109F39754D4051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		839604B8C60FDE39D5EF55FD178536E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 928675C6283334BEC1F05F04B5E2CBEA /* TaniwhaTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TaniwhaTextField/TaniwhaTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TaniwhaTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TaniwhaTextField/TaniwhaTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TaniwhaTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A80E754194DBEC1DDC38BD7748C708C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 795B2B54E1D3349550ACFC1D11C352D6 /* Pods-NZAirQuality.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NZAirQuality/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NZAirQuality/Pods-NZAirQuality.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NZAirQuality;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B47A69445D4B32F6972E05B2261D88FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 847514125898F0E8042518E2EFCE1C1C /* Pods-NZAirQualityTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NZAirQualityTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NZAirQualityTests/Pods-NZAirQualityTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NZAirQualityTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B4DD253B70CCB296C3BD8654F58E81E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB7F49BF496FD51F178CECBF707C7D40 /* FSLineChart.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FSLineChart/FSLineChart-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSLineChart/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FSLineChart/FSLineChart.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FSLineChart;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C06D8495BAEB3588FCF9CD83D0A1FEB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB7F49BF496FD51F178CECBF707C7D40 /* FSLineChart.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FSLineChart/FSLineChart-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSLineChart/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FSLineChart/FSLineChart.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FSLineChart;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163D87BE96A63549B0EACF1CC31A2E90 /* Debug */,
+				707B86CFB21B645E37109F39754D4051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		407EC161763408383D6DF8D997BC827F /* Build configuration list for PBXNativeTarget "FSLineChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C06D8495BAEB3588FCF9CD83D0A1FEB2 /* Debug */,
+				B4DD253B70CCB296C3BD8654F58E81E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6B5031AC5BD27A67067419F311196FC /* Build configuration list for PBXNativeTarget "TaniwhaTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D255A0A008510A1B0F02C7931F6EAFE /* Debug */,
+				839604B8C60FDE39D5EF55FD178536E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA87A7195750DC287A42AF4280036AC1 /* Build configuration list for PBXNativeTarget "Pods-NZAirQualityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2429B149942E355B10E32A6B7BA5632C /* Debug */,
+				B47A69445D4B32F6972E05B2261D88FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D74036BF8B6DB76BF4CBD2EAB826B3EE /* Build configuration list for PBXNativeTarget "Pods-NZAirQuality" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6547E18F6D073D71474B3AF002E33268 /* Debug */,
+				A80E754194DBEC1DDC38BD7748C708C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

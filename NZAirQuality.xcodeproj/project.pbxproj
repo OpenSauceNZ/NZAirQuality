@@ -14,6 +14,8 @@
 		0522E2941F0BC61200A155AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0522E2931F0BC61200A155AB /* Assets.xcassets */; };
 		0522E2971F0BC61200A155AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0522E2951F0BC61200A155AB /* LaunchScreen.storyboard */; };
 		0522E2A21F0BC61300A155AB /* NZAirQualityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522E2A11F0BC61300A155AB /* NZAirQualityTests.swift */; };
+		1262288940B380A191BA804C /* Pods_NZAirQualityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82C87E037FC534FE9CC1FF6 /* Pods_NZAirQualityTests.framework */; };
+		BA94B7334F1A0B4EABE39E4B /* Pods_NZAirQuality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01830C9123423CF94BF080A6 /* Pods_NZAirQuality.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01830C9123423CF94BF080A6 /* Pods_NZAirQuality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NZAirQuality.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0522E2861F0BC61200A155AB /* NZAirQuality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NZAirQuality.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0522E2891F0BC61200A155AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0522E28B1F0BC61200A155AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +41,11 @@
 		0522E29D1F0BC61300A155AB /* NZAirQualityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NZAirQualityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0522E2A11F0BC61300A155AB /* NZAirQualityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NZAirQualityTests.swift; sourceTree = "<group>"; };
 		0522E2A31F0BC61300A155AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DAA50EA11F35164955D48CE /* Pods-NZAirQuality.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NZAirQuality.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NZAirQuality/Pods-NZAirQuality.debug.xcconfig"; sourceTree = "<group>"; };
+		88273C58A65C6B09899368EB /* Pods-NZAirQualityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NZAirQualityTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NZAirQualityTests/Pods-NZAirQualityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8DC0A91D382E1F975572A3D1 /* Pods-NZAirQuality.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NZAirQuality.release.xcconfig"; path = "Pods/Target Support Files/Pods-NZAirQuality/Pods-NZAirQuality.release.xcconfig"; sourceTree = "<group>"; };
+		C82C87E037FC534FE9CC1FF6 /* Pods_NZAirQualityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NZAirQualityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF88092AE3BD0042B4C24548 /* Pods-NZAirQualityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NZAirQualityTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NZAirQualityTests/Pods-NZAirQualityTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA94B7334F1A0B4EABE39E4B /* Pods_NZAirQuality.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1262288940B380A191BA804C /* Pods_NZAirQualityTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +74,8 @@
 				0522E2881F0BC61200A155AB /* NZAirQuality */,
 				0522E2A01F0BC61300A155AB /* NZAirQualityTests */,
 				0522E2871F0BC61200A155AB /* Products */,
+				6A6D421DB5C16BA6DB918333 /* Pods */,
+				5E1F87C4D997B28B51330BC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +111,26 @@
 			path = NZAirQualityTests;
 			sourceTree = "<group>";
 		};
+		5E1F87C4D997B28B51330BC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01830C9123423CF94BF080A6 /* Pods_NZAirQuality.framework */,
+				C82C87E037FC534FE9CC1FF6 /* Pods_NZAirQualityTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A6D421DB5C16BA6DB918333 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DAA50EA11F35164955D48CE /* Pods-NZAirQuality.debug.xcconfig */,
+				8DC0A91D382E1F975572A3D1 /* Pods-NZAirQuality.release.xcconfig */,
+				88273C58A65C6B09899368EB /* Pods-NZAirQualityTests.debug.xcconfig */,
+				EF88092AE3BD0042B4C24548 /* Pods-NZAirQualityTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0522E2A61F0BC61300A155AB /* Build configuration list for PBXNativeTarget "NZAirQuality" */;
 			buildPhases = (
+				C811E2CE49676B714BD99248 /* [CP] Check Pods Manifest.lock */,
 				0522E2821F0BC61200A155AB /* Sources */,
 				0522E2831F0BC61200A155AB /* Frameworks */,
 				0522E2841F0BC61200A155AB /* Resources */,
+				78B801C0F15E9A80C3A2AAAE /* [CP] Embed Pods Frameworks */,
+				C994800A872D344E44E4C393 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0522E2A91F0BC61300A155AB /* Build configuration list for PBXNativeTarget "NZAirQualityTests" */;
 			buildPhases = (
+				0A6B1795790179CA0BEAE138 /* [CP] Check Pods Manifest.lock */,
 				0522E2991F0BC61300A155AB /* Sources */,
 				0522E29A1F0BC61300A155AB /* Frameworks */,
 				0522E29B1F0BC61300A155AB /* Resources */,
+				B611C46DA605290852481712 /* [CP] Embed Pods Frameworks */,
+				AF948148F51F82B44A4F2985 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,6 +236,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A6B1795790179CA0BEAE138 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		78B801C0F15E9A80C3A2AAAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NZAirQuality/Pods-NZAirQuality-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF948148F51F82B44A4F2985 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NZAirQualityTests/Pods-NZAirQualityTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B611C46DA605290852481712 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NZAirQualityTests/Pods-NZAirQualityTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C811E2CE49676B714BD99248 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C994800A872D344E44E4C393 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NZAirQuality/Pods-NZAirQuality-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0522E2821F0BC61200A155AB /* Sources */ = {
@@ -343,6 +474,7 @@
 		};
 		0522E2A71F0BC61300A155AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DAA50EA11F35164955D48CE /* Pods-NZAirQuality.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V7QHHUD2M5;
@@ -356,6 +488,7 @@
 		};
 		0522E2A81F0BC61300A155AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DC0A91D382E1F975572A3D1 /* Pods-NZAirQuality.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V7QHHUD2M5;
@@ -369,6 +502,7 @@
 		};
 		0522E2AA1F0BC61300A155AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88273C58A65C6B09899368EB /* Pods-NZAirQualityTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -384,6 +518,7 @@
 		};
 		0522E2AB1F0BC61300A155AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF88092AE3BD0042B4C24548 /* Pods-NZAirQualityTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

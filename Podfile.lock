@@ -1,0 +1,15 @@
+PODS:
+  - FSLineChart (0.1.7)
+  - TaniwhaTextField (1.0)
+
+DEPENDENCIES:
+  - FSLineChart
+  - TaniwhaTextField
+
+SPEC CHECKSUMS:
+  FSLineChart: 1b8d3727e8feb323144126d381184bf1b15e6efc
+  TaniwhaTextField: ee9ba7582002e9fc71a55ec9c97c45eb8663b05f
+
+PODFILE CHECKSUM: 631ba9b8ea2f136f104ff595e48be36b80fb64ea
+
+COCOAPODS: 1.2.1
