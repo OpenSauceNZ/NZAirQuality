@@ -12,7 +12,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        API.shared.getAirIndexDetailsByCityName(cityName: "auckland") { (airData, err) in
+            if err == nil {
+                print(airData?.data.aqi)
+            } else {
+                print(err?.localizedDescription)
+            }
+            
+        }
     }
     
 
