@@ -8,13 +8,13 @@
 
 import Foundation
 
-private let shareInstance = API()
+private let shareInstance = AirAPI()
 private let server = "https://api.waqi.info"
 private let token = "3ac5f237074a1b6b37ee24548b965a807862d89c"
 
 
-class API: NSObject {
-    class var shared: API  {
+class AirAPI: NSObject {
+    class var shared: AirAPI  {
         return shareInstance
     }
     func getAirIndexDetailsByCityName(cityName:String, completed: @escaping (_ airData:AirData?, _ error: Error?)->()) {
