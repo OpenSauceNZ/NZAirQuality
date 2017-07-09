@@ -26,7 +26,7 @@ struct Details: Decodable {
         case variousIndex = "iaqi"
     }
 }
-//------------------------------------------------------------------
+// MARK: ---VariousIndex---
 struct VariousIndex: Decodable {
     let humidity: humidity?
     let no2: no2?
@@ -43,7 +43,6 @@ struct VariousIndex: Decodable {
         case no2,pm10,pm25
     }
 }
-
 struct humidity: Decodable {
     let index:Float
     private enum CodingKeys: String, CodingKey {
@@ -87,9 +86,8 @@ struct wind: Decodable {
         case index = "v"
     }
 }
-//--------------------------------------------------------------
 
-
+// MARK: ---TimeInfo---
 struct TimeInfo: Decodable {
     let time: String?
     let timestamp: Double?
@@ -98,7 +96,7 @@ struct TimeInfo: Decodable {
         case timestamp = "v"
     }
 }
-
+// MARK: ---City---
 struct City: Decodable {
     let geo: [Float]?
     let name: String?
