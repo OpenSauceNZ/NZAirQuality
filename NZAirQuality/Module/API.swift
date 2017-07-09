@@ -9,10 +9,13 @@
 import Foundation
 
 private let shareInstance = API()
+private let server = ""
+
 
 class API: NSObject {
     class var shared: API  {
         return shareInstance
     }
+    
     
 }
