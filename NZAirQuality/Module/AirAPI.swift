@@ -17,10 +17,34 @@ class AirAPI: NSObject {
     class var shared: AirAPI  {
         return shareInstance
     }
-    func getAirIndexDetailsByCityName(cityName:String, completed: @escaping (_ airData:AirData?, _ error: Error?)->()) {
+    func getAirIndexDetailsByCityName(cityName: String, completed: @escaping (_ airData: AirData?, _ error: Error?)->()) {
         guard let serverUrl = URL(string: "\(server)/feed/\(cityName)/?token=\(token)") else {
             return
         }
+        requestServer(serverUrl: serverUrl) { (newData, error) in
+            if error == nil {
+                completed(newData, nil)
+            } else {
+                completed(nil, error)
+            }
+        }
+    }
+    
+    func getAirIndexDetailsByGeolocation(latitude: Float, longitude: Float, completed: @escaping (_ airData: AirData?, _ error: Error?)->()) {
+        
+        guard let serverUrl = URL(string: "\(server)/feed/geo:\(latitude);\(longitude)/?token=\(token)") else {
+            return
+        }
+        requestServer(serverUrl: serverUrl) { (newData, error) in
+            if error == nil {
+                completed(newData, nil)
+            } else {
+                completed(nil, error)
+            }
+        }
+    }
+    
+    fileprivate func requestServer(serverUrl: URL, completed: @escaping (_ airData: AirData?, _ error: Error?)->()) {
         URLSession.shared.dataTask(with: serverUrl) { (data, response, err) in
             guard let newData = data else {
                 completed(nil, err)

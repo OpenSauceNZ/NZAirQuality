@@ -20,6 +20,15 @@ class ViewController: UIViewController {
             }
             
         }
+        
+        AirAPI.shared.getAirIndexDetailsByGeolocation(latitude: 31.2047372, longitude: 121.4489017) { (airData, err) in
+            if err == nil {
+                print("-----------------------------")
+                print(airData)
+            } else {
+                print(err?.localizedDescription)
+            }
+        }
     }
     
 
