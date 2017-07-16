@@ -27,11 +27,11 @@ struct YWData: Decodable {
 struct YWChannel: Decodable {
     let astronomy: YWAstronomy?
     let atmosphere: YWAtmosphere?
-//
-//    let location: YWLocation?
-//    let wind: YWWind?
-//    let units: YWUnit?
-//    let item: YWItem?
+
+    let location: YWLocation?
+    let wind: YWWind?
+    let units: YWUnit?
+    let item: YWItem?
 }
 
 struct YWAstronomy: Decodable {
@@ -40,43 +40,43 @@ struct YWAstronomy: Decodable {
 }
 
 struct YWAtmosphere: Decodable {
-    let humidity: Float
-//    let pressure: Double? // In the JSON it return string of Int
-//    let rising: Int?
-//    let visibility: Double?  // same as here
+    let humidity: String? // In Doc shows it should be Number, not string ¯\_(ツ)_/¯
+    let pressure: String? // In the JSON it return string of Int
+    let rising: String?
+    let visibility: String?  // same as here
 }
 
-//struct YWLocation: Decodable {
-//    let city: String?
-//    let country: String?
-//    let region: String?
-//}
-//
-//struct YWUnit: Decodable {
-//    let distance: String?
-//    let pressure: String?
-//    let speed: String?
-//    let temperature: String?
-//}
-//
-//struct YWWind: Decodable {
-//    let chill: Int?
-//    let direction: Int?
-//    let speed: Int?
-//}
-//
-//struct YWItem: Decodable {
-//    let currentCondition: YWCondition?
-////    let forecast: [YWCondition]?
-//}
-//
-//struct YWCondition: Decodable {
-//    let code: Int?
-//    let date: String?
-//    let temp: Int?
-//    let text: String?
-////    let day: String?
-////    let high: Int?
-////    let low: Int?
-//}
+struct YWLocation: Decodable {
+    let city: String?
+    let country: String?
+    let region: String?
+}
+
+struct YWUnit: Decodable {
+    let distance: String?
+    let pressure: String?
+    let speed: String?
+    let temperature: String?
+}
+
+struct YWWind: Decodable {
+    let chill: String?
+    let direction: String?
+    let speed: String?
+}
+
+struct YWItem: Decodable {
+    let currentCondition: YWCondition?
+    let forecast: [YWCondition]?
+}
+
+struct YWCondition: Decodable {
+    let code: String?
+    let date: String?
+    let temp: String?
+    let text: String?
+    let day: String?
+    let high: String?
+    let low: String?
+}
 
