@@ -2,4 +2,54 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NZAirQuality/Module/WeatherAPI.swift"
+            timestampString = "521892391.115212"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "requestWeatherInfo(location:completed:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NZAirQuality.WeatherAPI.requestWeatherInfo(location: Swift.String, completed: () -&gt; ()) -&gt; ()"
+                  moduleName = "NZAirQuality"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Liguo_Jiao/Programming%20project/NZAirQuality/NZAirQuality/Module/WeatherAPI.swift"
+                  timestampString = "521892391.183875"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "468">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; () in NZAirQuality.WeatherAPI.requestWeatherInfo(location: Swift.String, completed: () -&gt; ()) -&gt; ()"
+                  moduleName = "NZAirQuality"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Liguo_Jiao/Programming%20project/NZAirQuality/NZAirQuality/Module/WeatherAPI.swift"
+                  timestampString = "521892391.18711"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "499">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

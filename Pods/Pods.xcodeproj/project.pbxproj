@@ -50,23 +50,23 @@
 		102B83558E42C0C96C5CAE920CFD8501 /* Pods-NZAirQualityTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NZAirQualityTests-umbrella.h"; sourceTree = "<group>"; };
 		116D2415BC1091FD6E247FDB9737D9D7 /* Pods-NZAirQuality-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NZAirQuality-acknowledgements.plist"; sourceTree = "<group>"; };
 		29C900C62835789B855A4E5CBF6BA51B /* UIColor+FSPalette.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+FSPalette.h"; path = "FSLineChart/FSLineChart/UIColor+FSPalette.h"; sourceTree = "<group>"; };
-		2BA00A759E1BC07617EE0D8473FC8C1F /* Pods_NZAirQuality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NZAirQuality.framework; path = "Pods-NZAirQuality.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BA00A759E1BC07617EE0D8473FC8C1F /* Pods_NZAirQuality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NZAirQuality.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B4D57981DFE014561491A0086E79D8 /* UIColor+FSPalette.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+FSPalette.m"; path = "FSLineChart/FSLineChart/UIColor+FSPalette.m"; sourceTree = "<group>"; };
-		3FC70E3B53DD138719696CF681B3CA65 /* Pods-NZAirQuality.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NZAirQuality.modulemap"; sourceTree = "<group>"; };
+		3FC70E3B53DD138719696CF681B3CA65 /* Pods-NZAirQuality.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NZAirQuality.modulemap"; sourceTree = "<group>"; };
 		44019C09FAC383B5DDFEDFA633BD3F43 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		447B056EA79F4865A27E7E5DE1111B9A /* Pods-NZAirQuality-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NZAirQuality-dummy.m"; sourceTree = "<group>"; };
 		529D7FC98E9E5205DC22C11526690D7D /* TaniwhaTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TaniwhaTextField-umbrella.h"; sourceTree = "<group>"; };
 		5615A5079C020DED273A5DBA4EB93339 /* FSLineChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSLineChart-dummy.m"; sourceTree = "<group>"; };
-		60958988963E978475EE6B55E9BC3F21 /* FSLineChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FSLineChart.framework; path = FSLineChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60958988963E978475EE6B55E9BC3F21 /* FSLineChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSLineChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68545295A86C365A2ABA23B4A80CF6B6 /* TaniwhaTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TaniwhaTextField-prefix.pch"; sourceTree = "<group>"; };
 		6D2BF6E3B26E24380EF60463DE776C56 /* Pods-NZAirQuality.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NZAirQuality.debug.xcconfig"; sourceTree = "<group>"; };
 		6D78BD1D81A19705C969F1E6915B238D /* FSLineChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSLineChart.m; path = FSLineChart/FSLineChart/FSLineChart.m; sourceTree = "<group>"; };
-		6EF75ED55CC73DBFBA175D06204C410C /* TaniwhaTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TaniwhaTextField.modulemap; sourceTree = "<group>"; };
+		6EF75ED55CC73DBFBA175D06204C410C /* TaniwhaTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TaniwhaTextField.modulemap; sourceTree = "<group>"; };
 		795B2B54E1D3349550ACFC1D11C352D6 /* Pods-NZAirQuality.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NZAirQuality.release.xcconfig"; sourceTree = "<group>"; };
 		847514125898F0E8042518E2EFCE1C1C /* Pods-NZAirQualityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NZAirQualityTests.release.xcconfig"; sourceTree = "<group>"; };
 		86944A6F226E61F39C6685820A5B8CD6 /* Pods-NZAirQualityTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NZAirQualityTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		928675C6283334BEC1F05F04B5E2CBEA /* TaniwhaTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TaniwhaTextField.xcconfig; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AE8057525D2ADA23FB6F0AEE9ADC7159 /* Pods-NZAirQuality-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NZAirQuality-umbrella.h"; sourceTree = "<group>"; };
 		B01675AF7F404F2F5DB74293B7BF0409 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3CA0AB8E3CC309E1FFB56F3CEDA1F8B /* Pods-NZAirQualityTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NZAirQualityTests-frameworks.sh"; sourceTree = "<group>"; };
@@ -74,9 +74,9 @@
 		BB7F49BF496FD51F178CECBF707C7D40 /* FSLineChart.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSLineChart.xcconfig; sourceTree = "<group>"; };
 		BCA5D48B77998F2A44D090103EB589A4 /* Pods-NZAirQuality-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NZAirQuality-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C448D60025E5114F809B0854092820AB /* Pods-NZAirQualityTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NZAirQualityTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C6C756C3FA71DEC91DCAEFCA78417B78 /* Pods_NZAirQualityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NZAirQualityTests.framework; path = "Pods-NZAirQualityTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD7EC1C7EFE77C84477F5A7064E9E1BC /* FSLineChart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FSLineChart.modulemap; sourceTree = "<group>"; };
-		CF552DCAA212BE1BF71F4064BD4E88DE /* TaniwhaTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TaniwhaTextField.framework; path = TaniwhaTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6C756C3FA71DEC91DCAEFCA78417B78 /* Pods_NZAirQualityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NZAirQualityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD7EC1C7EFE77C84477F5A7064E9E1BC /* FSLineChart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FSLineChart.modulemap; sourceTree = "<group>"; };
+		CF552DCAA212BE1BF71F4064BD4E88DE /* TaniwhaTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TaniwhaTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF7C767C1128AFF84FEAD8DBF0334A94 /* Pods-NZAirQualityTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NZAirQualityTests-resources.sh"; sourceTree = "<group>"; };
 		CFEAB8DF322FDF9BF4F0971EB7FF89EC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6FE9247F1A8A18CA90EA25D2E07546B /* Pods-NZAirQualityTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NZAirQualityTests-dummy.m"; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		E59CDD18C2E985DF943054DC49D36E94 /* TaniwhaTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TaniwhaTextField-dummy.m"; sourceTree = "<group>"; };
 		E5ADE703846B2ACD5E53BB55D22FC049 /* FSLineChart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSLineChart-prefix.pch"; sourceTree = "<group>"; };
 		E75B9861A63D05EEB1F0D0FE93BDEC2B /* Pods-NZAirQualityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NZAirQualityTests.debug.xcconfig"; sourceTree = "<group>"; };
-		EAF227CFCAD9BA09C90D26AB94A4427F /* Pods-NZAirQualityTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NZAirQualityTests.modulemap"; sourceTree = "<group>"; };
+		EAF227CFCAD9BA09C90D26AB94A4427F /* Pods-NZAirQualityTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NZAirQualityTests.modulemap"; sourceTree = "<group>"; };
 		FD0FA4B0C63C12F169EB9D29E9F51422 /* FSLineChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSLineChart.h; path = FSLineChart/FSLineChart/FSLineChart.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,7 +152,6 @@
 				0A997F0E87D0AA10F6BBADF0C1DF70D2 /* TaniwhaTextField.swift */,
 				6168AF3794883F3E0D73FAB6DA31E210 /* Support Files */,
 			);
-			name = TaniwhaTextField;
 			path = TaniwhaTextField;
 			sourceTree = "<group>";
 		};
@@ -216,7 +215,6 @@
 				39B4D57981DFE014561491A0086E79D8 /* UIColor+FSPalette.m */,
 				97B2686C60312C4762D9A69CEA468CF3 /* Support Files */,
 			);
-			name = FSLineChart;
 			path = FSLineChart;
 			sourceTree = "<group>";
 		};
@@ -390,6 +388,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					91F734ECFDB667D3EF3387D89D7C40AD = {
+						LastSwiftMigration = 0900;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -577,7 +580,8 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -694,7 +698,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
