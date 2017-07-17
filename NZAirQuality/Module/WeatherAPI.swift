@@ -43,9 +43,9 @@ class WeatherAPI: NSObject {
             let data = try! JSONSerialization.data(withJSONObject: queryDict, options: .prettyPrinted)
             
             do {
-                let airData = try JSONDecoder().decode(Weather.self, from: data)
+                let weatherData = try JSONDecoder().decode(Weather.self, from: data)
                 
-                completed(airData, nil)
+                completed(weatherData, nil)
             } catch let newError {
                 completed(nil, newError)
             }
