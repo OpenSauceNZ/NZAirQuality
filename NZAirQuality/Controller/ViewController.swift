@@ -30,10 +30,11 @@ class ViewController: UIViewController {
 //            }
 //        }
         
-        WeatherAPI.shared.requestWeatherInfo(location: "Auckland") { (weatherInfo, error) in
-            print(error?.localizedDescription)
-            //print(weatherInfo?.data.channel.location?.country)
-        }
+//        WeatherAPI.shared.requestWeatherInfo(location: "Auckland") { (weatherInfo, error) in
+//            guard error == nil else {
+//                return
+//            }
+//        }
     }
     
 
