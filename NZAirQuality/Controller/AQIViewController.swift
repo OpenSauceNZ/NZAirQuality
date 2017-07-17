@@ -42,6 +42,13 @@ class AQIViewController: UITableViewController {
         }
     }
     
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let header = view as! UITableViewHeaderFooterView
+        header.textLabel?.font = UIFont(name: "HelveticaNeue", size: 13)
+        header.textLabel?.textColor = NZASectionTitle
+        header.backgroundView?.backgroundColor = UIColor.clear
+    }
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section {
         case 0:

@@ -15,8 +15,13 @@ let NZATabBarBackgroundColor = UIColor(rgb: 0x1B1B1B)
 let NZATabBarTintColor = UIColor(rgb: 0xBB490B)
 let NZAYellow = UIColor(rgb: 0xFFBA00)
 let NZAPurple = UIColor(rgb: 0x5D3F86)
-let NZATitleColor = UIColor.white
-let NZASubTitleColor = UIColor(rgb: 0x9BDCFF)
+
+
+let NZATitleColor = UIColor(rgb: 0x9BDCFF)
+let NZASubTitleColor = UIColor.white
+
+let NZASectionTitle = UIColor(rgb: 0xA8CEFF)
+
 let NZADetailsTitleColor = UIColor(rgb: 0xE3EFFF)
 let NZADetailsSubTitleColor = UIColor(rgb: 0xA8CEFF)
 let NZATintColor = UIColor(rgb: 0xB3470C)

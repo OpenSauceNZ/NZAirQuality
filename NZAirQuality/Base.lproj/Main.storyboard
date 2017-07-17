@@ -9,6 +9,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--AQI-->
         <scene sceneID="mw4-vp-yB4">
@@ -26,15 +31,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="126.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmO-a1-9hG">
-                                            <rect key="frame" x="8" y="8" width="248" height="63"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="63" id="J6j-S8-loo"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Bw-YR-EJH">
                                             <rect key="frame" x="264" y="0.0" width="111" height="111"/>
                                             <constraints>
@@ -42,13 +38,22 @@
                                                 <constraint firstAttribute="width" constant="111" id="Dla-R3-wDe"/>
                                             </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmO-a1-9hG">
+                                            <rect key="frame" x="16" y="32" width="240" height="63"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="63" id="J6j-S8-loo"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="36"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="UmO-a1-9hG" firstAttribute="top" secondItem="OaG-NR-58f" secondAttribute="topMargin" id="N3J-oc-co6"/>
                                         <constraint firstItem="7Bw-YR-EJH" firstAttribute="top" secondItem="OaG-NR-58f" secondAttribute="top" id="PzS-Mr-6qs"/>
                                         <constraint firstItem="7Bw-YR-EJH" firstAttribute="leading" secondItem="UmO-a1-9hG" secondAttribute="trailing" constant="8" id="YGO-Wj-6S7"/>
-                                        <constraint firstItem="UmO-a1-9hG" firstAttribute="leading" secondItem="OaG-NR-58f" secondAttribute="leadingMargin" id="nL3-cl-1Ka"/>
+                                        <constraint firstItem="UmO-a1-9hG" firstAttribute="leading" secondItem="OaG-NR-58f" secondAttribute="leadingMargin" constant="8" id="nL3-cl-1Ka"/>
                                         <constraint firstAttribute="trailing" secondItem="7Bw-YR-EJH" secondAttribute="trailing" id="tMP-lM-1D4"/>
+                                        <constraint firstItem="UmO-a1-9hG" firstAttribute="centerY" secondItem="OaG-NR-58f" secondAttribute="centerY" id="tpX-yo-2Ui"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

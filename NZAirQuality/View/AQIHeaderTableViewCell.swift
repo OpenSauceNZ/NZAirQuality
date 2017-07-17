@@ -31,7 +31,6 @@ class AQIHeaderTableViewCell: UITableViewCell {
     
     func generateImageWithText(text: String, on imageView: UIImageView) -> UIImage {
         
-        
         let imageView = imageView
         imageView.backgroundColor = UIColor.clear
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: (imageView.layer.bounds.width), height: (imageView.layer.bounds.height)))
@@ -41,6 +40,8 @@ class AQIHeaderTableViewCell: UITableViewCell {
         label.textAlignment = .center
         label.textColor = UIColor.white
         label.text = text
+        label.font = UIFont(name: "HelveticaNeue-Medium", size: 18)
+        
         
         UIGraphicsBeginImageContextWithOptions(label.bounds.size, false, 0);
         imageView.layer.render(in: UIGraphicsGetCurrentContext()!)
