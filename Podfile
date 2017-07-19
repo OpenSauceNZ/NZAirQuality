@@ -4,6 +4,7 @@ use_frameworks!
 
 pod "FSLineChart"
 pod "TaniwhaTextField"
+pod 'Material', '~> 2.0'
 
 target 'NZAirQuality' do
   use_frameworks!
