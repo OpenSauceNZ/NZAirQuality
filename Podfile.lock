@@ -1,20 +1,15 @@
 PODS:
   - FSLineChart (0.1.7)
-  - Material (2.6.3):
-    - Material/Core (= 2.6.3)
-  - Material/Core (2.6.3)
   - TaniwhaTextField (1.0)
 
 DEPENDENCIES:
   - FSLineChart
-  - Material (~> 2.0)
   - TaniwhaTextField
 
 SPEC CHECKSUMS:
   FSLineChart: 1b8d3727e8feb323144126d381184bf1b15e6efc
-  Material: af607a7ec0e9978ef85cf189a3d8ceeeb650400f
   TaniwhaTextField: ee9ba7582002e9fc71a55ec9c97c45eb8663b05f
 
-PODFILE CHECKSUM: 0b103f5d52453d0b43838d53a4dae3b66cc2853b
+PODFILE CHECKSUM: 631ba9b8ea2f136f104ff595e48be36b80fb64ea
 
 COCOAPODS: 1.2.1

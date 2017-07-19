@@ -54,8 +54,7 @@ class AQIContentTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
         if cellCount > 0 {
             let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
             let cellWidth = flowLayout.itemSize.width + flowLayout.minimumInteritemSpacing
-            let cellHeight = flowLayout.itemSize.height + flowLayout.minimumInteritemSpacing
-            
+
             //20.00 was just extra spacing I wanted to add to my cell.
             let totalCellWidth = cellWidth * cellCount + 20.00 * (cellCount - 1)
             let contentWidth = collectionView.frame.size.width - collectionView.contentInset.left - collectionView.contentInset.right

@@ -7,319 +7,105 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0324E5EF2BC3991C25C01E22740F3C23 /* FSLineChart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BD0F07892C3300EFDEF84321B6CC673 /* FSLineChart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		07B7EE8ADB35194C1E54FBA70E998855 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A199234C560D2EE3B81A6C4A88210E6 /* NavigationController.swift */; };
-		082CE8EF7379F924525075D41529CD5D /* Gravity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CA4B8E787F4A8E4BC4EB73887D65F4 /* Gravity.swift */; };
-		09BBB84D53269CA68811719AE87074A7 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB02E3739A92264EB10CC57EC1A2F83 /* View.swift */; };
-		0BDFDE3CE41394D32A8D0A5B644B0CE5 /* CollectionViewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D5AEFBB049AD566497EBCE988758F /* CollectionViewCard.swift */; };
-		0EB1B520C516F34E96332EB3F4627D86 /* PageTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442F1BEB38541B7318BD4AB2EFE496DF /* PageTabBarController.swift */; };
-		1028735AFD69DB07D13D133188986CAE /* com.cosmicmind.material.fonts.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14D166ED5295F3E7A9CDE35E650238E3 /* com.cosmicmind.material.fonts.bundle */; };
-		116F2F7E6AF507EBB5B537F33EBDEF10 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425D2AAD6D53DAB139C23157CCA5DACA /* Card.swift */; };
-		11B879A171A72A861D6CA2C779D623CE /* ToolbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C396A958EE9D20D93E4BB25DDC87CA /* ToolbarController.swift */; };
-		16DE23F27BD2971ACA8D453582CD5B33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		171FDC7A53ADE7091E50B9DDA970C3A7 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A714FEE8B06FF89A84FE31B117C2C81 /* Roboto-Bold.ttf */; };
-		18A2C7EE52E5D6B32E86B5BEA77FF7CD /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870BE8BD24D6D11832251BC7EA101CDB /* Grid.swift */; };
-		1AACB7720CF330F53BBADE9E31C90B94 /* FABMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6643512D6B2289F701F0A58E9E805451 /* FABMenu.swift */; };
-		1BF9E3E962D42AF2A0DD1686186E1E15 /* Offset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D3687368BADCF24560098FB4FB0B88 /* Offset.swift */; };
-		1C34C51CF9B72B55FA06F9AABAAFE16F /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFDC031A07F7271E5ED74E8703CF4359 /* Roboto-Light.ttf */; };
-		1FC146E6F0F20534934A0E7A49E55475 /* Snackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BA90399E0908F7D9F40D982A6C5E1 /* Snackbar.swift */; };
-		1FF52504C022E7394D008A41BF2A7989 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F18D758FAE46ED1FC9BC839BB280D10 /* Font.swift */; };
-		245AC814177AE5647020E764F7F9CFC4 /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7599D3FC5C308C946B487330D52D66AE /* RootController.swift */; };
-		27ED38A3FADA8B9881593C60B8F77F24 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBA54A947DF392BCBB77966B020927F /* TabBar.swift */; };
+		0324E5EF2BC3991C25C01E22740F3C23 /* FSLineChart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD81F23F4E95AB1762A560AAE4508281 /* FSLineChart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B2315A20864C1C78757696E87EC98FA /* TaniwhaTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E59CDD18C2E985DF943054DC49D36E94 /* TaniwhaTextField-dummy.m */; };
 		2B677AA5812D07E8D851280BFABA0E22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		2DF97E65D7B47F8B454A607F46B5D1B0 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4ECFABE9C08DDAA1DC9DD58D8B1D28 /* CollectionViewController.swift */; };
-		2F347760825901287E9C322E69E08389 /* PresenterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DFAC7096520B24A59FF4C7AA8CCE5 /* PresenterCard.swift */; };
-		30E59DB6FBE799D6501E4C65808A7548 /* Material+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED440C8D7C1F114DA1659B74262E073 /* Material+String.swift */; };
-		31D44F4595EC084F00E56BEB36ECF37F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		32072E34469F287A217EFF38C08F3ACF /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7C719FF7BD54FC26998FEC9263DD7A /* TextField.swift */; };
-		373FEFF3C80CD8077C16D34D89950D95 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD70FA4C1DA6C2A7A3D40B4E509A7CFE /* CollectionView.swift */; };
-		37DB59489C622CE92C2CE60C4E19DC79 /* Material-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D52A38835F7694D0B06C51B74633B96 /* Material-dummy.m */; };
-		38AEA4D79A90E3B8EFA40EFF64967C03 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477E4C6C43829A0EBCE9FC1418CD3015 /* IconButton.swift */; };
-		39CBE1F83FCC50B6719346789644736F /* HeightPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59A5EA4D9A62BE7ED78BE0CF682EA7B /* HeightPreset.swift */; };
-		3B31F5B53C04B294A301137563FE2B05 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC38A2B8D0285A16664B1536A23C236 /* TextView.swift */; };
-		3B75ED554075B9ACD495F77A69339364 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		3C5B20D1C396F7072FFF2BC0A22C893D /* Material-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E2595060B9CADF528E89051E1051A4B9 /* Material-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D1A8603AAEC4FA3FBD9F786FAB5C087 /* FABButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06010EFC2127969F4AB5287F92412873 /* FABButton.swift */; };
-		3F330BFF24249466380831BD6D511A8B /* PulseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CAEEABA383E66D186B89BD69F928AB /* PulseView.swift */; };
-		40F417F672677057191BFB66BB2AC0DD /* RaisedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E54D4BCB3DC9674A3693E7C0E35E3D /* RaisedButton.swift */; };
-		419B9224E128E37D2EBAA84B12CEE2C6 /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = F989276AF3C9A4FB94BF5F89175A0E7B /* Display.swift */; };
-		487752C5D1B8739550F962D7D97E6F0D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5208D1F2A8F11844B4FD092AAD1516 /* TableViewController.swift */; };
-		49B205C140DE3B60477067BEF001EB83 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E927DD9F2FAE3748D669BC9DCEB83991 /* Roboto-Medium.ttf */; };
-		4B738B94A83C9D0408765125D54490E3 /* CharacterAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442EF85E12F202BBBE33DF22DB72BA5C /* CharacterAttribute.swift */; };
-		4E05D8BA097745D3114B750B736E8840 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC2AB429BC89A9B2C02FBBDAD20831D /* Color.swift */; };
-		5155DAB06AC678D4C280F9DE9C85DC95 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDF0913F2B6CFB59C15A707C016A3F /* CollectionReusableView.swift */; };
-		52571323658B71BE2BAE8C466B7B67B1 /* ErrorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E097633EA84CF7812654DB9D53607D10 /* ErrorTextField.swift */; };
-		5372437B5147B39398BB132051E7CC1F /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197B5F949B5C261155BF016A4E315EA4 /* NavigationBar.swift */; };
-		553B11E87ABA6786D29F46CFE92A9D3B /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197EE308F1B304CEA121D9367CE6057 /* StatusBarController.swift */; };
-		565D85A789C725461EF86514CE205C8B /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D232A23B03AE924D76B48E476C8ABAD /* Screen.swift */; };
-		59D080C77B664DE1BA783B49AE621B78 /* DataSourceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5AA8659228C3CB68C176A7C07CA862 /* DataSourceItem.swift */; };
-		5A29556B05C608AE989FEF204B753CED /* Material+Motion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E22E95F1E121FB0B1495E95C8F1F97 /* Material+Motion.swift */; };
-		5B280C0EE91E4313AF1821D88D164571 /* Material+Obj-C.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F75E6A7D286B867A2B86D832323925 /* Material+Obj-C.swift */; };
-		5C2C00331E63AEE7E02AD0133E96BA85 /* TaniwhaTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA135758D34BF11B93079E6FCE837CD /* TaniwhaTextField-dummy.m */; };
-		5CC98AA3B1C173EA5C0CBE49B2EBE2B2 /* ImageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB6BD0D832E99C2BEDCE5940F6F55FC /* ImageCard.swift */; };
-		5D976F6E385E5D59B94DD4742558CC9D /* Material+MotionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA68262143D3F909F65EB0EAA7D8FCB /* Material+MotionAnimation.swift */; };
-		63084458EF28E2038E319F21B56EBD7D /* Pods-NZAirQuality-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 447B056EA79F4865A27E7E5DE1111B9A /* Pods-NZAirQuality-dummy.m */; };
-		630C4932CF221DAA1D236FDA3CA45C4C /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD70D8E298DBDA707E673220BFC36F6 /* Bar.swift */; };
-		6328969B7ED402FE62685FDDCAC91F2B /* RobotoFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = E639C47792498D8B890766D0EC169179 /* RobotoFont.swift */; };
-		647CCCCDFC73BCAEBFEE53B0659F95B1 /* Pods-NZAirQuality-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE8057525D2ADA23FB6F0AEE9ADC7159 /* Pods-NZAirQuality-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6932DB0F080D4C4AC9186AE40AA98641 /* NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8F484E6B8ED7E5DC72E3E868A2F2A /* NavigationItem.swift */; };
-		6E36593546BFDCAE6089928661959104 /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA605E5457E599780E9F2BCAC1160138 /* EdgeInsets.swift */; };
-		7102DD0AF2FBB98629C288C85E10EB01 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFEAD8F8D4AB781EFC0E91CC8DFD9D3 /* TableViewCell.swift */; };
-		7105EE4F0935A582DED5B1CE1520375F /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5736A99A0BF29FBB21765F0F45CE07FD /* Layer.swift */; };
-		7481671ED62B76F258D38553F3153D2E /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB2BC6DD784292B4C788E8458081B38A /* Roboto-Thin.ttf */; };
-		77FD923EAD95EF3338C62DC3DDC86B56 /* TaniwhaTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D93BDE24E5F87D313348F066887EE077 /* TaniwhaTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		870B93B6D1D80D1A6189704188C53D4B /* Material+UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D369CF7AF6FFE5E3F0CE7C2671EE36 /* Material+UIWindow.swift */; };
-		8B547CC0A3F77E20383E2F02733A37CF /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D86F4933D83708ACAAC754EC80E3D /* Shape.swift */; };
-		8E3A5C72E00DD4447F17470991FB1DFA /* com.cosmicmind.material.icons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 906DAD122E0294861A94ACFA8A54B821 /* com.cosmicmind.material.icons.bundle */; };
-		925A2C6A48F3778D13E85CDF24D4B8B2 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C773FF3627CFC0D1B1B245551909EAE6 /* Icon.swift */; };
-		92E02A73819055033F2C3F399F0754F0 /* Material+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4B8663A63D1F3383C20C87091603FA /* Material+UIImage.swift */; };
-		93104D17BFA016BCEA4554534F3CFDBB /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38655CA937720F3240161CEAF2CBA98 /* Toolbar.swift */; };
-		9474236D8AED186A4E5388B537BFDBD2 /* PulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A9F7D17D6477C7C68F9EBA038A2659 /* PulseAnimation.swift */; };
-		94C63B0BB66948E1413CF441BFF585C4 /* Depth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10444901C654A76CDC528CD0F4DE7C4 /* Depth.swift */; };
-		992C9342DC2EB16F9F9068FDE58336E1 /* SearchBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30C5211C5C63AE80D2FA3CEED21A63D /* SearchBarController.swift */; };
-		9B3AFD849509CEA3D3D6DA24C3B79875 /* InterimSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6471B619E3DEA0407000F70282895F /* InterimSpace.swift */; };
-		A37754C8D65205848ED9C10DD9F54904 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF63753E6038719FC3F2522698ED1AE /* CollectionViewCell.swift */; };
-		A8A0C9572C9DE92F54205E6F5BE7BAF6 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BAC809C526D59FDAD06C00791EBEA4 /* Switch.swift */; };
-		AD5681307560DC6583E47930833596B2 /* FSLineChart.h in Headers */ = {isa = PBXBuildFile; fileRef = A378ADD4FCB4032DB5D8E9C84B7B852C /* FSLineChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B197787A06F2B4124BC1FF82F6975F2F /* FSLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FF7E3D943D3319BFA72698B50F96A6 /* FSLineChart.m */; };
-		B1FED128A3C24DC1A73BC9128E32711A /* FABMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF67C6366FC981247F530AEF65FC61CE /* FABMenuController.swift */; };
-		B9A3C95629A67457A35973F71F055E91 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79D99462AF3BF0592F5A300D0BF9312 /* SpringAnimation.swift */; };
-		BAB270A1D041DD8F7E0C253FC31934EC /* FlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1E1167C915A470498D1B7D65EAA4EC /* FlatButton.swift */; };
-		BBC5370053F23306831A440BAE301043 /* Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F8B59E1E003175F3613CF3C1EE51CC /* Border.swift */; };
-		BBF89475E42FE4D0D8B8DEFA5A1D6550 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5D42C133525BF6BB29CDB4BA5372B8 /* Device.swift */; };
-		BC5C9EEB0A4ECD6BBEDF1492FA6AADD0 /* BottomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EFF2D31385A52A49FA53B2ABD6DAE5 /* BottomNavigationController.swift */; };
-		BD5BE4729488A50F125262743CD733F4 /* BottomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331BEF22475FC0766DAF2AFC6EC414DA /* BottomTabBar.swift */; };
-		C0F7388159B48FE00EC70346DC660373 /* UIColor+FSPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 013BF24BF37F13E8F12D0C1288BCC2F8 /* UIColor+FSPalette.m */; };
-		C832AF230AEA8D6F0FA03C7392D11C54 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4C379CE7C0EB7BE02CBD9BCDC0EF8D /* TableView.swift */; };
+		33B22D8BD3AA284CC183C9AFDD8CFFDF /* TaniwhaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A997F0E87D0AA10F6BBADF0C1DF70D2 /* TaniwhaTextField.swift */; };
+		3FABB83D3FE3A89BFF6067ACD5FF2306 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		5F49CEE86E7C4BF8A24AC41F827FBE89 /* TaniwhaTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 529D7FC98E9E5205DC22C11526690D7D /* TaniwhaTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97D0A74BBDD3F07681818DAE58FFE340 /* Pods-NZAirQuality-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 447B056EA79F4865A27E7E5DE1111B9A /* Pods-NZAirQuality-dummy.m */; };
+		A9C6B54A2C57384EB0EF1C3A2D6DD59A /* Pods-NZAirQuality-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE8057525D2ADA23FB6F0AEE9ADC7159 /* Pods-NZAirQuality-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5681307560DC6583E47930833596B2 /* FSLineChart.h in Headers */ = {isa = PBXBuildFile; fileRef = FD0FA4B0C63C12F169EB9D29E9F51422 /* FSLineChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B197787A06F2B4124BC1FF82F6975F2F /* FSLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78BD1D81A19705C969F1E6915B238D /* FSLineChart.m */; };
+		B82B202B01BA07258DF6DAF14E91DB87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		C0F7388159B48FE00EC70346DC660373 /* UIColor+FSPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B4D57981DFE014561491A0086E79D8 /* UIColor+FSPalette.m */; };
 		C8E8C2665083E83738D7C70FF5BC2BF8 /* Pods-NZAirQualityTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 102B83558E42C0C96C5CAE920CFD8501 /* Pods-NZAirQualityTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C9DAE803007B16AC80D28323AFC166D9 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCA7FF94FE463AF1079F67919837AB /* CornerRadius.swift */; };
-		CCF6566008A497D0AA5401E7602E63DB /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619B49C4805C7BAC321A1DBCC4C0C9B /* Layout.swift */; };
-		CE79C251C315CFA47A7ADAA5B9E2E43B /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81433868B50847AB4D6567BDEE8F5F8 /* Divider.swift */; };
-		CE93894C8BD2DE2CBB3315AC68891A42 /* CollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A57E127ECEA1442FFBB98B8BA77A2F /* CollectionViewLayout.swift */; };
-		D0B31415996B28DDD044D79915EBD863 /* Material+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B55B30995B2DFA983D11B98CDB0DF5 /* Material+UIFont.swift */; };
-		D0B4DC5073F3062460F0772E908A5CC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		D29A5BFF0A3BB22B09DFB87BD42AA434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70219FFE32347E50BA4E3CF489461EDE /* Assets.xcassets */; };
 		D50155264DD77773512299F1D838451B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		DCCD08E4AECEAD34365087F8FFD01265 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98CCCD33EB822F2F8E5813A5F1E0ECA6 /* Roboto-Regular.ttf */; };
-		DDBFA68D2F126A3CA3C335F569807F57 /* Material+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B314603377F19DC13C4FC5F041899A8 /* Material+UIView.swift */; };
-		E0CD38914E5A972C541DDD2A99391B24 /* Material+CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF5198F32FC6245124A483FB279BFF /* Material+CALayer.swift */; };
-		E10D8B1C5BA248CA549385E0982A6698 /* TextStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1533D2BDF2D27E3F24AAC0060F3A0FD8 /* TextStorage.swift */; };
-		E7D02745D202B5B2967D24897874AA6C /* FSLineChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB008D27C995F54EA9983DD2CA2C0447 /* FSLineChart-dummy.m */; };
-		E884016BF8A807BE580286F21FE102DD /* NavigationDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C994F517B0919AA1BB9BCF770C581B /* NavigationDrawerController.swift */; };
-		E8B50C0B38F28A8D40CD868D03A17501 /* DynamicFontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD8AA364776E9C66FED542E19FBA47 /* DynamicFontType.swift */; };
+		E7D02745D202B5B2967D24897874AA6C /* FSLineChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5615A5079C020DED273A5DBA4EB93339 /* FSLineChart-dummy.m */; };
 		ECC1B4498CF2090AB8FFE12869388A6D /* Pods-NZAirQualityTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FE9247F1A8A18CA90EA25D2E07546B /* Pods-NZAirQualityTests-dummy.m */; };
-		F2BA53909EAEC2730D76DDBC723ECA96 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1158EF292AD13A9227EB0F4A9AD62276 /* Application.swift */; };
-		F60A37F2848E1EA8B20744A2B01CB91F /* SnackbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4DD5CCB64803804DE848BF5FB2CB62 /* SnackbarController.swift */; };
-		FB5B282C99FF4D4736D2F16AA35FDF02 /* Material+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9691C612954056EC8DA5EAB73EE55AF /* Material+Array.swift */; };
-		FB8EF0DF859C823ADDE65B93357D58FE /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86974BFEDD792155222935261CD5F11 /* Button.swift */; };
-		FBD4CB3C8796B92E67A673A76549546E /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED1DF8C6DA7C3536876B607356EFC6 /* SearchBar.swift */; };
-		FC5DE94578765F701B6E09EA3D9DB1F1 /* UIColor+FSPalette.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD9C004B71B467E5ACB2ED83B4DA9FF /* UIColor+FSPalette.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFF7B85BF5557E26E3FA8D8E757A7CBF /* TaniwhaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CF07AFDE885AA574599F65AA953903 /* TaniwhaTextField.swift */; };
+		FC5DE94578765F701B6E09EA3D9DB1F1 /* UIColor+FSPalette.h in Headers */ = {isa = PBXBuildFile; fileRef = 29C900C62835789B855A4E5CBF6BA51B /* UIColor+FSPalette.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE0045AB2069DFE39C26F853B7AA20E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		351A20F60939D38A3304ABEDC0D5F2E7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3A5897FCD2621886E495618AB901B1EF;
-			remoteInfo = "Material-com.cosmicmind.material.fonts";
-		};
-		571487D6D84B205FBE7F5A02059FC5CE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FE55F80E966F02731B09C8987A042233;
-			remoteInfo = TaniwhaTextField;
-		};
-		883EB9284E6981290B5512601599D119 /* PBXContainerItemProxy */ = {
+		1372B19C9FEF96E46ED3E7D48F60F09F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 809463219ED0A00088BB0753D65348EB;
 			remoteInfo = FSLineChart;
 		};
-		91FB5FEC5845DFF8550AD36234C97B74 /* PBXContainerItemProxy */ = {
+		D2EE6F97713FCF8F2BE52B714A6E0DF2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 39AA3FC7447AC6B6A131668CFF9C01CD;
-			remoteInfo = "Material-com.cosmicmind.material.icons";
-		};
-		977164C0AA1CE43CF1739C7837305598 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D511562A8961C5B7A5DD87BAE2374F2;
-			remoteInfo = Material;
+			remoteGlobalIDString = 91F734ECFDB667D3EF3387D89D7C40AD;
+			remoteInfo = TaniwhaTextField;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		013BF24BF37F13E8F12D0C1288BCC2F8 /* UIColor+FSPalette.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+FSPalette.m"; path = "FSLineChart/FSLineChart/UIColor+FSPalette.m"; sourceTree = "<group>"; };
-		05CA4B8E787F4A8E4BC4EB73887D65F4 /* Gravity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gravity.swift; path = Sources/iOS/Gravity.swift; sourceTree = "<group>"; };
-		06010EFC2127969F4AB5287F92412873 /* FABButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FABButton.swift; path = Sources/iOS/FABButton.swift; sourceTree = "<group>"; };
+		0A997F0E87D0AA10F6BBADF0C1DF70D2 /* TaniwhaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaniwhaTextField.swift; path = TaniwhaTextField/Classes/TaniwhaTextField.swift; sourceTree = "<group>"; };
 		0B5895E7807335E289EBC28751CA23FF /* Pods-NZAirQuality-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NZAirQuality-resources.sh"; sourceTree = "<group>"; };
-		0BBDFB4E17ABD6B6AF0B69430AE9C42B /* FSLineChart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSLineChart-prefix.pch"; sourceTree = "<group>"; };
-		0CAB8080D915ED21BFFB23C77E8365C9 /* ResourceBundle-com.cosmicmind.material.fonts-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-com.cosmicmind.material.fonts-Info.plist"; sourceTree = "<group>"; };
 		102B83558E42C0C96C5CAE920CFD8501 /* Pods-NZAirQualityTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NZAirQualityTests-umbrella.h"; sourceTree = "<group>"; };
-		1158EF292AD13A9227EB0F4A9AD62276 /* Application.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Application.swift; path = Sources/iOS/Application.swift; sourceTree = "<group>"; };
 		116D2415BC1091FD6E247FDB9737D9D7 /* Pods-NZAirQuality-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NZAirQuality-acknowledgements.plist"; sourceTree = "<group>"; };
-		11ED1DF8C6DA7C3536876B607356EFC6 /* SearchBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchBar.swift; path = Sources/iOS/SearchBar.swift; sourceTree = "<group>"; };
-		14D166ED5295F3E7A9CDE35E650238E3 /* com.cosmicmind.material.fonts.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = com.cosmicmind.material.fonts.bundle; path = com.cosmicmind.material.fonts.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		1533D2BDF2D27E3F24AAC0060F3A0FD8 /* TextStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextStorage.swift; path = Sources/iOS/TextStorage.swift; sourceTree = "<group>"; };
-		18B55B30995B2DFA983D11B98CDB0DF5 /* Material+UIFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIFont.swift"; path = "Sources/iOS/Material+UIFont.swift"; sourceTree = "<group>"; };
-		18CAEEABA383E66D186B89BD69F928AB /* PulseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PulseView.swift; path = Sources/iOS/PulseView.swift; sourceTree = "<group>"; };
-		197B5F949B5C261155BF016A4E315EA4 /* NavigationBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationBar.swift; path = Sources/iOS/NavigationBar.swift; sourceTree = "<group>"; };
-		19FF7E3D943D3319BFA72698B50F96A6 /* FSLineChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSLineChart.m; path = FSLineChart/FSLineChart/FSLineChart.m; sourceTree = "<group>"; };
-		1DBA54A947DF392BCBB77966B020927F /* TabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabBar.swift; path = Sources/iOS/TabBar.swift; sourceTree = "<group>"; };
-		1EB6BD0D832E99C2BEDCE5940F6F55FC /* ImageCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCard.swift; path = Sources/iOS/ImageCard.swift; sourceTree = "<group>"; };
-		26703040521738256265B6DEEBC5852C /* Material.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Material.modulemap; sourceTree = "<group>"; };
-		26B56D572155ACCB9D3EFA4AC4E72A17 /* TaniwhaTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TaniwhaTextField.xcconfig; sourceTree = "<group>"; };
-		2D52A38835F7694D0B06C51B74633B96 /* Material-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Material-dummy.m"; sourceTree = "<group>"; };
-		331BEF22475FC0766DAF2AFC6EC414DA /* BottomTabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BottomTabBar.swift; path = Sources/iOS/BottomTabBar.swift; sourceTree = "<group>"; };
-		3328B22FE2FB020196AF599A65E16B87 /* Pods_NZAirQuality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NZAirQuality.framework; path = "Pods-NZAirQuality.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		344A7CD8305811F1CBC6224208E31A00 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		345DFAC7096520B24A59FF4C7AA8CCE5 /* PresenterCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresenterCard.swift; path = Sources/iOS/PresenterCard.swift; sourceTree = "<group>"; };
-		38EFF2D31385A52A49FA53B2ABD6DAE5 /* BottomNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BottomNavigationController.swift; path = Sources/iOS/BottomNavigationController.swift; sourceTree = "<group>"; };
-		3A2D5AEFBB049AD566497EBCE988758F /* CollectionViewCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionViewCard.swift; path = Sources/iOS/CollectionViewCard.swift; sourceTree = "<group>"; };
-		3E4C379CE7C0EB7BE02CBD9BCDC0EF8D /* TableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableView.swift; path = Sources/iOS/TableView.swift; sourceTree = "<group>"; };
-		3EB02E3739A92264EB10CC57EC1A2F83 /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Sources/iOS/View.swift; sourceTree = "<group>"; };
+		29C900C62835789B855A4E5CBF6BA51B /* UIColor+FSPalette.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+FSPalette.h"; path = "FSLineChart/FSLineChart/UIColor+FSPalette.h"; sourceTree = "<group>"; };
+		2BA00A759E1BC07617EE0D8473FC8C1F /* Pods_NZAirQuality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NZAirQuality.framework; path = "Pods-NZAirQuality.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39B4D57981DFE014561491A0086E79D8 /* UIColor+FSPalette.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+FSPalette.m"; path = "FSLineChart/FSLineChart/UIColor+FSPalette.m"; sourceTree = "<group>"; };
 		3FC70E3B53DD138719696CF681B3CA65 /* Pods-NZAirQuality.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NZAirQuality.modulemap"; sourceTree = "<group>"; };
-		4197EE308F1B304CEA121D9367CE6057 /* StatusBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatusBarController.swift; path = Sources/iOS/StatusBarController.swift; sourceTree = "<group>"; };
-		41C396A958EE9D20D93E4BB25DDC87CA /* ToolbarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToolbarController.swift; path = Sources/iOS/ToolbarController.swift; sourceTree = "<group>"; };
-		425D2AAD6D53DAB139C23157CCA5DACA /* Card.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Sources/iOS/Card.swift; sourceTree = "<group>"; };
-		42F8B59E1E003175F3613CF3C1EE51CC /* Border.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Border.swift; path = Sources/iOS/Border.swift; sourceTree = "<group>"; };
-		442EF85E12F202BBBE33DF22DB72BA5C /* CharacterAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CharacterAttribute.swift; path = Sources/iOS/CharacterAttribute.swift; sourceTree = "<group>"; };
-		442F1BEB38541B7318BD4AB2EFE496DF /* PageTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageTabBarController.swift; path = Sources/iOS/PageTabBarController.swift; sourceTree = "<group>"; };
+		44019C09FAC383B5DDFEDFA633BD3F43 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		447B056EA79F4865A27E7E5DE1111B9A /* Pods-NZAirQuality-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NZAirQuality-dummy.m"; sourceTree = "<group>"; };
-		4619B49C4805C7BAC321A1DBCC4C0C9B /* Layout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Layout.swift; path = Sources/iOS/Layout.swift; sourceTree = "<group>"; };
-		477E4C6C43829A0EBCE9FC1418CD3015 /* IconButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IconButton.swift; path = Sources/iOS/IconButton.swift; sourceTree = "<group>"; };
-		47CF07AFDE885AA574599F65AA953903 /* TaniwhaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaniwhaTextField.swift; path = TaniwhaTextField/Classes/TaniwhaTextField.swift; sourceTree = "<group>"; };
-		4A714FEE8B06FF89A84FE31B117C2C81 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Bold.ttf"; path = "Sources/Font/Roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; };
-		4FA135758D34BF11B93079E6FCE837CD /* TaniwhaTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TaniwhaTextField-dummy.m"; sourceTree = "<group>"; };
-		54A8F484E6B8ED7E5DC72E3E868A2F2A /* NavigationItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationItem.swift; path = Sources/iOS/NavigationItem.swift; sourceTree = "<group>"; };
-		5736A99A0BF29FBB21765F0F45CE07FD /* Layer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Layer.swift; path = Sources/iOS/Layer.swift; sourceTree = "<group>"; };
-		5905B9CAD7ED9FD677DF17F47F8BA364 /* Material.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Material.framework; path = Material.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B314603377F19DC13C4FC5F041899A8 /* Material+UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIView.swift"; path = "Sources/iOS/Material+UIView.swift"; sourceTree = "<group>"; };
-		618730844EECA6045D07F545C84A6B40 /* FSLineChart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FSLineChart.modulemap; sourceTree = "<group>"; };
-		63A9F7D17D6477C7C68F9EBA038A2659 /* PulseAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PulseAnimation.swift; path = Sources/iOS/PulseAnimation.swift; sourceTree = "<group>"; };
-		6643512D6B2289F701F0A58E9E805451 /* FABMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FABMenu.swift; path = Sources/iOS/FABMenu.swift; sourceTree = "<group>"; };
-		6B5AA8659228C3CB68C176A7C07CA862 /* DataSourceItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataSourceItem.swift; path = Sources/iOS/DataSourceItem.swift; sourceTree = "<group>"; };
+		529D7FC98E9E5205DC22C11526690D7D /* TaniwhaTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TaniwhaTextField-umbrella.h"; sourceTree = "<group>"; };
+		5615A5079C020DED273A5DBA4EB93339 /* FSLineChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSLineChart-dummy.m"; sourceTree = "<group>"; };
+		60958988963E978475EE6B55E9BC3F21 /* FSLineChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FSLineChart.framework; path = FSLineChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68545295A86C365A2ABA23B4A80CF6B6 /* TaniwhaTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TaniwhaTextField-prefix.pch"; sourceTree = "<group>"; };
 		6D2BF6E3B26E24380EF60463DE776C56 /* Pods-NZAirQuality.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NZAirQuality.debug.xcconfig"; sourceTree = "<group>"; };
-		6F0FBE56717FDF38E7F34E5DD9E52A6D /* FSLineChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FSLineChart.framework; path = FSLineChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		70219FFE32347E50BA4E3CF489461EDE /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Sources/Assets.xcassets; sourceTree = "<group>"; };
-		7061DA3A2188808AA267286F0537D9B4 /* ResourceBundle-com.cosmicmind.material.icons-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-com.cosmicmind.material.icons-Info.plist"; sourceTree = "<group>"; };
-		74C348B25FF0C545D58523CAE17F6193 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7599D3FC5C308C946B487330D52D66AE /* RootController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RootController.swift; path = Sources/iOS/RootController.swift; sourceTree = "<group>"; };
+		6D78BD1D81A19705C969F1E6915B238D /* FSLineChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSLineChart.m; path = FSLineChart/FSLineChart/FSLineChart.m; sourceTree = "<group>"; };
+		6EF75ED55CC73DBFBA175D06204C410C /* TaniwhaTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TaniwhaTextField.modulemap; sourceTree = "<group>"; };
 		795B2B54E1D3349550ACFC1D11C352D6 /* Pods-NZAirQuality.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NZAirQuality.release.xcconfig"; sourceTree = "<group>"; };
-		7A199234C560D2EE3B81A6C4A88210E6 /* NavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationController.swift; path = Sources/iOS/NavigationController.swift; sourceTree = "<group>"; };
-		7BFDF0913F2B6CFB59C15A707C016A3F /* CollectionReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionReusableView.swift; path = Sources/iOS/CollectionReusableView.swift; sourceTree = "<group>"; };
-		7EC38A2B8D0285A16664B1536A23C236 /* TextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextView.swift; path = Sources/iOS/TextView.swift; sourceTree = "<group>"; };
-		7F18D758FAE46ED1FC9BC839BB280D10 /* Font.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Font.swift; path = Sources/iOS/Font.swift; sourceTree = "<group>"; };
 		847514125898F0E8042518E2EFCE1C1C /* Pods-NZAirQualityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NZAirQualityTests.release.xcconfig"; sourceTree = "<group>"; };
 		86944A6F226E61F39C6685820A5B8CD6 /* Pods-NZAirQualityTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NZAirQualityTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		870BE8BD24D6D11832251BC7EA101CDB /* Grid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Grid.swift; path = Sources/iOS/Grid.swift; sourceTree = "<group>"; };
-		87A4861E84AE6C56419E4E28F9DED903 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88C994F517B0919AA1BB9BCF770C581B /* NavigationDrawerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationDrawerController.swift; path = Sources/iOS/NavigationDrawerController.swift; sourceTree = "<group>"; };
-		8D232A23B03AE924D76B48E476C8ABAD /* Screen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Screen.swift; path = Sources/iOS/Screen.swift; sourceTree = "<group>"; };
-		8D4DD5CCB64803804DE848BF5FB2CB62 /* SnackbarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnackbarController.swift; path = Sources/iOS/SnackbarController.swift; sourceTree = "<group>"; };
-		8E7C719FF7BD54FC26998FEC9263DD7A /* TextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextField.swift; path = Sources/iOS/TextField.swift; sourceTree = "<group>"; };
-		906DAD122E0294861A94ACFA8A54B821 /* com.cosmicmind.material.icons.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = com.cosmicmind.material.icons.bundle; path = com.cosmicmind.material.icons.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		928675C6283334BEC1F05F04B5E2CBEA /* TaniwhaTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TaniwhaTextField.xcconfig; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		98A57E127ECEA1442FFBB98B8BA77A2F /* CollectionViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionViewLayout.swift; path = Sources/iOS/CollectionViewLayout.swift; sourceTree = "<group>"; };
-		98CCCD33EB822F2F8E5813A5F1E0ECA6 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Regular.ttf"; path = "Sources/Font/Roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
-		98F75E6A7D286B867A2B86D832323925 /* Material+Obj-C.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+Obj-C.swift"; path = "Sources/iOS/Material+Obj-C.swift"; sourceTree = "<group>"; };
-		9AE0EF3F9164B8CFA236D6D9D57BAEDD /* TaniwhaTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TaniwhaTextField-prefix.pch"; sourceTree = "<group>"; };
-		9BD0F07892C3300EFDEF84321B6CC673 /* FSLineChart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSLineChart-umbrella.h"; sourceTree = "<group>"; };
-		9D5D42C133525BF6BB29CDB4BA5372B8 /* Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.swift; path = Sources/iOS/Device.swift; sourceTree = "<group>"; };
-		9ED440C8D7C1F114DA1659B74262E073 /* Material+String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+String.swift"; path = "Sources/iOS/Material+String.swift"; sourceTree = "<group>"; };
-		A378ADD4FCB4032DB5D8E9C84B7B852C /* FSLineChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSLineChart.h; path = FSLineChart/FSLineChart/FSLineChart.h; sourceTree = "<group>"; };
-		A4E22E95F1E121FB0B1495E95C8F1F97 /* Material+Motion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+Motion.swift"; path = "Sources/iOS/Material+Motion.swift"; sourceTree = "<group>"; };
-		A79D99462AF3BF0592F5A300D0BF9312 /* SpringAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringAnimation.swift; path = Sources/iOS/SpringAnimation.swift; sourceTree = "<group>"; };
-		A81433868B50847AB4D6567BDEE8F5F8 /* Divider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Divider.swift; path = Sources/iOS/Divider.swift; sourceTree = "<group>"; };
-		AB008D27C995F54EA9983DD2CA2C0447 /* FSLineChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSLineChart-dummy.m"; sourceTree = "<group>"; };
-		ABD70D8E298DBDA707E673220BFC36F6 /* Bar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bar.swift; path = Sources/iOS/Bar.swift; sourceTree = "<group>"; };
-		AC15ACF1476572ED6E7C282AB3DBCDB3 /* TaniwhaTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TaniwhaTextField.framework; path = TaniwhaTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD5BA90399E0908F7D9F40D982A6C5E1 /* Snackbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Snackbar.swift; path = Sources/iOS/Snackbar.swift; sourceTree = "<group>"; };
-		AD70FA4C1DA6C2A7A3D40B4E509A7CFE /* CollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionView.swift; path = Sources/iOS/CollectionView.swift; sourceTree = "<group>"; };
 		AE8057525D2ADA23FB6F0AEE9ADC7159 /* Pods-NZAirQuality-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NZAirQuality-umbrella.h"; sourceTree = "<group>"; };
-		AEF63753E6038719FC3F2522698ED1AE /* CollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = Sources/iOS/CollectionViewCell.swift; sourceTree = "<group>"; };
-		AF67C6366FC981247F530AEF65FC61CE /* FABMenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FABMenuController.swift; path = Sources/iOS/FABMenuController.swift; sourceTree = "<group>"; };
 		B01675AF7F404F2F5DB74293B7BF0409 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B10C0892B578E1D9883F079F1185056C /* Pods_NZAirQualityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NZAirQualityTests.framework; path = "Pods-NZAirQualityTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1D369CF7AF6FFE5E3F0CE7C2671EE36 /* Material+UIWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIWindow.swift"; path = "Sources/iOS/Material+UIWindow.swift"; sourceTree = "<group>"; };
 		B3CA0AB8E3CC309E1FFB56F3CEDA1F8B /* Pods-NZAirQualityTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NZAirQualityTests-frameworks.sh"; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		BBC2AB429BC89A9B2C02FBBDAD20831D /* Color.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Color.swift; path = Sources/iOS/Color.swift; sourceTree = "<group>"; };
+		BB7F49BF496FD51F178CECBF707C7D40 /* FSLineChart.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSLineChart.xcconfig; sourceTree = "<group>"; };
 		BCA5D48B77998F2A44D090103EB589A4 /* Pods-NZAirQuality-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NZAirQuality-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C1E54D4BCB3DC9674A3693E7C0E35E3D /* RaisedButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RaisedButton.swift; path = Sources/iOS/RaisedButton.swift; sourceTree = "<group>"; };
 		C448D60025E5114F809B0854092820AB /* Pods-NZAirQualityTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NZAirQualityTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C6A596572D758AD570372FB4AC988F4B /* Material.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Material.xcconfig; sourceTree = "<group>"; };
-		C773FF3627CFC0D1B1B245551909EAE6 /* Icon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Icon.swift; path = Sources/iOS/Icon.swift; sourceTree = "<group>"; };
-		CA605E5457E599780E9F2BCAC1160138 /* EdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EdgeInsets.swift; path = Sources/iOS/EdgeInsets.swift; sourceTree = "<group>"; };
-		CBFEAD8F8D4AB781EFC0E91CC8DFD9D3 /* TableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = Sources/iOS/TableViewCell.swift; sourceTree = "<group>"; };
-		CD6E9763B9AD80FE410A4BCC424D2886 /* Material-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Material-prefix.pch"; sourceTree = "<group>"; };
+		C6C756C3FA71DEC91DCAEFCA78417B78 /* Pods_NZAirQualityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NZAirQualityTests.framework; path = "Pods-NZAirQualityTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD7EC1C7EFE77C84477F5A7064E9E1BC /* FSLineChart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FSLineChart.modulemap; sourceTree = "<group>"; };
+		CF552DCAA212BE1BF71F4064BD4E88DE /* TaniwhaTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TaniwhaTextField.framework; path = TaniwhaTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF7C767C1128AFF84FEAD8DBF0334A94 /* Pods-NZAirQualityTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NZAirQualityTests-resources.sh"; sourceTree = "<group>"; };
-		CFDC031A07F7271E5ED74E8703CF4359 /* Roboto-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Light.ttf"; path = "Sources/Font/Roboto/Roboto-Light.ttf"; sourceTree = "<group>"; };
-		D10444901C654A76CDC528CD0F4DE7C4 /* Depth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Depth.swift; path = Sources/iOS/Depth.swift; sourceTree = "<group>"; };
-		D59A5EA4D9A62BE7ED78BE0CF682EA7B /* HeightPreset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeightPreset.swift; path = Sources/iOS/HeightPreset.swift; sourceTree = "<group>"; };
-		D63A3183F3E94479780F8478AE8F24F1 /* TaniwhaTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TaniwhaTextField.modulemap; sourceTree = "<group>"; };
+		CFEAB8DF322FDF9BF4F0971EB7FF89EC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6FE9247F1A8A18CA90EA25D2E07546B /* Pods-NZAirQualityTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NZAirQualityTests-dummy.m"; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D93BDE24E5F87D313348F066887EE077 /* TaniwhaTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TaniwhaTextField-umbrella.h"; sourceTree = "<group>"; };
-		D9691C612954056EC8DA5EAB73EE55AF /* Material+Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+Array.swift"; path = "Sources/iOS/Material+Array.swift"; sourceTree = "<group>"; };
-		D9DCA7FF94FE463AF1079F67919837AB /* CornerRadius.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CornerRadius.swift; path = Sources/iOS/CornerRadius.swift; sourceTree = "<group>"; };
-		DA4ECFABE9C08DDAA1DC9DD58D8B1D28 /* CollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = Sources/iOS/CollectionViewController.swift; sourceTree = "<group>"; };
-		DA6471B619E3DEA0407000F70282895F /* InterimSpace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterimSpace.swift; path = Sources/iOS/InterimSpace.swift; sourceTree = "<group>"; };
-		DE7D86F4933D83708ACAAC754EC80E3D /* Shape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shape.swift; path = Sources/iOS/Shape.swift; sourceTree = "<group>"; };
+		DD81F23F4E95AB1762A560AAE4508281 /* FSLineChart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSLineChart-umbrella.h"; sourceTree = "<group>"; };
 		DF1637F36905508E487AD0383B4E673A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E097633EA84CF7812654DB9D53607D10 /* ErrorTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorTextField.swift; path = Sources/iOS/ErrorTextField.swift; sourceTree = "<group>"; };
-		E2595060B9CADF528E89051E1051A4B9 /* Material-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Material-umbrella.h"; sourceTree = "<group>"; };
-		E30C5211C5C63AE80D2FA3CEED21A63D /* SearchBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchBarController.swift; path = Sources/iOS/SearchBarController.swift; sourceTree = "<group>"; };
 		E3871AF705A2DB3F0C4AA13414302BD9 /* Pods-NZAirQuality-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NZAirQuality-frameworks.sh"; sourceTree = "<group>"; };
-		E5D3687368BADCF24560098FB4FB0B88 /* Offset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Offset.swift; path = Sources/iOS/Offset.swift; sourceTree = "<group>"; };
-		E639C47792498D8B890766D0EC169179 /* RobotoFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RobotoFont.swift; path = Sources/iOS/RobotoFont.swift; sourceTree = "<group>"; };
+		E59CDD18C2E985DF943054DC49D36E94 /* TaniwhaTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TaniwhaTextField-dummy.m"; sourceTree = "<group>"; };
+		E5ADE703846B2ACD5E53BB55D22FC049 /* FSLineChart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSLineChart-prefix.pch"; sourceTree = "<group>"; };
 		E75B9861A63D05EEB1F0D0FE93BDEC2B /* Pods-NZAirQualityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NZAirQualityTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E927DD9F2FAE3748D669BC9DCEB83991 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Medium.ttf"; path = "Sources/Font/Roboto/Roboto-Medium.ttf"; sourceTree = "<group>"; };
-		EA1E1167C915A470498D1B7D65EAA4EC /* FlatButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatButton.swift; path = Sources/iOS/FlatButton.swift; sourceTree = "<group>"; };
 		EAF227CFCAD9BA09C90D26AB94A4427F /* Pods-NZAirQualityTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NZAirQualityTests.modulemap"; sourceTree = "<group>"; };
-		ED1C67B38172D748DE29007F17DB9911 /* FSLineChart.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSLineChart.xcconfig; sourceTree = "<group>"; };
-		EE5208D1F2A8F11844B4FD092AAD1516 /* TableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = Sources/iOS/TableViewController.swift; sourceTree = "<group>"; };
-		EECF5198F32FC6245124A483FB279BFF /* Material+CALayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+CALayer.swift"; path = "Sources/iOS/Material+CALayer.swift"; sourceTree = "<group>"; };
-		F38655CA937720F3240161CEAF2CBA98 /* Toolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toolbar.swift; path = Sources/iOS/Toolbar.swift; sourceTree = "<group>"; };
-		F5BAC809C526D59FDAD06C00791EBEA4 /* Switch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Switch.swift; path = Sources/iOS/Switch.swift; sourceTree = "<group>"; };
-		F6BD8AA364776E9C66FED542E19FBA47 /* DynamicFontType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicFontType.swift; path = Sources/iOS/DynamicFontType.swift; sourceTree = "<group>"; };
-		F86974BFEDD792155222935261CD5F11 /* Button.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Button.swift; path = Sources/iOS/Button.swift; sourceTree = "<group>"; };
-		F989276AF3C9A4FB94BF5F89175A0E7B /* Display.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Display.swift; path = Sources/iOS/Display.swift; sourceTree = "<group>"; };
-		FAA68262143D3F909F65EB0EAA7D8FCB /* Material+MotionAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+MotionAnimation.swift"; path = "Sources/iOS/Material+MotionAnimation.swift"; sourceTree = "<group>"; };
-		FB2BC6DD784292B4C788E8458081B38A /* Roboto-Thin.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Thin.ttf"; path = "Sources/Font/Roboto/Roboto-Thin.ttf"; sourceTree = "<group>"; };
-		FBD9C004B71B467E5ACB2ED83B4DA9FF /* UIColor+FSPalette.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+FSPalette.h"; path = "FSLineChart/FSLineChart/UIColor+FSPalette.h"; sourceTree = "<group>"; };
-		FD4B8663A63D1F3383C20C87091603FA /* Material+UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIImage.swift"; path = "Sources/iOS/Material+UIImage.swift"; sourceTree = "<group>"; };
+		FD0FA4B0C63C12F169EB9D29E9F51422 /* FSLineChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSLineChart.h; path = FSLineChart/FSLineChart/FSLineChart.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0FBAEF5D09B5F0B0E5939AAC9C357DA1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				31D44F4595EC084F00E56BEB36ECF37F /* Foundation.framework in Frameworks */,
-				D0B4DC5073F3062460F0772E908A5CC0 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1B5EF16A0B4BD0C54238D5AC8662EAD9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3340F2364FAD640A31E15E34C2447F04 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D50155264DD77773512299F1D838451B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46EF1D090812E54B48DFBFC387401D3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B82B202B01BA07258DF6DAF14E91DB87 /* Foundation.framework in Frameworks */,
+				3FABB83D3FE3A89BFF6067ACD5FF2306 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,26 +117,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		805BB31E484415F43BB9C3F69D3F7DAD /* Frameworks */ = {
+		BF6CC4BA942D02C123EA6C8AEFEE9CCB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B75ED554075B9ACD495F77A69339364 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		92FC950ECFCA6D95AFD9069B19D1EA91 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				16DE23F27BD2971ACA8D453582CD5B33 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A988B246A4B50E26154FA9076E838EB9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				FE0045AB2069DFE39C26F853B7AA20E2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,33 +146,25 @@
 			path = "Target Support Files/Pods-NZAirQualityTests";
 			sourceTree = "<group>";
 		};
-		262B37C59CBDFDEFE48189C750514522 /* Support Files */ = {
+		1E44753C06DE05025E44E84F10D551AB /* TaniwhaTextField */ = {
 			isa = PBXGroup;
 			children = (
-				74C348B25FF0C545D58523CAE17F6193 /* Info.plist */,
-				26703040521738256265B6DEEBC5852C /* Material.modulemap */,
-				C6A596572D758AD570372FB4AC988F4B /* Material.xcconfig */,
-				2D52A38835F7694D0B06C51B74633B96 /* Material-dummy.m */,
-				CD6E9763B9AD80FE410A4BCC424D2886 /* Material-prefix.pch */,
-				E2595060B9CADF528E89051E1051A4B9 /* Material-umbrella.h */,
-				0CAB8080D915ED21BFFB23C77E8365C9 /* ResourceBundle-com.cosmicmind.material.fonts-Info.plist */,
-				7061DA3A2188808AA267286F0537D9B4 /* ResourceBundle-com.cosmicmind.material.icons-Info.plist */,
+				0A997F0E87D0AA10F6BBADF0C1DF70D2 /* TaniwhaTextField.swift */,
+				6168AF3794883F3E0D73FAB6DA31E210 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Material";
+			name = TaniwhaTextField;
+			path = TaniwhaTextField;
 			sourceTree = "<group>";
 		};
-		34031FC65CD670D27F3643DEC40DA734 /* Resources */ = {
+		3FDBAF801E505FA9E442D8AD1F7F15FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				70219FFE32347E50BA4E3CF489461EDE /* Assets.xcassets */,
-				4A714FEE8B06FF89A84FE31B117C2C81 /* Roboto-Bold.ttf */,
-				CFDC031A07F7271E5ED74E8703CF4359 /* Roboto-Light.ttf */,
-				E927DD9F2FAE3748D669BC9DCEB83991 /* Roboto-Medium.ttf */,
-				98CCCD33EB822F2F8E5813A5F1E0ECA6 /* Roboto-Regular.ttf */,
-				FB2BC6DD784292B4C788E8458081B38A /* Roboto-Thin.ttf */,
+				60958988963E978475EE6B55E9BC3F21 /* FSLineChart.framework */,
+				2BA00A759E1BC07617EE0D8473FC8C1F /* Pods_NZAirQuality.framework */,
+				C6C756C3FA71DEC91DCAEFCA78417B78 /* Pods_NZAirQualityTests.framework */,
+				CF552DCAA212BE1BF71F4064BD4E88DE /* TaniwhaTextField.framework */,
 			);
-			name = Resources;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -421,101 +184,40 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7167F13C63FB8A48C9789C993D74ABB5 /* Core */ = {
+		5D084B2182776775CF2FCA821FB94B10 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1158EF292AD13A9227EB0F4A9AD62276 /* Application.swift */,
-				ABD70D8E298DBDA707E673220BFC36F6 /* Bar.swift */,
-				42F8B59E1E003175F3613CF3C1EE51CC /* Border.swift */,
-				38EFF2D31385A52A49FA53B2ABD6DAE5 /* BottomNavigationController.swift */,
-				331BEF22475FC0766DAF2AFC6EC414DA /* BottomTabBar.swift */,
-				F86974BFEDD792155222935261CD5F11 /* Button.swift */,
-				425D2AAD6D53DAB139C23157CCA5DACA /* Card.swift */,
-				442EF85E12F202BBBE33DF22DB72BA5C /* CharacterAttribute.swift */,
-				7BFDF0913F2B6CFB59C15A707C016A3F /* CollectionReusableView.swift */,
-				AD70FA4C1DA6C2A7A3D40B4E509A7CFE /* CollectionView.swift */,
-				3A2D5AEFBB049AD566497EBCE988758F /* CollectionViewCard.swift */,
-				AEF63753E6038719FC3F2522698ED1AE /* CollectionViewCell.swift */,
-				DA4ECFABE9C08DDAA1DC9DD58D8B1D28 /* CollectionViewController.swift */,
-				98A57E127ECEA1442FFBB98B8BA77A2F /* CollectionViewLayout.swift */,
-				BBC2AB429BC89A9B2C02FBBDAD20831D /* Color.swift */,
-				D9DCA7FF94FE463AF1079F67919837AB /* CornerRadius.swift */,
-				6B5AA8659228C3CB68C176A7C07CA862 /* DataSourceItem.swift */,
-				D10444901C654A76CDC528CD0F4DE7C4 /* Depth.swift */,
-				9D5D42C133525BF6BB29CDB4BA5372B8 /* Device.swift */,
-				F989276AF3C9A4FB94BF5F89175A0E7B /* Display.swift */,
-				A81433868B50847AB4D6567BDEE8F5F8 /* Divider.swift */,
-				F6BD8AA364776E9C66FED542E19FBA47 /* DynamicFontType.swift */,
-				CA605E5457E599780E9F2BCAC1160138 /* EdgeInsets.swift */,
-				E097633EA84CF7812654DB9D53607D10 /* ErrorTextField.swift */,
-				06010EFC2127969F4AB5287F92412873 /* FABButton.swift */,
-				6643512D6B2289F701F0A58E9E805451 /* FABMenu.swift */,
-				AF67C6366FC981247F530AEF65FC61CE /* FABMenuController.swift */,
-				EA1E1167C915A470498D1B7D65EAA4EC /* FlatButton.swift */,
-				7F18D758FAE46ED1FC9BC839BB280D10 /* Font.swift */,
-				05CA4B8E787F4A8E4BC4EB73887D65F4 /* Gravity.swift */,
-				870BE8BD24D6D11832251BC7EA101CDB /* Grid.swift */,
-				D59A5EA4D9A62BE7ED78BE0CF682EA7B /* HeightPreset.swift */,
-				C773FF3627CFC0D1B1B245551909EAE6 /* Icon.swift */,
-				477E4C6C43829A0EBCE9FC1418CD3015 /* IconButton.swift */,
-				1EB6BD0D832E99C2BEDCE5940F6F55FC /* ImageCard.swift */,
-				DA6471B619E3DEA0407000F70282895F /* InterimSpace.swift */,
-				5736A99A0BF29FBB21765F0F45CE07FD /* Layer.swift */,
-				4619B49C4805C7BAC321A1DBCC4C0C9B /* Layout.swift */,
-				D9691C612954056EC8DA5EAB73EE55AF /* Material+Array.swift */,
-				EECF5198F32FC6245124A483FB279BFF /* Material+CALayer.swift */,
-				A4E22E95F1E121FB0B1495E95C8F1F97 /* Material+Motion.swift */,
-				FAA68262143D3F909F65EB0EAA7D8FCB /* Material+MotionAnimation.swift */,
-				98F75E6A7D286B867A2B86D832323925 /* Material+Obj-C.swift */,
-				9ED440C8D7C1F114DA1659B74262E073 /* Material+String.swift */,
-				18B55B30995B2DFA983D11B98CDB0DF5 /* Material+UIFont.swift */,
-				FD4B8663A63D1F3383C20C87091603FA /* Material+UIImage.swift */,
-				5B314603377F19DC13C4FC5F041899A8 /* Material+UIView.swift */,
-				B1D369CF7AF6FFE5E3F0CE7C2671EE36 /* Material+UIWindow.swift */,
-				197B5F949B5C261155BF016A4E315EA4 /* NavigationBar.swift */,
-				7A199234C560D2EE3B81A6C4A88210E6 /* NavigationController.swift */,
-				88C994F517B0919AA1BB9BCF770C581B /* NavigationDrawerController.swift */,
-				54A8F484E6B8ED7E5DC72E3E868A2F2A /* NavigationItem.swift */,
-				E5D3687368BADCF24560098FB4FB0B88 /* Offset.swift */,
-				442F1BEB38541B7318BD4AB2EFE496DF /* PageTabBarController.swift */,
-				345DFAC7096520B24A59FF4C7AA8CCE5 /* PresenterCard.swift */,
-				63A9F7D17D6477C7C68F9EBA038A2659 /* PulseAnimation.swift */,
-				18CAEEABA383E66D186B89BD69F928AB /* PulseView.swift */,
-				C1E54D4BCB3DC9674A3693E7C0E35E3D /* RaisedButton.swift */,
-				E639C47792498D8B890766D0EC169179 /* RobotoFont.swift */,
-				7599D3FC5C308C946B487330D52D66AE /* RootController.swift */,
-				8D232A23B03AE924D76B48E476C8ABAD /* Screen.swift */,
-				11ED1DF8C6DA7C3536876B607356EFC6 /* SearchBar.swift */,
-				E30C5211C5C63AE80D2FA3CEED21A63D /* SearchBarController.swift */,
-				DE7D86F4933D83708ACAAC754EC80E3D /* Shape.swift */,
-				AD5BA90399E0908F7D9F40D982A6C5E1 /* Snackbar.swift */,
-				8D4DD5CCB64803804DE848BF5FB2CB62 /* SnackbarController.swift */,
-				A79D99462AF3BF0592F5A300D0BF9312 /* SpringAnimation.swift */,
-				4197EE308F1B304CEA121D9367CE6057 /* StatusBarController.swift */,
-				F5BAC809C526D59FDAD06C00791EBEA4 /* Switch.swift */,
-				1DBA54A947DF392BCBB77966B020927F /* TabBar.swift */,
-				3E4C379CE7C0EB7BE02CBD9BCDC0EF8D /* TableView.swift */,
-				CBFEAD8F8D4AB781EFC0E91CC8DFD9D3 /* TableViewCell.swift */,
-				EE5208D1F2A8F11844B4FD092AAD1516 /* TableViewController.swift */,
-				8E7C719FF7BD54FC26998FEC9263DD7A /* TextField.swift */,
-				1533D2BDF2D27E3F24AAC0060F3A0FD8 /* TextStorage.swift */,
-				7EC38A2B8D0285A16664B1536A23C236 /* TextView.swift */,
-				F38655CA937720F3240161CEAF2CBA98 /* Toolbar.swift */,
-				41C396A958EE9D20D93E4BB25DDC87CA /* ToolbarController.swift */,
-				3EB02E3739A92264EB10CC57EC1A2F83 /* View.swift */,
-				34031FC65CD670D27F3643DEC40DA734 /* Resources */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		72477FCD9C34A718BFF61866EC3C5C2F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				81BB9CB979247536F01DA008116EB731 /* FSLineChart */,
-				87C2DDCACDA60E3FE4C8053EE516EC6B /* Material */,
-				EBDA9DAA2F3346E3B980FD7AEA1E3FF6 /* TaniwhaTextField */,
+				6FFB708C3EFDDA73A0111834DF70B6DE /* FSLineChart */,
+				1E44753C06DE05025E44E84F10D551AB /* TaniwhaTextField */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		6168AF3794883F3E0D73FAB6DA31E210 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFEAB8DF322FDF9BF4F0971EB7FF89EC /* Info.plist */,
+				6EF75ED55CC73DBFBA175D06204C410C /* TaniwhaTextField.modulemap */,
+				928675C6283334BEC1F05F04B5E2CBEA /* TaniwhaTextField.xcconfig */,
+				E59CDD18C2E985DF943054DC49D36E94 /* TaniwhaTextField-dummy.m */,
+				68545295A86C365A2ABA23B4A80CF6B6 /* TaniwhaTextField-prefix.pch */,
+				529D7FC98E9E5205DC22C11526690D7D /* TaniwhaTextField-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TaniwhaTextField";
+			sourceTree = "<group>";
+		};
+		6FFB708C3EFDDA73A0111834DF70B6DE /* FSLineChart */ = {
+			isa = PBXGroup;
+			children = (
+				FD0FA4B0C63C12F169EB9D29E9F51422 /* FSLineChart.h */,
+				6D78BD1D81A19705C969F1E6915B238D /* FSLineChart.m */,
+				29C900C62835789B855A4E5CBF6BA51B /* UIColor+FSPalette.h */,
+				39B4D57981DFE014561491A0086E79D8 /* UIColor+FSPalette.m */,
+				97B2686C60312C4762D9A69CEA468CF3 /* Support Files */,
+			);
+			name = FSLineChart;
+			path = FSLineChart;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -523,8 +225,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				72477FCD9C34A718BFF61866EC3C5C2F /* Pods */,
-				A4ABFFC45CFE7A95CB49914C05F5F344 /* Products */,
+				5D084B2182776775CF2FCA821FB94B10 /* Pods */,
+				3FDBAF801E505FA9E442D8AD1F7F15FF /* Products */,
 				AEDEAEEE407463C99FF18E83A679590C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -547,41 +249,18 @@
 			path = "Target Support Files/Pods-NZAirQuality";
 			sourceTree = "<group>";
 		};
-		81BB9CB979247536F01DA008116EB731 /* FSLineChart */ = {
+		97B2686C60312C4762D9A69CEA468CF3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A378ADD4FCB4032DB5D8E9C84B7B852C /* FSLineChart.h */,
-				19FF7E3D943D3319BFA72698B50F96A6 /* FSLineChart.m */,
-				FBD9C004B71B467E5ACB2ED83B4DA9FF /* UIColor+FSPalette.h */,
-				013BF24BF37F13E8F12D0C1288BCC2F8 /* UIColor+FSPalette.m */,
-				FC7B51F632CF7C0304FD49010B4BE84D /* Support Files */,
+				CD7EC1C7EFE77C84477F5A7064E9E1BC /* FSLineChart.modulemap */,
+				BB7F49BF496FD51F178CECBF707C7D40 /* FSLineChart.xcconfig */,
+				5615A5079C020DED273A5DBA4EB93339 /* FSLineChart-dummy.m */,
+				E5ADE703846B2ACD5E53BB55D22FC049 /* FSLineChart-prefix.pch */,
+				DD81F23F4E95AB1762A560AAE4508281 /* FSLineChart-umbrella.h */,
+				44019C09FAC383B5DDFEDFA633BD3F43 /* Info.plist */,
 			);
-			name = FSLineChart;
-			path = FSLineChart;
-			sourceTree = "<group>";
-		};
-		87C2DDCACDA60E3FE4C8053EE516EC6B /* Material */ = {
-			isa = PBXGroup;
-			children = (
-				7167F13C63FB8A48C9789C993D74ABB5 /* Core */,
-				262B37C59CBDFDEFE48189C750514522 /* Support Files */,
-			);
-			name = Material;
-			path = Material;
-			sourceTree = "<group>";
-		};
-		A4ABFFC45CFE7A95CB49914C05F5F344 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				14D166ED5295F3E7A9CDE35E650238E3 /* com.cosmicmind.material.fonts.bundle */,
-				906DAD122E0294861A94ACFA8A54B821 /* com.cosmicmind.material.icons.bundle */,
-				6F0FBE56717FDF38E7F34E5DD9E52A6D /* FSLineChart.framework */,
-				5905B9CAD7ED9FD677DF17F47F8BA364 /* Material.framework */,
-				3328B22FE2FB020196AF599A65E16B87 /* Pods_NZAirQuality.framework */,
-				B10C0892B578E1D9883F079F1185056C /* Pods_NZAirQualityTests.framework */,
-				AC15ACF1476572ED6E7C282AB3DBCDB3 /* TaniwhaTextField.framework */,
-			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/FSLineChart";
 			sourceTree = "<group>";
 		};
 		AEDEAEEE407463C99FF18E83A679590C /* Targets Support Files */ = {
@@ -591,44 +270,6 @@
 				0ED507B85A74A2441899438B21B55576 /* Pods-NZAirQualityTests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		DC58B4E940E164A8DB3DE26089AF3694 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				344A7CD8305811F1CBC6224208E31A00 /* Info.plist */,
-				D63A3183F3E94479780F8478AE8F24F1 /* TaniwhaTextField.modulemap */,
-				26B56D572155ACCB9D3EFA4AC4E72A17 /* TaniwhaTextField.xcconfig */,
-				4FA135758D34BF11B93079E6FCE837CD /* TaniwhaTextField-dummy.m */,
-				9AE0EF3F9164B8CFA236D6D9D57BAEDD /* TaniwhaTextField-prefix.pch */,
-				D93BDE24E5F87D313348F066887EE077 /* TaniwhaTextField-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TaniwhaTextField";
-			sourceTree = "<group>";
-		};
-		EBDA9DAA2F3346E3B980FD7AEA1E3FF6 /* TaniwhaTextField */ = {
-			isa = PBXGroup;
-			children = (
-				47CF07AFDE885AA574599F65AA953903 /* TaniwhaTextField.swift */,
-				DC58B4E940E164A8DB3DE26089AF3694 /* Support Files */,
-			);
-			name = TaniwhaTextField;
-			path = TaniwhaTextField;
-			sourceTree = "<group>";
-		};
-		FC7B51F632CF7C0304FD49010B4BE84D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				618730844EECA6045D07F545C84A6B40 /* FSLineChart.modulemap */,
-				ED1C67B38172D748DE29007F17DB9911 /* FSLineChart.xcconfig */,
-				AB008D27C995F54EA9983DD2CA2C0447 /* FSLineChart-dummy.m */,
-				0BBDFB4E17ABD6B6AF0B69430AE9C42B /* FSLineChart-prefix.pch */,
-				9BD0F07892C3300EFDEF84321B6CC673 /* FSLineChart-umbrella.h */,
-				87A4861E84AE6C56419E4E28F9DED903 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/FSLineChart";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -642,11 +283,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B522956CE01D12846947FF9B8CDA053 /* Headers */ = {
+		83C4A16B0DAA8DFE1E081E385E245A71 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C5B20D1C396F7072FFF2BC0A22C893D /* Material-umbrella.h in Headers */,
+				A9C6B54A2C57384EB0EF1C3A2D6DD59A /* Pods-NZAirQuality-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BFF526059B8B4E6EE8B77C52CE84DA1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F49CEE86E7C4BF8A24AC41F827FBE89 /* TaniwhaTextField-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,22 +306,6 @@
 				0324E5EF2BC3991C25C01E22740F3C23 /* FSLineChart-umbrella.h in Headers */,
 				AD5681307560DC6583E47930833596B2 /* FSLineChart.h in Headers */,
 				FC5DE94578765F701B6E09EA3D9DB1F1 /* UIColor+FSPalette.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EABD743C024075453EC0B9C51BEFEDA9 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				647CCCCDFC73BCAEBFEE53B0659F95B1 /* Pods-NZAirQuality-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F343FFBDC802514AC30440F600884EB6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				77FD923EAD95EF3338C62DC3DDC86B56 /* TaniwhaTextField-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,62 +326,27 @@
 			);
 			name = "Pods-NZAirQualityTests";
 			productName = "Pods-NZAirQualityTests";
-			productReference = B10C0892B578E1D9883F079F1185056C /* Pods_NZAirQualityTests.framework */;
+			productReference = C6C756C3FA71DEC91DCAEFCA78417B78 /* Pods_NZAirQualityTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		23F36AC64BBE178C8803E279E9B9549F /* Pods-NZAirQuality */ = {
+		4802A21EEBEF5FE90CB792FC6471875A /* Pods-NZAirQuality */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC065ED599FBB5FB068CFBD5E9C7C8C2 /* Build configuration list for PBXNativeTarget "Pods-NZAirQuality" */;
+			buildConfigurationList = D74036BF8B6DB76BF4CBD2EAB826B3EE /* Build configuration list for PBXNativeTarget "Pods-NZAirQuality" */;
 			buildPhases = (
-				5DBF1CDF54F6A8341951F46203BDA06D /* Sources */,
-				805BB31E484415F43BB9C3F69D3F7DAD /* Frameworks */,
-				EABD743C024075453EC0B9C51BEFEDA9 /* Headers */,
+				993477195EA4AFEA1A564725DAEF5FA5 /* Sources */,
+				BF6CC4BA942D02C123EA6C8AEFEE9CCB /* Frameworks */,
+				83C4A16B0DAA8DFE1E081E385E245A71 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E7396E32E934D45C060C0E0E36862EF5 /* PBXTargetDependency */,
-				2EC87B2B8DDB9D95E5AF0EB89859EB5C /* PBXTargetDependency */,
-				B436CE02BC9D7339D45FFFF8207C4157 /* PBXTargetDependency */,
+				DE3BE77D1721E01634545CB5F01163BE /* PBXTargetDependency */,
+				9129CAD892933F551720476A272CBA03 /* PBXTargetDependency */,
 			);
 			name = "Pods-NZAirQuality";
 			productName = "Pods-NZAirQuality";
-			productReference = 3328B22FE2FB020196AF599A65E16B87 /* Pods_NZAirQuality.framework */;
+			productReference = 2BA00A759E1BC07617EE0D8473FC8C1F /* Pods_NZAirQuality.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		39AA3FC7447AC6B6A131668CFF9C01CD /* Material-com.cosmicmind.material.icons */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4E0629477D8B10092DE7C4EBE113A4AA /* Build configuration list for PBXNativeTarget "Material-com.cosmicmind.material.icons" */;
-			buildPhases = (
-				DC26CC73E39937D27BDB22DB9E63E2E9 /* Sources */,
-				A988B246A4B50E26154FA9076E838EB9 /* Frameworks */,
-				21FFF6DCF8152FC6B8D31651E28F21C0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Material-com.cosmicmind.material.icons";
-			productName = "Material-com.cosmicmind.material.icons";
-			productReference = 906DAD122E0294861A94ACFA8A54B821 /* com.cosmicmind.material.icons.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		3A5897FCD2621886E495618AB901B1EF /* Material-com.cosmicmind.material.fonts */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E2AB237CCE1496F48C5D7FBDC6A24860 /* Build configuration list for PBXNativeTarget "Material-com.cosmicmind.material.fonts" */;
-			buildPhases = (
-				7B5D12C5859969C7D00B9987AACA9D44 /* Sources */,
-				1B5EF16A0B4BD0C54238D5AC8662EAD9 /* Frameworks */,
-				6DA8DD8FA2F06642CB86B6C21EFD05C0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Material-com.cosmicmind.material.fonts";
-			productName = "Material-com.cosmicmind.material.fonts";
-			productReference = 14D166ED5295F3E7A9CDE35E650238E3 /* com.cosmicmind.material.fonts.bundle */;
-			productType = "com.apple.product-type.bundle";
 		};
 		809463219ED0A00088BB0753D65348EB /* FSLineChart */ = {
 			isa = PBXNativeTarget;
@@ -764,36 +362,16 @@
 			);
 			name = FSLineChart;
 			productName = FSLineChart;
-			productReference = 6F0FBE56717FDF38E7F34E5DD9E52A6D /* FSLineChart.framework */;
+			productReference = 60958988963E978475EE6B55E9BC3F21 /* FSLineChart.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8D511562A8961C5B7A5DD87BAE2374F2 /* Material */ = {
+		91F734ECFDB667D3EF3387D89D7C40AD /* TaniwhaTextField */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 80C6EBF59090A44DE7FB5E08AEF2A36C /* Build configuration list for PBXNativeTarget "Material" */;
+			buildConfigurationList = C6B5031AC5BD27A67067419F311196FC /* Build configuration list for PBXNativeTarget "TaniwhaTextField" */;
 			buildPhases = (
-				6166065119638295FE32C418F8FBBE70 /* Sources */,
-				92FC950ECFCA6D95AFD9069B19D1EA91 /* Frameworks */,
-				BBF754C82FB65C8ED988B269F5313B7F /* Resources */,
-				8B522956CE01D12846947FF9B8CDA053 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				030F575D3DC602E493CC4383B64FE064 /* PBXTargetDependency */,
-				DB5CA241889596FAD955ECAAC85F903B /* PBXTargetDependency */,
-			);
-			name = Material;
-			productName = Material;
-			productReference = 5905B9CAD7ED9FD677DF17F47F8BA364 /* Material.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FE55F80E966F02731B09C8987A042233 /* TaniwhaTextField */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 53F572D6A54DB9184F60DF539433E597 /* Build configuration list for PBXNativeTarget "TaniwhaTextField" */;
-			buildPhases = (
-				A653195127B9A1FED117ED1840060FEB /* Sources */,
-				0FBAEF5D09B5F0B0E5939AAC9C357DA1 /* Frameworks */,
-				F343FFBDC802514AC30440F600884EB6 /* Headers */,
+				99DB67BA3AA6FF1805BAB80FDDE4A8C1 /* Sources */,
+				46EF1D090812E54B48DFBFC387401D3F /* Frameworks */,
+				8BFF526059B8B4E6EE8B77C52CE84DA1 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -801,7 +379,7 @@
 			);
 			name = TaniwhaTextField;
 			productName = TaniwhaTextField;
-			productReference = AC15ACF1476572ED6E7C282AB3DBCDB3 /* TaniwhaTextField.framework */;
+			productReference = CF552DCAA212BE1BF71F4064BD4E88DE /* TaniwhaTextField.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -821,52 +399,17 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = A4ABFFC45CFE7A95CB49914C05F5F344 /* Products */;
+			productRefGroup = 3FDBAF801E505FA9E442D8AD1F7F15FF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				809463219ED0A00088BB0753D65348EB /* FSLineChart */,
-				8D511562A8961C5B7A5DD87BAE2374F2 /* Material */,
-				3A5897FCD2621886E495618AB901B1EF /* Material-com.cosmicmind.material.fonts */,
-				39AA3FC7447AC6B6A131668CFF9C01CD /* Material-com.cosmicmind.material.icons */,
-				23F36AC64BBE178C8803E279E9B9549F /* Pods-NZAirQuality */,
+				4802A21EEBEF5FE90CB792FC6471875A /* Pods-NZAirQuality */,
 				195F31C13FA035E626244646FF4A96AA /* Pods-NZAirQualityTests */,
-				FE55F80E966F02731B09C8987A042233 /* TaniwhaTextField */,
+				91F734ECFDB667D3EF3387D89D7C40AD /* TaniwhaTextField */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		21FFF6DCF8152FC6B8D31651E28F21C0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D29A5BFF0A3BB22B09DFB87BD42AA434 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6DA8DD8FA2F06642CB86B6C21EFD05C0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				171FDC7A53ADE7091E50B9DDA970C3A7 /* Roboto-Bold.ttf in Resources */,
-				1C34C51CF9B72B55FA06F9AABAAFE16F /* Roboto-Light.ttf in Resources */,
-				49B205C140DE3B60477067BEF001EB83 /* Roboto-Medium.ttf in Resources */,
-				DCCD08E4AECEAD34365087F8FFD01265 /* Roboto-Regular.ttf in Resources */,
-				7481671ED62B76F258D38553F3153D2E /* Roboto-Thin.ttf in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BBF754C82FB65C8ED988B269F5313B7F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1028735AFD69DB07D13D133188986CAE /* com.cosmicmind.material.fonts.bundle in Resources */,
-				8E3A5C72E00DD4447F17470991FB1DFA /* com.cosmicmind.material.icons.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A7A772D49F810231495AE68B6D15854 /* Sources */ = {
@@ -877,121 +420,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5DBF1CDF54F6A8341951F46203BDA06D /* Sources */ = {
+		993477195EA4AFEA1A564725DAEF5FA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63084458EF28E2038E319F21B56EBD7D /* Pods-NZAirQuality-dummy.m in Sources */,
+				97D0A74BBDD3F07681818DAE58FFE340 /* Pods-NZAirQuality-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6166065119638295FE32C418F8FBBE70 /* Sources */ = {
+		99DB67BA3AA6FF1805BAB80FDDE4A8C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2BA53909EAEC2730D76DDBC723ECA96 /* Application.swift in Sources */,
-				630C4932CF221DAA1D236FDA3CA45C4C /* Bar.swift in Sources */,
-				BBC5370053F23306831A440BAE301043 /* Border.swift in Sources */,
-				BC5C9EEB0A4ECD6BBEDF1492FA6AADD0 /* BottomNavigationController.swift in Sources */,
-				BD5BE4729488A50F125262743CD733F4 /* BottomTabBar.swift in Sources */,
-				FB8EF0DF859C823ADDE65B93357D58FE /* Button.swift in Sources */,
-				116F2F7E6AF507EBB5B537F33EBDEF10 /* Card.swift in Sources */,
-				4B738B94A83C9D0408765125D54490E3 /* CharacterAttribute.swift in Sources */,
-				5155DAB06AC678D4C280F9DE9C85DC95 /* CollectionReusableView.swift in Sources */,
-				373FEFF3C80CD8077C16D34D89950D95 /* CollectionView.swift in Sources */,
-				0BDFDE3CE41394D32A8D0A5B644B0CE5 /* CollectionViewCard.swift in Sources */,
-				A37754C8D65205848ED9C10DD9F54904 /* CollectionViewCell.swift in Sources */,
-				2DF97E65D7B47F8B454A607F46B5D1B0 /* CollectionViewController.swift in Sources */,
-				CE93894C8BD2DE2CBB3315AC68891A42 /* CollectionViewLayout.swift in Sources */,
-				4E05D8BA097745D3114B750B736E8840 /* Color.swift in Sources */,
-				C9DAE803007B16AC80D28323AFC166D9 /* CornerRadius.swift in Sources */,
-				59D080C77B664DE1BA783B49AE621B78 /* DataSourceItem.swift in Sources */,
-				94C63B0BB66948E1413CF441BFF585C4 /* Depth.swift in Sources */,
-				BBF89475E42FE4D0D8B8DEFA5A1D6550 /* Device.swift in Sources */,
-				419B9224E128E37D2EBAA84B12CEE2C6 /* Display.swift in Sources */,
-				CE79C251C315CFA47A7ADAA5B9E2E43B /* Divider.swift in Sources */,
-				E8B50C0B38F28A8D40CD868D03A17501 /* DynamicFontType.swift in Sources */,
-				6E36593546BFDCAE6089928661959104 /* EdgeInsets.swift in Sources */,
-				52571323658B71BE2BAE8C466B7B67B1 /* ErrorTextField.swift in Sources */,
-				3D1A8603AAEC4FA3FBD9F786FAB5C087 /* FABButton.swift in Sources */,
-				1AACB7720CF330F53BBADE9E31C90B94 /* FABMenu.swift in Sources */,
-				B1FED128A3C24DC1A73BC9128E32711A /* FABMenuController.swift in Sources */,
-				BAB270A1D041DD8F7E0C253FC31934EC /* FlatButton.swift in Sources */,
-				1FF52504C022E7394D008A41BF2A7989 /* Font.swift in Sources */,
-				082CE8EF7379F924525075D41529CD5D /* Gravity.swift in Sources */,
-				18A2C7EE52E5D6B32E86B5BEA77FF7CD /* Grid.swift in Sources */,
-				39CBE1F83FCC50B6719346789644736F /* HeightPreset.swift in Sources */,
-				925A2C6A48F3778D13E85CDF24D4B8B2 /* Icon.swift in Sources */,
-				38AEA4D79A90E3B8EFA40EFF64967C03 /* IconButton.swift in Sources */,
-				5CC98AA3B1C173EA5C0CBE49B2EBE2B2 /* ImageCard.swift in Sources */,
-				9B3AFD849509CEA3D3D6DA24C3B79875 /* InterimSpace.swift in Sources */,
-				7105EE4F0935A582DED5B1CE1520375F /* Layer.swift in Sources */,
-				CCF6566008A497D0AA5401E7602E63DB /* Layout.swift in Sources */,
-				FB5B282C99FF4D4736D2F16AA35FDF02 /* Material+Array.swift in Sources */,
-				E0CD38914E5A972C541DDD2A99391B24 /* Material+CALayer.swift in Sources */,
-				5A29556B05C608AE989FEF204B753CED /* Material+Motion.swift in Sources */,
-				5D976F6E385E5D59B94DD4742558CC9D /* Material+MotionAnimation.swift in Sources */,
-				5B280C0EE91E4313AF1821D88D164571 /* Material+Obj-C.swift in Sources */,
-				30E59DB6FBE799D6501E4C65808A7548 /* Material+String.swift in Sources */,
-				D0B31415996B28DDD044D79915EBD863 /* Material+UIFont.swift in Sources */,
-				92E02A73819055033F2C3F399F0754F0 /* Material+UIImage.swift in Sources */,
-				DDBFA68D2F126A3CA3C335F569807F57 /* Material+UIView.swift in Sources */,
-				870B93B6D1D80D1A6189704188C53D4B /* Material+UIWindow.swift in Sources */,
-				37DB59489C622CE92C2CE60C4E19DC79 /* Material-dummy.m in Sources */,
-				5372437B5147B39398BB132051E7CC1F /* NavigationBar.swift in Sources */,
-				07B7EE8ADB35194C1E54FBA70E998855 /* NavigationController.swift in Sources */,
-				E884016BF8A807BE580286F21FE102DD /* NavigationDrawerController.swift in Sources */,
-				6932DB0F080D4C4AC9186AE40AA98641 /* NavigationItem.swift in Sources */,
-				1BF9E3E962D42AF2A0DD1686186E1E15 /* Offset.swift in Sources */,
-				0EB1B520C516F34E96332EB3F4627D86 /* PageTabBarController.swift in Sources */,
-				2F347760825901287E9C322E69E08389 /* PresenterCard.swift in Sources */,
-				9474236D8AED186A4E5388B537BFDBD2 /* PulseAnimation.swift in Sources */,
-				3F330BFF24249466380831BD6D511A8B /* PulseView.swift in Sources */,
-				40F417F672677057191BFB66BB2AC0DD /* RaisedButton.swift in Sources */,
-				6328969B7ED402FE62685FDDCAC91F2B /* RobotoFont.swift in Sources */,
-				245AC814177AE5647020E764F7F9CFC4 /* RootController.swift in Sources */,
-				565D85A789C725461EF86514CE205C8B /* Screen.swift in Sources */,
-				FBD4CB3C8796B92E67A673A76549546E /* SearchBar.swift in Sources */,
-				992C9342DC2EB16F9F9068FDE58336E1 /* SearchBarController.swift in Sources */,
-				8B547CC0A3F77E20383E2F02733A37CF /* Shape.swift in Sources */,
-				1FC146E6F0F20534934A0E7A49E55475 /* Snackbar.swift in Sources */,
-				F60A37F2848E1EA8B20744A2B01CB91F /* SnackbarController.swift in Sources */,
-				B9A3C95629A67457A35973F71F055E91 /* SpringAnimation.swift in Sources */,
-				553B11E87ABA6786D29F46CFE92A9D3B /* StatusBarController.swift in Sources */,
-				A8A0C9572C9DE92F54205E6F5BE7BAF6 /* Switch.swift in Sources */,
-				27ED38A3FADA8B9881593C60B8F77F24 /* TabBar.swift in Sources */,
-				C832AF230AEA8D6F0FA03C7392D11C54 /* TableView.swift in Sources */,
-				7102DD0AF2FBB98629C288C85E10EB01 /* TableViewCell.swift in Sources */,
-				487752C5D1B8739550F962D7D97E6F0D /* TableViewController.swift in Sources */,
-				32072E34469F287A217EFF38C08F3ACF /* TextField.swift in Sources */,
-				E10D8B1C5BA248CA549385E0982A6698 /* TextStorage.swift in Sources */,
-				3B31F5B53C04B294A301137563FE2B05 /* TextView.swift in Sources */,
-				93104D17BFA016BCEA4554534F3CFDBB /* Toolbar.swift in Sources */,
-				11B879A171A72A861D6CA2C779D623CE /* ToolbarController.swift in Sources */,
-				09BBB84D53269CA68811719AE87074A7 /* View.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B5D12C5859969C7D00B9987AACA9D44 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A653195127B9A1FED117ED1840060FEB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5C2C00331E63AEE7E02AD0133E96BA85 /* TaniwhaTextField-dummy.m in Sources */,
-				FFF7B85BF5557E26E3FA8D8E757A7CBF /* TaniwhaTextField.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC26CC73E39937D27BDB22DB9E63E2E9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				0B2315A20864C1C78757696E87EC98FA /* TaniwhaTextField-dummy.m in Sources */,
+				33B22D8BD3AA284CC183C9AFDD8CFFDF /* TaniwhaTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1008,42 +450,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		030F575D3DC602E493CC4383B64FE064 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Material-com.cosmicmind.material.fonts";
-			target = 3A5897FCD2621886E495618AB901B1EF /* Material-com.cosmicmind.material.fonts */;
-			targetProxy = 351A20F60939D38A3304ABEDC0D5F2E7 /* PBXContainerItemProxy */;
-		};
-		2EC87B2B8DDB9D95E5AF0EB89859EB5C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Material;
-			target = 8D511562A8961C5B7A5DD87BAE2374F2 /* Material */;
-			targetProxy = 977164C0AA1CE43CF1739C7837305598 /* PBXContainerItemProxy */;
-		};
-		B436CE02BC9D7339D45FFFF8207C4157 /* PBXTargetDependency */ = {
+		9129CAD892933F551720476A272CBA03 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TaniwhaTextField;
-			target = FE55F80E966F02731B09C8987A042233 /* TaniwhaTextField */;
-			targetProxy = 571487D6D84B205FBE7F5A02059FC5CE /* PBXContainerItemProxy */;
+			target = 91F734ECFDB667D3EF3387D89D7C40AD /* TaniwhaTextField */;
+			targetProxy = D2EE6F97713FCF8F2BE52B714A6E0DF2 /* PBXContainerItemProxy */;
 		};
-		DB5CA241889596FAD955ECAAC85F903B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Material-com.cosmicmind.material.icons";
-			target = 39AA3FC7447AC6B6A131668CFF9C01CD /* Material-com.cosmicmind.material.icons */;
-			targetProxy = 91FB5FEC5845DFF8550AD36234C97B74 /* PBXContainerItemProxy */;
-		};
-		E7396E32E934D45C060C0E0E36862EF5 /* PBXTargetDependency */ = {
+		DE3BE77D1721E01634545CB5F01163BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FSLineChart;
 			target = 809463219ED0A00088BB0753D65348EB /* FSLineChart */;
-			targetProxy = 883EB9284E6981290B5512601599D119 /* PBXContainerItemProxy */;
+			targetProxy = 1372B19C9FEF96E46ED3E7D48F60F09F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		02B237C12EA6DC936070F3AE7968AA09 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED1C67B38172D748DE29007F17DB9911 /* FSLineChart.xcconfig */;
+			baseConfigurationReference = BB7F49BF496FD51F178CECBF707C7D40 /* FSLineChart.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1074,9 +498,9 @@
 			};
 			name = Release;
 		};
-		115C02E5770B4BF27F34EDA810039302 /* Release */ = {
+		110E6297C6F4F1E8FA5DECE8DA56E97E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6A596572D758AD570372FB4AC988F4B /* Material.xcconfig */;
+			baseConfigurationReference = 795B2B54E1D3349550ACFC1D11C352D6 /* Pods-NZAirQuality.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1090,91 +514,66 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Material/Material-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Material/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-NZAirQuality/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Material/Material.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NZAirQuality/Pods-NZAirQuality.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Material;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NZAirQuality;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		1CE445AB947FF68AA6A9AEE08E870ACA /* Release */ = {
+		1DF0A88D9683A026B2589FC11FED70F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6A596572D758AD570372FB4AC988F4B /* Material.xcconfig */;
+			baseConfigurationReference = 6D2BF6E3B26E24380EF60463DE776C56 /* Pods-NZAirQuality.debug.xcconfig */;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Material";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Material/ResourceBundle-com.cosmicmind.material.fonts-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = com.cosmicmind.material.fonts;
+				INFOPLIST_FILE = "Target Support Files/Pods-NZAirQuality/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NZAirQuality/Pods-NZAirQuality.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NZAirQuality;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		31FFC9C23DC5F1B278F774F05769ABCD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6A596572D758AD570372FB4AC988F4B /* Material.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Material";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Material/ResourceBundle-com.cosmicmind.material.icons-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = com.cosmicmind.material.icons;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		3216A1CF61B2B53415479DBC87FA4336 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26B56D572155ACCB9D3EFA4AC4E72A17 /* TaniwhaTextField.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TaniwhaTextField/TaniwhaTextField-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TaniwhaTextField/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TaniwhaTextField/TaniwhaTextField.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = TaniwhaTextField;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		3999AD79C4512019122BA61DBC4DFAA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1248,9 +647,9 @@
 			};
 			name = Release;
 		};
-		3E3B6B6BD96BE2CEE99CFA873306ADF9 /* Debug */ = {
+		49F3288BF70E04C08C5580F30EF51ACC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26B56D572155ACCB9D3EFA4AC4E72A17 /* TaniwhaTextField.xcconfig */;
+			baseConfigurationReference = 928675C6283334BEC1F05F04B5E2CBEA /* TaniwhaTextField.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1331,155 +730,9 @@
 			};
 			name = Debug;
 		};
-		8A481D7D3D245EF2C2C313D7294A9FC9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6A596572D758AD570372FB4AC988F4B /* Material.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Material/Material-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Material/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Material/Material.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Material;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8FBB0C89E2FF7CE70C2AD8969F57DE88 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6A596572D758AD570372FB4AC988F4B /* Material.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Material";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Material/ResourceBundle-com.cosmicmind.material.icons-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = com.cosmicmind.material.icons;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		979F6FC0A51974A8EA679F5D218C6431 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6A596572D758AD570372FB4AC988F4B /* Material.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Material";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Material/ResourceBundle-com.cosmicmind.material.fonts-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = com.cosmicmind.material.fonts;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		9A014AD01C16F75E4F617333B9DFB1D3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 795B2B54E1D3349550ACFC1D11C352D6 /* Pods-NZAirQuality.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-NZAirQuality/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NZAirQuality/Pods-NZAirQuality.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NZAirQuality;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AD5801130F2224FA647CE71B28460D7F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D2BF6E3B26E24380EF60463DE776C56 /* Pods-NZAirQuality.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-NZAirQuality/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NZAirQuality/Pods-NZAirQuality.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NZAirQuality;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		B0746479BDCBC6F419CA8E8BCF0E2DE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED1C67B38172D748DE29007F17DB9911 /* FSLineChart.xcconfig */;
+			baseConfigurationReference = BB7F49BF496FD51F178CECBF707C7D40 /* FSLineChart.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1554,6 +807,40 @@
 			};
 			name = Release;
 		};
+		CD9049EF968E921373807F5CCB836242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 928675C6283334BEC1F05F04B5E2CBEA /* TaniwhaTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TaniwhaTextField/TaniwhaTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TaniwhaTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TaniwhaTextField/TaniwhaTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TaniwhaTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1575,29 +862,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4E0629477D8B10092DE7C4EBE113A4AA /* Build configuration list for PBXNativeTarget "Material-com.cosmicmind.material.icons" */ = {
+		C6B5031AC5BD27A67067419F311196FC /* Build configuration list for PBXNativeTarget "TaniwhaTextField" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				31FFC9C23DC5F1B278F774F05769ABCD /* Debug */,
-				8FBB0C89E2FF7CE70C2AD8969F57DE88 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		53F572D6A54DB9184F60DF539433E597 /* Build configuration list for PBXNativeTarget "TaniwhaTextField" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3E3B6B6BD96BE2CEE99CFA873306ADF9 /* Debug */,
-				3216A1CF61B2B53415479DBC87FA4336 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		80C6EBF59090A44DE7FB5E08AEF2A36C /* Build configuration list for PBXNativeTarget "Material" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8A481D7D3D245EF2C2C313D7294A9FC9 /* Debug */,
-				115C02E5770B4BF27F34EDA810039302 /* Release */,
+				49F3288BF70E04C08C5580F30EF51ACC /* Debug */,
+				CD9049EF968E921373807F5CCB836242 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1611,20 +880,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC065ED599FBB5FB068CFBD5E9C7C8C2 /* Build configuration list for PBXNativeTarget "Pods-NZAirQuality" */ = {
+		D74036BF8B6DB76BF4CBD2EAB826B3EE /* Build configuration list for PBXNativeTarget "Pods-NZAirQuality" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AD5801130F2224FA647CE71B28460D7F /* Debug */,
-				9A014AD01C16F75E4F617333B9DFB1D3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E2AB237CCE1496F48C5D7FBDC6A24860 /* Build configuration list for PBXNativeTarget "Material-com.cosmicmind.material.fonts" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				979F6FC0A51974A8EA679F5D218C6431 /* Debug */,
-				1CE445AB947FF68AA6A9AEE08E870ACA /* Release */,
+				1DF0A88D9683A026B2589FC11FED70F4 /* Debug */,
+				110E6297C6F4F1E8FA5DECE8DA56E97E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
