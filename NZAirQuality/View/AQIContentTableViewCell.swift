@@ -17,7 +17,7 @@ class AQIContentTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     @IBOutlet weak var contentCollectionView: UICollectionView!
     var collectionViewContentPosition: CollectionViewContentPosition = .Left
     
-    var numberOfItems = 3
+    var numberOfItems = 6
     
     
     
@@ -39,12 +39,11 @@ class AQIContentTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "indexCell", for: indexPath) as! UICollectionViewCell
-        if indexPath.row%2 == 0 {
-            cell.backgroundColor = UIColor.red
-        } else {
-            cell.backgroundColor = UIColor.yellow
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "indexCell", for: indexPath) as? AQIContentCollectionViewCell else {
+            return UICollectionViewCell()
         }
+        
+        cell.contentImage.image = UIImage(named: "component_\(indexPath.row + 1)")
         
         return cell
     }
