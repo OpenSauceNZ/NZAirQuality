@@ -13,8 +13,10 @@
 		0522E2941F0BC61200A155AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0522E2931F0BC61200A155AB /* Assets.xcassets */; };
 		0522E2971F0BC61200A155AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0522E2951F0BC61200A155AB /* LaunchScreen.storyboard */; };
 		0522E2A21F0BC61300A155AB /* NZAirQualityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522E2A11F0BC61300A155AB /* NZAirQualityTests.swift */; };
+		053FDD581F1F81DD00042AF1 /* AQIContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053FDD571F1F81DD00042AF1 /* AQIContentCollectionViewCell.swift */; };
 		0555F9591F1B2CAC00BCD89D /* YQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0555F9581F1B2CAC00BCD89D /* YQL.swift */; };
 		0557EDAD1F1C82F200058C70 /* AQIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557EDAC1F1C82F200058C70 /* AQIViewController.swift */; };
+		05582FCE1F1F0ECC005F2737 /* AQIContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05582FCD1F1F0ECC005F2737 /* AQIContentTableViewCell.swift */; };
 		0572D7551F0BD0130026E4E1 /* AirData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572D7541F0BD0130026E4E1 /* AirData.swift */; };
 		0572D7571F0BD0210026E4E1 /* AirAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572D7561F0BD0210026E4E1 /* AirAPI.swift */; };
 		05ABA0241F1C86A900090411 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ABA0231F1C86A900090411 /* WeatherViewController.swift */; };
@@ -48,8 +50,10 @@
 		0522E29D1F0BC61300A155AB /* NZAirQualityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NZAirQualityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0522E2A11F0BC61300A155AB /* NZAirQualityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NZAirQualityTests.swift; sourceTree = "<group>"; };
 		0522E2A31F0BC61300A155AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		053FDD571F1F81DD00042AF1 /* AQIContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIContentCollectionViewCell.swift; sourceTree = "<group>"; };
 		0555F9581F1B2CAC00BCD89D /* YQL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQL.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0557EDAC1F1C82F200058C70 /* AQIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIViewController.swift; sourceTree = "<group>"; };
+		05582FCD1F1F0ECC005F2737 /* AQIContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIContentTableViewCell.swift; sourceTree = "<group>"; };
 		0572D7541F0BD0130026E4E1 /* AirData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirData.swift; sourceTree = "<group>"; };
 		0572D7561F0BD0210026E4E1 /* AirAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirAPI.swift; sourceTree = "<group>"; };
 		05ABA0231F1C86A900090411 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				05ABA0251F1C89C800090411 /* AQIHeaderTableViewCell.swift */,
+				05582FCD1F1F0ECC005F2737 /* AQIContentTableViewCell.swift */,
+				053FDD571F1F81DD00042AF1 /* AQIContentCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -386,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0522E2921F0BC61200A155AB /* NZAirQuality.xcdatamodeld in Sources */,
+				053FDD581F1F81DD00042AF1 /* AQIContentCollectionViewCell.swift in Sources */,
 				05EA2D2E1F1269AF00734544 /* WeatherAPI.swift in Sources */,
 				0555F9591F1B2CAC00BCD89D /* YQL.swift in Sources */,
 				0572D7551F0BD0130026E4E1 /* AirData.swift in Sources */,
@@ -394,6 +401,7 @@
 				05C639621F1C73CD00D0B771 /* Style.swift in Sources */,
 				0572D7571F0BD0210026E4E1 /* AirAPI.swift in Sources */,
 				0557EDAD1F1C82F200058C70 /* AQIViewController.swift in Sources */,
+				05582FCE1F1F0ECC005F2737 /* AQIContentTableViewCell.swift in Sources */,
 				05ABA0241F1C86A900090411 /* WeatherViewController.swift in Sources */,
 				05ABA0261F1C89C800090411 /* AQIHeaderTableViewCell.swift in Sources */,
 			);
@@ -537,6 +545,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V7QHHUD2M5;
 				INFOPLIST_FILE = NZAirQuality/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "liguo-jiao.NZAirQuality";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -552,6 +561,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V7QHHUD2M5;
 				INFOPLIST_FILE = NZAirQuality/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "liguo-jiao.NZAirQuality";
 				PRODUCT_NAME = "$(TARGET_NAME)";

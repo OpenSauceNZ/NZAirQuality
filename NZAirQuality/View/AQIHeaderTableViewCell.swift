@@ -26,7 +26,6 @@ class AQIHeaderTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
     }
     
     func generateImageWithText(text: String, on imageView: UIImageView) -> UIImage {
@@ -36,7 +35,6 @@ class AQIHeaderTableViewCell: UITableViewCell {
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: (imageView.layer.bounds.width), height: (imageView.layer.bounds.height)))
         
         label.backgroundColor = UIColor.clear
-        
         label.textAlignment = .center
         label.textColor = UIColor.white
         label.text = text
