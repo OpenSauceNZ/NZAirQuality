@@ -9,7 +9,10 @@
 import UIKit
 
 class AQIViewController: UITableViewController {
-
+    
+    var contentCellHeight: CGFloat = 70
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad() 
         // Uncomment the following line to preserve selection between presentations
@@ -17,6 +20,7 @@ class AQIViewController: UITableViewController {
         self.tableView.backgroundColor = NZABackgroundColor
         UITabBar.appearance().barTintColor = NZATabBarBackgroundColor
         UITabBar.appearance().tintColor = NZATabBarTintColor
+        
     }
     
     // MARK: - Table view data source
@@ -54,10 +58,13 @@ class AQIViewController: UITableViewController {
         case 0:
             return 135
         case 1:
-            return tableView.estimatedRowHeight
+            return contentCellHeight
         default:
-            return tableView.estimatedRowHeight
+            return UITableViewAutomaticDimension
         }
+    }
+    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -69,7 +76,12 @@ class AQIViewController: UITableViewController {
                 return UITableViewCell()
             }
         case 1:
-            return UITableViewCell()
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "AQIContentCell", for: indexPath) as? AQIContentTableViewCell {
+                contentCellHeight = CGFloat((round(Double(cell.numberOfItems)/2.0) * 70) + 20)
+                return cell
+            } else {
+                return UITableViewCell()
+            }
         default:
             return UITableViewCell()
         }
