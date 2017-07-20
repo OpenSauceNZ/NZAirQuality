@@ -7,108 +7,119 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0324E5EF2BC3991C25C01E22740F3C23 /* FSLineChart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD81F23F4E95AB1762A560AAE4508281 /* FSLineChart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0B2315A20864C1C78757696E87EC98FA /* TaniwhaTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E59CDD18C2E985DF943054DC49D36E94 /* TaniwhaTextField-dummy.m */; };
+		123A4A00A78798D85E630A21736A3506 /* Pods-NZAirQuality-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE8057525D2ADA23FB6F0AEE9ADC7159 /* Pods-NZAirQuality-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		192F393DA094B88B46E626C4FB320D6B /* ScrollableGraphViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAFFD2CB1B8953862929DF6C8913E5 /* ScrollableGraphViewDataSource.swift */; };
+		1B8D185E6C3A9C93E761D81B6269AFF3 /* Plot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FFD14CDC6CDCC1E397613AC08AA921 /* Plot.swift */; };
+		1CD17232D8A156FE937DDE8C5FAA585C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		1F873E4A0549A10BB45873CD409437C7 /* GradientDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC5A4E3E1EB7450F7952054059F6F76 /* GradientDrawingLayer.swift */; };
+		1FFAD9F8CD3AB7E8823FD7AB80164010 /* Pods-NZAirQuality-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 447B056EA79F4865A27E7E5DE1111B9A /* Pods-NZAirQuality-dummy.m */; };
+		298CD5EA4B9E3BAD29A405819A37FCC4 /* ScrollableGraphView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 429C9CD8ED55EF394002FE231D98B376 /* ScrollableGraphView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B677AA5812D07E8D851280BFABA0E22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		33B22D8BD3AA284CC183C9AFDD8CFFDF /* TaniwhaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A997F0E87D0AA10F6BBADF0C1DF70D2 /* TaniwhaTextField.swift */; };
-		3FABB83D3FE3A89BFF6067ACD5FF2306 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		5F49CEE86E7C4BF8A24AC41F827FBE89 /* TaniwhaTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 529D7FC98E9E5205DC22C11526690D7D /* TaniwhaTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97D0A74BBDD3F07681818DAE58FFE340 /* Pods-NZAirQuality-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 447B056EA79F4865A27E7E5DE1111B9A /* Pods-NZAirQuality-dummy.m */; };
-		A9C6B54A2C57384EB0EF1C3A2D6DD59A /* Pods-NZAirQuality-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE8057525D2ADA23FB6F0AEE9ADC7159 /* Pods-NZAirQuality-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD5681307560DC6583E47930833596B2 /* FSLineChart.h in Headers */ = {isa = PBXBuildFile; fileRef = FD0FA4B0C63C12F169EB9D29E9F51422 /* FSLineChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B197787A06F2B4124BC1FF82F6975F2F /* FSLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78BD1D81A19705C969F1E6915B238D /* FSLineChart.m */; };
-		B82B202B01BA07258DF6DAF14E91DB87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		C0F7388159B48FE00EC70346DC660373 /* UIColor+FSPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B4D57981DFE014561491A0086E79D8 /* UIColor+FSPalette.m */; };
+		31EC66C1FF4B1F7D3E174BEA4A7074F1 /* TaniwhaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A4347FEE2252718F057A34C4B915B /* TaniwhaTextField.swift */; };
+		32516DFA613942D6D05ABB8E06C9AAF1 /* TaniwhaTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EDD70D20325F8C627B857DF37DB74C8 /* TaniwhaTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		642EEFD7FE8226178B5A29C34E0348CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		6AAA0D6362F07EDB4B2BCA2D14E8746B /* ReferenceLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC652E7605782C595A7FE4841F8381B /* ReferenceLines.swift */; };
+		7910051876536094512F1CD569995EA2 /* LinePlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D0A04CD1262FA7215C17EC9C17F99C /* LinePlot.swift */; };
+		79EB9A9172CC26E9231023DC67D5466F /* ScrollableGraphViewDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE2B89623AC4C75D834F13EC50B735D /* ScrollableGraphViewDrawingLayer.swift */; };
+		7FF6065A45A7C0D48D1253FB9CFBC733 /* DotDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC140C9147C9BAAEC9E5141A74E65A4B /* DotDrawingLayer.swift */; };
+		82B5D63D916EBAA4CAD6847F111CEC66 /* FillDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B71E0E050D9D789D5708FFA2847F446 /* FillDrawingLayer.swift */; };
+		8F3760BDF5FCA9BF8C06442A1658100D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		8F69263C4AAC15F5FC35AA8885598222 /* BarDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BBA33FF5E4018DF6A9A44444B4D1C5 /* BarDrawingLayer.swift */; };
+		99A6A0DEAE769FD49B63F63370DC85BB /* BarPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FC7B64D5C3307BD5A63FC73CEC169F /* BarPlot.swift */; };
+		9CD12674F73973BEB3EEC91DD9641304 /* GraphPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CC34730182C0FCCFE7B1575A5B7C38 /* GraphPoint.swift */; };
+		A2310542F0F02A1A155F94CFF5E98BBD /* DotPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99616AC005061573A44BFCFB2D7CE551 /* DotPlot.swift */; };
+		B9C90072950DB66459FCE6C5015FCA3E /* ScrollableGraphViewDrawingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B516041D4A8519A5E814DDFB64064C /* ScrollableGraphViewDrawingDelegate.swift */; };
+		BB526199B799D32F3689DF014B397779 /* ScrollableGraphView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD191E5DC76515FC4CE97E170C0AC6B /* ScrollableGraphView-dummy.m */; };
+		BFA8EAA78322763BBCA8C5DC02EE0BAD /* LabelPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804DA64C48E727D353DC7E3229019BD2 /* LabelPool.swift */; };
 		C8E8C2665083E83738D7C70FF5BC2BF8 /* Pods-NZAirQualityTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 102B83558E42C0C96C5CAE920CFD8501 /* Pods-NZAirQualityTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D50155264DD77773512299F1D838451B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		E7D02745D202B5B2967D24897874AA6C /* FSLineChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5615A5079C020DED273A5DBA4EB93339 /* FSLineChart-dummy.m */; };
+		C9139F2C00CD80BF3005A5DD88ED869E /* GraphPointAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41D17AF79ED57215098C52577DC4F42 /* GraphPointAnimation.swift */; };
+		D97E4363F9EBF46F31C133CA91DD3E57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		DBC29DDA0B717CFFFAFF63B1E056043E /* LineDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E1CF374F97394900D2BD8BABCA1532 /* LineDrawingLayer.swift */; };
+		E5DDEAB5D14FBF0A6655937F0F2C7BD8 /* ScrollableGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8818B9136078589C958D02A0BC75E /* ScrollableGraphView.swift */; };
+		E8F2B531C7013090BBD1C0C3CE34A492 /* ReferenceLineDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292FB5C79282C001CBECF66E3BC478F0 /* ReferenceLineDrawingView.swift */; };
+		EC4D065751F56602353DA0BF170CD36D /* TaniwhaTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6028DFF4B82D5E590FAF96BD79EA20C6 /* TaniwhaTextField-dummy.m */; };
 		ECC1B4498CF2090AB8FFE12869388A6D /* Pods-NZAirQualityTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FE9247F1A8A18CA90EA25D2E07546B /* Pods-NZAirQualityTests-dummy.m */; };
-		FC5DE94578765F701B6E09EA3D9DB1F1 /* UIColor+FSPalette.h in Headers */ = {isa = PBXBuildFile; fileRef = 29C900C62835789B855A4E5CBF6BA51B /* UIColor+FSPalette.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FE0045AB2069DFE39C26F853B7AA20E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1372B19C9FEF96E46ED3E7D48F60F09F /* PBXContainerItemProxy */ = {
+		4157E80174AB253028A3E629A8670132 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 809463219ED0A00088BB0753D65348EB;
-			remoteInfo = FSLineChart;
-		};
-		D2EE6F97713FCF8F2BE52B714A6E0DF2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 91F734ECFDB667D3EF3387D89D7C40AD;
+			remoteGlobalIDString = C677A6E7D56A9B753D1BE2E5EF5CD71B;
 			remoteInfo = TaniwhaTextField;
+		};
+		D682C4CF75A9C641A20104BAD95E4518 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC12F935B16BEFA2A4A48E99800F44B8;
+			remoteInfo = ScrollableGraphView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A997F0E87D0AA10F6BBADF0C1DF70D2 /* TaniwhaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaniwhaTextField.swift; path = TaniwhaTextField/Classes/TaniwhaTextField.swift; sourceTree = "<group>"; };
+		070B7CB513E1E0BB999CE42F1ED58556 /* ScrollableGraphView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScrollableGraphView.framework; path = ScrollableGraphView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B234C9A3B0414A83A71F20F26CF5439 /* TaniwhaTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TaniwhaTextField.xcconfig; sourceTree = "<group>"; };
 		0B5895E7807335E289EBC28751CA23FF /* Pods-NZAirQuality-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NZAirQuality-resources.sh"; sourceTree = "<group>"; };
+		0DC7BBC410CB9F36E6D79CBD52059C5E /* ScrollableGraphView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ScrollableGraphView.modulemap; sourceTree = "<group>"; };
 		102B83558E42C0C96C5CAE920CFD8501 /* Pods-NZAirQualityTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NZAirQualityTests-umbrella.h"; sourceTree = "<group>"; };
 		116D2415BC1091FD6E247FDB9737D9D7 /* Pods-NZAirQuality-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NZAirQuality-acknowledgements.plist"; sourceTree = "<group>"; };
-		29C900C62835789B855A4E5CBF6BA51B /* UIColor+FSPalette.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+FSPalette.h"; path = "FSLineChart/FSLineChart/UIColor+FSPalette.h"; sourceTree = "<group>"; };
-		2BA00A759E1BC07617EE0D8473FC8C1F /* Pods_NZAirQuality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NZAirQuality.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		39B4D57981DFE014561491A0086E79D8 /* UIColor+FSPalette.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+FSPalette.m"; path = "FSLineChart/FSLineChart/UIColor+FSPalette.m"; sourceTree = "<group>"; };
-		3FC70E3B53DD138719696CF681B3CA65 /* Pods-NZAirQuality.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NZAirQuality.modulemap"; sourceTree = "<group>"; };
-		44019C09FAC383B5DDFEDFA633BD3F43 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12BBA33FF5E4018DF6A9A44444B4D1C5 /* BarDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarDrawingLayer.swift; path = Classes/Drawing/BarDrawingLayer.swift; sourceTree = "<group>"; };
+		15B516041D4A8519A5E814DDFB64064C /* ScrollableGraphViewDrawingDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphViewDrawingDelegate.swift; path = Classes/Protocols/ScrollableGraphViewDrawingDelegate.swift; sourceTree = "<group>"; };
+		292FB5C79282C001CBECF66E3BC478F0 /* ReferenceLineDrawingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceLineDrawingView.swift; path = Classes/Drawing/ReferenceLineDrawingView.swift; sourceTree = "<group>"; };
+		37D0A04CD1262FA7215C17EC9C17F99C /* LinePlot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinePlot.swift; path = Classes/Plots/LinePlot.swift; sourceTree = "<group>"; };
+		3EDD70D20325F8C627B857DF37DB74C8 /* TaniwhaTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TaniwhaTextField-umbrella.h"; sourceTree = "<group>"; };
+		3FC70E3B53DD138719696CF681B3CA65 /* Pods-NZAirQuality.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NZAirQuality.modulemap"; sourceTree = "<group>"; };
+		429C9CD8ED55EF394002FE231D98B376 /* ScrollableGraphView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollableGraphView-umbrella.h"; sourceTree = "<group>"; };
 		447B056EA79F4865A27E7E5DE1111B9A /* Pods-NZAirQuality-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NZAirQuality-dummy.m"; sourceTree = "<group>"; };
-		529D7FC98E9E5205DC22C11526690D7D /* TaniwhaTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TaniwhaTextField-umbrella.h"; sourceTree = "<group>"; };
-		5615A5079C020DED273A5DBA4EB93339 /* FSLineChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSLineChart-dummy.m"; sourceTree = "<group>"; };
-		60958988963E978475EE6B55E9BC3F21 /* FSLineChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSLineChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		68545295A86C365A2ABA23B4A80CF6B6 /* TaniwhaTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TaniwhaTextField-prefix.pch"; sourceTree = "<group>"; };
+		4B71E0E050D9D789D5708FFA2847F446 /* FillDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FillDrawingLayer.swift; path = Classes/Drawing/FillDrawingLayer.swift; sourceTree = "<group>"; };
+		51E93D7FC3FEF817A1807A2633284A86 /* ScrollableGraphView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollableGraphView.xcconfig; sourceTree = "<group>"; };
+		6028DFF4B82D5E590FAF96BD79EA20C6 /* TaniwhaTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TaniwhaTextField-dummy.m"; sourceTree = "<group>"; };
+		61E1CF374F97394900D2BD8BABCA1532 /* LineDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineDrawingLayer.swift; path = Classes/Drawing/LineDrawingLayer.swift; sourceTree = "<group>"; };
+		6A8A4347FEE2252718F057A34C4B915B /* TaniwhaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaniwhaTextField.swift; path = TaniwhaTextField/Classes/TaniwhaTextField.swift; sourceTree = "<group>"; };
 		6D2BF6E3B26E24380EF60463DE776C56 /* Pods-NZAirQuality.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NZAirQuality.debug.xcconfig"; sourceTree = "<group>"; };
-		6D78BD1D81A19705C969F1E6915B238D /* FSLineChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSLineChart.m; path = FSLineChart/FSLineChart/FSLineChart.m; sourceTree = "<group>"; };
-		6EF75ED55CC73DBFBA175D06204C410C /* TaniwhaTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TaniwhaTextField.modulemap; sourceTree = "<group>"; };
 		795B2B54E1D3349550ACFC1D11C352D6 /* Pods-NZAirQuality.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NZAirQuality.release.xcconfig"; sourceTree = "<group>"; };
+		7CD191E5DC76515FC4CE97E170C0AC6B /* ScrollableGraphView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ScrollableGraphView-dummy.m"; sourceTree = "<group>"; };
+		804DA64C48E727D353DC7E3229019BD2 /* LabelPool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabelPool.swift; path = Classes/Reference/LabelPool.swift; sourceTree = "<group>"; };
+		83D6C1A3FD6F5D7735A9D767B18CCAD9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		847514125898F0E8042518E2EFCE1C1C /* Pods-NZAirQualityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NZAirQualityTests.release.xcconfig"; sourceTree = "<group>"; };
 		86944A6F226E61F39C6685820A5B8CD6 /* Pods-NZAirQualityTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NZAirQualityTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		928675C6283334BEC1F05F04B5E2CBEA /* TaniwhaTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TaniwhaTextField.xcconfig; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9952AFD3DB2AC988FA77946CB73B1F83 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99616AC005061573A44BFCFB2D7CE551 /* DotPlot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DotPlot.swift; path = Classes/Plots/DotPlot.swift; sourceTree = "<group>"; };
+		9BC5A4E3E1EB7450F7952054059F6F76 /* GradientDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientDrawingLayer.swift; path = Classes/Drawing/GradientDrawingLayer.swift; sourceTree = "<group>"; };
+		A6A7C6E7E56EE17FB6DF8262DEAE8844 /* ScrollableGraphView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollableGraphView-prefix.pch"; sourceTree = "<group>"; };
+		A6FC7B64D5C3307BD5A63FC73CEC169F /* BarPlot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarPlot.swift; path = Classes/Plots/BarPlot.swift; sourceTree = "<group>"; };
+		A7FAFFD2CB1B8953862929DF6C8913E5 /* ScrollableGraphViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphViewDataSource.swift; path = Classes/Protocols/ScrollableGraphViewDataSource.swift; sourceTree = "<group>"; };
 		AE8057525D2ADA23FB6F0AEE9ADC7159 /* Pods-NZAirQuality-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NZAirQuality-umbrella.h"; sourceTree = "<group>"; };
 		B01675AF7F404F2F5DB74293B7BF0409 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3CA0AB8E3CC309E1FFB56F3CEDA1F8B /* Pods-NZAirQualityTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NZAirQualityTests-frameworks.sh"; sourceTree = "<group>"; };
+		B4CC34730182C0FCCFE7B1575A5B7C38 /* GraphPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphPoint.swift; path = Classes/Plots/Animation/GraphPoint.swift; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		BB7F49BF496FD51F178CECBF707C7D40 /* FSLineChart.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSLineChart.xcconfig; sourceTree = "<group>"; };
 		BCA5D48B77998F2A44D090103EB589A4 /* Pods-NZAirQuality-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NZAirQuality-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BD03D32784DF57F769685CF1B4EFC6EF /* TaniwhaTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TaniwhaTextField-prefix.pch"; sourceTree = "<group>"; };
+		C25658E73B8A63F52A7F55B8F219A118 /* Pods_NZAirQualityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NZAirQualityTests.framework; path = "Pods-NZAirQualityTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C448D60025E5114F809B0854092820AB /* Pods-NZAirQualityTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NZAirQualityTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C6C756C3FA71DEC91DCAEFCA78417B78 /* Pods_NZAirQualityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NZAirQualityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD7EC1C7EFE77C84477F5A7064E9E1BC /* FSLineChart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FSLineChart.modulemap; sourceTree = "<group>"; };
-		CF552DCAA212BE1BF71F4064BD4E88DE /* TaniwhaTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TaniwhaTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5FFD14CDC6CDCC1E397613AC08AA921 /* Plot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Plot.swift; path = Classes/Plots/Plot.swift; sourceTree = "<group>"; };
+		CAC652E7605782C595A7FE4841F8381B /* ReferenceLines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceLines.swift; path = Classes/Reference/ReferenceLines.swift; sourceTree = "<group>"; };
+		CCE2B89623AC4C75D834F13EC50B735D /* ScrollableGraphViewDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphViewDrawingLayer.swift; path = Classes/Drawing/ScrollableGraphViewDrawingLayer.swift; sourceTree = "<group>"; };
 		CF7C767C1128AFF84FEAD8DBF0334A94 /* Pods-NZAirQualityTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NZAirQualityTests-resources.sh"; sourceTree = "<group>"; };
-		CFEAB8DF322FDF9BF4F0971EB7FF89EC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6FE9247F1A8A18CA90EA25D2E07546B /* Pods-NZAirQualityTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NZAirQualityTests-dummy.m"; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DD81F23F4E95AB1762A560AAE4508281 /* FSLineChart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSLineChart-umbrella.h"; sourceTree = "<group>"; };
+		DBBF8D3AEF3527D6405B64A6781C9021 /* TaniwhaTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TaniwhaTextField.modulemap; sourceTree = "<group>"; };
 		DF1637F36905508E487AD0383B4E673A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3871AF705A2DB3F0C4AA13414302BD9 /* Pods-NZAirQuality-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NZAirQuality-frameworks.sh"; sourceTree = "<group>"; };
-		E59CDD18C2E985DF943054DC49D36E94 /* TaniwhaTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TaniwhaTextField-dummy.m"; sourceTree = "<group>"; };
-		E5ADE703846B2ACD5E53BB55D22FC049 /* FSLineChart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSLineChart-prefix.pch"; sourceTree = "<group>"; };
+		E41D17AF79ED57215098C52577DC4F42 /* GraphPointAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphPointAnimation.swift; path = Classes/Plots/Animation/GraphPointAnimation.swift; sourceTree = "<group>"; };
 		E75B9861A63D05EEB1F0D0FE93BDEC2B /* Pods-NZAirQualityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NZAirQualityTests.debug.xcconfig"; sourceTree = "<group>"; };
-		EAF227CFCAD9BA09C90D26AB94A4427F /* Pods-NZAirQualityTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NZAirQualityTests.modulemap"; sourceTree = "<group>"; };
-		FD0FA4B0C63C12F169EB9D29E9F51422 /* FSLineChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSLineChart.h; path = FSLineChart/FSLineChart/FSLineChart.h; sourceTree = "<group>"; };
+		E8A7F7BB456BCB20554929B6FD6BF885 /* Pods_NZAirQuality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NZAirQuality.framework; path = "Pods-NZAirQuality.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAF227CFCAD9BA09C90D26AB94A4427F /* Pods-NZAirQualityTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NZAirQualityTests.modulemap"; sourceTree = "<group>"; };
+		EC140C9147C9BAAEC9E5141A74E65A4B /* DotDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DotDrawingLayer.swift; path = Classes/Drawing/DotDrawingLayer.swift; sourceTree = "<group>"; };
+		ECC8818B9136078589C958D02A0BC75E /* ScrollableGraphView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphView.swift; path = Classes/ScrollableGraphView.swift; sourceTree = "<group>"; };
+		FA6481E1B1E279A15D1683CD8E707D75 /* TaniwhaTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TaniwhaTextField.framework; path = TaniwhaTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3340F2364FAD640A31E15E34C2447F04 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D50155264DD77773512299F1D838451B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		46EF1D090812E54B48DFBFC387401D3F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B82B202B01BA07258DF6DAF14E91DB87 /* Foundation.framework in Frameworks */,
-				3FABB83D3FE3A89BFF6067ACD5FF2306 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4DDD054761312C8D252EDEFC7ADFFF00 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -117,11 +128,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BF6CC4BA942D02C123EA6C8AEFEE9CCB /* Frameworks */ = {
+		573A765F433E6B0D7A842B9902712771 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE0045AB2069DFE39C26F853B7AA20E2 /* Foundation.framework in Frameworks */,
+				8F3760BDF5FCA9BF8C06442A1658100D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B40941DDBC936FACA91D34EFE0BD26D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD17232D8A156FE937DDE8C5FAA585C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93D733EE0FB70AE0B2BD5A2B594C4E1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97E4363F9EBF46F31C133CA91DD3E57 /* Foundation.framework in Frameworks */,
+				642EEFD7FE8226178B5A29C34E0348CD /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,24 +174,18 @@
 			path = "Target Support Files/Pods-NZAirQualityTests";
 			sourceTree = "<group>";
 		};
-		1E44753C06DE05025E44E84F10D551AB /* TaniwhaTextField */ = {
+		108E03977CF5398E8C19BC2343616168 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0A997F0E87D0AA10F6BBADF0C1DF70D2 /* TaniwhaTextField.swift */,
-				6168AF3794883F3E0D73FAB6DA31E210 /* Support Files */,
+				9952AFD3DB2AC988FA77946CB73B1F83 /* Info.plist */,
+				0DC7BBC410CB9F36E6D79CBD52059C5E /* ScrollableGraphView.modulemap */,
+				51E93D7FC3FEF817A1807A2633284A86 /* ScrollableGraphView.xcconfig */,
+				7CD191E5DC76515FC4CE97E170C0AC6B /* ScrollableGraphView-dummy.m */,
+				A6A7C6E7E56EE17FB6DF8262DEAE8844 /* ScrollableGraphView-prefix.pch */,
+				429C9CD8ED55EF394002FE231D98B376 /* ScrollableGraphView-umbrella.h */,
 			);
-			path = TaniwhaTextField;
-			sourceTree = "<group>";
-		};
-		3FDBAF801E505FA9E442D8AD1F7F15FF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				60958988963E978475EE6B55E9BC3F21 /* FSLineChart.framework */,
-				2BA00A759E1BC07617EE0D8473FC8C1F /* Pods_NZAirQuality.framework */,
-				C6C756C3FA71DEC91DCAEFCA78417B78 /* Pods_NZAirQualityTests.framework */,
-				CF552DCAA212BE1BF71F4064BD4E88DE /* TaniwhaTextField.framework */,
-			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/ScrollableGraphView";
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -183,48 +205,13 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		5D084B2182776775CF2FCA821FB94B10 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6FFB708C3EFDDA73A0111834DF70B6DE /* FSLineChart */,
-				1E44753C06DE05025E44E84F10D551AB /* TaniwhaTextField */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		6168AF3794883F3E0D73FAB6DA31E210 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CFEAB8DF322FDF9BF4F0971EB7FF89EC /* Info.plist */,
-				6EF75ED55CC73DBFBA175D06204C410C /* TaniwhaTextField.modulemap */,
-				928675C6283334BEC1F05F04B5E2CBEA /* TaniwhaTextField.xcconfig */,
-				E59CDD18C2E985DF943054DC49D36E94 /* TaniwhaTextField-dummy.m */,
-				68545295A86C365A2ABA23B4A80CF6B6 /* TaniwhaTextField-prefix.pch */,
-				529D7FC98E9E5205DC22C11526690D7D /* TaniwhaTextField-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TaniwhaTextField";
-			sourceTree = "<group>";
-		};
-		6FFB708C3EFDDA73A0111834DF70B6DE /* FSLineChart */ = {
-			isa = PBXGroup;
-			children = (
-				FD0FA4B0C63C12F169EB9D29E9F51422 /* FSLineChart.h */,
-				6D78BD1D81A19705C969F1E6915B238D /* FSLineChart.m */,
-				29C900C62835789B855A4E5CBF6BA51B /* UIColor+FSPalette.h */,
-				39B4D57981DFE014561491A0086E79D8 /* UIColor+FSPalette.m */,
-				97B2686C60312C4762D9A69CEA468CF3 /* Support Files */,
-			);
-			path = FSLineChart;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				5D084B2182776775CF2FCA821FB94B10 /* Pods */,
-				3FDBAF801E505FA9E442D8AD1F7F15FF /* Products */,
+				A851B814988B8760DFB5FCDD15B31F40 /* Pods */,
+				BFA787BA97F2B4E210A853E78D66A8E3 /* Products */,
 				AEDEAEEE407463C99FF18E83A679590C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -247,18 +234,13 @@
 			path = "Target Support Files/Pods-NZAirQuality";
 			sourceTree = "<group>";
 		};
-		97B2686C60312C4762D9A69CEA468CF3 /* Support Files */ = {
+		A851B814988B8760DFB5FCDD15B31F40 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CD7EC1C7EFE77C84477F5A7064E9E1BC /* FSLineChart.modulemap */,
-				BB7F49BF496FD51F178CECBF707C7D40 /* FSLineChart.xcconfig */,
-				5615A5079C020DED273A5DBA4EB93339 /* FSLineChart-dummy.m */,
-				E5ADE703846B2ACD5E53BB55D22FC049 /* FSLineChart-prefix.pch */,
-				DD81F23F4E95AB1762A560AAE4508281 /* FSLineChart-umbrella.h */,
-				44019C09FAC383B5DDFEDFA633BD3F43 /* Info.plist */,
+				E535311F26BDC89F687FB51D2B2E8973 /* ScrollableGraphView */,
+				C45E72A8B1828A4667C46AE0377834A3 /* TaniwhaTextField */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/FSLineChart";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		AEDEAEEE407463C99FF18E83A679590C /* Targets Support Files */ = {
@@ -268,6 +250,68 @@
 				0ED507B85A74A2441899438B21B55576 /* Pods-NZAirQualityTests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BFA787BA97F2B4E210A853E78D66A8E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8A7F7BB456BCB20554929B6FD6BF885 /* Pods_NZAirQuality.framework */,
+				C25658E73B8A63F52A7F55B8F219A118 /* Pods_NZAirQualityTests.framework */,
+				070B7CB513E1E0BB999CE42F1ED58556 /* ScrollableGraphView.framework */,
+				FA6481E1B1E279A15D1683CD8E707D75 /* TaniwhaTextField.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C45E72A8B1828A4667C46AE0377834A3 /* TaniwhaTextField */ = {
+			isa = PBXGroup;
+			children = (
+				6A8A4347FEE2252718F057A34C4B915B /* TaniwhaTextField.swift */,
+				F07A1B7A692957ADC444B8B3002F1857 /* Support Files */,
+			);
+			name = TaniwhaTextField;
+			path = TaniwhaTextField;
+			sourceTree = "<group>";
+		};
+		E535311F26BDC89F687FB51D2B2E8973 /* ScrollableGraphView */ = {
+			isa = PBXGroup;
+			children = (
+				12BBA33FF5E4018DF6A9A44444B4D1C5 /* BarDrawingLayer.swift */,
+				A6FC7B64D5C3307BD5A63FC73CEC169F /* BarPlot.swift */,
+				EC140C9147C9BAAEC9E5141A74E65A4B /* DotDrawingLayer.swift */,
+				99616AC005061573A44BFCFB2D7CE551 /* DotPlot.swift */,
+				4B71E0E050D9D789D5708FFA2847F446 /* FillDrawingLayer.swift */,
+				9BC5A4E3E1EB7450F7952054059F6F76 /* GradientDrawingLayer.swift */,
+				B4CC34730182C0FCCFE7B1575A5B7C38 /* GraphPoint.swift */,
+				E41D17AF79ED57215098C52577DC4F42 /* GraphPointAnimation.swift */,
+				804DA64C48E727D353DC7E3229019BD2 /* LabelPool.swift */,
+				61E1CF374F97394900D2BD8BABCA1532 /* LineDrawingLayer.swift */,
+				37D0A04CD1262FA7215C17EC9C17F99C /* LinePlot.swift */,
+				C5FFD14CDC6CDCC1E397613AC08AA921 /* Plot.swift */,
+				292FB5C79282C001CBECF66E3BC478F0 /* ReferenceLineDrawingView.swift */,
+				CAC652E7605782C595A7FE4841F8381B /* ReferenceLines.swift */,
+				ECC8818B9136078589C958D02A0BC75E /* ScrollableGraphView.swift */,
+				A7FAFFD2CB1B8953862929DF6C8913E5 /* ScrollableGraphViewDataSource.swift */,
+				15B516041D4A8519A5E814DDFB64064C /* ScrollableGraphViewDrawingDelegate.swift */,
+				CCE2B89623AC4C75D834F13EC50B735D /* ScrollableGraphViewDrawingLayer.swift */,
+				108E03977CF5398E8C19BC2343616168 /* Support Files */,
+			);
+			name = ScrollableGraphView;
+			path = ScrollableGraphView;
+			sourceTree = "<group>";
+		};
+		F07A1B7A692957ADC444B8B3002F1857 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				83D6C1A3FD6F5D7735A9D767B18CCAD9 /* Info.plist */,
+				DBBF8D3AEF3527D6405B64A6781C9021 /* TaniwhaTextField.modulemap */,
+				0B234C9A3B0414A83A71F20F26CF5439 /* TaniwhaTextField.xcconfig */,
+				6028DFF4B82D5E590FAF96BD79EA20C6 /* TaniwhaTextField-dummy.m */,
+				BD03D32784DF57F769685CF1B4EFC6EF /* TaniwhaTextField-prefix.pch */,
+				3EDD70D20325F8C627B857DF37DB74C8 /* TaniwhaTextField-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TaniwhaTextField";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,29 +325,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83C4A16B0DAA8DFE1E081E385E245A71 /* Headers */ = {
+		A56BD762F3615E3C36BA1BBA5828B7DA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9C6B54A2C57384EB0EF1C3A2D6DD59A /* Pods-NZAirQuality-umbrella.h in Headers */,
+				123A4A00A78798D85E630A21736A3506 /* Pods-NZAirQuality-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BFF526059B8B4E6EE8B77C52CE84DA1 /* Headers */ = {
+		D33A8474836D0F50BC11E042F2FDC4E5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F49CEE86E7C4BF8A24AC41F827FBE89 /* TaniwhaTextField-umbrella.h in Headers */,
+				298CD5EA4B9E3BAD29A405819A37FCC4 /* ScrollableGraphView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		95DE14B8D24D9BB482AE7F43145F1510 /* Headers */ = {
+		DA3BF1EE077C5029220607C53B46C9A8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0324E5EF2BC3991C25C01E22740F3C23 /* FSLineChart-umbrella.h in Headers */,
-				AD5681307560DC6583E47930833596B2 /* FSLineChart.h in Headers */,
-				FC5DE94578765F701B6E09EA3D9DB1F1 /* UIColor+FSPalette.h in Headers */,
+				32516DFA613942D6D05ABB8E06C9AAF1 /* TaniwhaTextField-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,52 +366,35 @@
 			);
 			name = "Pods-NZAirQualityTests";
 			productName = "Pods-NZAirQualityTests";
-			productReference = C6C756C3FA71DEC91DCAEFCA78417B78 /* Pods_NZAirQualityTests.framework */;
+			productReference = C25658E73B8A63F52A7F55B8F219A118 /* Pods_NZAirQualityTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4802A21EEBEF5FE90CB792FC6471875A /* Pods-NZAirQuality */ = {
+		40E761454A1D9813D456FB3D9B4B6580 /* Pods-NZAirQuality */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D74036BF8B6DB76BF4CBD2EAB826B3EE /* Build configuration list for PBXNativeTarget "Pods-NZAirQuality" */;
+			buildConfigurationList = F557249C009A1BC90768E14C4599039B /* Build configuration list for PBXNativeTarget "Pods-NZAirQuality" */;
 			buildPhases = (
-				993477195EA4AFEA1A564725DAEF5FA5 /* Sources */,
-				BF6CC4BA942D02C123EA6C8AEFEE9CCB /* Frameworks */,
-				83C4A16B0DAA8DFE1E081E385E245A71 /* Headers */,
+				0CE97A5073072C63386D337B7C8D4263 /* Sources */,
+				573A765F433E6B0D7A842B9902712771 /* Frameworks */,
+				A56BD762F3615E3C36BA1BBA5828B7DA /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DE3BE77D1721E01634545CB5F01163BE /* PBXTargetDependency */,
-				9129CAD892933F551720476A272CBA03 /* PBXTargetDependency */,
+				097B1960C8D54164C493D03CD0641FED /* PBXTargetDependency */,
+				E40114E2981FC97D5FD4611DD49D3613 /* PBXTargetDependency */,
 			);
 			name = "Pods-NZAirQuality";
 			productName = "Pods-NZAirQuality";
-			productReference = 2BA00A759E1BC07617EE0D8473FC8C1F /* Pods_NZAirQuality.framework */;
+			productReference = E8A7F7BB456BCB20554929B6FD6BF885 /* Pods_NZAirQuality.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		809463219ED0A00088BB0753D65348EB /* FSLineChart */ = {
+		C677A6E7D56A9B753D1BE2E5EF5CD71B /* TaniwhaTextField */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 407EC161763408383D6DF8D997BC827F /* Build configuration list for PBXNativeTarget "FSLineChart" */;
+			buildConfigurationList = 9A8627ED7D2D72D7A10914B71458A3CA /* Build configuration list for PBXNativeTarget "TaniwhaTextField" */;
 			buildPhases = (
-				F4D5E8DFAC0A5E3FE2F0039F334A6472 /* Sources */,
-				3340F2364FAD640A31E15E34C2447F04 /* Frameworks */,
-				95DE14B8D24D9BB482AE7F43145F1510 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FSLineChart;
-			productName = FSLineChart;
-			productReference = 60958988963E978475EE6B55E9BC3F21 /* FSLineChart.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		91F734ECFDB667D3EF3387D89D7C40AD /* TaniwhaTextField */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C6B5031AC5BD27A67067419F311196FC /* Build configuration list for PBXNativeTarget "TaniwhaTextField" */;
-			buildPhases = (
-				99DB67BA3AA6FF1805BAB80FDDE4A8C1 /* Sources */,
-				46EF1D090812E54B48DFBFC387401D3F /* Frameworks */,
-				8BFF526059B8B4E6EE8B77C52CE84DA1 /* Headers */,
+				965FB914A00579224FF149E09710739C /* Sources */,
+				93D733EE0FB70AE0B2BD5A2B594C4E1D /* Frameworks */,
+				DA3BF1EE077C5029220607C53B46C9A8 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -377,7 +402,24 @@
 			);
 			name = TaniwhaTextField;
 			productName = TaniwhaTextField;
-			productReference = CF552DCAA212BE1BF71F4064BD4E88DE /* TaniwhaTextField.framework */;
+			productReference = FA6481E1B1E279A15D1683CD8E707D75 /* TaniwhaTextField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC12F935B16BEFA2A4A48E99800F44B8 /* ScrollableGraphView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF4397699B3AB4BC6F5583EE46BED7F3 /* Build configuration list for PBXNativeTarget "ScrollableGraphView" */;
+			buildPhases = (
+				FD94C658380B016852AB40FC16661130 /* Sources */,
+				6B40941DDBC936FACA91D34EFE0BD26D /* Frameworks */,
+				D33A8474836D0F50BC11E042F2FDC4E5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrollableGraphView;
+			productName = ScrollableGraphView;
+			productReference = 070B7CB513E1E0BB999CE42F1ED58556 /* ScrollableGraphView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -388,11 +430,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					91F734ECFDB667D3EF3387D89D7C40AD = {
-						LastSwiftMigration = 0900;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -402,14 +439,14 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3FDBAF801E505FA9E442D8AD1F7F15FF /* Products */;
+			productRefGroup = BFA787BA97F2B4E210A853E78D66A8E3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				809463219ED0A00088BB0753D65348EB /* FSLineChart */,
-				4802A21EEBEF5FE90CB792FC6471875A /* Pods-NZAirQuality */,
+				40E761454A1D9813D456FB3D9B4B6580 /* Pods-NZAirQuality */,
 				195F31C13FA035E626244646FF4A96AA /* Pods-NZAirQualityTests */,
-				91F734ECFDB667D3EF3387D89D7C40AD /* TaniwhaTextField */,
+				DC12F935B16BEFA2A4A48E99800F44B8 /* ScrollableGraphView */,
+				C677A6E7D56A9B753D1BE2E5EF5CD71B /* TaniwhaTextField */,
 			);
 		};
 /* End PBXProject section */
@@ -423,52 +460,213 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		993477195EA4AFEA1A564725DAEF5FA5 /* Sources */ = {
+		0CE97A5073072C63386D337B7C8D4263 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97D0A74BBDD3F07681818DAE58FFE340 /* Pods-NZAirQuality-dummy.m in Sources */,
+				1FFAD9F8CD3AB7E8823FD7AB80164010 /* Pods-NZAirQuality-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		99DB67BA3AA6FF1805BAB80FDDE4A8C1 /* Sources */ = {
+		965FB914A00579224FF149E09710739C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B2315A20864C1C78757696E87EC98FA /* TaniwhaTextField-dummy.m in Sources */,
-				33B22D8BD3AA284CC183C9AFDD8CFFDF /* TaniwhaTextField.swift in Sources */,
+				EC4D065751F56602353DA0BF170CD36D /* TaniwhaTextField-dummy.m in Sources */,
+				31EC66C1FF4B1F7D3E174BEA4A7074F1 /* TaniwhaTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4D5E8DFAC0A5E3FE2F0039F334A6472 /* Sources */ = {
+		FD94C658380B016852AB40FC16661130 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7D02745D202B5B2967D24897874AA6C /* FSLineChart-dummy.m in Sources */,
-				B197787A06F2B4124BC1FF82F6975F2F /* FSLineChart.m in Sources */,
-				C0F7388159B48FE00EC70346DC660373 /* UIColor+FSPalette.m in Sources */,
+				8F69263C4AAC15F5FC35AA8885598222 /* BarDrawingLayer.swift in Sources */,
+				99A6A0DEAE769FD49B63F63370DC85BB /* BarPlot.swift in Sources */,
+				7FF6065A45A7C0D48D1253FB9CFBC733 /* DotDrawingLayer.swift in Sources */,
+				A2310542F0F02A1A155F94CFF5E98BBD /* DotPlot.swift in Sources */,
+				82B5D63D916EBAA4CAD6847F111CEC66 /* FillDrawingLayer.swift in Sources */,
+				1F873E4A0549A10BB45873CD409437C7 /* GradientDrawingLayer.swift in Sources */,
+				9CD12674F73973BEB3EEC91DD9641304 /* GraphPoint.swift in Sources */,
+				C9139F2C00CD80BF3005A5DD88ED869E /* GraphPointAnimation.swift in Sources */,
+				BFA8EAA78322763BBCA8C5DC02EE0BAD /* LabelPool.swift in Sources */,
+				DBC29DDA0B717CFFFAFF63B1E056043E /* LineDrawingLayer.swift in Sources */,
+				7910051876536094512F1CD569995EA2 /* LinePlot.swift in Sources */,
+				1B8D185E6C3A9C93E761D81B6269AFF3 /* Plot.swift in Sources */,
+				E8F2B531C7013090BBD1C0C3CE34A492 /* ReferenceLineDrawingView.swift in Sources */,
+				6AAA0D6362F07EDB4B2BCA2D14E8746B /* ReferenceLines.swift in Sources */,
+				BB526199B799D32F3689DF014B397779 /* ScrollableGraphView-dummy.m in Sources */,
+				E5DDEAB5D14FBF0A6655937F0F2C7BD8 /* ScrollableGraphView.swift in Sources */,
+				192F393DA094B88B46E626C4FB320D6B /* ScrollableGraphViewDataSource.swift in Sources */,
+				B9C90072950DB66459FCE6C5015FCA3E /* ScrollableGraphViewDrawingDelegate.swift in Sources */,
+				79EB9A9172CC26E9231023DC67D5466F /* ScrollableGraphViewDrawingLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9129CAD892933F551720476A272CBA03 /* PBXTargetDependency */ = {
+		097B1960C8D54164C493D03CD0641FED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ScrollableGraphView;
+			target = DC12F935B16BEFA2A4A48E99800F44B8 /* ScrollableGraphView */;
+			targetProxy = D682C4CF75A9C641A20104BAD95E4518 /* PBXContainerItemProxy */;
+		};
+		E40114E2981FC97D5FD4611DD49D3613 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TaniwhaTextField;
-			target = 91F734ECFDB667D3EF3387D89D7C40AD /* TaniwhaTextField */;
-			targetProxy = D2EE6F97713FCF8F2BE52B714A6E0DF2 /* PBXContainerItemProxy */;
-		};
-		DE3BE77D1721E01634545CB5F01163BE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FSLineChart;
-			target = 809463219ED0A00088BB0753D65348EB /* FSLineChart */;
-			targetProxy = 1372B19C9FEF96E46ED3E7D48F60F09F /* PBXContainerItemProxy */;
+			target = C677A6E7D56A9B753D1BE2E5EF5CD71B /* TaniwhaTextField */;
+			targetProxy = 4157E80174AB253028A3E629A8670132 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		163D87BE96A63549B0EACF1CC31A2E90 /* Debug */ = {
+		05973D5EFD57AE6CDF85C15F9D598F40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B234C9A3B0414A83A71F20F26CF5439 /* TaniwhaTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TaniwhaTextField/TaniwhaTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TaniwhaTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TaniwhaTextField/TaniwhaTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TaniwhaTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0C454E2F60B276BA9E7E8E2BA9D9E634 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D2BF6E3B26E24380EF60463DE776C56 /* Pods-NZAirQuality.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NZAirQuality/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NZAirQuality/Pods-NZAirQuality.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NZAirQuality;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3999AD79C4512019122BA61DBC4DFAA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E75B9861A63D05EEB1F0D0FE93BDEC2B /* Pods-NZAirQualityTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NZAirQualityTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NZAirQualityTests/Pods-NZAirQualityTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NZAirQualityTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3A4B93187610AB61D98DDB3E256FD549 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 847514125898F0E8042518E2EFCE1C1C /* Pods-NZAirQualityTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NZAirQualityTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NZAirQualityTests/Pods-NZAirQualityTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NZAirQualityTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		643C76AA582046977B7877822ED7A258 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -508,7 +706,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -516,45 +714,9 @@
 			};
 			name = Debug;
 		};
-		2429B149942E355B10E32A6B7BA5632C /* Debug */ = {
+		857FA06EE78504BA3F4BDFD20791E069 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E75B9861A63D05EEB1F0D0FE93BDEC2B /* Pods-NZAirQualityTests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-NZAirQualityTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NZAirQualityTests/Pods-NZAirQualityTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NZAirQualityTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3D255A0A008510A1B0F02C7931F6EAFE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 928675C6283334BEC1F05F04B5E2CBEA /* TaniwhaTextField.xcconfig */;
+			baseConfigurationReference = 0B234C9A3B0414A83A71F20F26CF5439 /* TaniwhaTextField.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -580,7 +742,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -588,16 +749,50 @@
 			};
 			name = Debug;
 		};
-		6547E18F6D073D71474B3AF002E33268 /* Debug */ = {
+		8C98A63C57AE61E34C1A3FED5B14278E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D2BF6E3B26E24380EF60463DE776C56 /* Pods-NZAirQuality.debug.xcconfig */;
+			baseConfigurationReference = 51E93D7FC3FEF817A1807A2633284A86 /* ScrollableGraphView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ScrollableGraphView/ScrollableGraphView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ScrollableGraphView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ScrollableGraphView/ScrollableGraphView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ScrollableGraphView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BE459706C01917342B6B0B45DB4F4D38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 795B2B54E1D3349550ACFC1D11C352D6 /* Pods-NZAirQuality.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -606,11 +801,11 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-NZAirQuality/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-NZAirQuality/Pods-NZAirQuality.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -618,16 +813,15 @@
 				PRODUCT_NAME = Pods_NZAirQuality;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		707B86CFB21B645E37109F39754D4051 /* Release */ = {
+		C03B8870130C98D1B02B59D003687524 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -663,7 +857,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
@@ -671,151 +865,9 @@
 			};
 			name = Release;
 		};
-		839604B8C60FDE39D5EF55FD178536E5 /* Release */ = {
+		DB700CA2C2A3D978FC925A07AEFA5FC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 928675C6283334BEC1F05F04B5E2CBEA /* TaniwhaTextField.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TaniwhaTextField/TaniwhaTextField-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TaniwhaTextField/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TaniwhaTextField/TaniwhaTextField.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = TaniwhaTextField;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A80E754194DBEC1DDC38BD7748C708C3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 795B2B54E1D3349550ACFC1D11C352D6 /* Pods-NZAirQuality.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-NZAirQuality/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NZAirQuality/Pods-NZAirQuality.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NZAirQuality;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B47A69445D4B32F6972E05B2261D88FB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 847514125898F0E8042518E2EFCE1C1C /* Pods-NZAirQualityTests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-NZAirQualityTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NZAirQualityTests/Pods-NZAirQualityTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NZAirQualityTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B4DD253B70CCB296C3BD8654F58E81E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB7F49BF496FD51F178CECBF707C7D40 /* FSLineChart.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FSLineChart/FSLineChart-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FSLineChart/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FSLineChart/FSLineChart.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = FSLineChart;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C06D8495BAEB3588FCF9CD83D0A1FEB2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB7F49BF496FD51F178CECBF707C7D40 /* FSLineChart.xcconfig */;
+			baseConfigurationReference = 51E93D7FC3FEF817A1807A2633284A86 /* ScrollableGraphView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -829,17 +881,19 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FSLineChart/FSLineChart-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FSLineChart/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ScrollableGraphView/ScrollableGraphView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ScrollableGraphView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FSLineChart/FSLineChart.modulemap";
+				MODULEMAP_FILE = "Target Support Files/ScrollableGraphView/ScrollableGraphView.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = FSLineChart;
+				PRODUCT_NAME = ScrollableGraphView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -852,26 +906,17 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				163D87BE96A63549B0EACF1CC31A2E90 /* Debug */,
-				707B86CFB21B645E37109F39754D4051 /* Release */,
+				643C76AA582046977B7877822ED7A258 /* Debug */,
+				C03B8870130C98D1B02B59D003687524 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		407EC161763408383D6DF8D997BC827F /* Build configuration list for PBXNativeTarget "FSLineChart" */ = {
+		9A8627ED7D2D72D7A10914B71458A3CA /* Build configuration list for PBXNativeTarget "TaniwhaTextField" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C06D8495BAEB3588FCF9CD83D0A1FEB2 /* Debug */,
-				B4DD253B70CCB296C3BD8654F58E81E7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C6B5031AC5BD27A67067419F311196FC /* Build configuration list for PBXNativeTarget "TaniwhaTextField" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3D255A0A008510A1B0F02C7931F6EAFE /* Debug */,
-				839604B8C60FDE39D5EF55FD178536E5 /* Release */,
+				857FA06EE78504BA3F4BDFD20791E069 /* Debug */,
+				05973D5EFD57AE6CDF85C15F9D598F40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -879,17 +924,26 @@
 		CA87A7195750DC287A42AF4280036AC1 /* Build configuration list for PBXNativeTarget "Pods-NZAirQualityTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2429B149942E355B10E32A6B7BA5632C /* Debug */,
-				B47A69445D4B32F6972E05B2261D88FB /* Release */,
+				3999AD79C4512019122BA61DBC4DFAA9 /* Debug */,
+				3A4B93187610AB61D98DDB3E256FD549 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D74036BF8B6DB76BF4CBD2EAB826B3EE /* Build configuration list for PBXNativeTarget "Pods-NZAirQuality" */ = {
+		EF4397699B3AB4BC6F5583EE46BED7F3 /* Build configuration list for PBXNativeTarget "ScrollableGraphView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6547E18F6D073D71474B3AF002E33268 /* Debug */,
-				A80E754194DBEC1DDC38BD7748C708C3 /* Release */,
+				DB700CA2C2A3D978FC925A07AEFA5FC9 /* Debug */,
+				8C98A63C57AE61E34C1A3FED5B14278E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F557249C009A1BC90768E14C4599039B /* Build configuration list for PBXNativeTarget "Pods-NZAirQuality" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C454E2F60B276BA9E7E8E2BA9D9E634 /* Debug */,
+				BE459706C01917342B6B0B45DB4F4D38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

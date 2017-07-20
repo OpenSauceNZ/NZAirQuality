@@ -4,17 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>FSLineChart.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-NZAirQuality.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-NZAirQualityTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ScrollableGraphView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -26,27 +26,6 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>195F31C13FA035E626244646FF4A96AA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4802A21EEBEF5FE90CB792FC6471875A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>809463219ED0A00088BB0753D65348EB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>91F734ECFDB667D3EF3387D89D7C40AD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeaderCell" rowHeight="127" id="zdJ-vL-v4u" customClass="AQIHeaderTableViewCell" customModule="NZAirQuality" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeaderCell" rowHeight="127" id="zdJ-vL-v4u" customClass="AQIHeaderTableViewCell" customModule="NZAirQuality">
                                 <rect key="frame" x="0.0" y="28" width="375" height="127"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zdJ-vL-v4u" id="OaG-NR-58f">
@@ -142,13 +142,28 @@
                                     <outlet property="contentCollectionView" destination="J9f-IT-FYd" id="1ms-0f-1vl"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GraphicCell" rowHeight="194" id="XhB-IS-3IZ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GraphicCell" rowHeight="194" id="XhB-IS-3IZ" customClass="AQIGraphicTableViewCell" customModule="NZAirQuality" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="391" width="375" height="194"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XhB-IS-3IZ" id="vFP-Pc-wFb">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="193.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="co4-8p-aHq" customClass="FSLineChart">
+                                            <rect key="frame" x="8" y="8" width="359" height="178"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="co4-8p-aHq" firstAttribute="top" secondItem="vFP-Pc-wFb" secondAttribute="top" constant="8" id="BvY-CK-Ysx"/>
+                                        <constraint firstAttribute="bottom" secondItem="co4-8p-aHq" secondAttribute="bottom" constant="7.5" id="HR7-iL-ZdU"/>
+                                        <constraint firstItem="co4-8p-aHq" firstAttribute="leading" secondItem="vFP-Pc-wFb" secondAttribute="leading" constant="8" id="hXi-XZ-5lf"/>
+                                        <constraint firstAttribute="trailing" secondItem="co4-8p-aHq" secondAttribute="trailing" constant="8" id="tR8-Th-LeB"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="graph" destination="co4-8p-aHq" id="Dvf-1g-wVh"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

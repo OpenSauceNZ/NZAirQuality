@@ -1,15 +1,15 @@
 PODS:
-  - FSLineChart (0.1.7)
+  - ScrollableGraphView (4.0.4)
   - TaniwhaTextField (1.0)
 
 DEPENDENCIES:
-  - FSLineChart
+  - ScrollableGraphView
   - TaniwhaTextField
 
 SPEC CHECKSUMS:
-  FSLineChart: 1b8d3727e8feb323144126d381184bf1b15e6efc
+  ScrollableGraphView: 072ea302f4ca27779692656a49d51fe537b2b1e7
   TaniwhaTextField: ee9ba7582002e9fc71a55ec9c97c45eb8663b05f
 
-PODFILE CHECKSUM: 631ba9b8ea2f136f104ff595e48be36b80fb64ea
+PODFILE CHECKSUM: 6ea8f4be1c78439d8b02eb9f7611d0e249204c5a
 
 COCOAPODS: 1.2.1
