@@ -7,18 +7,30 @@
 //
 
 import UIKit
+import MapKit
 
-class AQIViewController: UITableViewController {
+class AQIViewController: UITableViewController, UISearchResultsUpdating {
+    
     
     var contentCellHeight: CGFloat = 70
-    
+    var searchController: UISearchController!
+    var searchResultController = UITableViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.backgroundColor = NZABackgroundColor
         UITabBar.appearance().barTintColor = NZATabBarBackgroundColor
         UITabBar.appearance().tintColor = NZATabBarTintColor
+        
+        self.searchController = UISearchController(searchResultsController: searchResultController)
+        self.searchController.searchResultsUpdater = self
+        self.tableView.tableHeaderView = self.searchController.searchBar
     }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+
+    }
+    
     
     // MARK: - Table view data source
 
@@ -57,7 +69,7 @@ class AQIViewController: UITableViewController {
         case 1:
             return contentCellHeight
         default:
-            return UITableViewAutomaticDimension
+            return 300
         }
     }
     

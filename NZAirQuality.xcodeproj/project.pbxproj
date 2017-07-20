@@ -17,6 +17,7 @@
 		0555F9591F1B2CAC00BCD89D /* YQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0555F9581F1B2CAC00BCD89D /* YQL.swift */; };
 		0557EDAD1F1C82F200058C70 /* AQIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557EDAC1F1C82F200058C70 /* AQIViewController.swift */; };
 		05582FCE1F1F0ECC005F2737 /* AQIContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05582FCD1F1F0ECC005F2737 /* AQIContentTableViewCell.swift */; };
+		055AC2311F20514900AAE55D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055AC2301F20514900AAE55D /* CoreDataManager.swift */; };
 		0572D7551F0BD0130026E4E1 /* AirData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572D7541F0BD0130026E4E1 /* AirData.swift */; };
 		0572D7571F0BD0210026E4E1 /* AirAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572D7561F0BD0210026E4E1 /* AirAPI.swift */; };
 		05ABA0241F1C86A900090411 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ABA0231F1C86A900090411 /* WeatherViewController.swift */; };
@@ -54,6 +55,7 @@
 		0555F9581F1B2CAC00BCD89D /* YQL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQL.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0557EDAC1F1C82F200058C70 /* AQIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIViewController.swift; sourceTree = "<group>"; };
 		05582FCD1F1F0ECC005F2737 /* AQIContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIContentTableViewCell.swift; sourceTree = "<group>"; };
+		055AC2301F20514900AAE55D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		0572D7541F0BD0130026E4E1 /* AirData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirData.swift; sourceTree = "<group>"; };
 		0572D7561F0BD0210026E4E1 /* AirAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirAPI.swift; sourceTree = "<group>"; };
 		05ABA0231F1C86A900090411 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				05EA2D2D1F1269AF00734544 /* WeatherAPI.swift */,
 				0555F9581F1B2CAC00BCD89D /* YQL.swift */,
 				05C639611F1C73CD00D0B771 /* Style.swift */,
+				055AC2301F20514900AAE55D /* CoreDataManager.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				0522E2921F0BC61200A155AB /* NZAirQuality.xcdatamodeld in Sources */,
 				053FDD581F1F81DD00042AF1 /* AQIContentCollectionViewCell.swift in Sources */,
 				05EA2D2E1F1269AF00734544 /* WeatherAPI.swift in Sources */,
+				055AC2311F20514900AAE55D /* CoreDataManager.swift in Sources */,
 				0555F9591F1B2CAC00BCD89D /* YQL.swift in Sources */,
 				0572D7551F0BD0130026E4E1 /* AirData.swift in Sources */,
 				0522E28A1F0BC61200A155AB /* AppDelegate.swift in Sources */,

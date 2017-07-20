@@ -16,10 +16,7 @@ class AQIContentTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     
     @IBOutlet weak var contentCollectionView: UICollectionView!
     var collectionViewContentPosition: CollectionViewContentPosition = .Left
-    
     var numberOfItems = 6
-    
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -42,9 +39,7 @@ class AQIContentTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "indexCell", for: indexPath) as? AQIContentCollectionViewCell else {
             return UICollectionViewCell()
         }
-        
         cell.contentImage.image = UIImage(named: "component_\(indexPath.row + 1)")
-        
         return cell
     }
     
