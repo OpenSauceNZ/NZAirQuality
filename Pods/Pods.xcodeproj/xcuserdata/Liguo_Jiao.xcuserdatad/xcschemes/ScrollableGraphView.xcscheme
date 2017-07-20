@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '809463219ED0A00088BB0753D65348EB'
-               BlueprintName = 'FSLineChart'
+               BlueprintIdentifier = 'DC12F935B16BEFA2A4A48E99800F44B8'
+               BlueprintName = 'ScrollableGraphView'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'FSLineChart.framework'>
+               BuildableName = 'ScrollableGraphView.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

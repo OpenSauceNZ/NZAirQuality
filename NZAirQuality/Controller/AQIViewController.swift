@@ -93,7 +93,12 @@ class AQIViewController: UITableViewController, UISearchResultsUpdating {
                 return UITableViewCell()
             }
         default:
-            return UITableViewCell()
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "GraphicCell", for: indexPath) as? AQIGraphicTableViewCell {
+                
+                return cell
+            } else {
+                return UITableViewCell()
+            }
         }
     }
 }

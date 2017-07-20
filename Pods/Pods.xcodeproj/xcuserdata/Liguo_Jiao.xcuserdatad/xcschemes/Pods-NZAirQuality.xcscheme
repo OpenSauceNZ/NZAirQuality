@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4802A21EEBEF5FE90CB792FC6471875A'
+               BlueprintIdentifier = '40E761454A1D9813D456FB3D9B4B6580'
                BlueprintName = 'Pods-NZAirQuality'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods-NZAirQuality.framework'>

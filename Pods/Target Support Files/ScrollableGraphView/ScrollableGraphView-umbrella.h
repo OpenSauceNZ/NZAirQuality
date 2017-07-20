@@ -10,9 +10,7 @@
 #endif
 #endif
 
-#import "FSLineChart.h"
-#import "UIColor+FSPalette.h"
 
-FOUNDATION_EXPORT double FSLineChartVersionNumber;
-FOUNDATION_EXPORT const unsigned char FSLineChartVersionString[];
+FOUNDATION_EXPORT double ScrollableGraphViewVersionNumber;
+FOUNDATION_EXPORT const unsigned char ScrollableGraphViewVersionString[];
 

@@ -2,9 +2,8 @@
 # platform :ios, '9.0'
 use_frameworks!
 
-pod "FSLineChart"
+pod 'ScrollableGraphView'
 pod "TaniwhaTextField"
-
 
 target 'NZAirQuality' do
   use_frameworks!
