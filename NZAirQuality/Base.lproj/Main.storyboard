@@ -149,7 +149,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="193.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="co4-8p-aHq" customClass="FSLineChart">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="co4-8p-aHq" customClass="ScrollableGraphView" customModule="ScrollableGraphView">
                                             <rect key="frame" x="8" y="8" width="359" height="178"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
@@ -162,7 +162,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="graph" destination="co4-8p-aHq" id="Dvf-1g-wVh"/>
+                                    <outlet property="graphView" destination="co4-8p-aHq" id="5QP-1d-rBU"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

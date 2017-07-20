@@ -7,14 +7,19 @@
 //
 
 import UIKit
-import MapKit
+import ScrollableGraphView
 
-class AQIViewController: UITableViewController, UISearchResultsUpdating {
-    
+
+class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearchBarDelegate, ScrollableGraphViewDataSource {
     
     var contentCellHeight: CGFloat = 70
     var searchController: UISearchController!
     var searchResultController = UITableViewController()
+    
+    //MARK: Extension variables -- ScrollableGraphViewDataSource
+    var numberOfItems = 30
+    lazy var plotOneData: [Double] = self.generateRandomData(self.numberOfItems, max: 100, shouldIncludeOutliers: true)
+    lazy var plotTwoData: [Double] = self.generateRandomData(self.numberOfItems, max: 80, shouldIncludeOutliers: false)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,13 +27,31 @@ class AQIViewController: UITableViewController, UISearchResultsUpdating {
         UITabBar.appearance().barTintColor = NZATabBarBackgroundColor
         UITabBar.appearance().tintColor = NZATabBarTintColor
         
-        self.searchController = UISearchController(searchResultsController: searchResultController)
-        self.searchController.searchResultsUpdater = self
+        searchController = UISearchController(searchResultsController: searchResultController)
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.searchBarStyle = UISearchBarStyle.prominent
+        searchController.searchBar.backgroundImage = UIImage()
+        searchController.searchBar.barTintColor = NZABackgroundColor
+        searchController.searchBar.tintColor = NZATabBarTintColor
+        searchResultController.tableView.backgroundColor = NZABackgroundColor
+        
         self.tableView.tableHeaderView = self.searchController.searchBar
     }
     
     func updateSearchResults(for searchController: UISearchController) {
 
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        
+        searchBar.setShowsCancelButton(true, animated: true)
+        for ob: UIView in ((searchBar.subviews[0] )).subviews {
+            
+            if let z = ob as? UIButton {
+                let btn: UIButton = z
+                btn.setTitleColor(NZATabBarTintColor, for: .normal)
+            }
+        }
     }
     
     
@@ -94,11 +117,51 @@ class AQIViewController: UITableViewController, UISearchResultsUpdating {
             }
         default:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "GraphicCell", for: indexPath) as? AQIGraphicTableViewCell {
+                cell.graphView.dataSource = self
+                cell.graphView.delegate = self
                 
                 return cell
             } else {
                 return UITableViewCell()
             }
         }
+    }
+}
+
+extension AQIViewController {
+    
+    func value(forPlot plot: Plot, atIndex pointIndex: Int) -> Double {
+        switch(plot.identifier) {
+        case "multiBlue", "multiBlueDot":
+            return plotOneData[pointIndex]
+        case "multiOrange", "multiOrangeSquare":
+            return plotTwoData[pointIndex]
+        default:
+            return 0
+        }
+    }
+    
+    func label(atIndex pointIndex: Int) -> String {
+        return "FEB \(pointIndex)"
+    }
+    
+    func numberOfPoints() -> Int {
+        return numberOfItems
+    }
+    
+    private func generateRandomData(_ numberOfItems: Int, max: Double, shouldIncludeOutliers: Bool = true) -> [Double] {
+        var data = [Double]()
+        for _ in 0 ..< numberOfItems {
+            var randomNumber = Double(arc4random()).truncatingRemainder(dividingBy: max)
+            
+            if(shouldIncludeOutliers) {
+                if(arc4random() % 100 < 10) {
+                    randomNumber *= 3
+                }
+            }
+            
+            data.append(randomNumber)
+        }
+        return data
     }
 }

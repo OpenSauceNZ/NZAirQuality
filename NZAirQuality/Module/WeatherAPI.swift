@@ -33,7 +33,9 @@ class WeatherAPI: NSObject {
         let newYQL = YQL()
         let queryString = "select * from weather.forecast where woeid in (select woeid from geo.places(1) where text=\"\(location)\")"
         newYQL.query(queryString) { jsonDict in
-            let queryDict = jsonDict["query"]
+            guard let queryDict = jsonDict["query"] else {
+                return
+            }
             let data = try! JSONSerialization.data(withJSONObject: queryDict, options: .prettyPrinted)
             
             do {
