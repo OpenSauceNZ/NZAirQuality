@@ -1,4 +1,6 @@
-# NZAirQuality
+
+# NZAirQuality [![](https://github.com/iceman201/NZAirQuality/blob/master/NZAirQuality/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20%402x.png)](https://liguo.jiao.co.nz/)
+
 
 <p align="center">
 <img src="https://github.com/iceman201/NZAirQuality/blob/master/Iphone_1.png?raw=true" alt="mockup"/>
