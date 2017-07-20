@@ -326,3 +326,4 @@ internal class ReferenceLineDrawingView : UIView {
         self.referenceLineLayer.path = createReferenceLinesPath().cgPath
     }
 }
+

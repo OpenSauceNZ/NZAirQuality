@@ -7,34 +7,78 @@
 //
 
 import UIKit
-
+import ScrollableGraphView
 
 class AQIGraphicTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var graph: FSLineChart!
+    @IBOutlet weak var graphView: ScrollableGraphView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        var data: [Int] = []
         
-        // Generate some dummy data
-        for _ in 0...10 {
-            data.append(Int(20 + (arc4random() % 100)))
-        }
-        
-        graph.verticalGridStep = 5
-        graph.horizontalGridStep = 9
-        graph.labelForIndex = { "\($0)" }
-        graph.labelForValue = { "$\($0)" }
-        graph.setChartData(data)
+        self.selectionStyle = .none
         self.backgroundColor = NZABackgroundColor
-        graph.backgroundColor = NZABackgroundColor
+        setup(on: graphView)
     }
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
+}
 
+extension AQIGraphicTableViewCell {
+    func setup(on newGraphView: ScrollableGraphView) {
+        // Setup the first plot.
+        let blueLinePlot = LinePlot(identifier: "multiBlue")
+        
+        blueLinePlot.lineColor = UIColor(rgb: 0x16aafc)
+        blueLinePlot.adaptAnimationType = ScrollableGraphViewAnimationType.elastic
+        
+        // dots on the line
+        let blueDotPlot = DotPlot(identifier: "multiBlueDot")
+        blueDotPlot.dataPointType = ScrollableGraphViewDataPointType.circle
+        blueDotPlot.dataPointSize = 5
+        blueDotPlot.dataPointFillColor = UIColor(rgb: 0x16aafc)
+        
+        blueDotPlot.adaptAnimationType = ScrollableGraphViewAnimationType.elastic
+        
+        // Setup the second plot.
+        let orangeLinePlot = LinePlot(identifier: "multiOrange")
+        
+        orangeLinePlot.lineColor = UIColor(rgb: 0xff7d78)
+        orangeLinePlot.adaptAnimationType = ScrollableGraphViewAnimationType.easeOut
+        
+        // squares on the line
+        let orangeSquarePlot = DotPlot(identifier: "multiOrangeSquare")
+        orangeSquarePlot.dataPointType = ScrollableGraphViewDataPointType.square
+        orangeSquarePlot.dataPointSize = 5
+        orangeSquarePlot.dataPointFillColor = UIColor(rgb: 0xff7d78)
+        orangeSquarePlot.adaptAnimationType = ScrollableGraphViewAnimationType.easeOut
+        
+        // Setup the reference lines.
+        let referenceLines = ReferenceLines()
+        
+        referenceLines.referenceLineLabelFont = UIFont.boldSystemFont(ofSize: 8)
+        referenceLines.referenceLineColor = UIColor.white.withAlphaComponent(0.2)
+        referenceLines.referenceLineLabelColor = UIColor.white
+        referenceLines.relativePositions = [0, 0.2, 0.4, 0.6, 0.8, 1]
+        
+        referenceLines.dataPointLabelColor = UIColor.white.withAlphaComponent(1)
+        
+        // Setup the graph
+        newGraphView.backgroundFillColor = UIColor(rgb: 0x333333)
+        
+        newGraphView.dataPointSpacing = 80
+        
+        newGraphView.shouldAnimateOnStartup = true
+        newGraphView.shouldAdaptRange = true
+        newGraphView.shouldRangeAlwaysStartAtZero = true
+        
+        // Add everything to the graph.
+        newGraphView.addReferenceLines(referenceLines: referenceLines)
+        newGraphView.addPlot(plot: blueLinePlot)
+        newGraphView.addPlot(plot: blueDotPlot)
+        newGraphView.addPlot(plot: orangeLinePlot)
+        newGraphView.addPlot(plot: orangeSquarePlot)
+    }
 }

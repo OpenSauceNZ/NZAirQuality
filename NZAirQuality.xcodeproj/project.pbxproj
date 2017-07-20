@@ -23,6 +23,7 @@
 		0572D7571F0BD0210026E4E1 /* AirAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572D7561F0BD0210026E4E1 /* AirAPI.swift */; };
 		05ABA0241F1C86A900090411 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ABA0231F1C86A900090411 /* WeatherViewController.swift */; };
 		05ABA0261F1C89C800090411 /* AQIHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ABA0251F1C89C800090411 /* AQIHeaderTableViewCell.swift */; };
+		05BC7A081F2116B800824348 /* LocationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BC7A071F2116B800824348 /* LocationServices.swift */; };
 		05C639621F1C73CD00D0B771 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C639611F1C73CD00D0B771 /* Style.swift */; };
 		05EA2D2C1F12695000734544 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA2D2B1F12695000734544 /* Weather.swift */; };
 		05EA2D2E1F1269AF00734544 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA2D2D1F1269AF00734544 /* WeatherAPI.swift */; };
@@ -62,6 +63,7 @@
 		0572D7561F0BD0210026E4E1 /* AirAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirAPI.swift; sourceTree = "<group>"; };
 		05ABA0231F1C86A900090411 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		05ABA0251F1C89C800090411 /* AQIHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		05BC7A071F2116B800824348 /* LocationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServices.swift; sourceTree = "<group>"; };
 		05C639611F1C73CD00D0B771 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		05EA2D2B1F12695000734544 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		05EA2D2D1F1269AF00734544 /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				0555F9581F1B2CAC00BCD89D /* YQL.swift */,
 				05C639611F1C73CD00D0B771 /* Style.swift */,
 				055AC2301F20514900AAE55D /* CoreDataManager.swift */,
+				05BC7A071F2116B800824348 /* LocationServices.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -242,7 +245,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Liguo Jiao";
 				TargetAttributes = {
 					0522E2851F0BC61200A155AB = {
@@ -411,6 +414,7 @@
 				054F1F111F20FDCD0050D140 /* AQIGraphicTableViewCell.swift in Sources */,
 				05582FCE1F1F0ECC005F2737 /* AQIContentTableViewCell.swift in Sources */,
 				05ABA0241F1C86A900090411 /* WeatherViewController.swift in Sources */,
+				05BC7A081F2116B800824348 /* LocationServices.swift in Sources */,
 				05ABA0261F1C89C800090411 /* AQIHeaderTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,7 +467,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -471,7 +477,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -513,7 +523,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -521,7 +533,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
