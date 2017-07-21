@@ -7,43 +7,55 @@
 //
 
 import Foundation
-import MapKit
+import CoreLocation
 
-typealias JSONDictionary = [String:Any]
-
-class LocationServices {
+class Location: NSObject, CLLocationManagerDelegate {
+    enum Result <T> {
+        case Success(T)
+        case Failure(Error)
+    }
     
-    let shared = LocationServices()
-    let locManager = CLLocationManager()
-    var currentLocation: CLLocation!
     
-    let authStatus = CLLocationManager.authorizationStatus()
-    let inUse = CLAuthorizationStatus.authorizedWhenInUse
-    let always = CLAuthorizationStatus.authorizedAlways
+    static let shared: Location = Location()
     
-    func getAdress(completion: @escaping (_ address: JSONDictionary?, _ error: Error?) -> ()) {
-        switch self.authStatus {
-        case .authorizedWhenInUse, .authorizedAlways:
-            self.currentLocation = locManager.location
-            let geoCoder = CLGeocoder()
-            geoCoder.reverseGeocodeLocation(self.currentLocation) { placemarks, error in
-                
-                if let e = error {
-                    completion(nil, e)
-                } else {
-                    guard let placeArray = placemarks else {
-                        return
-                    }
-                    var placeMark: CLPlacemark!
-                    placeMark = placeArray[0]
-                    guard let address = placeMark.addressDictionary as? JSONDictionary else {
-                        return
-                    }
-                    completion(address, nil)
-                }
-            }
-        default:
-            self.locManager.requestWhenInUseAuthorization()
-        }
+    typealias Callback = (Result<Location>) -> Void
+    
+    var requests: Array <Callback> = Array <Callback>()
+    
+    var location: CLLocation? { return sharedLocationManager.location  }
+    
+    lazy var sharedLocationManager: CLLocationManager = {
+        let newLocationmanager = CLLocationManager()
+        newLocationmanager.delegate = self
+        return newLocationmanager
+    }()
+    
+    // MARK: - Authorization
+    
+    class func authorize() { shared.authorize() }
+    func authorize() { sharedLocationManager.requestWhenInUseAuthorization() }
+    
+    // MARK: - Helpers
+    
+    func locate(callback: @escaping Callback) {
+        self.requests.append(callback)
+        sharedLocationManager.startUpdatingLocation()
+    }
+    
+    func reset() {
+        self.requests = Array <Callback>()
+        sharedLocationManager.stopUpdatingLocation()
+    }
+    
+    // MARK: - Delegate
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        for request in self.requests { request(.Failure(error)) }
+        self.reset()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: Array <CLLocation>) {
+        for request in self.requests { request(.Success(self)) }
+        self.reset()
     }
 }

@@ -16,25 +16,30 @@ struct AirData: Decodable {
 
 struct Details: Decodable {
     let aqi: Int?
-   // let city: City?
+    let city: City?
     let variousIndex: VariousIndex?
     let timeInfo: TimeInfo?
     
     private enum CodingKeys : String, CodingKey {
-        case aqi//,city
+        case aqi,city
         case timeInfo = "time"
         case variousIndex = "iaqi"
     }
 }
 // MARK: ---VariousIndex---
 struct VariousIndex: Decodable {
-    let humidity: humidity?
-    let no2: no2?
-    let presure: presure?
-    let pm10: pm10?
-    let pm25: pm25? //PM2.5
-    let temp: temp?
-    let wind: wind?
+    let humidity: Index?
+    let no2: Index?
+    let presure: Index?
+    let pm10: Index?
+    let pm25: Index? //PM2.5
+    let temp: Index?
+    let wind: Index?
+    var arrayOfIndex: [String: Index?] {
+        return ["Humidity": humidity, "NO_2": no2, "Presure": presure, "PM_10": pm10, "PM_2.5": pm25, "Temp": temp, "Wind": wind]
+    }
+
+    
     private enum CodingKeys : String, CodingKey {
         case humidity = "h"
         case presure = "p"
@@ -43,49 +48,13 @@ struct VariousIndex: Decodable {
         case no2,pm10,pm25
     }
 }
-struct humidity: Decodable {
-    let index:Float
-    private enum CodingKeys: String, CodingKey {
-        case index = "v"
-    }
-}
-struct no2: Decodable {
-    let index:Float
-    private enum CodingKeys: String, CodingKey {
-        case index = "v"
-    }
-}
-struct presure: Decodable {
-    let index:Float
-    private enum CodingKeys: String, CodingKey {
-        case index = "v"
-    }
-}
-struct pm10: Decodable {
-    let index:Float
-    private enum CodingKeys: String, CodingKey {
-        case index = "v"
-    }
-}
-struct pm25: Decodable {
-    let index:Float
-    private enum CodingKeys: String, CodingKey {
-        case index = "v"
-    }
-}
-struct temp: Decodable {
+struct Index: Decodable {
     let index:Float
     private enum CodingKeys: String, CodingKey {
         case index = "v"
     }
 }
 
-struct wind: Decodable {
-    let index:Float
-    private enum CodingKeys: String, CodingKey {
-        case index = "v"
-    }
-}
 
 // MARK: ---TimeInfo---
 struct TimeInfo: Decodable {

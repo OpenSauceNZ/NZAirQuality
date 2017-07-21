@@ -13,7 +13,7 @@ private let server = "https://api.waqi.info"
 private let token = "3ac5f237074a1b6b37ee24548b965a807862d89c"
 
 class AirAPI: NSObject {
-    class var shared: AirAPI  {
+    static var shared: AirAPI  {
         return shareInstance
     }
     func getAirIndexDetailsByCityName(cityName: String, completed: @escaping (_ airData: AirData?, _ error: Error?)->()) {
@@ -29,7 +29,7 @@ class AirAPI: NSObject {
         }
     }
     
-    func getAirIndexDetailsByGeolocation(latitude: Float, longitude: Float, completed: @escaping (_ airData: AirData?, _ error: Error?)->()) {
+    func getAirIndexDetailsByGeolocation(latitude: Double, longitude: Double, completed: @escaping (_ airData: AirData?, _ error: Error?)->()) {
         guard let serverUrl = URL(string: "\(server)/feed/geo:\(latitude);\(longitude)/?token=\(token)") else {
             return
         }

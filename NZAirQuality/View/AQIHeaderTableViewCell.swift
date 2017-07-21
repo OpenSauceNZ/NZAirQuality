@@ -18,9 +18,9 @@ class AQIHeaderTableViewCell: UITableViewCell {
         super.awakeFromNib()
         self.backgroundColor = NZABackgroundColor
         headerTitle.textColor = NZATitleColor
-        headerTitle.text = "Beijing"
+        headerTitle.text = ""
         statusImage.image = #imageLiteral(resourceName: "AQI-Good")
-        statusImage.image = generateImageWithText(text: "hello", on: statusImage)
+        statusImage.image = generateImageWithText(text: "...", on: statusImage)
         self.selectionStyle = .none
     }
 
@@ -31,6 +31,7 @@ class AQIHeaderTableViewCell: UITableViewCell {
     func generateImageWithText(text: String, on imageView: UIImageView) -> UIImage {
         
         let imageView = imageView
+        imageView.image = #imageLiteral(resourceName: "AQI-Good")
         imageView.backgroundColor = UIColor.clear
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: (imageView.layer.bounds.width), height: (imageView.layer.bounds.height)))
         
@@ -38,9 +39,10 @@ class AQIHeaderTableViewCell: UITableViewCell {
         label.textAlignment = .center
         label.textColor = UIColor.white
         label.text = text
+        label.lineBreakMode = .byWordWrapping
+        label.numberOfLines = 2
         label.font = UIFont(name: "HelveticaNeue-Medium", size: 18)
-        
-        
+                
         UIGraphicsBeginImageContextWithOptions(label.bounds.size, false, 0);
         imageView.layer.render(in: UIGraphicsGetCurrentContext()!)
         label.layer.render(in: UIGraphicsGetCurrentContext()!)

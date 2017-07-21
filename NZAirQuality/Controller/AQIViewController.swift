@@ -8,13 +8,20 @@
 
 import UIKit
 import ScrollableGraphView
+import CoreLocation
 
-
-class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearchBarDelegate, ScrollableGraphViewDataSource {
+class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearchBarDelegate, CLLocationManagerDelegate, ScrollableGraphViewDataSource {
     
     var contentCellHeight: CGFloat = 70
     var searchController: UISearchController!
     var searchResultController = UITableViewController()
+    
+    var currentAirData: AirData?
+    
+    //MARK: Location
+    var locManager = CLLocationManager()
+    var currentLocation: CLLocation!
+    
     
     //MARK: Extension variables -- ScrollableGraphViewDataSource
     var numberOfItems = 30
@@ -27,6 +34,11 @@ class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearc
         UITabBar.appearance().barTintColor = NZATabBarBackgroundColor
         UITabBar.appearance().tintColor = NZATabBarTintColor
         
+        
+        let adjustForTabbarInsets: UIEdgeInsets = UIEdgeInsetsMake(20, 0, self.tabBarController?.tabBar.frame.height ?? 0, 0) // 20 for search bar
+        self.tableView.contentInset = adjustForTabbarInsets
+        self.tableView.scrollIndicatorInsets = adjustForTabbarInsets
+        
         searchController = UISearchController(searchResultsController: searchResultController)
         searchController.searchResultsUpdater = self
         searchController.searchBar.searchBarStyle = UISearchBarStyle.prominent
@@ -34,26 +46,21 @@ class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearc
         searchController.searchBar.barTintColor = NZABackgroundColor
         searchController.searchBar.tintColor = NZATabBarTintColor
         searchResultController.tableView.backgroundColor = NZABackgroundColor
-        
         self.tableView.tableHeaderView = self.searchController.searchBar
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        locManager.requestWhenInUseAuthorization()
+        if CLLocationManager.locationServicesEnabled() {
+            locManager.delegate = self
+            locManager.startUpdatingLocation()
+        }
     }
     
     func updateSearchResults(for searchController: UISearchController) {
 
     }
-    
-    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        
-        searchBar.setShowsCancelButton(true, animated: true)
-        for ob: UIView in ((searchBar.subviews[0] )).subviews {
-            
-            if let z = ob as? UIButton {
-                let btn: UIButton = z
-                btn.setTitleColor(NZATabBarTintColor, for: .normal)
-            }
-        }
-    }
-    
     
     // MARK: - Table view data source
 
@@ -90,7 +97,7 @@ class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearc
         case 0:
             return 135
         case 1:
-            return contentCellHeight
+            return AQIContentTableViewCell.contentItems(count: currentAirData?.data.variousIndex)
         default:
             return 300
         }
@@ -104,13 +111,18 @@ class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearc
         switch indexPath.section {
         case 0:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderCell", for: indexPath) as? AQIHeaderTableViewCell {
+                if let airIndex = currentAirData?.data.aqi {
+                    cell.headerTitle.text = currentAirData?.data.city?.name
+                    cell.statusImage.image = cell.generateImageWithText(text: "AQI \r\n \(airIndex)", on: cell.statusImage)
+                }
                 return cell
             } else {
                 return UITableViewCell()
             }
         case 1:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "AQIContentCell", for: indexPath) as? AQIContentTableViewCell {
-                contentCellHeight = CGFloat((round(Double(cell.numberOfItems)/2.0) * 70) + 20)
+                cell.airData = currentAirData
+                cell.contentCollectionView.reloadData()
                 return cell
             } else {
                 return UITableViewCell()
@@ -119,17 +131,38 @@ class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearc
             if let cell = tableView.dequeueReusableCell(withIdentifier: "GraphicCell", for: indexPath) as? AQIGraphicTableViewCell {
                 cell.graphView.dataSource = self
                 cell.graphView.delegate = self
-                
                 return cell
             } else {
                 return UITableViewCell()
             }
         }
     }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let locValue = manager.location?.coordinate {
+            fetchAirData(lat: locValue.latitude, long: locValue.longitude)
+            print("locations = \(locValue.latitude) \(locValue.longitude)")
+        }
+    }
 }
 
+// MARKS: Location service
+
 extension AQIViewController {
-    
+    func fetchAirData(lat: Double, long: Double) {
+        AirAPI.shared.getAirIndexDetailsByGeolocation(latitude: lat, longitude: long, completed: { (airData, error) in
+            self.currentAirData = airData
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+                self.locManager.stopUpdatingLocation()
+            }
+        })
+    }
+}
+
+// MARKS: ScrollableGraphViewDataSource
+
+extension AQIViewController {
     func value(forPlot plot: Plot, atIndex pointIndex: Int) -> Double {
         switch(plot.identifier) {
         case "multiBlue", "multiBlueDot":

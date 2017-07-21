@@ -25,7 +25,7 @@ import UIKit
 private let shareInstance = WeatherAPI()
 
 class WeatherAPI: NSObject {
-    class var shared: WeatherAPI  {
+    static var shared: WeatherAPI  {
         return shareInstance
     }
     
