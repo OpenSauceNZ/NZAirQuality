@@ -16,7 +16,10 @@ class AQIContentTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     
     @IBOutlet weak var contentCollectionView: UICollectionView!
     var collectionViewContentPosition: CollectionViewContentPosition = .Left
-    var numberOfItems = 6
+    var numberOfItems = 0
+    
+    var airData: AirData?
+    private var airDataFormatArray: [String: Index?]?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,13 +28,12 @@ class AQIContentTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
         contentCollectionView.backgroundColor = UIColor.clear
         self.backgroundColor = NZABackgroundColor
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        // Configure the view for the selected state
-    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if let variousIndex = airData?.data.variousIndex {
+            formatAirData(newData: variousIndex)
+        }
+        numberOfItems = airDataFormatArray?.count ?? 0
         return numberOfItems
     }
 
@@ -39,7 +41,16 @@ class AQIContentTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "indexCell", for: indexPath) as? AQIContentCollectionViewCell else {
             return UICollectionViewCell()
         }
-        cell.contentImage.image = UIImage(named: "component_\(indexPath.row + 1)")
+        cell.contentTitleLabel.text = ""
+        
+        if let indexKeys = airDataFormatArray?.keys, let indexValue = airDataFormatArray?.values {
+            let nameList = Array(indexKeys)
+            let valueList = Array(indexValue)
+            let value = Int(round(valueList[indexPath.row]?.index ?? 0.0))
+            cell.contentImage.image = UIImage(named: "component_\(nameList[indexPath.row])")
+            cell.contentTitleLabel.text = "\(nameList[indexPath.row].replacingOccurrences(of: "_", with: " "))"
+            cell.contentSubtitleLabel.text = "Current: \(value)"
+        }
         return cell
     }
     
@@ -53,17 +64,25 @@ class AQIContentTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
             //20.00 was just extra spacing I wanted to add to my cell.
             let totalCellWidth = cellWidth * cellCount + 20.00 * (cellCount - 1)
             let contentWidth = collectionView.frame.size.width - collectionView.contentInset.left - collectionView.contentInset.right
-
-            
             if (totalCellWidth < contentWidth) {
                 let padding = (contentWidth - totalCellWidth) / 2.0
-                
                 return UIEdgeInsetsMake(0, padding, 0, padding)
             } else {
                 return UIEdgeInsetsMake(0, 40, 0, 40)
             }
         }
         return UIEdgeInsets.zero
+    }
+    
+    func formatAirData(newData: VariousIndex) {
+        var new = newData.arrayOfIndex
+        for each in newData.arrayOfIndex {
+            if each.value?.index == 0.0 || each.value?.index == nil {
+                new.removeValue(forKey: "\(each.key)")
+            }
+        }
+        airDataFormatArray = new
+        contentCollectionView.reloadData()
     }
     
 }

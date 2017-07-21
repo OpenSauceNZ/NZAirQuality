@@ -38,12 +38,12 @@
                                                 <constraint firstAttribute="width" constant="111" id="Dla-R3-wDe"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmO-a1-9hG">
-                                            <rect key="frame" x="16" y="32" width="240" height="63"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmO-a1-9hG">
+                                            <rect key="frame" x="16" y="8" width="240" height="103"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="63" id="J6j-S8-loo"/>
+                                                <constraint firstAttribute="height" constant="103" id="J6j-S8-loo"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="36"/>
+                                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="33"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -53,7 +53,7 @@
                                         <constraint firstItem="7Bw-YR-EJH" firstAttribute="leading" secondItem="UmO-a1-9hG" secondAttribute="trailing" constant="8" id="YGO-Wj-6S7"/>
                                         <constraint firstItem="UmO-a1-9hG" firstAttribute="leading" secondItem="OaG-NR-58f" secondAttribute="leadingMargin" constant="8" id="nL3-cl-1Ka"/>
                                         <constraint firstAttribute="trailing" secondItem="7Bw-YR-EJH" secondAttribute="trailing" id="tMP-lM-1D4"/>
-                                        <constraint firstItem="UmO-a1-9hG" firstAttribute="centerY" secondItem="OaG-NR-58f" secondAttribute="centerY" id="tpX-yo-2Ui"/>
+                                        <constraint firstItem="UmO-a1-9hG" firstAttribute="centerY" secondItem="OaG-NR-58f" secondAttribute="centerY" constant="-3.75" id="tpX-yo-2Ui"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
