@@ -83,8 +83,7 @@ class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearc
         case 0:
             return 135
         case 1:
-            return
-            
+            return AQIContentTableViewCell.contentItems(count: currentAirData?.data.variousIndex)
         default:
             return 300
         }

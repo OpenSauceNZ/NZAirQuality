@@ -31,7 +31,7 @@ class AQIContentTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if let variousIndex = airData?.data.variousIndex {
-            formatAirData(newData: variousIndex)
+            airDataFormatArray = AQIContentTableViewCell.formatAirData(newData: variousIndex)
         }
         numberOfItems = airDataFormatArray?.count ?? 0
         return numberOfItems
@@ -74,15 +74,22 @@ class AQIContentTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
         return UIEdgeInsets.zero
     }
     
-    func formatAirData(newData: VariousIndex) {
+    static func formatAirData(newData: VariousIndex) -> [String: Index?] {
         var new = newData.arrayOfIndex
         for each in newData.arrayOfIndex {
             if each.value?.index == 0.0 || each.value?.index == nil {
                 new.removeValue(forKey: "\(each.key)")
             }
         }
-        airDataFormatArray = new
-        contentCollectionView.reloadData()
+        return new
+    }
+    
+    static func contentItems(count data: VariousIndex?) -> CGFloat {
+        if let newData = data {
+            var new = formatAirData(newData: newData)
+            return CGFloat((round(Double(new.count) / 2.0) * 70) + 20)
+        }
+        return 0
     }
     
 }
