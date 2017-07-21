@@ -36,7 +36,7 @@ struct VariousIndex: Decodable {
     let temp: Index?
     let wind: Index?
     var arrayOfIndex: [String: Index?] {
-        return ["Humidity": humidity, "NO_2": no2, "Presure": presure, "PM_10": pm10, "PM_2.5": pm25, "Temp": temp, "Wind_Speed": wind]
+        return ["Humidity": humidity, "NO_2": no2, "Presure": presure, "PM_10": pm10, "PM_2.5": pm25, "Temp": temp, "Wind": wind]
     }
 
     
