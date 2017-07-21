@@ -15,3 +15,28 @@
 
 
 **Project is on-going developing now**
+
+
+- **Progress**
+  - ***AQI***
+    - [x] API request functions.
+    - [x] JSON Data Decoding.
+    - [x] Layout-setup
+    - [x] City name display.
+    - [x] AQI information display.
+    - [x] Autolayout of collection view for details display of each polution name&index.
+    - [x] Assets
+      - [x] Logo
+      - [x] AQI-icons
+    - [x] Graph display setup 
+    - [ ] Loading history data into graph
+    - [ ] Component animation
+  - ***Weather***
+    - [x] API request functions
+    - [x] JSON Data Decoding
+    - [ ] Assets
+      - [x] Logo
+      - [ ] Weather-icons
+    - [ ] Layout-setup
+    - [ ] Data loading
+    - [ ] Component animation
