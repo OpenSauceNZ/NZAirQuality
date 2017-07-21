@@ -29,7 +29,7 @@ class AirAPI: NSObject {
         }
     }
     
-    func getAirIndexDetailsByGeolocation(latitude: Float, longitude: Float, completed: @escaping (_ airData: AirData?, _ error: Error?)->()) {
+    func getAirIndexDetailsByGeolocation(latitude: Double, longitude: Double, completed: @escaping (_ airData: AirData?, _ error: Error?)->()) {
         guard let serverUrl = URL(string: "\(server)/feed/geo:\(latitude);\(longitude)/?token=\(token)") else {
             return
         }

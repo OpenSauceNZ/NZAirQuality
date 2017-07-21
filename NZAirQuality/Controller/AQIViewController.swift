@@ -10,7 +10,7 @@ import UIKit
 import ScrollableGraphView
 import CoreLocation
 
-class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearchBarDelegate, ScrollableGraphViewDataSource {
+class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearchBarDelegate, CLLocationManagerDelegate,ScrollableGraphViewDataSource {
     
     var contentCellHeight: CGFloat = 70
     var searchController: UISearchController!
@@ -33,7 +33,14 @@ class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearc
         self.tableView.backgroundColor = NZABackgroundColor
         UITabBar.appearance().barTintColor = NZATabBarBackgroundColor
         UITabBar.appearance().tintColor = NZATabBarTintColor
-        fetchAirData()
+        
+        locManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locManager.delegate = self
+            locManager.startUpdatingLocation()
+        }
+    //        fetchAirData()
         searchController = UISearchController(searchResultsController: searchResultController)
         searchController.searchResultsUpdater = self
         searchController.searchBar.searchBarStyle = UISearchBarStyle.prominent
@@ -124,15 +131,19 @@ class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearc
             }
         }
     }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let locValue = manager.location?.coordinate {
+            fetchAirData(lat: locValue.latitude, long: locValue.longitude)
+            print("locations = \(locValue.latitude) \(locValue.longitude)")
+        }
+    }
 }
 
 // MARKS: Location service
 
 extension AQIViewController {
-    func fetchAirData() {
-        getLocation()
-        let lat = Float(currentLocation.coordinate.latitude)
-        let long = Float(currentLocation.coordinate.longitude)
+    func fetchAirData(lat: Double, long: Double) {
         AirAPI.shared.getAirIndexDetailsByGeolocation(latitude: lat, longitude: long, completed: { (airData, error) in
             self.currentAirData = airData
             DispatchQueue.main.async {
