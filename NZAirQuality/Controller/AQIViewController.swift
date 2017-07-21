@@ -10,7 +10,7 @@ import UIKit
 import ScrollableGraphView
 import CoreLocation
 
-class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearchBarDelegate, CLLocationManagerDelegate,ScrollableGraphViewDataSource {
+class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearchBarDelegate, CLLocationManagerDelegate, ScrollableGraphViewDataSource {
     
     var contentCellHeight: CGFloat = 70
     var searchController: UISearchController!
@@ -34,11 +34,10 @@ class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearc
         UITabBar.appearance().barTintColor = NZATabBarBackgroundColor
         UITabBar.appearance().tintColor = NZATabBarTintColor
         
-        locManager.requestWhenInUseAuthorization()
-        if CLLocationManager.locationServicesEnabled() {
-            locManager.delegate = self
-            locManager.startUpdatingLocation()
-        }
+        
+        let adjustForTabbarInsets: UIEdgeInsets = UIEdgeInsetsMake(20, 0, self.tabBarController?.tabBar.frame.height ?? 0, 0) // 20 for search bar
+        self.tableView.contentInset = adjustForTabbarInsets
+        self.tableView.scrollIndicatorInsets = adjustForTabbarInsets
         
         searchController = UISearchController(searchResultsController: searchResultController)
         searchController.searchResultsUpdater = self
@@ -48,6 +47,15 @@ class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearc
         searchController.searchBar.tintColor = NZATabBarTintColor
         searchResultController.tableView.backgroundColor = NZABackgroundColor
         self.tableView.tableHeaderView = self.searchController.searchBar
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        locManager.requestWhenInUseAuthorization()
+        if CLLocationManager.locationServicesEnabled() {
+            locManager.delegate = self
+            locManager.startUpdatingLocation()
+        }
     }
     
     func updateSearchResults(for searchController: UISearchController) {
@@ -114,7 +122,6 @@ class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearc
         case 1:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "AQIContentCell", for: indexPath) as? AQIContentTableViewCell {
                 cell.airData = currentAirData
-                contentCellHeight = CGFloat((round(Double(cell.numberOfItems) / 2.0) * 70) + 20)
                 cell.contentCollectionView.reloadData()
                 return cell
             } else {
@@ -152,7 +159,6 @@ extension AQIViewController {
         })
     }
 }
-
 
 // MARKS: ScrollableGraphViewDataSource
 

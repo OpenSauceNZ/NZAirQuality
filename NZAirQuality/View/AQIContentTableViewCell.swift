@@ -75,19 +75,19 @@ class AQIContentTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     }
     
     static func formatAirData(newData: VariousIndex) -> [String: Index?] {
-        var new = newData.arrayOfIndex
+        var dataArray = newData.arrayOfIndex
         for each in newData.arrayOfIndex {
             if each.value?.index == 0.0 || each.value?.index == nil {
-                new.removeValue(forKey: "\(each.key)")
+                dataArray.removeValue(forKey: "\(each.key)")
             }
         }
-        return new
+        return dataArray
     }
     
     static func contentItems(count data: VariousIndex?) -> CGFloat {
         if let newData = data {
-            var new = formatAirData(newData: newData)
-            return CGFloat((round(Double(new.count) / 2.0) * 70) + 20)
+            var formatData = formatAirData(newData: newData)
+            return CGFloat((round(Double(formatData.count) / 2.0) * 70) + 25)
         }
         return 0
     }
