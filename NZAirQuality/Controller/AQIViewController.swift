@@ -35,12 +35,11 @@ class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearc
         UITabBar.appearance().tintColor = NZATabBarTintColor
         
         locManager.requestWhenInUseAuthorization()
-        
         if CLLocationManager.locationServicesEnabled() {
             locManager.delegate = self
             locManager.startUpdatingLocation()
         }
-    //        fetchAirData()
+        
         searchController = UISearchController(searchResultsController: searchResultController)
         searchController.searchResultsUpdater = self
         searchController.searchBar.searchBarStyle = UISearchBarStyle.prominent
@@ -148,18 +147,9 @@ extension AQIViewController {
             self.currentAirData = airData
             DispatchQueue.main.async {
                 self.tableView.reloadData()
+                self.locManager.stopUpdatingLocation()
             }
         })
-    }
-    func getLocation() {
-        locManager.requestWhenInUseAuthorization()
-        switch CLLocationManager.authorizationStatus() {
-        case .authorizedAlways, .authorizedWhenInUse:
-            currentLocation = locManager.location
-            print(currentLocation.coordinate.latitude)
-            print(currentLocation.coordinate.longitude)
-        default: break
-        }
     }
 }
 
