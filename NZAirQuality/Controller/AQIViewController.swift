@@ -129,26 +129,21 @@ class AQIViewController: UITableViewController, UISearchBarDelegate, CLLocationM
                 cell.headerTitle.text = currentAirData?.data.city?.name
                 cell.statusImage.image = cell.generateImageWithText(text: "AQI \r\n \(airIndex)", on: cell.statusImage)
                 return cell
-            } else {
-                return UITableViewCell()
             }
         case 1:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "AQIContentCell", for: indexPath) as? AQIContentTableViewCell {
                 cell.airData = currentAirData
                 cell.contentCollectionView.reloadData()
                 return cell
-            } else {
-                return UITableViewCell()
             }
         default:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "GraphicCell", for: indexPath) as? AQIGraphicTableViewCell {
                 cell.graphView.dataSource = self
                 cell.graphView.delegate = self
                 return cell
-            } else {
-                return UITableViewCell()
             }
         }
+        return UITableViewCell()
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
