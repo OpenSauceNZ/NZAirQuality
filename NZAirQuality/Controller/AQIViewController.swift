@@ -9,19 +9,19 @@
 import UIKit
 import ScrollableGraphView
 import CoreLocation
+import MapKit
 
-class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearchBarDelegate, CLLocationManagerDelegate, ScrollableGraphViewDataSource {
+class AQIViewController: UITableViewController, UISearchBarDelegate, CLLocationManagerDelegate, ScrollableGraphViewDataSource {
     
     var contentCellHeight: CGFloat = 70
     var searchController: UISearchController!
     var searchResultController = UITableViewController()
-    
+    var searchResultList: [MKMapItem]?
     var currentAirData: AirData?
     
     //MARK: Location
     var locManager = CLLocationManager()
     var currentLocation: CLLocation!
-    
     
     //MARK: Extension variables -- ScrollableGraphViewDataSource
     var numberOfItems = 30
@@ -34,23 +34,13 @@ class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearc
         UITabBar.appearance().barTintColor = NZATabBarBackgroundColor
         UITabBar.appearance().tintColor = NZATabBarTintColor
         
+        setSearchController()
         
         let adjustForTabbarInsets: UIEdgeInsets = UIEdgeInsetsMake(20, 0, self.tabBarController?.tabBar.frame.height ?? 0, 0) // 20 for search bar
         self.tableView.contentInset = adjustForTabbarInsets
         self.tableView.scrollIndicatorInsets = adjustForTabbarInsets
-        
-        searchController = UISearchController(searchResultsController: searchResultController)
-        searchController.searchResultsUpdater = self
-        searchController.searchBar.searchBarStyle = UISearchBarStyle.prominent
-        searchController.searchBar.backgroundImage = UIImage()
-        searchController.searchBar.barTintColor = NZABackgroundColor
-        searchController.searchBar.tintColor = NZATabBarTintColor
-        searchResultController.tableView.backgroundColor = NZABackgroundColor
         self.tableView.tableHeaderView = self.searchController.searchBar
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+        
         locManager.requestWhenInUseAuthorization()
         if CLLocationManager.locationServicesEnabled() {
             locManager.delegate = self
@@ -58,20 +48,22 @@ class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearc
         }
     }
     
-    func updateSearchResults(for searchController: UISearchController) {
-
-    }
-    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 3
+        if tableView == searchResultController.tableView {
+            return 1
+        } else {
+            return 3
+        }
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 1
+        if tableView == searchResultController.tableView {
+            return searchResultList?.count ?? 0
+        } else {
+            return 1
+        }
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -93,13 +85,17 @@ class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearc
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        switch indexPath.section {
-        case 0:
-            return 135
-        case 1:
-            return AQIContentTableViewCell.contentItems(count: currentAirData?.data.variousIndex)
-        default:
-            return 300
+        if tableView == searchResultController.tableView {
+            return 45
+        } else {
+            switch indexPath.section {
+            case 0:
+                return 135
+            case 1:
+                return AQIContentTableViewCell.contentItems(count: currentAirData?.data.variousIndex)
+            default:
+                return 300
+            }
         }
     }
     
@@ -107,14 +103,31 @@ class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearc
         return UITableViewAutomaticDimension
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if tableView == searchResultController.tableView {
+            if let city = searchResultList?[indexPath.row].placemark.addressDictionary?["City"] as? String {
+                fetchAirData(withCityName: city)
+                searchController.isActive = false
+            }
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if tableView == searchResultController.tableView,
+            let city = searchResultList?[indexPath.row].placemark.addressDictionary?["City"] as? String,
+            let country = searchResultList?[indexPath.row].placemark.addressDictionary?["Country"] as? String {
+                let cell = UITableViewCell()
+                cell.textLabel?.text = "\(city), \(country)"
+                cell.backgroundColor = UIColor.clear
+                cell.textLabel?.textColor = UIColor.white
+                return cell
+        }
         switch indexPath.section {
         case 0:
-            if let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderCell", for: indexPath) as? AQIHeaderTableViewCell {
-                if let airIndex = currentAirData?.data.aqi {
-                    cell.headerTitle.text = currentAirData?.data.city?.name
-                    cell.statusImage.image = cell.generateImageWithText(text: "AQI \r\n \(airIndex)", on: cell.statusImage)
-                }
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderCell", for: indexPath) as? AQIHeaderTableViewCell,
+                let airIndex = currentAirData?.data.aqi {
+                cell.headerTitle.text = currentAirData?.data.city?.name
+                cell.statusImage.image = cell.generateImageWithText(text: "AQI \r\n \(airIndex)", on: cell.statusImage)
                 return cell
             } else {
                 return UITableViewCell()
@@ -140,16 +153,55 @@ class AQIViewController: UITableViewController, UISearchResultsUpdating, UISearc
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let locValue = manager.location?.coordinate {
-            fetchAirData(lat: locValue.latitude, long: locValue.longitude)
+            fetchAirData(withCoordinate: locValue.latitude, long: locValue.longitude)
             print("locations = \(locValue.latitude) \(locValue.longitude)")
         }
     }
 }
 
-// MARKS: Location service
+
+extension AQIViewController : UISearchResultsUpdating {
+    func setSearchController() {
+        searchResultController.tableView.delegate = self
+        searchResultController.tableView.dataSource = self
+        
+        searchController = UISearchController(searchResultsController: searchResultController)
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.searchBarStyle = UISearchBarStyle.prominent
+        searchController.searchBar.backgroundImage = UIImage()
+        searchController.searchBar.barTintColor = NZABackgroundColor
+        searchController.searchBar.tintColor = NZATabBarTintColor
+        searchResultController.tableView.backgroundColor = NZABackgroundColor
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        var localRegion: MKCoordinateRegion?
+//        let distance: CLLocationDistance = 1200
+//        let currentLocation = CLLocationCoordinate2D.init(latitude: 50.412165, longitude: -104.66087)
+//        localRegion = MKCoordinateRegionMakeWithDistance(currentLocation, distance, distance)
+        guard let searchBarText = searchController.searchBar.text else {
+            return
+        }
+        let request = MKLocalSearchRequest()
+        request.naturalLanguageQuery = searchBarText
+//        request.region = localRegion!
+        let search = MKLocalSearch(request: request)
+        search.start { response, _ in
+            guard let response = response else {
+                return
+            }
+            self.searchResultList = response.mapItems
+            //self.matchingItems = response.mapItems
+            self.searchResultController.tableView.reloadData()
+        }
+    }
+}
+
+
+// MARKS: Data Fetching/Updating
 
 extension AQIViewController {
-    func fetchAirData(lat: Double, long: Double) {
+    func fetchAirData(withCoordinate lat: Double, long: Double) {
         AirAPI.shared.getAirIndexDetailsByGeolocation(latitude: lat, longitude: long, completed: { (airData, error) in
             self.currentAirData = airData
             DispatchQueue.main.async {
@@ -157,6 +209,15 @@ extension AQIViewController {
                 self.locManager.stopUpdatingLocation()
             }
         })
+    }
+    func fetchAirData(withCityName city: String) {
+        AirAPI.shared.getAirIndexDetailsByCityName(cityName: city) { (airData, error) in
+            self.currentAirData = airData
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+                self.locManager.stopUpdatingLocation()
+            }
+        }
     }
 }
 
