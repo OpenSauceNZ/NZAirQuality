@@ -32,6 +32,7 @@
     - [ ] Loading history data into graph
     - [ ] Component animation    
     - [ ] Fetch history data
+    
   - ***Weather***
     - [x] API request functions
     - [x] JSON Data Decoding
