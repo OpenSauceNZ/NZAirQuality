@@ -113,22 +113,21 @@ class AQIViewController: UITableViewController, UISearchBarDelegate, CLLocationM
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if tableView == searchResultController.tableView {
-            let cell = UITableViewCell()
-            if let city = searchResultList?[indexPath.row].placemark.addressDictionary?["City"] as? String, let country = searchResultList?[indexPath.row].placemark.addressDictionary?["Country"] as? String {
+        if tableView == searchResultController.tableView,
+            let city = searchResultList?[indexPath.row].placemark.addressDictionary?["City"] as? String,
+            let country = searchResultList?[indexPath.row].placemark.addressDictionary?["Country"] as? String {
+                let cell = UITableViewCell()
                 cell.textLabel?.text = "\(city), \(country)"
-            }
-            cell.backgroundColor = UIColor.clear
-            cell.textLabel?.textColor = UIColor.white
-            return cell
+                cell.backgroundColor = UIColor.clear
+                cell.textLabel?.textColor = UIColor.white
+                return cell
         }
         switch indexPath.section {
         case 0:
-            if let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderCell", for: indexPath) as? AQIHeaderTableViewCell {
-                if let airIndex = currentAirData?.data.aqi {
-                    cell.headerTitle.text = currentAirData?.data.city?.name
-                    cell.statusImage.image = cell.generateImageWithText(text: "AQI \r\n \(airIndex)", on: cell.statusImage)
-                }
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderCell", for: indexPath) as? AQIHeaderTableViewCell,
+                let airIndex = currentAirData?.data.aqi {
+                cell.headerTitle.text = currentAirData?.data.city?.name
+                cell.statusImage.image = cell.generateImageWithText(text: "AQI \r\n \(airIndex)", on: cell.statusImage)
                 return cell
             } else {
                 return UITableViewCell()
@@ -178,18 +177,15 @@ extension AQIViewController : UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         var localRegion: MKCoordinateRegion?
 //        let distance: CLLocationDistance = 1200
-        
 //        let currentLocation = CLLocationCoordinate2D.init(latitude: 50.412165, longitude: -104.66087)
-        
 //        localRegion = MKCoordinateRegionMakeWithDistance(currentLocation, distance, distance)
-        
-        guard let searchBarText = searchController.searchBar.text else { return }
-        
+        guard let searchBarText = searchController.searchBar.text else {
+            return
+        }
         let request = MKLocalSearchRequest()
         request.naturalLanguageQuery = searchBarText
 //        request.region = localRegion!
         let search = MKLocalSearch(request: request)
-        
         search.start { response, _ in
             guard let response = response else {
                 return
