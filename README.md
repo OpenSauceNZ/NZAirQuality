@@ -15,8 +15,6 @@
 
 
 **Project is on-going developing now**
-
-
 - **Progress**
   - ***AQI***
     - [x] API request functions.
@@ -33,7 +31,7 @@
     - [ ] Component animation    
     - [ ] Fetch history data
     
-  - ***Weather***
+  - ***Weather***
     - [x] API request functions
     - [x] JSON Data Decoding
     - [ ] Assets
