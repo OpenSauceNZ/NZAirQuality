@@ -15,8 +15,6 @@
 
 
 **Project is on-going developing now**
-
-
 - **Progress**
   - ***AQI***
     - [x] API request functions.
@@ -30,7 +28,9 @@
       - [x] AQI-icons
     - [x] Graph display setup 
     - [ ] Loading history data into graph
-    - [ ] Component animation
+    - [ ] Component animation    
+    - [ ] Fetch history data
+    
   - ***Weather***
     - [x] API request functions
     - [x] JSON Data Decoding
