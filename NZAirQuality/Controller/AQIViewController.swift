@@ -124,31 +124,27 @@ class AQIViewController: UITableViewController, UISearchBarDelegate, CLLocationM
         }
         switch indexPath.section {
         case 0:
-            if let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderCell", for: indexPath) as? AQIHeaderTableViewCell,
-                let airIndex = currentAirData?.data.aqi {
-                cell.headerTitle.text = currentAirData?.data.city?.name
-                cell.statusImage.image = cell.generateImageWithText(text: "AQI \r\n \(airIndex)", on: cell.statusImage)
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderCell", for: indexPath) as? AQIHeaderTableViewCell {
+                if let airIndex = currentAirData?.data.aqi {
+                    cell.headerTitle.text = currentAirData?.data.city?.name
+                    cell.statusImage.image = cell.generateImageWithText(text: "AQI \r\n \(airIndex)", on: cell.statusImage)
+                }
                 return cell
-            } else {
-                return UITableViewCell()
             }
         case 1:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "AQIContentCell", for: indexPath) as? AQIContentTableViewCell {
                 cell.airData = currentAirData
                 cell.contentCollectionView.reloadData()
                 return cell
-            } else {
-                return UITableViewCell()
             }
         default:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "GraphicCell", for: indexPath) as? AQIGraphicTableViewCell {
                 cell.graphView.dataSource = self
                 cell.graphView.delegate = self
                 return cell
-            } else {
-                return UITableViewCell()
             }
         }
+        return UITableViewCell()
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
