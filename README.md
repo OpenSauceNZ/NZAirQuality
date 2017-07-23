@@ -27,9 +27,10 @@
       - [x] Logo
       - [x] AQI-icons
     - [x] Graph display setup 
-    - [ ] Loading history data into graph
-    - [ ] Component animation    
-    - [ ] Fetch history data
+    - [ ] Loading history data into graph 
+    - [ ] Component animation
+    - [x] Country/City realtime searching
+    - [ ] Fetch history data * This is a big issue I am facing at the moment, since API doesnt give the parameter
     
   - ***Weather***
     - [x] API request functions
