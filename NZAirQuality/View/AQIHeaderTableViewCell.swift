@@ -20,7 +20,7 @@ class AQIHeaderTableViewCell: UITableViewCell {
         headerTitle.textColor = NZATitleColor
         headerTitle.text = ""
         statusImage.image = #imageLiteral(resourceName: "AQI-Good")
-        statusImage.image = generateImageWithText(text: "...", on: statusImage)
+        statusImage.image = generateImageWithText(text: "...", with: #imageLiteral(resourceName: "AQI-Good"), on: statusImage)
         self.selectionStyle = .none
     }
 
@@ -28,10 +28,9 @@ class AQIHeaderTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func generateImageWithText(text: String, on imageView: UIImageView) -> UIImage {
-        
+    func generateImageWithText(text: String, with image: UIImage, on imageView: UIImageView) -> UIImage {
         let imageView = imageView
-        imageView.image = #imageLiteral(resourceName: "AQI-Good")
+        imageView.image = image
         imageView.backgroundColor = UIColor.clear
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: (imageView.layer.bounds.width), height: (imageView.layer.bounds.height)))
         

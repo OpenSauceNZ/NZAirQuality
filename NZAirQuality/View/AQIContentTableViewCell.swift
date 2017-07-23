@@ -13,12 +13,24 @@ enum CollectionViewContentPosition {
 }
 
 class AQIContentTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
     @IBOutlet weak var contentCollectionView: UICollectionView!
     var collectionViewContentPosition: CollectionViewContentPosition = .Left
     var numberOfItems = 0
-    
     var airData: AirData?
+    lazy var unitArray: [String: String] = {
+        return ["Temp":"℃",
+                "Wind":"km/h",
+                "Presure":"hPa",
+                "Humidity":"%",
+                "NO_2":"μg/m3",
+                "PM_2.5":"μg/m3",
+                "PM_10":"μg/m3",
+                "SO_2":"μg/m3",
+                "CO":"μg/m3",
+                "O_3":"μg/m3",
+                "CO_2":"mg/m3"
+        ]
+    }()
     private var airDataFormatArray: [String: Index?]?
     
     override func awakeFromNib() {
@@ -47,9 +59,10 @@ class AQIContentTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
             let nameList = Array(indexKeys)
             let valueList = Array(indexValue)
             let value = Int(round(valueList[indexPath.row]?.index ?? 0.0))
+            let dataUnit = unitArray["\(nameList[indexPath.row])"]
             cell.contentImage.image = UIImage(named: "component_\(nameList[indexPath.row])")
             cell.contentTitleLabel.text = "\(nameList[indexPath.row].replacingOccurrences(of: "_", with: " "))"
-            cell.contentSubtitleLabel.text = "Current: \(value)"
+            cell.contentSubtitleLabel.text = "\(value) \(dataUnit ?? "")"
         }
         return cell
     }
@@ -86,8 +99,9 @@ class AQIContentTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     
     static func contentItems(count data: VariousIndex?) -> CGFloat {
         if let newData = data {
-            var formatData = formatAirData(newData: newData)
-            return CGFloat((round(Double(formatData.count) / 2.0) * 70) + 25)
+            let formatData = formatAirData(newData: newData)
+            let space = Double(5 * formatData.count) + (round(Double(formatData.count) / 2.0) * 70)
+            return CGFloat(space)
         }
         return 0
     }
