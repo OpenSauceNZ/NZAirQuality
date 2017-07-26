@@ -99,7 +99,7 @@ class AQIViewController: UITableViewController, UISearchBarDelegate, CLLocationM
         }
     }
     
-    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    fileprivate func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
     }
     
@@ -112,23 +112,38 @@ class AQIViewController: UITableViewController, UISearchBarDelegate, CLLocationM
         }
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if tableView == searchResultController.tableView,
-            let city = searchResultList?[indexPath.row].placemark.addressDictionary?["City"] as? String,
+    fileprivate func headerCellSetup(_ cell: AQIHeaderTableViewCell) {
+        if let airIndex = currentAirData?.data.aqi {
+            cell.headerTitle.text = currentAirData?.data.city?.name
+            if airIndex < 75 { // Good air quality
+                cell.statusImage.image = cell.generateImageWithText(text: "AQI \r\n \(airIndex)", with: #imageLiteral(resourceName: "AQI-Good"), on: cell.statusImage)
+            } else if airIndex < 200 {
+                cell.statusImage.image = cell.generateImageWithText(text: "AQI \r\n \(airIndex)", with: #imageLiteral(resourceName: "AQI-Medium"), on: cell.statusImage)
+            } else {
+                cell.statusImage.image = cell.generateImageWithText(text: "AQI \r\n \(airIndex)", with: #imageLiteral(resourceName: "AQI-Bad"), on: cell.statusImage)
+            }
+        }
+    }
+    
+    fileprivate func searchResultCellSetup(_ indexPath: IndexPath, _ cell: UITableViewCell) {
+        if let city = searchResultList?[indexPath.row].placemark.addressDictionary?["City"] as? String,
             let country = searchResultList?[indexPath.row].placemark.addressDictionary?["Country"] as? String {
-                let cell = UITableViewCell()
-                cell.textLabel?.text = "\(city), \(country)"
-                cell.backgroundColor = UIColor.clear
-                cell.textLabel?.textColor = UIColor.white
-                return cell
+            cell.textLabel?.text = "\(city), \(country)"
+            cell.backgroundColor = UIColor.clear
+            cell.textLabel?.textColor = UIColor.white
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if tableView == searchResultController.tableView {
+            let cell = UITableViewCell()
+            searchResultCellSetup(indexPath, cell)
+            return cell
         }
         switch indexPath.section {
         case 0:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderCell", for: indexPath) as? AQIHeaderTableViewCell {
-                if let airIndex = currentAirData?.data.aqi {
-                    cell.headerTitle.text = currentAirData?.data.city?.name
-                    cell.statusImage.image = cell.generateImageWithText(text: "AQI \r\n \(airIndex)", on: cell.statusImage)
-                }
+                headerCellSetup(cell)
                 return cell
             }
         case 1:
@@ -157,7 +172,7 @@ class AQIViewController: UITableViewController, UISearchBarDelegate, CLLocationM
 
 
 extension AQIViewController : UISearchResultsUpdating {
-    func setSearchController() {
+    fileprivate func setSearchController() {
         searchResultController.tableView.delegate = self
         searchResultController.tableView.dataSource = self
         
@@ -170,8 +185,8 @@ extension AQIViewController : UISearchResultsUpdating {
         searchResultController.tableView.backgroundColor = NZABackgroundColor
     }
     
-    func updateSearchResults(for searchController: UISearchController) {
-        var localRegion: MKCoordinateRegion?
+    internal func updateSearchResults(for searchController: UISearchController) {
+//        var localRegion: MKCoordinateRegion?
 //        let distance: CLLocationDistance = 1200
 //        let currentLocation = CLLocationCoordinate2D.init(latitude: 50.412165, longitude: -104.66087)
 //        localRegion = MKCoordinateRegionMakeWithDistance(currentLocation, distance, distance)
@@ -197,7 +212,7 @@ extension AQIViewController : UISearchResultsUpdating {
 // MARKS: Data Fetching/Updating
 
 extension AQIViewController {
-    func fetchAirData(withCoordinate lat: Double, long: Double) {
+    fileprivate func fetchAirData(withCoordinate lat: Double, long: Double) {
         AirAPI.shared.getAirIndexDetailsByGeolocation(latitude: lat, longitude: long, completed: { (airData, error) in
             self.currentAirData = airData
             DispatchQueue.main.async {
@@ -206,7 +221,7 @@ extension AQIViewController {
             }
         })
     }
-    func fetchAirData(withCityName city: String) {
+    fileprivate func fetchAirData(withCityName city: String) {
         AirAPI.shared.getAirIndexDetailsByCityName(cityName: city) { (airData, error) in
             self.currentAirData = airData
             DispatchQueue.main.async {
@@ -220,7 +235,7 @@ extension AQIViewController {
 // MARKS: ScrollableGraphViewDataSource
 
 extension AQIViewController {
-    func value(forPlot plot: Plot, atIndex pointIndex: Int) -> Double {
+    internal func value(forPlot plot: Plot, atIndex pointIndex: Int) -> Double {
         switch(plot.identifier) {
         case "multiBlue", "multiBlueDot":
             return plotOneData[pointIndex]
@@ -231,11 +246,11 @@ extension AQIViewController {
         }
     }
     
-    func label(atIndex pointIndex: Int) -> String {
+    internal func label(atIndex pointIndex: Int) -> String {
         return "FEB \(pointIndex)"
     }
     
-    func numberOfPoints() -> Int {
+    internal func numberOfPoints() -> Int {
         return numberOfItems
     }
     

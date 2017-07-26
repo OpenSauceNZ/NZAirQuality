@@ -16,6 +16,7 @@ class AirAPI: NSObject {
     static var shared: AirAPI  {
         return shareInstance
     }
+    
     func getAirIndexDetailsByCityName(cityName: String, completed: @escaping (_ airData: AirData?, _ error: Error?)->()) {
         guard let serverUrl = URL(string: "\(server)/feed/\(cityName)/?token=\(token)") else {
             return

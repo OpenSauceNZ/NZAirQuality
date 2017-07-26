@@ -35,17 +35,28 @@ struct VariousIndex: Decodable {
     let pm25: Index? //PM2.5
     let temp: Index?
     let wind: Index?
+    let co: Index?
+    let o3: Index?
+    let so2: Index?
     var arrayOfIndex: [String: Index?] {
-        return ["Humidity": humidity, "NO_2": no2, "Presure": presure, "PM_10": pm10, "PM_2.5": pm25, "Temp": temp, "Wind": wind]
+        return ["Humidity": humidity,
+                "NO_2": no2,
+                "Presure": presure,
+                "PM_10": pm10,
+                "PM_2.5": pm25,
+                "Temp": temp,
+                "Wind": wind,
+                "CO": co,
+                "O_3": o3,
+                "SO_2": so2
+        ]
     }
-
-    
     private enum CodingKeys : String, CodingKey {
         case humidity = "h"
         case presure = "p"
         case temp = "t"
         case wind = "w"
-        case no2,pm10,pm25
+        case no2,pm10,pm25,co,o3,so2
     }
 }
 struct Index: Decodable {
