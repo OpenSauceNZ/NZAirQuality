@@ -13,6 +13,7 @@
 		0522E2941F0BC61200A155AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0522E2931F0BC61200A155AB /* Assets.xcassets */; };
 		0522E2971F0BC61200A155AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0522E2951F0BC61200A155AB /* LaunchScreen.storyboard */; };
 		0522E2A21F0BC61300A155AB /* NZAirQualityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522E2A11F0BC61300A155AB /* NZAirQualityTests.swift */; };
+		052D2EEF1F2990920081A860 /* WeatherHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052D2EEE1F2990920081A860 /* WeatherHeaderViewCell.swift */; };
 		053FDD581F1F81DD00042AF1 /* AQIContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053FDD571F1F81DD00042AF1 /* AQIContentCollectionViewCell.swift */; };
 		054F1F111F20FDCD0050D140 /* AQIGraphicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054F1F101F20FDCD0050D140 /* AQIGraphicTableViewCell.swift */; };
 		0555F9591F1B2CAC00BCD89D /* YQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0555F9581F1B2CAC00BCD89D /* YQL.swift */; };
@@ -53,6 +54,7 @@
 		0522E29D1F0BC61300A155AB /* NZAirQualityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NZAirQualityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0522E2A11F0BC61300A155AB /* NZAirQualityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NZAirQualityTests.swift; sourceTree = "<group>"; };
 		0522E2A31F0BC61300A155AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		052D2EEE1F2990920081A860 /* WeatherHeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherHeaderViewCell.swift; sourceTree = "<group>"; };
 		053FDD571F1F81DD00042AF1 /* AQIContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIContentCollectionViewCell.swift; sourceTree = "<group>"; };
 		054F1F101F20FDCD0050D140 /* AQIGraphicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIGraphicTableViewCell.swift; sourceTree = "<group>"; };
 		0555F9581F1B2CAC00BCD89D /* YQL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQL.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -139,6 +141,25 @@
 			path = NZAirQualityTests;
 			sourceTree = "<group>";
 		};
+		052D2EEC1F2990560081A860 /* AQI */ = {
+			isa = PBXGroup;
+			children = (
+				05ABA0251F1C89C800090411 /* AQIHeaderTableViewCell.swift */,
+				05582FCD1F1F0ECC005F2737 /* AQIContentTableViewCell.swift */,
+				053FDD571F1F81DD00042AF1 /* AQIContentCollectionViewCell.swift */,
+				054F1F101F20FDCD0050D140 /* AQIGraphicTableViewCell.swift */,
+			);
+			path = AQI;
+			sourceTree = "<group>";
+		};
+		052D2EED1F29906E0081A860 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				052D2EEE1F2990920081A860 /* WeatherHeaderViewCell.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
 		05557B1F1F0BC85F00579BE7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,10 +187,8 @@
 		05557B211F0BC85F00579BE7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				05ABA0251F1C89C800090411 /* AQIHeaderTableViewCell.swift */,
-				05582FCD1F1F0ECC005F2737 /* AQIContentTableViewCell.swift */,
-				053FDD571F1F81DD00042AF1 /* AQIContentCollectionViewCell.swift */,
-				054F1F101F20FDCD0050D140 /* AQIGraphicTableViewCell.swift */,
+				052D2EED1F29906E0081A860 /* Weather */,
+				052D2EEC1F2990560081A860 /* AQI */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -409,6 +428,7 @@
 				0522E28A1F0BC61200A155AB /* AppDelegate.swift in Sources */,
 				05EA2D2C1F12695000734544 /* Weather.swift in Sources */,
 				05C639621F1C73CD00D0B771 /* Style.swift in Sources */,
+				052D2EEF1F2990920081A860 /* WeatherHeaderViewCell.swift in Sources */,
 				0572D7571F0BD0210026E4E1 /* AirAPI.swift in Sources */,
 				0557EDAD1F1C82F200058C70 /* AQIViewController.swift in Sources */,
 				054F1F111F20FDCD0050D140 /* AQIGraphicTableViewCell.swift in Sources */,
