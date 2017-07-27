@@ -187,8 +187,8 @@
 		05557B211F0BC85F00579BE7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				052D2EED1F29906E0081A860 /* Weather */,
 				052D2EEC1F2990560081A860 /* AQI */,
+				052D2EED1F29906E0081A860 /* Weather */,
 			);
 			path = View;
 			sourceTree = "<group>";
