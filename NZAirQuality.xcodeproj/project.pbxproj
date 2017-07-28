@@ -26,6 +26,7 @@
 		05ABA0261F1C89C800090411 /* AQIHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ABA0251F1C89C800090411 /* AQIHeaderTableViewCell.swift */; };
 		05BC7A081F2116B800824348 /* LocationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BC7A071F2116B800824348 /* LocationServices.swift */; };
 		05C639621F1C73CD00D0B771 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C639611F1C73CD00D0B771 /* Style.swift */; };
+		05E448661F2AD88D00B70DF7 /* WeatherInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E448651F2AD88D00B70DF7 /* WeatherInfoView.swift */; };
 		05EA2D2C1F12695000734544 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA2D2B1F12695000734544 /* Weather.swift */; };
 		05EA2D2E1F1269AF00734544 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA2D2D1F1269AF00734544 /* WeatherAPI.swift */; };
 		1262288940B380A191BA804C /* Pods_NZAirQualityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82C87E037FC534FE9CC1FF6 /* Pods_NZAirQualityTests.framework */; };
@@ -67,6 +68,7 @@
 		05ABA0251F1C89C800090411 /* AQIHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		05BC7A071F2116B800824348 /* LocationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServices.swift; sourceTree = "<group>"; };
 		05C639611F1C73CD00D0B771 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		05E448651F2AD88D00B70DF7 /* WeatherInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoView.swift; sourceTree = "<group>"; };
 		05EA2D2B1F12695000734544 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		05EA2D2D1F1269AF00734544 /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
 		0DAA50EA11F35164955D48CE /* Pods-NZAirQuality.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NZAirQuality.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NZAirQuality/Pods-NZAirQuality.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				052D2EEE1F2990920081A860 /* WeatherHeaderViewCell.swift */,
+				05E448651F2AD88D00B70DF7 /* WeatherInfoView.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				05EA2D2E1F1269AF00734544 /* WeatherAPI.swift in Sources */,
 				055AC2311F20514900AAE55D /* CoreDataManager.swift in Sources */,
 				0555F9591F1B2CAC00BCD89D /* YQL.swift in Sources */,
+				05E448661F2AD88D00B70DF7 /* WeatherInfoView.swift in Sources */,
 				0572D7551F0BD0130026E4E1 /* AirData.swift in Sources */,
 				0522E28A1F0BC61200A155AB /* AppDelegate.swift in Sources */,
 				05EA2D2C1F12695000734544 /* Weather.swift in Sources */,
