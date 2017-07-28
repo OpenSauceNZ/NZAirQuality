@@ -8,8 +8,7 @@
 
 import UIKit
 
-class WeatherDailyViewCell: UITableViewCell {
-    
+class WeatherDailyViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
     @IBOutlet weak var infoDisplayCollectionView: UICollectionView!
     
     
@@ -23,5 +22,18 @@ class WeatherDailyViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "infoCell", for: indexPath) as? WeatherDailyInfoCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        
+        
+        return cell
+        
+    }
 }

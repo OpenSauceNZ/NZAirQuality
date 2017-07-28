@@ -9,6 +9,7 @@
 import UIKit
 
 class WeatherViewController: UITableViewController, UISearchResultsUpdating {
+    var currentWeather: Weather?
     
     var searchController: UISearchController!
     var searchResultController = UITableViewController()
@@ -18,7 +19,6 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating {
         setSearchController()
         self.tableView.backgroundColor = NZABackgroundColor
         self.tableView.tableHeaderView = self.searchController.searchBar
-        
     }
     
     func setGradientBackground() {
@@ -37,13 +37,11 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating {
         guard let searchBarText = searchController.searchBar.text else {
             return
         }
-        
     }
     
     fileprivate func setSearchController() {
         searchResultController.tableView.delegate = self
         searchResultController.tableView.dataSource = self
-        
         searchController = UISearchController(searchResultsController: searchResultController)
         searchController.searchResultsUpdater = self
         searchController.searchBar.searchBarStyle = UISearchBarStyle.prominent
@@ -62,32 +60,42 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating {
         return 2
     }
     
-//    fileprivate func searchResultCellSetup(_ indexPath: IndexPath, _ cell: UITableViewCell) {
-//        if let city = searchResultList?[indexPath.row].placemark.addressDictionary?["City"] as? String,
-//            let country = searchResultList?[indexPath.row].placemark.addressDictionary?["Country"] as? String {
-//            cell.textLabel?.text = "\(city), \(country)"
-//            cell.backgroundColor = UIColor.clear
-//            cell.textLabel?.textColor = UIColor.white
-//        }
-//    }
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if tableView == searchResultController.tableView {
             let cell = UITableViewCell()
 //            searchResultCellSetup(indexPath, cell)
             return cell
-        } else {
+        }
+        switch indexPath.row {
+        case 0:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "WHeaderCell", for: indexPath) as? WeatherHeaderViewCell {
                 return cell
-            } else {
-                return UITableViewCell()
             }
+        case 1:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "WDailyCell", for: indexPath) as? WeatherDailyViewCell {
+                return cell
+            }
+        default:
+            return UITableViewCell()
         }
-        
+        return UITableViewCell()
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 230
     }
     
+    
+    func fetchWeatherData(byCityName name: String) {
+        WeatherAPI.shared.requestWeatherInfo(location: name) { (weather, error) in
+            guard let currentData = weather else {
+                // TODO: Error handling
+                return
+            }
+            self.currentWeather = currentData
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
 }
