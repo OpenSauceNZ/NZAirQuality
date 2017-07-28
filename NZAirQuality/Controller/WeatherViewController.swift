@@ -15,8 +15,10 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setSearchController()
         self.tableView.backgroundColor = NZABackgroundColor
-        setGradientBackground()
+        self.tableView.tableHeaderView = self.searchController.searchBar
+        
     }
     
     func setGradientBackground() {
@@ -26,15 +28,30 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating {
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [ colorTop, colorBottom]
         gradientLayer.locations = [ 0.0, 1.0]
-        gradientLayer.frame = self.view.bounds
+        gradientLayer.frame = self.tableView.bounds
         
-        self.tableView.backgroundView?.layer.addSublayer(gradientLayer)
+        self.tableView.layer.addSublayer(gradientLayer)
     }
     
     func updateSearchResults(for searchController: UISearchController) {
+        guard let searchBarText = searchController.searchBar.text else {
+            return
+        }
         
     }
     
+    fileprivate func setSearchController() {
+        searchResultController.tableView.delegate = self
+        searchResultController.tableView.dataSource = self
+        
+        searchController = UISearchController(searchResultsController: searchResultController)
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.searchBarStyle = UISearchBarStyle.prominent
+        searchController.searchBar.backgroundImage = UIImage()
+        searchController.searchBar.barTintColor = NZABackgroundColor
+        searchController.searchBar.tintColor = NZATabBarTintColor
+        searchResultController.tableView.backgroundColor = NZABackgroundColor
+    }
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -45,11 +62,26 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating {
         return 2
     }
     
+//    fileprivate func searchResultCellSetup(_ indexPath: IndexPath, _ cell: UITableViewCell) {
+//        if let city = searchResultList?[indexPath.row].placemark.addressDictionary?["City"] as? String,
+//            let country = searchResultList?[indexPath.row].placemark.addressDictionary?["Country"] as? String {
+//            cell.textLabel?.text = "\(city), \(country)"
+//            cell.backgroundColor = UIColor.clear
+//            cell.textLabel?.textColor = UIColor.white
+//        }
+//    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "WHeaderCell", for: indexPath) as? WeatherHeaderViewCell {
+        if tableView == searchResultController.tableView {
+            let cell = UITableViewCell()
+//            searchResultCellSetup(indexPath, cell)
             return cell
         } else {
-            return UITableViewCell()
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "WHeaderCell", for: indexPath) as? WeatherHeaderViewCell {
+                return cell
+            } else {
+                return UITableViewCell()
+            }
         }
         
     }
