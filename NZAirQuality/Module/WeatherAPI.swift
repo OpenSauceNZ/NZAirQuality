@@ -37,17 +37,12 @@ class WeatherAPI: NSObject {
                 return
             }
             let data = try! JSONSerialization.data(withJSONObject: queryDict, options: .prettyPrinted)
-            
             do {
                 let weatherData = try JSONDecoder().decode(Weather.self, from: data)
-                
                 completed(weatherData, nil)
             } catch let newError {
                 completed(nil, newError)
             }
-//            print(queryDict)
-//            print(queryDict["count"]!)
-//            print(queryDict["results"]!)
         }
         RunLoop.main.run()
     }
