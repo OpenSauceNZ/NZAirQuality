@@ -11,16 +11,10 @@ import UIKit
 class WeatherDailyViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
     @IBOutlet weak var infoDisplayCollectionView: UICollectionView!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        infoDisplayCollectionView.delegate = self
+        infoDisplayCollectionView.dataSource = self
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -31,7 +25,7 @@ class WeatherDailyViewCell: UITableViewCell, UICollectionViewDelegate, UICollect
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "infoCell", for: indexPath) as? WeatherDailyInfoCollectionViewCell else {
             return UICollectionViewCell()
         }
-        
+        cell.statuImage.image = #imageLiteral(resourceName: "component_Wind")
         
         return cell
         
