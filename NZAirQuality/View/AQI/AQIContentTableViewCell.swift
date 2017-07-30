@@ -31,6 +31,7 @@ class AQIContentTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
                 "CO_2":"mg/m3"
         ]
     }()
+    
     private var airDataFormatArray: [String: Index?]?
     
     override func awakeFromNib() {
@@ -53,6 +54,7 @@ class AQIContentTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "indexCell", for: indexPath) as? AQIContentCollectionViewCell else {
             return UICollectionViewCell()
         }
+        
         cell.contentTitleLabel.text = ""
         
         if let indexKeys = airDataFormatArray?.keys, let indexValue = airDataFormatArray?.values {
