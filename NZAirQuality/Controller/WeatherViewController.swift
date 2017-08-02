@@ -7,18 +7,27 @@
 //
 
 import UIKit
+import CoreLocation
 
-class WeatherViewController: UITableViewController, UISearchResultsUpdating {
+class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLLocationManagerDelegate {
     var currentWeather: Weather?
-    
     var searchController: UISearchController!
     var searchResultController = UITableViewController()
+    var locManager = CLLocationManager()
+    var currentLocation: CLLocation!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setSearchController()
+        //fetchWeatherData(byCityName: "Auckland")
         self.tableView.backgroundColor = NZABackgroundColor
         self.tableView.tableHeaderView = self.searchController.searchBar
+        
+        locManager.requestWhenInUseAuthorization()
+        if CLLocationManager.locationServicesEnabled() {
+            locManager.delegate = self
+            locManager.startUpdatingLocation()
+        }
     }
     
     func setGradientBackground() {
@@ -36,6 +45,12 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         guard let searchBarText = searchController.searchBar.text else {
             return
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let locValue = manager.location?.coordinate {
+            fetchWeatherData(byCityName: "(\(locValue.latitude),\(locValue.longitude))")
         }
     }
     
@@ -73,8 +88,11 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating {
             }
         case 1:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "WDailyCell", for: indexPath) as? WeatherDailyViewCell {
+                cell.weatherData = currentWeather
+                cell.infoDisplayCollectionView.reloadData()
                 return cell
             }
+            
         default:
             return UITableViewCell()
         }
@@ -82,7 +100,14 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 230
+        switch indexPath.row {
+        case 0:
+            return 230
+        case 1:
+            return 135
+        default:
+            return 45
+        }
     }
     
     
