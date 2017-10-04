@@ -17,15 +17,17 @@ class WeatherHeaderViewCell: UITableViewCell {
     @IBOutlet weak var tempture: UILabel!
     
     @IBOutlet weak var location: UILabel!
-    
     @IBOutlet weak var weatherStatus: UILabel!
-    
-    
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         self.selectionStyle = .none
         self.backgroundColor = NZABackgroundColor
+        
+        self.weatherStatus.adjustsFontSizeToFitWidth = true
+        self.weatherStatus.minimumScaleFactor = 0.2
+        self.weatherStatus.numberOfLines = 0
+        
         self.tempture.text = "25℃"
         
         tempture.backgroundColor = UIColor.clear
@@ -39,9 +41,11 @@ class WeatherHeaderViewCell: UITableViewCell {
         tempture.layer.shadowRadius = 6
         
     }
+    override func layoutIfNeeded() {
+        super.layoutIfNeeded()
 
+    }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-
 }

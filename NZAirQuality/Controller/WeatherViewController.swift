@@ -21,8 +21,11 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLL
         setSearchController()
         //fetchWeatherData(byCityName: "Auckland")
         self.tableView.backgroundColor = NZABackgroundColor
-        self.tableView.tableHeaderView = self.searchController.searchBar
         
+        let adjustForTabbarInsets: UIEdgeInsets = UIEdgeInsetsMake(20, 0, self.tabBarController?.tabBar.frame.height ?? 0, 0) // 20 for search bar
+        self.tableView.contentInset = adjustForTabbarInsets
+        self.tableView.scrollIndicatorInsets = adjustForTabbarInsets
+        self.tableView.tableHeaderView = self.searchController.searchBar
         locManager.requestWhenInUseAuthorization()
         if CLLocationManager.locationServicesEnabled() {
             locManager.delegate = self
@@ -84,10 +87,17 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLL
         switch indexPath.row {
         case 0:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "WHeaderCell", for: indexPath) as? WeatherHeaderViewCell {
+                if let city = currentWeather?.data.channel.location?.city, let _ = currentWeather?.data.channel.location?.country {
+                    cell.location.text = "\(city)"
+                }
+                if let weatherCondition = currentWeather?.data.channel.item?.currentCondition?.text {
+                    cell.weatherStatus.text = weatherCondition
+                }
                 return cell
             }
         case 1:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "WDailyCell", for: indexPath) as? WeatherDailyViewCell {
+                cell.backgroundColor = NZABackgroundColor
                 cell.weatherData = currentWeather
                 cell.infoDisplayCollectionView.reloadData()
                 return cell
@@ -104,7 +114,7 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLL
         case 0:
             return 230
         case 1:
-            return 135
+            return 270
         default:
             return 45
         }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vN1-od-FwK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vN1-od-FwK">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -202,7 +202,7 @@
         <scene sceneID="Z9O-ME-MQq">
             <objects>
                 <tableViewController id="IWW-Tf-v55" customClass="WeatherViewController" customModule="NZAirQuality" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" id="Vh7-UK-Euy">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" id="Vh7-UK-Euy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -217,17 +217,17 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F7e-Wb-6Tq" customClass="WeatherInfoView" customModule="NZAirQuality" customModuleProvider="target">
                                             <rect key="frame" x="8" y="8" width="164" height="180"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auckland" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgY-2s-thy">
-                                                    <rect key="frame" x="8" y="8" width="147.66666666666666" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auckland" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgY-2s-thy">
+                                                    <rect key="frame" x="8" y="0.0" width="148" height="29"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="AdF-kb-2ST"/>
+                                                        <constraint firstAttribute="height" constant="29" id="AdF-kb-2ST"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32℃" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tML-pH-6CK">
-                                                    <rect key="frame" x="8.6666666666666714" y="28.999999999999993" width="155.33333333333331" height="82.333333333333314"/>
+                                                    <rect key="frame" x="0.3333333333333286" y="28.999999999999993" width="163.66666666666669" height="87.333333333333314"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="tML-pH-6CK" secondAttribute="height" multiplier="143:85" constant="16.952941176470574" id="kOe-KO-tln"/>
                                                     </constraints>
@@ -236,14 +236,14 @@
                                                     <nil key="highlightedColor"/>
                                                     <size key="shadowOffset" width="3" height="3"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yahoo!" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ns-Gp-DRS">
-                                                    <rect key="frame" x="44.666666666666657" y="145.33333333333337" width="111" height="25.666666666666657"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yahoo!" translatesAutoresizingMaskIntoConstraints="NO" id="1ns-Gp-DRS">
+                                                    <rect key="frame" x="44.666666666666657" y="150.33333333333337" width="111" height="20.666666666666657"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="111" id="fxh-HN-jwV"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Partly Cloudy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5J-8G-BRI">
-                                                    <rect key="frame" x="0.0" y="111.33333333333334" width="164" height="34.000000000000028"/>
+                                                    <rect key="frame" x="0.0" y="116.33333333333334" width="164" height="34.000000000000028"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="b5J-8G-BRI" secondAttribute="height" multiplier="82:17" id="v42-dG-37w"/>
                                                     </constraints>
@@ -260,7 +260,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="b5J-8G-BRI" secondAttribute="trailing" id="GB9-6B-bcF"/>
                                                 <constraint firstAttribute="bottom" secondItem="1ns-Gp-DRS" secondAttribute="bottom" constant="9" id="LFn-kg-rbW"/>
                                                 <constraint firstAttribute="trailing" secondItem="1ns-Gp-DRS" secondAttribute="trailing" constant="8" id="Wrm-hv-R7i"/>
-                                                <constraint firstItem="XgY-2s-thy" firstAttribute="top" secondItem="F7e-Wb-6Tq" secondAttribute="top" constant="8" id="ZdI-hd-DIj"/>
+                                                <constraint firstItem="XgY-2s-thy" firstAttribute="top" secondItem="F7e-Wb-6Tq" secondAttribute="top" id="ZdI-hd-DIj"/>
                                                 <constraint firstAttribute="width" secondItem="F7e-Wb-6Tq" secondAttribute="height" multiplier="41:45" id="aa1-cs-SqB"/>
                                                 <constraint firstItem="tML-pH-6CK" firstAttribute="trailing" secondItem="XgY-2s-thy" secondAttribute="trailing" constant="8.5" id="dbP-Hb-CTA"/>
                                                 <constraint firstItem="b5J-8G-BRI" firstAttribute="leading" secondItem="F7e-Wb-6Tq" secondAttribute="leading" id="pE6-Mb-5FR"/>
@@ -321,7 +321,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iEn-HN-gUF">
-                                            <rect key="frame" x="8" y="0.0" width="398" height="113"/>
+                                            <rect key="frame" x="8" y="8" width="398" height="113"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5cr-EV-hFe">
                                                 <size key="itemSize" width="97" height="117"/>
@@ -397,10 +397,10 @@
                                         </collectionView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="iEn-HN-gUF" secondAttribute="bottom" constant="16.666666666666657" id="haR-Fr-s9e"/>
+                                        <constraint firstAttribute="bottom" secondItem="iEn-HN-gUF" secondAttribute="bottom" constant="8.6666666666666572" id="haR-Fr-s9e"/>
                                         <constraint firstItem="iEn-HN-gUF" firstAttribute="leading" secondItem="l8d-Tu-GQg" secondAttribute="leading" constant="8" id="kej-B4-kkt"/>
                                         <constraint firstAttribute="trailing" secondItem="iEn-HN-gUF" secondAttribute="trailing" constant="8" id="n8s-u5-nYG"/>
-                                        <constraint firstItem="iEn-HN-gUF" firstAttribute="top" secondItem="l8d-Tu-GQg" secondAttribute="top" id="wLb-IP-PDs"/>
+                                        <constraint firstItem="iEn-HN-gUF" firstAttribute="top" secondItem="l8d-Tu-GQg" secondAttribute="top" constant="8" id="wLb-IP-PDs"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
