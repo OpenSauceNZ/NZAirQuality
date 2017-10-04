@@ -202,7 +202,7 @@ extension AQIViewController : UISearchResultsUpdating {
                 return
             }
             self.searchResultList = response.mapItems
-            //self.matchingItems = response.mapItems
+//            self.matchingItems = response.mapItems
             self.searchResultController.tableView.reloadData()
         }
     }
@@ -214,8 +214,9 @@ extension AQIViewController : UISearchResultsUpdating {
 extension AQIViewController {
     fileprivate func fetchAirData(withCoordinate lat: Double, long: Double) {
         AirAPI.shared.getAirIndexDetailsByGeolocation(latitude: lat, longitude: long, completed: { (airData, error) in
-            self.currentAirData = airData
+            
             DispatchQueue.main.async {
+                self.currentAirData = airData
                 self.tableView.reloadData()
                 self.locManager.stopUpdatingLocation()
             }
@@ -223,8 +224,9 @@ extension AQIViewController {
     }
     fileprivate func fetchAirData(withCityName city: String) {
         AirAPI.shared.getAirIndexDetailsByCityName(cityName: city) { (airData, error) in
-            self.currentAirData = airData
+            
             DispatchQueue.main.async {
+                self.currentAirData = airData
                 self.tableView.reloadData()
                 self.locManager.stopUpdatingLocation()
             }
