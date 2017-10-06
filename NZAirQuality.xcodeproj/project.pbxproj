@@ -17,6 +17,7 @@
 		052959C21F2B538C00A32214 /* WeatherDailyInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052959C11F2B538C00A32214 /* WeatherDailyInfoCollectionViewCell.swift */; };
 		052D2EEF1F2990920081A860 /* WeatherHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052D2EEE1F2990920081A860 /* WeatherHeaderViewCell.swift */; };
 		053FDD581F1F81DD00042AF1 /* AQIContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053FDD571F1F81DD00042AF1 /* AQIContentCollectionViewCell.swift */; };
+		0545C6451F875F1D006A5168 /* WeatherFontIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0545C6441F875F1D006A5168 /* WeatherFontIcons.swift */; };
 		054F1F111F20FDCD0050D140 /* AQIGraphicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054F1F101F20FDCD0050D140 /* AQIGraphicTableViewCell.swift */; };
 		0555F9591F1B2CAC00BCD89D /* YQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0555F9581F1B2CAC00BCD89D /* YQL.swift */; };
 		0557EDAD1F1C82F200058C70 /* AQIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557EDAC1F1C82F200058C70 /* AQIViewController.swift */; };
@@ -24,6 +25,7 @@
 		055AC2311F20514900AAE55D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055AC2301F20514900AAE55D /* CoreDataManager.swift */; };
 		0572D7551F0BD0130026E4E1 /* AirData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572D7541F0BD0130026E4E1 /* AirData.swift */; };
 		0572D7571F0BD0210026E4E1 /* AirAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572D7561F0BD0210026E4E1 /* AirAPI.swift */; };
+		05A329DB1F87DCF40092079C /* weathericons-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0535CD971F8750020007807B /* weathericons-regular-webfont.ttf */; };
 		05ABA0241F1C86A900090411 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ABA0231F1C86A900090411 /* WeatherViewController.swift */; };
 		05ABA0261F1C89C800090411 /* AQIHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ABA0251F1C89C800090411 /* AQIHeaderTableViewCell.swift */; };
 		05BC7A081F2116B800824348 /* LocationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BC7A071F2116B800824348 /* LocationServices.swift */; };
@@ -60,7 +62,9 @@
 		052959BF1F2B511800A32214 /* WeatherDailyViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDailyViewCell.swift; sourceTree = "<group>"; };
 		052959C11F2B538C00A32214 /* WeatherDailyInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDailyInfoCollectionViewCell.swift; sourceTree = "<group>"; };
 		052D2EEE1F2990920081A860 /* WeatherHeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherHeaderViewCell.swift; sourceTree = "<group>"; };
+		0535CD971F8750020007807B /* weathericons-regular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "weathericons-regular-webfont.ttf"; sourceTree = "<group>"; };
 		053FDD571F1F81DD00042AF1 /* AQIContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIContentCollectionViewCell.swift; sourceTree = "<group>"; };
+		0545C6441F875F1D006A5168 /* WeatherFontIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WeatherFontIcons.swift; path = NZAirQuality/WeatherFontIcons.swift; sourceTree = SOURCE_ROOT; };
 		054F1F101F20FDCD0050D140 /* AQIGraphicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIGraphicTableViewCell.swift; sourceTree = "<group>"; };
 		0555F9581F1B2CAC00BCD89D /* YQL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQL.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0557EDAC1F1C82F200058C70 /* AQIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +136,9 @@
 				0522E28D1F0BC61200A155AB /* Main.storyboard */,
 				0522E2931F0BC61200A155AB /* Assets.xcassets */,
 				0522E2951F0BC61200A155AB /* LaunchScreen.storyboard */,
+				05C639611F1C73CD00D0B771 /* Style.swift */,
+				0545C6441F875F1D006A5168 /* WeatherFontIcons.swift */,
+				0535CD971F8750020007807B /* weathericons-regular-webfont.ttf */,
 				0522E2981F0BC61200A155AB /* Info.plist */,
 				0522E2901F0BC61200A155AB /* NZAirQuality.xcdatamodeld */,
 			);
@@ -186,7 +193,6 @@
 				05EA2D2B1F12695000734544 /* Weather.swift */,
 				05EA2D2D1F1269AF00734544 /* WeatherAPI.swift */,
 				0555F9581F1B2CAC00BCD89D /* YQL.swift */,
-				05C639611F1C73CD00D0B771 /* Style.swift */,
 				055AC2301F20514900AAE55D /* CoreDataManager.swift */,
 				05BC7A071F2116B800824348 /* LocationServices.swift */,
 			);
@@ -315,6 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05A329DB1F87DCF40092079C /* weathericons-regular-webfont.ttf in Resources */,
 				0522E2971F0BC61200A155AB /* LaunchScreen.storyboard in Resources */,
 				0522E2941F0BC61200A155AB /* Assets.xcassets in Resources */,
 				0522E28F1F0BC61200A155AB /* Main.storyboard in Resources */,
@@ -337,13 +344,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NZAirQualityTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		78B801C0F15E9A80C3A2AAAE /* [CP] Embed Pods Frameworks */ = {
@@ -352,9 +362,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NZAirQuality/Pods-NZAirQuality-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
+				"${BUILT_PRODUCTS_DIR}/ScrollableGraphView/ScrollableGraphView.framework",
+				"${BUILT_PRODUCTS_DIR}/TaniwhaTextField/TaniwhaTextField.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScrollableGraphView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TaniwhaTextField.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -397,13 +414,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NZAirQuality-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C994800A872D344E44E4C393 /* [CP] Copy Pods Resources */ = {
@@ -435,6 +455,7 @@
 				052959C01F2B511800A32214 /* WeatherDailyViewCell.swift in Sources */,
 				055AC2311F20514900AAE55D /* CoreDataManager.swift in Sources */,
 				0555F9591F1B2CAC00BCD89D /* YQL.swift in Sources */,
+				0545C6451F875F1D006A5168 /* WeatherFontIcons.swift in Sources */,
 				05E448661F2AD88D00B70DF7 /* WeatherInfoView.swift in Sources */,
 				0572D7551F0BD0130026E4E1 /* AirData.swift in Sources */,
 				0522E28A1F0BC61200A155AB /* AppDelegate.swift in Sources */,

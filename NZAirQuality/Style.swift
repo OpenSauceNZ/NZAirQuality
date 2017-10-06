@@ -26,8 +26,6 @@ let NZADetailsTitleColor = UIColor(rgb: 0xE3EFFF)
 let NZADetailsSubTitleColor = UIColor(rgb: 0xA8CEFF)
 let NZATintColor = UIColor(rgb: 0xB3470C)
 
-
-
 extension UIColor {
     convenience init(red: Int, green: Int, blue: Int) {
         assert(red >= 0 && red <= 255, "Invalid red component")

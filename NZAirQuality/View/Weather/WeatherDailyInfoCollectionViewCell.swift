@@ -10,7 +10,7 @@ import UIKit
 
 class WeatherDailyInfoCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var statuImage: UIImageView!
+    @IBOutlet weak var statuImage: UILabel!
     @IBOutlet weak var day: UILabel!
     @IBOutlet weak var highTemp: UILabel!
     @IBOutlet weak var lowTemp: UILabel!
@@ -18,5 +18,8 @@ class WeatherDailyInfoCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        statuImage.textColor = NZATitleColor
+        statuImage.font = UIFont(name: "WeatherIcons-Regular", size: 50)
+        statuImage.textAlignment = .center
     }
 }

@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SWXMLHash.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ScrollableGraphView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -26,27 +31,6 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>195F31C13FA035E626244646FF4A96AA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>40E761454A1D9813D456FB3D9B4B6580</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C677A6E7D56A9B753D1BE2E5EF5CD71B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DC12F935B16BEFA2A4A48E99800F44B8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

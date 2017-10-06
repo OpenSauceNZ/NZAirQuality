@@ -1,15 +1,18 @@
 PODS:
   - ScrollableGraphView (4.0.4)
+  - SWXMLHash (4.0.0)
   - TaniwhaTextField (1.0)
 
 DEPENDENCIES:
   - ScrollableGraphView
+  - SWXMLHash (~> 4.0.0)
   - TaniwhaTextField
 
 SPEC CHECKSUMS:
   ScrollableGraphView: 072ea302f4ca27779692656a49d51fe537b2b1e7
+  SWXMLHash: 6bbc0bf72975a18ceda469fb7d6a886a26d81694
   TaniwhaTextField: ee9ba7582002e9fc71a55ec9c97c45eb8663b05f
 
-PODFILE CHECKSUM: 6ea8f4be1c78439d8b02eb9f7611d0e249204c5a
+PODFILE CHECKSUM: 48884b3c7d87c688a7d9aff115f601cb2adddc97
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1

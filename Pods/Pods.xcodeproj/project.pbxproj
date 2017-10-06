@@ -7,119 +7,165 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		123A4A00A78798D85E630A21736A3506 /* Pods-NZAirQuality-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE8057525D2ADA23FB6F0AEE9ADC7159 /* Pods-NZAirQuality-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		192F393DA094B88B46E626C4FB320D6B /* ScrollableGraphViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAFFD2CB1B8953862929DF6C8913E5 /* ScrollableGraphViewDataSource.swift */; };
-		1B8D185E6C3A9C93E761D81B6269AFF3 /* Plot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FFD14CDC6CDCC1E397613AC08AA921 /* Plot.swift */; };
-		1CD17232D8A156FE937DDE8C5FAA585C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		1F873E4A0549A10BB45873CD409437C7 /* GradientDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC5A4E3E1EB7450F7952054059F6F76 /* GradientDrawingLayer.swift */; };
-		1FFAD9F8CD3AB7E8823FD7AB80164010 /* Pods-NZAirQuality-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 447B056EA79F4865A27E7E5DE1111B9A /* Pods-NZAirQuality-dummy.m */; };
-		298CD5EA4B9E3BAD29A405819A37FCC4 /* ScrollableGraphView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 429C9CD8ED55EF394002FE231D98B376 /* ScrollableGraphView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02AA8A99883BF75C5FEA1AD1CE45D90B /* FillDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAC0497A639FE398D3CD51646AE98D8 /* FillDrawingLayer.swift */; };
+		1D6E4B8AA33A47925386088D2078875B /* ScrollableGraphViewDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D122EB965C66AFE8F7DEBDBF37AF079 /* ScrollableGraphViewDrawingLayer.swift */; };
+		223C8083A67BDD7469253BA7C53696EA /* DotDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA39F6C5F3E8508A7632B0575A05F92 /* DotDrawingLayer.swift */; };
 		2B677AA5812D07E8D851280BFABA0E22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		31EC66C1FF4B1F7D3E174BEA4A7074F1 /* TaniwhaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A4347FEE2252718F057A34C4B915B /* TaniwhaTextField.swift */; };
-		32516DFA613942D6D05ABB8E06C9AAF1 /* TaniwhaTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EDD70D20325F8C627B857DF37DB74C8 /* TaniwhaTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		642EEFD7FE8226178B5A29C34E0348CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		6AAA0D6362F07EDB4B2BCA2D14E8746B /* ReferenceLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC652E7605782C595A7FE4841F8381B /* ReferenceLines.swift */; };
-		7910051876536094512F1CD569995EA2 /* LinePlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D0A04CD1262FA7215C17EC9C17F99C /* LinePlot.swift */; };
-		79EB9A9172CC26E9231023DC67D5466F /* ScrollableGraphViewDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE2B89623AC4C75D834F13EC50B735D /* ScrollableGraphViewDrawingLayer.swift */; };
-		7FF6065A45A7C0D48D1253FB9CFBC733 /* DotDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC140C9147C9BAAEC9E5141A74E65A4B /* DotDrawingLayer.swift */; };
-		82B5D63D916EBAA4CAD6847F111CEC66 /* FillDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B71E0E050D9D789D5708FFA2847F446 /* FillDrawingLayer.swift */; };
-		8F3760BDF5FCA9BF8C06442A1658100D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		8F69263C4AAC15F5FC35AA8885598222 /* BarDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BBA33FF5E4018DF6A9A44444B4D1C5 /* BarDrawingLayer.swift */; };
-		99A6A0DEAE769FD49B63F63370DC85BB /* BarPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FC7B64D5C3307BD5A63FC73CEC169F /* BarPlot.swift */; };
-		9CD12674F73973BEB3EEC91DD9641304 /* GraphPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CC34730182C0FCCFE7B1575A5B7C38 /* GraphPoint.swift */; };
-		A2310542F0F02A1A155F94CFF5E98BBD /* DotPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99616AC005061573A44BFCFB2D7CE551 /* DotPlot.swift */; };
-		B9C90072950DB66459FCE6C5015FCA3E /* ScrollableGraphViewDrawingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B516041D4A8519A5E814DDFB64064C /* ScrollableGraphViewDrawingDelegate.swift */; };
-		BB526199B799D32F3689DF014B397779 /* ScrollableGraphView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD191E5DC76515FC4CE97E170C0AC6B /* ScrollableGraphView-dummy.m */; };
-		BFA8EAA78322763BBCA8C5DC02EE0BAD /* LabelPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804DA64C48E727D353DC7E3229019BD2 /* LabelPool.swift */; };
+		2F6C0FD4976809537E0C2F9916761A78 /* ReferenceLineDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF0C785551FEF96F01CC180BDE2E05A /* ReferenceLineDrawingView.swift */; };
+		345A8F3FB4775E2300336E7686C5CAAE /* TaniwhaTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B31A1C27D61A2E5894ABD7DA2CD225C /* TaniwhaTextField-dummy.m */; };
+		4D24489C0A3DEFCA517266AD8527E33E /* Pods-NZAirQuality-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE8057525D2ADA23FB6F0AEE9ADC7159 /* Pods-NZAirQuality-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58B5FAC1EFBE859BD81FB9F25BB124E0 /* BarPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1FA5DB746DBA13AC347DB28E7B0BD2 /* BarPlot.swift */; };
+		687702223572DC6F4966233E3C078A3B /* ScrollableGraphViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16E4DA664212F7015A7030AF63CB808 /* ScrollableGraphViewDataSource.swift */; };
+		6C6599C7D0A12559732CC09B776AF4D0 /* Plot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A3660E6498BCAB759B921CF61FB42 /* Plot.swift */; };
+		6C8106649B8768F39E187EC72E29B04E /* ReferenceLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2064813A6910E2A1BA86AD46F0D38 /* ReferenceLines.swift */; };
+		72A18320C359F0980B5160BE4CC2E5BC /* TaniwhaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355DDFA26A4A53262F3DB5CB200EA10E /* TaniwhaTextField.swift */; };
+		72CDD5E92A98301860DECDA6FCE86EB0 /* DotPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D3984B0F43070FB9B8EC6426F121F2 /* DotPlot.swift */; };
+		73B7B3CB52B8CD0448981D2EE1BDD2EA /* SWXMLHash-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3081D3E2918C23E3B58B5A9D3BEE6D1 /* SWXMLHash-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78BDC6136F586845EDCAB60ACABAE403 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		885012071494C961929E6167C21F00A5 /* GraphPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFFF842EA9B69F18A959028F22EF55F /* GraphPoint.swift */; };
+		8BC4F362237E1269DB795CB05B5E7F75 /* ScrollableGraphView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F611DC378B0EA352F969F4A00D5D1C2 /* ScrollableGraphView-dummy.m */; };
+		8CE8257CD006AE2565428FB064DB670C /* GradientDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1C9B532A14C1EF5CC02E7D45FF93C0 /* GradientDrawingLayer.swift */; };
+		A3F354E3C8265F8462DAA620FA7DCE62 /* Pods-NZAirQuality-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 447B056EA79F4865A27E7E5DE1111B9A /* Pods-NZAirQuality-dummy.m */; };
+		A6406A2DCF496D24468D6D3D9F9057BE /* LineDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977524F37A964FD9B98A4B38B9B4BC76 /* LineDrawingLayer.swift */; };
+		B4FB6DB3CD147B96B945EA9DA4A90E09 /* ScrollableGraphView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07DB819C0C1EE5B13983E57914EC08D3 /* ScrollableGraphView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9B9BC630AF5C6D57A0ADFF47C1A0CDE /* SWXMLHash+TypeConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E83A9EC4297FDE8C6B11C4A9304B018 /* SWXMLHash+TypeConversion.swift */; };
+		BA76D560D0656FDDEAD6602A71013D7C /* LabelPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29D853F986FC408D222C4E7405F486A /* LabelPool.swift */; };
+		BC6E772DF1F52CB5EEB713EE6BD7AEF4 /* TaniwhaTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 132DE38F387CC48EA041BE7FD1630576 /* TaniwhaTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6A7F65C12F917294C21E09AAF8BE88F /* ScrollableGraphViewDrawingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D337E4C4F09125A7377C0FAA0E86F524 /* ScrollableGraphViewDrawingDelegate.swift */; };
 		C8E8C2665083E83738D7C70FF5BC2BF8 /* Pods-NZAirQualityTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 102B83558E42C0C96C5CAE920CFD8501 /* Pods-NZAirQualityTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C9139F2C00CD80BF3005A5DD88ED869E /* GraphPointAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41D17AF79ED57215098C52577DC4F42 /* GraphPointAnimation.swift */; };
-		D97E4363F9EBF46F31C133CA91DD3E57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		DBC29DDA0B717CFFFAFF63B1E056043E /* LineDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E1CF374F97394900D2BD8BABCA1532 /* LineDrawingLayer.swift */; };
-		E5DDEAB5D14FBF0A6655937F0F2C7BD8 /* ScrollableGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8818B9136078589C958D02A0BC75E /* ScrollableGraphView.swift */; };
-		E8F2B531C7013090BBD1C0C3CE34A492 /* ReferenceLineDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292FB5C79282C001CBECF66E3BC478F0 /* ReferenceLineDrawingView.swift */; };
-		EC4D065751F56602353DA0BF170CD36D /* TaniwhaTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6028DFF4B82D5E590FAF96BD79EA20C6 /* TaniwhaTextField-dummy.m */; };
+		C990DDE07A78394EB1FD0FB455FE08E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		D5C72431C784C6AC55E9D91571EA518D /* BarDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E5C9903438A33AC5306F21A02F1E65 /* BarDrawingLayer.swift */; };
+		DC68A2D8553A12289AF8B175065F71E8 /* ScrollableGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE2E0CE4EB613F0F638D0EAC0EDD407 /* ScrollableGraphView.swift */; };
+		DCFEEE6CC709BA257A94614128C8526A /* GraphPointAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A94961EBE8C842CD9CDB8E2B25D61 /* GraphPointAnimation.swift */; };
+		DEE982027B176E6D18DDE98BC7D4C98B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		E0A815FA1F4442A32A88B4DA1EA3E948 /* SWXMLHash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27736A74B6DE373901DB35D9A7E78D84 /* SWXMLHash-dummy.m */; };
 		ECC1B4498CF2090AB8FFE12869388A6D /* Pods-NZAirQualityTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FE9247F1A8A18CA90EA25D2E07546B /* Pods-NZAirQualityTests-dummy.m */; };
+		EE679FB49F93876D1DFB4B9AFC8263F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		F45DDDDBAB902491CF26CCD5C8649C50 /* LinePlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F9B144132A1A8BF95E3D2D986F7A68 /* LinePlot.swift */; };
+		F627906F1AB9E8E0EB9299C04D467FC2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		F939F65769C4C55AAA2DF2A538ACD8D6 /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417174E5C6C9C3F52FBB2F1B733645CF /* SWXMLHash.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4157E80174AB253028A3E629A8670132 /* PBXContainerItemProxy */ = {
+		7F3E5028332672A899089D50F3D9684B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C677A6E7D56A9B753D1BE2E5EF5CD71B;
+			remoteGlobalIDString = 5AF53A6FDF395A812F5CBA28CE566241;
+			remoteInfo = SWXMLHash;
+		};
+		D8D1833E56F9ADB4C9F66CB2135D8497 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63E8C3E1895E7A7375FDE97BE2153FAB;
 			remoteInfo = TaniwhaTextField;
 		};
-		D682C4CF75A9C641A20104BAD95E4518 /* PBXContainerItemProxy */ = {
+		EBCB71190447945F50108C1AFD7CC9F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DC12F935B16BEFA2A4A48E99800F44B8;
+			remoteGlobalIDString = 9DEA9BEDD28808E36336CE9C66C93E7D;
 			remoteInfo = ScrollableGraphView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		070B7CB513E1E0BB999CE42F1ED58556 /* ScrollableGraphView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScrollableGraphView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B234C9A3B0414A83A71F20F26CF5439 /* TaniwhaTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TaniwhaTextField.xcconfig; sourceTree = "<group>"; };
+		0193C6221690E6BB28D48EA652A09DB6 /* TaniwhaTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TaniwhaTextField.framework; path = TaniwhaTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07DB819C0C1EE5B13983E57914EC08D3 /* ScrollableGraphView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollableGraphView-umbrella.h"; sourceTree = "<group>"; };
 		0B5895E7807335E289EBC28751CA23FF /* Pods-NZAirQuality-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NZAirQuality-resources.sh"; sourceTree = "<group>"; };
-		0DC7BBC410CB9F36E6D79CBD52059C5E /* ScrollableGraphView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ScrollableGraphView.modulemap; sourceTree = "<group>"; };
+		0D122EB965C66AFE8F7DEBDBF37AF079 /* ScrollableGraphViewDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphViewDrawingLayer.swift; path = Classes/Drawing/ScrollableGraphViewDrawingLayer.swift; sourceTree = "<group>"; };
+		0EF0C785551FEF96F01CC180BDE2E05A /* ReferenceLineDrawingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceLineDrawingView.swift; path = Classes/Drawing/ReferenceLineDrawingView.swift; sourceTree = "<group>"; };
+		0F611DC378B0EA352F969F4A00D5D1C2 /* ScrollableGraphView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ScrollableGraphView-dummy.m"; sourceTree = "<group>"; };
+		0FE2E0CE4EB613F0F638D0EAC0EDD407 /* ScrollableGraphView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphView.swift; path = Classes/ScrollableGraphView.swift; sourceTree = "<group>"; };
 		102B83558E42C0C96C5CAE920CFD8501 /* Pods-NZAirQualityTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NZAirQualityTests-umbrella.h"; sourceTree = "<group>"; };
 		116D2415BC1091FD6E247FDB9737D9D7 /* Pods-NZAirQuality-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NZAirQuality-acknowledgements.plist"; sourceTree = "<group>"; };
-		12BBA33FF5E4018DF6A9A44444B4D1C5 /* BarDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarDrawingLayer.swift; path = Classes/Drawing/BarDrawingLayer.swift; sourceTree = "<group>"; };
-		15B516041D4A8519A5E814DDFB64064C /* ScrollableGraphViewDrawingDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphViewDrawingDelegate.swift; path = Classes/Protocols/ScrollableGraphViewDrawingDelegate.swift; sourceTree = "<group>"; };
-		292FB5C79282C001CBECF66E3BC478F0 /* ReferenceLineDrawingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceLineDrawingView.swift; path = Classes/Drawing/ReferenceLineDrawingView.swift; sourceTree = "<group>"; };
-		37D0A04CD1262FA7215C17EC9C17F99C /* LinePlot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinePlot.swift; path = Classes/Plots/LinePlot.swift; sourceTree = "<group>"; };
-		3EDD70D20325F8C627B857DF37DB74C8 /* TaniwhaTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TaniwhaTextField-umbrella.h"; sourceTree = "<group>"; };
-		3FC70E3B53DD138719696CF681B3CA65 /* Pods-NZAirQuality.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NZAirQuality.modulemap"; sourceTree = "<group>"; };
-		429C9CD8ED55EF394002FE231D98B376 /* ScrollableGraphView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollableGraphView-umbrella.h"; sourceTree = "<group>"; };
+		132DE38F387CC48EA041BE7FD1630576 /* TaniwhaTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TaniwhaTextField-umbrella.h"; sourceTree = "<group>"; };
+		14D3984B0F43070FB9B8EC6426F121F2 /* DotPlot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DotPlot.swift; path = Classes/Plots/DotPlot.swift; sourceTree = "<group>"; };
+		171FB7F4D498788DC60167C864DDB6C7 /* SWXMLHash-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWXMLHash-prefix.pch"; sourceTree = "<group>"; };
+		17F2064813A6910E2A1BA86AD46F0D38 /* ReferenceLines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceLines.swift; path = Classes/Reference/ReferenceLines.swift; sourceTree = "<group>"; };
+		197782939463593B72885035D735BCF2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E83A9EC4297FDE8C6B11C4A9304B018 /* SWXMLHash+TypeConversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SWXMLHash+TypeConversion.swift"; path = "Source/SWXMLHash+TypeConversion.swift"; sourceTree = "<group>"; };
+		27736A74B6DE373901DB35D9A7E78D84 /* SWXMLHash-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SWXMLHash-dummy.m"; sourceTree = "<group>"; };
+		2B17CB8377B63AB0F467C496348DE04E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA39F6C5F3E8508A7632B0575A05F92 /* DotDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DotDrawingLayer.swift; path = Classes/Drawing/DotDrawingLayer.swift; sourceTree = "<group>"; };
+		355DDFA26A4A53262F3DB5CB200EA10E /* TaniwhaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaniwhaTextField.swift; path = TaniwhaTextField/Classes/TaniwhaTextField.swift; sourceTree = "<group>"; };
+		37E5C9903438A33AC5306F21A02F1E65 /* BarDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarDrawingLayer.swift; path = Classes/Drawing/BarDrawingLayer.swift; sourceTree = "<group>"; };
+		3FC70E3B53DD138719696CF681B3CA65 /* Pods-NZAirQuality.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NZAirQuality.modulemap"; sourceTree = "<group>"; };
+		417174E5C6C9C3F52FBB2F1B733645CF /* SWXMLHash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SWXMLHash.swift; path = Source/SWXMLHash.swift; sourceTree = "<group>"; };
 		447B056EA79F4865A27E7E5DE1111B9A /* Pods-NZAirQuality-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NZAirQuality-dummy.m"; sourceTree = "<group>"; };
-		4B71E0E050D9D789D5708FFA2847F446 /* FillDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FillDrawingLayer.swift; path = Classes/Drawing/FillDrawingLayer.swift; sourceTree = "<group>"; };
-		51E93D7FC3FEF817A1807A2633284A86 /* ScrollableGraphView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollableGraphView.xcconfig; sourceTree = "<group>"; };
-		6028DFF4B82D5E590FAF96BD79EA20C6 /* TaniwhaTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TaniwhaTextField-dummy.m"; sourceTree = "<group>"; };
-		61E1CF374F97394900D2BD8BABCA1532 /* LineDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineDrawingLayer.swift; path = Classes/Drawing/LineDrawingLayer.swift; sourceTree = "<group>"; };
-		6A8A4347FEE2252718F057A34C4B915B /* TaniwhaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaniwhaTextField.swift; path = TaniwhaTextField/Classes/TaniwhaTextField.swift; sourceTree = "<group>"; };
+		4B31A1C27D61A2E5894ABD7DA2CD225C /* TaniwhaTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TaniwhaTextField-dummy.m"; sourceTree = "<group>"; };
+		514E2324DB186B2C1E41A78D572EBEAE /* SWXMLHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SWXMLHash.framework; path = SWXMLHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59494590D107AE453B1E96F4688E5DC9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A645EB1B2B48D6AA8F0F67B9F78CC7E /* SWXMLHash.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWXMLHash.xcconfig; sourceTree = "<group>"; };
+		63BB0102AA7A828A4227183202FC55F4 /* ScrollableGraphView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollableGraphView.xcconfig; sourceTree = "<group>"; };
 		6D2BF6E3B26E24380EF60463DE776C56 /* Pods-NZAirQuality.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NZAirQuality.debug.xcconfig"; sourceTree = "<group>"; };
+		748186E4A870D48FE7B95006A364436C /* TaniwhaTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TaniwhaTextField.xcconfig; sourceTree = "<group>"; };
 		795B2B54E1D3349550ACFC1D11C352D6 /* Pods-NZAirQuality.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NZAirQuality.release.xcconfig"; sourceTree = "<group>"; };
-		7CD191E5DC76515FC4CE97E170C0AC6B /* ScrollableGraphView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ScrollableGraphView-dummy.m"; sourceTree = "<group>"; };
-		804DA64C48E727D353DC7E3229019BD2 /* LabelPool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabelPool.swift; path = Classes/Reference/LabelPool.swift; sourceTree = "<group>"; };
-		83D6C1A3FD6F5D7735A9D767B18CCAD9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CFD557A4E46E096754DE66D97AF21AF /* SWXMLHash.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SWXMLHash.modulemap; sourceTree = "<group>"; };
 		847514125898F0E8042518E2EFCE1C1C /* Pods-NZAirQualityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NZAirQualityTests.release.xcconfig"; sourceTree = "<group>"; };
 		86944A6F226E61F39C6685820A5B8CD6 /* Pods-NZAirQualityTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NZAirQualityTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9952AFD3DB2AC988FA77946CB73B1F83 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		99616AC005061573A44BFCFB2D7CE551 /* DotPlot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DotPlot.swift; path = Classes/Plots/DotPlot.swift; sourceTree = "<group>"; };
-		9BC5A4E3E1EB7450F7952054059F6F76 /* GradientDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientDrawingLayer.swift; path = Classes/Drawing/GradientDrawingLayer.swift; sourceTree = "<group>"; };
-		A6A7C6E7E56EE17FB6DF8262DEAE8844 /* ScrollableGraphView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollableGraphView-prefix.pch"; sourceTree = "<group>"; };
-		A6FC7B64D5C3307BD5A63FC73CEC169F /* BarPlot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarPlot.swift; path = Classes/Plots/BarPlot.swift; sourceTree = "<group>"; };
-		A7FAFFD2CB1B8953862929DF6C8913E5 /* ScrollableGraphViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphViewDataSource.swift; path = Classes/Protocols/ScrollableGraphViewDataSource.swift; sourceTree = "<group>"; };
+		8E1FA5DB746DBA13AC347DB28E7B0BD2 /* BarPlot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarPlot.swift; path = Classes/Plots/BarPlot.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		977524F37A964FD9B98A4B38B9B4BC76 /* LineDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineDrawingLayer.swift; path = Classes/Drawing/LineDrawingLayer.swift; sourceTree = "<group>"; };
+		9D5A54BF9EE7B23F6B40D0507DC06BA3 /* TaniwhaTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TaniwhaTextField-prefix.pch"; sourceTree = "<group>"; };
+		A4D1B6F3895485264AC8109B2688904A /* ScrollableGraphView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollableGraphView-prefix.pch"; sourceTree = "<group>"; };
+		ABFC97D717F81E041F9B0B2C2F992336 /* Pods_NZAirQuality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NZAirQuality.framework; path = "Pods-NZAirQuality.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE8057525D2ADA23FB6F0AEE9ADC7159 /* Pods-NZAirQuality-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NZAirQuality-umbrella.h"; sourceTree = "<group>"; };
 		B01675AF7F404F2F5DB74293B7BF0409 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3CA0AB8E3CC309E1FFB56F3CEDA1F8B /* Pods-NZAirQualityTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NZAirQualityTests-frameworks.sh"; sourceTree = "<group>"; };
-		B4CC34730182C0FCCFE7B1575A5B7C38 /* GraphPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphPoint.swift; path = Classes/Plots/Animation/GraphPoint.swift; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		BCA5D48B77998F2A44D090103EB589A4 /* Pods-NZAirQuality-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NZAirQuality-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BD03D32784DF57F769685CF1B4EFC6EF /* TaniwhaTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TaniwhaTextField-prefix.pch"; sourceTree = "<group>"; };
-		C25658E73B8A63F52A7F55B8F219A118 /* Pods_NZAirQualityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NZAirQualityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C448D60025E5114F809B0854092820AB /* Pods-NZAirQualityTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NZAirQualityTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C5FFD14CDC6CDCC1E397613AC08AA921 /* Plot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Plot.swift; path = Classes/Plots/Plot.swift; sourceTree = "<group>"; };
-		CAC652E7605782C595A7FE4841F8381B /* ReferenceLines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceLines.swift; path = Classes/Reference/ReferenceLines.swift; sourceTree = "<group>"; };
-		CCE2B89623AC4C75D834F13EC50B735D /* ScrollableGraphViewDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphViewDrawingLayer.swift; path = Classes/Drawing/ScrollableGraphViewDrawingLayer.swift; sourceTree = "<group>"; };
+		C72A3660E6498BCAB759B921CF61FB42 /* Plot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Plot.swift; path = Classes/Plots/Plot.swift; sourceTree = "<group>"; };
+		C7F9B144132A1A8BF95E3D2D986F7A68 /* LinePlot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinePlot.swift; path = Classes/Plots/LinePlot.swift; sourceTree = "<group>"; };
+		CA1C9B532A14C1EF5CC02E7D45FF93C0 /* GradientDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientDrawingLayer.swift; path = Classes/Drawing/GradientDrawingLayer.swift; sourceTree = "<group>"; };
+		CAAC0497A639FE398D3CD51646AE98D8 /* FillDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FillDrawingLayer.swift; path = Classes/Drawing/FillDrawingLayer.swift; sourceTree = "<group>"; };
 		CF7C767C1128AFF84FEAD8DBF0334A94 /* Pods-NZAirQualityTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NZAirQualityTests-resources.sh"; sourceTree = "<group>"; };
+		D29D853F986FC408D222C4E7405F486A /* LabelPool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabelPool.swift; path = Classes/Reference/LabelPool.swift; sourceTree = "<group>"; };
+		D2C3BB7E14A98D1EBE01DFA198186FDB /* Pods_NZAirQualityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NZAirQualityTests.framework; path = "Pods-NZAirQualityTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D337E4C4F09125A7377C0FAA0E86F524 /* ScrollableGraphViewDrawingDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphViewDrawingDelegate.swift; path = Classes/Protocols/ScrollableGraphViewDrawingDelegate.swift; sourceTree = "<group>"; };
 		D6FE9247F1A8A18CA90EA25D2E07546B /* Pods-NZAirQualityTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NZAirQualityTests-dummy.m"; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DBBF8D3AEF3527D6405B64A6781C9021 /* TaniwhaTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TaniwhaTextField.modulemap; sourceTree = "<group>"; };
 		DF1637F36905508E487AD0383B4E673A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3081D3E2918C23E3B58B5A9D3BEE6D1 /* SWXMLHash-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWXMLHash-umbrella.h"; sourceTree = "<group>"; };
 		E3871AF705A2DB3F0C4AA13414302BD9 /* Pods-NZAirQuality-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NZAirQuality-frameworks.sh"; sourceTree = "<group>"; };
-		E41D17AF79ED57215098C52577DC4F42 /* GraphPointAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphPointAnimation.swift; path = Classes/Plots/Animation/GraphPointAnimation.swift; sourceTree = "<group>"; };
 		E75B9861A63D05EEB1F0D0FE93BDEC2B /* Pods-NZAirQualityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NZAirQualityTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E8A7F7BB456BCB20554929B6FD6BF885 /* Pods_NZAirQuality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NZAirQuality.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAF227CFCAD9BA09C90D26AB94A4427F /* Pods-NZAirQualityTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NZAirQualityTests.modulemap"; sourceTree = "<group>"; };
-		EC140C9147C9BAAEC9E5141A74E65A4B /* DotDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DotDrawingLayer.swift; path = Classes/Drawing/DotDrawingLayer.swift; sourceTree = "<group>"; };
-		ECC8818B9136078589C958D02A0BC75E /* ScrollableGraphView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphView.swift; path = Classes/ScrollableGraphView.swift; sourceTree = "<group>"; };
-		FA6481E1B1E279A15D1683CD8E707D75 /* TaniwhaTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TaniwhaTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAF227CFCAD9BA09C90D26AB94A4427F /* Pods-NZAirQualityTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NZAirQualityTests.modulemap"; sourceTree = "<group>"; };
+		ED8904AD820B6FFC229EE1A9BCD96800 /* ScrollableGraphView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScrollableGraphView.framework; path = ScrollableGraphView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEBF68E257D608FDB70AA4C615A88148 /* ScrollableGraphView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ScrollableGraphView.modulemap; sourceTree = "<group>"; };
+		EF2A94961EBE8C842CD9CDB8E2B25D61 /* GraphPointAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphPointAnimation.swift; path = Classes/Plots/Animation/GraphPointAnimation.swift; sourceTree = "<group>"; };
+		F16E4DA664212F7015A7030AF63CB808 /* ScrollableGraphViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphViewDataSource.swift; path = Classes/Protocols/ScrollableGraphViewDataSource.swift; sourceTree = "<group>"; };
+		F67718FE6AF8BE6FB8DE76F2EE16344C /* TaniwhaTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TaniwhaTextField.modulemap; sourceTree = "<group>"; };
+		FBFFF842EA9B69F18A959028F22EF55F /* GraphPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphPoint.swift; path = Classes/Plots/Animation/GraphPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0293EE00C33FEC4072E171C07DD916A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEE982027B176E6D18DDE98BC7D4C98B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08945903D35C2CEE19557A68AB315557 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE679FB49F93876D1DFB4B9AFC8263F9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CBEEEF1C79C90E7ED76DFE446E20577 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78BDC6136F586845EDCAB60ACABAE403 /* Foundation.framework in Frameworks */,
+				F627906F1AB9E8E0EB9299C04D467FC2 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DDD054761312C8D252EDEFC7ADFFF00 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -128,28 +174,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		573A765F433E6B0D7A842B9902712771 /* Frameworks */ = {
+		7B8B22FB76EB006D93B56ACA2ED948BB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F3760BDF5FCA9BF8C06442A1658100D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6B40941DDBC936FACA91D34EFE0BD26D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1CD17232D8A156FE937DDE8C5FAA585C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		93D733EE0FB70AE0B2BD5A2B594C4E1D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D97E4363F9EBF46F31C133CA91DD3E57 /* Foundation.framework in Frameworks */,
-				642EEFD7FE8226178B5A29C34E0348CD /* UIKit.framework in Frameworks */,
+				C990DDE07A78394EB1FD0FB455FE08E1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,18 +203,16 @@
 			path = "Target Support Files/Pods-NZAirQualityTests";
 			sourceTree = "<group>";
 		};
-		108E03977CF5398E8C19BC2343616168 /* Support Files */ = {
+		41416C47B8E6A0DA677B225743A34F52 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9952AFD3DB2AC988FA77946CB73B1F83 /* Info.plist */,
-				0DC7BBC410CB9F36E6D79CBD52059C5E /* ScrollableGraphView.modulemap */,
-				51E93D7FC3FEF817A1807A2633284A86 /* ScrollableGraphView.xcconfig */,
-				7CD191E5DC76515FC4CE97E170C0AC6B /* ScrollableGraphView-dummy.m */,
-				A6A7C6E7E56EE17FB6DF8262DEAE8844 /* ScrollableGraphView-prefix.pch */,
-				429C9CD8ED55EF394002FE231D98B376 /* ScrollableGraphView-umbrella.h */,
+				ABFC97D717F81E041F9B0B2C2F992336 /* Pods_NZAirQuality.framework */,
+				D2C3BB7E14A98D1EBE01DFA198186FDB /* Pods_NZAirQualityTests.framework */,
+				ED8904AD820B6FFC229EE1A9BCD96800 /* ScrollableGraphView.framework */,
+				514E2324DB186B2C1E41A78D572EBEAE /* SWXMLHash.framework */,
+				0193C6221690E6BB28D48EA652A09DB6 /* TaniwhaTextField.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/ScrollableGraphView";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -205,15 +232,64 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		519391CF90EDE8F401B261015CCA1D28 /* SWXMLHash */ = {
+			isa = PBXGroup;
+			children = (
+				417174E5C6C9C3F52FBB2F1B733645CF /* SWXMLHash.swift */,
+				1E83A9EC4297FDE8C6B11C4A9304B018 /* SWXMLHash+TypeConversion.swift */,
+				7D612993428F4E2A45F1D6EAA3FEEB7C /* Support Files */,
+			);
+			name = SWXMLHash;
+			path = SWXMLHash;
+			sourceTree = "<group>";
+		};
+		52EE1263651FE7B36E5C70F85D96EF55 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B17CB8377B63AB0F467C496348DE04E /* Info.plist */,
+				F67718FE6AF8BE6FB8DE76F2EE16344C /* TaniwhaTextField.modulemap */,
+				748186E4A870D48FE7B95006A364436C /* TaniwhaTextField.xcconfig */,
+				4B31A1C27D61A2E5894ABD7DA2CD225C /* TaniwhaTextField-dummy.m */,
+				9D5A54BF9EE7B23F6B40D0507DC06BA3 /* TaniwhaTextField-prefix.pch */,
+				132DE38F387CC48EA041BE7FD1630576 /* TaniwhaTextField-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TaniwhaTextField";
+			sourceTree = "<group>";
+		};
+		7D612993428F4E2A45F1D6EAA3FEEB7C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				59494590D107AE453B1E96F4688E5DC9 /* Info.plist */,
+				7CFD557A4E46E096754DE66D97AF21AF /* SWXMLHash.modulemap */,
+				5A645EB1B2B48D6AA8F0F67B9F78CC7E /* SWXMLHash.xcconfig */,
+				27736A74B6DE373901DB35D9A7E78D84 /* SWXMLHash-dummy.m */,
+				171FB7F4D498788DC60167C864DDB6C7 /* SWXMLHash-prefix.pch */,
+				E3081D3E2918C23E3B58B5A9D3BEE6D1 /* SWXMLHash-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SWXMLHash";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				A851B814988B8760DFB5FCDD15B31F40 /* Pods */,
-				BFA787BA97F2B4E210A853E78D66A8E3 /* Products */,
+				F67426C85094BE34A120071235D426D1 /* Pods */,
+				41416C47B8E6A0DA677B225743A34F52 /* Products */,
 				AEDEAEEE407463C99FF18E83A679590C /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		7F8DD7E472F3ADF1D411C6DCEE913E7B /* TaniwhaTextField */ = {
+			isa = PBXGroup;
+			children = (
+				355DDFA26A4A53262F3DB5CB200EA10E /* TaniwhaTextField.swift */,
+				52EE1263651FE7B36E5C70F85D96EF55 /* Support Files */,
+			);
+			name = TaniwhaTextField;
+			path = TaniwhaTextField;
 			sourceTree = "<group>";
 		};
 		819AB8025EDB3CE102B6A0FE03B3724A /* Pods-NZAirQuality */ = {
@@ -234,15 +310,6 @@
 			path = "Target Support Files/Pods-NZAirQuality";
 			sourceTree = "<group>";
 		};
-		A851B814988B8760DFB5FCDD15B31F40 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E535311F26BDC89F687FB51D2B2E8973 /* ScrollableGraphView */,
-				C45E72A8B1828A4667C46AE0377834A3 /* TaniwhaTextField */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		AEDEAEEE407463C99FF18E83A679590C /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,64 +319,55 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BFA787BA97F2B4E210A853E78D66A8E3 /* Products */ = {
+		C15069E5112E3FCC592A464F2E438311 /* ScrollableGraphView */ = {
 			isa = PBXGroup;
 			children = (
-				E8A7F7BB456BCB20554929B6FD6BF885 /* Pods_NZAirQuality.framework */,
-				C25658E73B8A63F52A7F55B8F219A118 /* Pods_NZAirQualityTests.framework */,
-				070B7CB513E1E0BB999CE42F1ED58556 /* ScrollableGraphView.framework */,
-				FA6481E1B1E279A15D1683CD8E707D75 /* TaniwhaTextField.framework */,
+				37E5C9903438A33AC5306F21A02F1E65 /* BarDrawingLayer.swift */,
+				8E1FA5DB746DBA13AC347DB28E7B0BD2 /* BarPlot.swift */,
+				2EA39F6C5F3E8508A7632B0575A05F92 /* DotDrawingLayer.swift */,
+				14D3984B0F43070FB9B8EC6426F121F2 /* DotPlot.swift */,
+				CAAC0497A639FE398D3CD51646AE98D8 /* FillDrawingLayer.swift */,
+				CA1C9B532A14C1EF5CC02E7D45FF93C0 /* GradientDrawingLayer.swift */,
+				FBFFF842EA9B69F18A959028F22EF55F /* GraphPoint.swift */,
+				EF2A94961EBE8C842CD9CDB8E2B25D61 /* GraphPointAnimation.swift */,
+				D29D853F986FC408D222C4E7405F486A /* LabelPool.swift */,
+				977524F37A964FD9B98A4B38B9B4BC76 /* LineDrawingLayer.swift */,
+				C7F9B144132A1A8BF95E3D2D986F7A68 /* LinePlot.swift */,
+				C72A3660E6498BCAB759B921CF61FB42 /* Plot.swift */,
+				0EF0C785551FEF96F01CC180BDE2E05A /* ReferenceLineDrawingView.swift */,
+				17F2064813A6910E2A1BA86AD46F0D38 /* ReferenceLines.swift */,
+				0FE2E0CE4EB613F0F638D0EAC0EDD407 /* ScrollableGraphView.swift */,
+				F16E4DA664212F7015A7030AF63CB808 /* ScrollableGraphViewDataSource.swift */,
+				D337E4C4F09125A7377C0FAA0E86F524 /* ScrollableGraphViewDrawingDelegate.swift */,
+				0D122EB965C66AFE8F7DEBDBF37AF079 /* ScrollableGraphViewDrawingLayer.swift */,
+				DA052AF8133EB36B9A4256AD130B0E3B /* Support Files */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C45E72A8B1828A4667C46AE0377834A3 /* TaniwhaTextField */ = {
-			isa = PBXGroup;
-			children = (
-				6A8A4347FEE2252718F057A34C4B915B /* TaniwhaTextField.swift */,
-				F07A1B7A692957ADC444B8B3002F1857 /* Support Files */,
-			);
-			path = TaniwhaTextField;
-			sourceTree = "<group>";
-		};
-		E535311F26BDC89F687FB51D2B2E8973 /* ScrollableGraphView */ = {
-			isa = PBXGroup;
-			children = (
-				12BBA33FF5E4018DF6A9A44444B4D1C5 /* BarDrawingLayer.swift */,
-				A6FC7B64D5C3307BD5A63FC73CEC169F /* BarPlot.swift */,
-				EC140C9147C9BAAEC9E5141A74E65A4B /* DotDrawingLayer.swift */,
-				99616AC005061573A44BFCFB2D7CE551 /* DotPlot.swift */,
-				4B71E0E050D9D789D5708FFA2847F446 /* FillDrawingLayer.swift */,
-				9BC5A4E3E1EB7450F7952054059F6F76 /* GradientDrawingLayer.swift */,
-				B4CC34730182C0FCCFE7B1575A5B7C38 /* GraphPoint.swift */,
-				E41D17AF79ED57215098C52577DC4F42 /* GraphPointAnimation.swift */,
-				804DA64C48E727D353DC7E3229019BD2 /* LabelPool.swift */,
-				61E1CF374F97394900D2BD8BABCA1532 /* LineDrawingLayer.swift */,
-				37D0A04CD1262FA7215C17EC9C17F99C /* LinePlot.swift */,
-				C5FFD14CDC6CDCC1E397613AC08AA921 /* Plot.swift */,
-				292FB5C79282C001CBECF66E3BC478F0 /* ReferenceLineDrawingView.swift */,
-				CAC652E7605782C595A7FE4841F8381B /* ReferenceLines.swift */,
-				ECC8818B9136078589C958D02A0BC75E /* ScrollableGraphView.swift */,
-				A7FAFFD2CB1B8953862929DF6C8913E5 /* ScrollableGraphViewDataSource.swift */,
-				15B516041D4A8519A5E814DDFB64064C /* ScrollableGraphViewDrawingDelegate.swift */,
-				CCE2B89623AC4C75D834F13EC50B735D /* ScrollableGraphViewDrawingLayer.swift */,
-				108E03977CF5398E8C19BC2343616168 /* Support Files */,
-			);
+			name = ScrollableGraphView;
 			path = ScrollableGraphView;
 			sourceTree = "<group>";
 		};
-		F07A1B7A692957ADC444B8B3002F1857 /* Support Files */ = {
+		DA052AF8133EB36B9A4256AD130B0E3B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				83D6C1A3FD6F5D7735A9D767B18CCAD9 /* Info.plist */,
-				DBBF8D3AEF3527D6405B64A6781C9021 /* TaniwhaTextField.modulemap */,
-				0B234C9A3B0414A83A71F20F26CF5439 /* TaniwhaTextField.xcconfig */,
-				6028DFF4B82D5E590FAF96BD79EA20C6 /* TaniwhaTextField-dummy.m */,
-				BD03D32784DF57F769685CF1B4EFC6EF /* TaniwhaTextField-prefix.pch */,
-				3EDD70D20325F8C627B857DF37DB74C8 /* TaniwhaTextField-umbrella.h */,
+				197782939463593B72885035D735BCF2 /* Info.plist */,
+				EEBF68E257D608FDB70AA4C615A88148 /* ScrollableGraphView.modulemap */,
+				63BB0102AA7A828A4227183202FC55F4 /* ScrollableGraphView.xcconfig */,
+				0F611DC378B0EA352F969F4A00D5D1C2 /* ScrollableGraphView-dummy.m */,
+				A4D1B6F3895485264AC8109B2688904A /* ScrollableGraphView-prefix.pch */,
+				07DB819C0C1EE5B13983E57914EC08D3 /* ScrollableGraphView-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/TaniwhaTextField";
+			path = "../Target Support Files/ScrollableGraphView";
+			sourceTree = "<group>";
+		};
+		F67426C85094BE34A120071235D426D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C15069E5112E3FCC592A464F2E438311 /* ScrollableGraphView */,
+				519391CF90EDE8F401B261015CCA1D28 /* SWXMLHash */,
+				7F8DD7E472F3ADF1D411C6DCEE913E7B /* TaniwhaTextField */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,27 +381,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A56BD762F3615E3C36BA1BBA5828B7DA /* Headers */ = {
+		50FCFAF770D165667D7A6DB0E09EAA69 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				123A4A00A78798D85E630A21736A3506 /* Pods-NZAirQuality-umbrella.h in Headers */,
+				4D24489C0A3DEFCA517266AD8527E33E /* Pods-NZAirQuality-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D33A8474836D0F50BC11E042F2FDC4E5 /* Headers */ = {
+		CD943287B19A4F374DEE51C2732CE143 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				298CD5EA4B9E3BAD29A405819A37FCC4 /* ScrollableGraphView-umbrella.h in Headers */,
+				BC6E772DF1F52CB5EEB713EE6BD7AEF4 /* TaniwhaTextField-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA3BF1EE077C5029220607C53B46C9A8 /* Headers */ = {
+		E4BA2CF93B2B394FC7E4E0A24581558A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32516DFA613942D6D05ABB8E06C9AAF1 /* TaniwhaTextField-umbrella.h in Headers */,
+				B4FB6DB3CD147B96B945EA9DA4A90E09 /* ScrollableGraphView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B65D42E59ECC50E027B0B6339B9114 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73B7B3CB52B8CD0448981D2EE1BDD2EA /* SWXMLHash-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,35 +430,33 @@
 			);
 			name = "Pods-NZAirQualityTests";
 			productName = "Pods-NZAirQualityTests";
-			productReference = C25658E73B8A63F52A7F55B8F219A118 /* Pods_NZAirQualityTests.framework */;
+			productReference = D2C3BB7E14A98D1EBE01DFA198186FDB /* Pods_NZAirQualityTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		40E761454A1D9813D456FB3D9B4B6580 /* Pods-NZAirQuality */ = {
+		5AF53A6FDF395A812F5CBA28CE566241 /* SWXMLHash */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F557249C009A1BC90768E14C4599039B /* Build configuration list for PBXNativeTarget "Pods-NZAirQuality" */;
+			buildConfigurationList = D389CBB15BB2B6A5CE3DDE01962AC70E /* Build configuration list for PBXNativeTarget "SWXMLHash" */;
 			buildPhases = (
-				0CE97A5073072C63386D337B7C8D4263 /* Sources */,
-				573A765F433E6B0D7A842B9902712771 /* Frameworks */,
-				A56BD762F3615E3C36BA1BBA5828B7DA /* Headers */,
+				B31628B1798542913F90344E5F218465 /* Sources */,
+				0293EE00C33FEC4072E171C07DD916A0 /* Frameworks */,
+				F5B65D42E59ECC50E027B0B6339B9114 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				097B1960C8D54164C493D03CD0641FED /* PBXTargetDependency */,
-				E40114E2981FC97D5FD4611DD49D3613 /* PBXTargetDependency */,
 			);
-			name = "Pods-NZAirQuality";
-			productName = "Pods-NZAirQuality";
-			productReference = E8A7F7BB456BCB20554929B6FD6BF885 /* Pods_NZAirQuality.framework */;
+			name = SWXMLHash;
+			productName = SWXMLHash;
+			productReference = 514E2324DB186B2C1E41A78D572EBEAE /* SWXMLHash.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C677A6E7D56A9B753D1BE2E5EF5CD71B /* TaniwhaTextField */ = {
+		63E8C3E1895E7A7375FDE97BE2153FAB /* TaniwhaTextField */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A8627ED7D2D72D7A10914B71458A3CA /* Build configuration list for PBXNativeTarget "TaniwhaTextField" */;
+			buildConfigurationList = 3FEF2CAB30E9A165270C0FFFA2E30DDC /* Build configuration list for PBXNativeTarget "TaniwhaTextField" */;
 			buildPhases = (
-				965FB914A00579224FF149E09710739C /* Sources */,
-				93D733EE0FB70AE0B2BD5A2B594C4E1D /* Frameworks */,
-				DA3BF1EE077C5029220607C53B46C9A8 /* Headers */,
+				A102F63CA1C242E62EFF28461EC5C37D /* Sources */,
+				0CBEEEF1C79C90E7ED76DFE446E20577 /* Frameworks */,
+				CD943287B19A4F374DEE51C2732CE143 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -400,16 +464,16 @@
 			);
 			name = TaniwhaTextField;
 			productName = TaniwhaTextField;
-			productReference = FA6481E1B1E279A15D1683CD8E707D75 /* TaniwhaTextField.framework */;
+			productReference = 0193C6221690E6BB28D48EA652A09DB6 /* TaniwhaTextField.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DC12F935B16BEFA2A4A48E99800F44B8 /* ScrollableGraphView */ = {
+		9DEA9BEDD28808E36336CE9C66C93E7D /* ScrollableGraphView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EF4397699B3AB4BC6F5583EE46BED7F3 /* Build configuration list for PBXNativeTarget "ScrollableGraphView" */;
+			buildConfigurationList = 1E7F7FA6EFAA480D6DA6CEF24D02F0ED /* Build configuration list for PBXNativeTarget "ScrollableGraphView" */;
 			buildPhases = (
-				FD94C658380B016852AB40FC16661130 /* Sources */,
-				6B40941DDBC936FACA91D34EFE0BD26D /* Frameworks */,
-				D33A8474836D0F50BC11E042F2FDC4E5 /* Headers */,
+				C22B48C5C9C7994CEFC52637EDB3F689 /* Sources */,
+				08945903D35C2CEE19557A68AB315557 /* Frameworks */,
+				E4BA2CF93B2B394FC7E4E0A24581558A /* Headers */,
 			);
 			buildRules = (
 			);
@@ -417,7 +481,27 @@
 			);
 			name = ScrollableGraphView;
 			productName = ScrollableGraphView;
-			productReference = 070B7CB513E1E0BB999CE42F1ED58556 /* ScrollableGraphView.framework */;
+			productReference = ED8904AD820B6FFC229EE1A9BCD96800 /* ScrollableGraphView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BF3504222CAD3AA484B3E06BA6753101 /* Pods-NZAirQuality */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C63FD9265575585A806634601A32401 /* Build configuration list for PBXNativeTarget "Pods-NZAirQuality" */;
+			buildPhases = (
+				888E5A2382ACE176A2AF76F77B216A7D /* Sources */,
+				7B8B22FB76EB006D93B56ACA2ED948BB /* Frameworks */,
+				50FCFAF770D165667D7A6DB0E09EAA69 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4EB53667DF86468813147A867EA0E80 /* PBXTargetDependency */,
+				81D692E33E2ECEA898235F59FD200C4F /* PBXTargetDependency */,
+				4C072291889236ECB6EE77FB1BEA9CCD /* PBXTargetDependency */,
+			);
+			name = "Pods-NZAirQuality";
+			productName = "Pods-NZAirQuality";
+			productReference = ABFC97D717F81E041F9B0B2C2F992336 /* Pods_NZAirQuality.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -427,18 +511,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0900;
-				TargetAttributes = {
-					40E761454A1D9813D456FB3D9B4B6580 = {
-						LastSwiftMigration = 0900;
-					};
-					C677A6E7D56A9B753D1BE2E5EF5CD71B = {
-						LastSwiftMigration = 0900;
-					};
-					DC12F935B16BEFA2A4A48E99800F44B8 = {
-						LastSwiftMigration = 0900;
-					};
-				};
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -448,14 +521,15 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = BFA787BA97F2B4E210A853E78D66A8E3 /* Products */;
+			productRefGroup = 41416C47B8E6A0DA677B225743A34F52 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				40E761454A1D9813D456FB3D9B4B6580 /* Pods-NZAirQuality */,
+				BF3504222CAD3AA484B3E06BA6753101 /* Pods-NZAirQuality */,
 				195F31C13FA035E626244646FF4A96AA /* Pods-NZAirQualityTests */,
-				DC12F935B16BEFA2A4A48E99800F44B8 /* ScrollableGraphView */,
-				C677A6E7D56A9B753D1BE2E5EF5CD71B /* TaniwhaTextField */,
+				9DEA9BEDD28808E36336CE9C66C93E7D /* ScrollableGraphView */,
+				5AF53A6FDF395A812F5CBA28CE566241 /* SWXMLHash */,
+				63E8C3E1895E7A7375FDE97BE2153FAB /* TaniwhaTextField */,
 			);
 		};
 /* End PBXProject section */
@@ -469,103 +543,84 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0CE97A5073072C63386D337B7C8D4263 /* Sources */ = {
+		888E5A2382ACE176A2AF76F77B216A7D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FFAD9F8CD3AB7E8823FD7AB80164010 /* Pods-NZAirQuality-dummy.m in Sources */,
+				A3F354E3C8265F8462DAA620FA7DCE62 /* Pods-NZAirQuality-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		965FB914A00579224FF149E09710739C /* Sources */ = {
+		A102F63CA1C242E62EFF28461EC5C37D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC4D065751F56602353DA0BF170CD36D /* TaniwhaTextField-dummy.m in Sources */,
-				31EC66C1FF4B1F7D3E174BEA4A7074F1 /* TaniwhaTextField.swift in Sources */,
+				345A8F3FB4775E2300336E7686C5CAAE /* TaniwhaTextField-dummy.m in Sources */,
+				72A18320C359F0980B5160BE4CC2E5BC /* TaniwhaTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD94C658380B016852AB40FC16661130 /* Sources */ = {
+		B31628B1798542913F90344E5F218465 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F69263C4AAC15F5FC35AA8885598222 /* BarDrawingLayer.swift in Sources */,
-				99A6A0DEAE769FD49B63F63370DC85BB /* BarPlot.swift in Sources */,
-				7FF6065A45A7C0D48D1253FB9CFBC733 /* DotDrawingLayer.swift in Sources */,
-				A2310542F0F02A1A155F94CFF5E98BBD /* DotPlot.swift in Sources */,
-				82B5D63D916EBAA4CAD6847F111CEC66 /* FillDrawingLayer.swift in Sources */,
-				1F873E4A0549A10BB45873CD409437C7 /* GradientDrawingLayer.swift in Sources */,
-				9CD12674F73973BEB3EEC91DD9641304 /* GraphPoint.swift in Sources */,
-				C9139F2C00CD80BF3005A5DD88ED869E /* GraphPointAnimation.swift in Sources */,
-				BFA8EAA78322763BBCA8C5DC02EE0BAD /* LabelPool.swift in Sources */,
-				DBC29DDA0B717CFFFAFF63B1E056043E /* LineDrawingLayer.swift in Sources */,
-				7910051876536094512F1CD569995EA2 /* LinePlot.swift in Sources */,
-				1B8D185E6C3A9C93E761D81B6269AFF3 /* Plot.swift in Sources */,
-				E8F2B531C7013090BBD1C0C3CE34A492 /* ReferenceLineDrawingView.swift in Sources */,
-				6AAA0D6362F07EDB4B2BCA2D14E8746B /* ReferenceLines.swift in Sources */,
-				BB526199B799D32F3689DF014B397779 /* ScrollableGraphView-dummy.m in Sources */,
-				E5DDEAB5D14FBF0A6655937F0F2C7BD8 /* ScrollableGraphView.swift in Sources */,
-				192F393DA094B88B46E626C4FB320D6B /* ScrollableGraphViewDataSource.swift in Sources */,
-				B9C90072950DB66459FCE6C5015FCA3E /* ScrollableGraphViewDrawingDelegate.swift in Sources */,
-				79EB9A9172CC26E9231023DC67D5466F /* ScrollableGraphViewDrawingLayer.swift in Sources */,
+				B9B9BC630AF5C6D57A0ADFF47C1A0CDE /* SWXMLHash+TypeConversion.swift in Sources */,
+				E0A815FA1F4442A32A88B4DA1EA3E948 /* SWXMLHash-dummy.m in Sources */,
+				F939F65769C4C55AAA2DF2A538ACD8D6 /* SWXMLHash.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C22B48C5C9C7994CEFC52637EDB3F689 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5C72431C784C6AC55E9D91571EA518D /* BarDrawingLayer.swift in Sources */,
+				58B5FAC1EFBE859BD81FB9F25BB124E0 /* BarPlot.swift in Sources */,
+				223C8083A67BDD7469253BA7C53696EA /* DotDrawingLayer.swift in Sources */,
+				72CDD5E92A98301860DECDA6FCE86EB0 /* DotPlot.swift in Sources */,
+				02AA8A99883BF75C5FEA1AD1CE45D90B /* FillDrawingLayer.swift in Sources */,
+				8CE8257CD006AE2565428FB064DB670C /* GradientDrawingLayer.swift in Sources */,
+				885012071494C961929E6167C21F00A5 /* GraphPoint.swift in Sources */,
+				DCFEEE6CC709BA257A94614128C8526A /* GraphPointAnimation.swift in Sources */,
+				BA76D560D0656FDDEAD6602A71013D7C /* LabelPool.swift in Sources */,
+				A6406A2DCF496D24468D6D3D9F9057BE /* LineDrawingLayer.swift in Sources */,
+				F45DDDDBAB902491CF26CCD5C8649C50 /* LinePlot.swift in Sources */,
+				6C6599C7D0A12559732CC09B776AF4D0 /* Plot.swift in Sources */,
+				2F6C0FD4976809537E0C2F9916761A78 /* ReferenceLineDrawingView.swift in Sources */,
+				6C8106649B8768F39E187EC72E29B04E /* ReferenceLines.swift in Sources */,
+				8BC4F362237E1269DB795CB05B5E7F75 /* ScrollableGraphView-dummy.m in Sources */,
+				DC68A2D8553A12289AF8B175065F71E8 /* ScrollableGraphView.swift in Sources */,
+				687702223572DC6F4966233E3C078A3B /* ScrollableGraphViewDataSource.swift in Sources */,
+				C6A7F65C12F917294C21E09AAF8BE88F /* ScrollableGraphViewDrawingDelegate.swift in Sources */,
+				1D6E4B8AA33A47925386088D2078875B /* ScrollableGraphViewDrawingLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		097B1960C8D54164C493D03CD0641FED /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ScrollableGraphView;
-			target = DC12F935B16BEFA2A4A48E99800F44B8 /* ScrollableGraphView */;
-			targetProxy = D682C4CF75A9C641A20104BAD95E4518 /* PBXContainerItemProxy */;
-		};
-		E40114E2981FC97D5FD4611DD49D3613 /* PBXTargetDependency */ = {
+		4C072291889236ECB6EE77FB1BEA9CCD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TaniwhaTextField;
-			target = C677A6E7D56A9B753D1BE2E5EF5CD71B /* TaniwhaTextField */;
-			targetProxy = 4157E80174AB253028A3E629A8670132 /* PBXContainerItemProxy */;
+			target = 63E8C3E1895E7A7375FDE97BE2153FAB /* TaniwhaTextField */;
+			targetProxy = D8D1833E56F9ADB4C9F66CB2135D8497 /* PBXContainerItemProxy */;
+		};
+		81D692E33E2ECEA898235F59FD200C4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ScrollableGraphView;
+			target = 9DEA9BEDD28808E36336CE9C66C93E7D /* ScrollableGraphView */;
+			targetProxy = EBCB71190447945F50108C1AFD7CC9F1 /* PBXContainerItemProxy */;
+		};
+		F4EB53667DF86468813147A867EA0E80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SWXMLHash;
+			target = 5AF53A6FDF395A812F5CBA28CE566241 /* SWXMLHash */;
+			targetProxy = 7F3E5028332672A899089D50F3D9684B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		05973D5EFD57AE6CDF85C15F9D598F40 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B234C9A3B0414A83A71F20F26CF5439 /* TaniwhaTextField.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TaniwhaTextField/TaniwhaTextField-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TaniwhaTextField/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TaniwhaTextField/TaniwhaTextField.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = TaniwhaTextField;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		0C454E2F60B276BA9E7E8E2BA9D9E634 /* Debug */ = {
+		10663AA89FE623654D656B1BAF1CBCE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6D2BF6E3B26E24380EF60463DE776C56 /* Pods-NZAirQuality.debug.xcconfig */;
 			buildSettings = {
@@ -597,13 +652,50 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		1DBC405DCFB4D7D8F5AEBCF3610C820C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 795B2B54E1D3349550ACFC1D11C352D6 /* Pods-NZAirQuality.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NZAirQuality/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NZAirQuality/Pods-NZAirQuality.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NZAirQuality;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		3999AD79C4512019122BA61DBC4DFAA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -677,7 +769,77 @@
 			};
 			name = Release;
 		};
-		643C76AA582046977B7877822ED7A258 /* Debug */ = {
+		4ECF58BAA3AF3C5662940CAE4A92DFE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63BB0102AA7A828A4227183202FC55F4 /* ScrollableGraphView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ScrollableGraphView/ScrollableGraphView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ScrollableGraphView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ScrollableGraphView/ScrollableGraphView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ScrollableGraphView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9360F8E3F02FCAADFBE5D6F06DAD5075 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 748186E4A870D48FE7B95006A364436C /* TaniwhaTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TaniwhaTextField/TaniwhaTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TaniwhaTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TaniwhaTextField/TaniwhaTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TaniwhaTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9BFC9E4A7AAD7A607ACE06D95A401A5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -687,9 +849,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -697,21 +857,15 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
@@ -729,13 +883,128 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		857FA06EE78504BA3F4BDFD20791E069 /* Debug */ = {
+		B154653B4B5E6F6B07F26FC3EBE57165 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B234C9A3B0414A83A71F20F26CF5439 /* TaniwhaTextField.xcconfig */;
+			baseConfigurationReference = 5A645EB1B2B48D6AA8F0F67B9F78CC7E /* SWXMLHash.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SWXMLHash/SWXMLHash-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SWXMLHash/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SWXMLHash/SWXMLHash.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SWXMLHash;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B4ADE435ED952B3A0FAEB7668DC61633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63BB0102AA7A828A4227183202FC55F4 /* ScrollableGraphView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ScrollableGraphView/ScrollableGraphView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ScrollableGraphView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ScrollableGraphView/ScrollableGraphView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ScrollableGraphView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C03B8870130C98D1B02B59D003687524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C40BA1E3DCC652806495048301CF5250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 748186E4A870D48FE7B95006A364436C /* TaniwhaTextField.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -759,9 +1028,8 @@
 				PRODUCT_NAME = TaniwhaTextField;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -769,9 +1037,9 @@
 			};
 			name = Debug;
 		};
-		8C98A63C57AE61E34C1A3FED5B14278E /* Release */ = {
+		C9739BA0EA3EBE8DDBB4F7835911CCBA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51E93D7FC3FEF817A1807A2633284A86 /* ScrollableGraphView.xcconfig */;
+			baseConfigurationReference = 5A645EB1B2B48D6AA8F0F67B9F78CC7E /* SWXMLHash.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -785,170 +1053,60 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ScrollableGraphView/ScrollableGraphView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ScrollableGraphView/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SWXMLHash/SWXMLHash-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SWXMLHash/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ScrollableGraphView/ScrollableGraphView.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SWXMLHash/SWXMLHash.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = ScrollableGraphView;
+				PRODUCT_NAME = SWXMLHash;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BE459706C01917342B6B0B45DB4F4D38 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 795B2B54E1D3349550ACFC1D11C352D6 /* Pods-NZAirQuality.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-NZAirQuality/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NZAirQuality/Pods-NZAirQuality.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NZAirQuality;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		C03B8870130C98D1B02B59D003687524 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		DB700CA2C2A3D978FC925A07AEFA5FC9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51E93D7FC3FEF817A1807A2633284A86 /* ScrollableGraphView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ScrollableGraphView/ScrollableGraphView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ScrollableGraphView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ScrollableGraphView/ScrollableGraphView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ScrollableGraphView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1C63FD9265575585A806634601A32401 /* Build configuration list for PBXNativeTarget "Pods-NZAirQuality" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10663AA89FE623654D656B1BAF1CBCE8 /* Debug */,
+				1DBC405DCFB4D7D8F5AEBCF3610C820C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E7F7FA6EFAA480D6DA6CEF24D02F0ED /* Build configuration list for PBXNativeTarget "ScrollableGraphView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4ADE435ED952B3A0FAEB7668DC61633 /* Debug */,
+				4ECF58BAA3AF3C5662940CAE4A92DFE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				643C76AA582046977B7877822ED7A258 /* Debug */,
+				9BFC9E4A7AAD7A607ACE06D95A401A5A /* Debug */,
 				C03B8870130C98D1B02B59D003687524 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A8627ED7D2D72D7A10914B71458A3CA /* Build configuration list for PBXNativeTarget "TaniwhaTextField" */ = {
+		3FEF2CAB30E9A165270C0FFFA2E30DDC /* Build configuration list for PBXNativeTarget "TaniwhaTextField" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				857FA06EE78504BA3F4BDFD20791E069 /* Debug */,
-				05973D5EFD57AE6CDF85C15F9D598F40 /* Release */,
+				C40BA1E3DCC652806495048301CF5250 /* Debug */,
+				9360F8E3F02FCAADFBE5D6F06DAD5075 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -962,20 +1120,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EF4397699B3AB4BC6F5583EE46BED7F3 /* Build configuration list for PBXNativeTarget "ScrollableGraphView" */ = {
+		D389CBB15BB2B6A5CE3DDE01962AC70E /* Build configuration list for PBXNativeTarget "SWXMLHash" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB700CA2C2A3D978FC925A07AEFA5FC9 /* Debug */,
-				8C98A63C57AE61E34C1A3FED5B14278E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F557249C009A1BC90768E14C4599039B /* Build configuration list for PBXNativeTarget "Pods-NZAirQuality" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0C454E2F60B276BA9E7E8E2BA9D9E634 /* Debug */,
-				BE459706C01917342B6B0B45DB4F4D38 /* Release */,
+				B154653B4B5E6F6B07F26FC3EBE57165 /* Debug */,
+				C9739BA0EA3EBE8DDBB4F7835911CCBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

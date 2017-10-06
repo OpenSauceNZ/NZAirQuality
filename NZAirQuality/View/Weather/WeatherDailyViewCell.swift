@@ -29,7 +29,7 @@ class WeatherDailyViewCell: UITableViewCell, UICollectionViewDelegate, UICollect
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "infoCell", for: indexPath) as? WeatherDailyInfoCollectionViewCell else {
             return UICollectionViewCell()
         }
-        cell.statuImage.image = #imageLiteral(resourceName: "021-cloudy-1")
+        cell.statuImage.text = String(utf8String: "\(XML.iconByName(name: "wi_day_sunny")!)")
         cell.backgroundColor = NZABackgroundColor
         cell.day.text = weatherData?.data.channel.item?.forecast?[indexPath.row].day
         
@@ -38,6 +38,7 @@ class WeatherDailyViewCell: UITableViewCell, UICollectionViewDelegate, UICollect
         }
         cell.highTemp.text = convertToCelsius(input: weatherData?.data.channel.item?.forecast?[indexPath.row].high)
         cell.lowTemp.text = convertToCelsius(input: weatherData?.data.channel.item?.forecast?[indexPath.row].low)
+        
         return cell
     }
     private func convertToCelsius(input: String?) -> String? {

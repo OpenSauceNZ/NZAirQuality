@@ -4,6 +4,7 @@ use_frameworks!
 
 pod 'ScrollableGraphView'
 pod "TaniwhaTextField"
+pod 'SWXMLHash', '~> 4.0.0'
 
 target 'NZAirQuality' do
   use_frameworks!

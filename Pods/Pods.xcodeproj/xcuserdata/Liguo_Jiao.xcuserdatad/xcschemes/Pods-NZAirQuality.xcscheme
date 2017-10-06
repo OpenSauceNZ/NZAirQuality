@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0900"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "40E761454A1D9813D456FB3D9B4B6580"
+               BlueprintIdentifier = "BF3504222CAD3AA484B3E06BA6753101"
                BuildableName = "Pods_NZAirQuality.framework"
                BlueprintName = "Pods-NZAirQuality"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "40E761454A1D9813D456FB3D9B4B6580"
+            BlueprintIdentifier = "BF3504222CAD3AA484B3E06BA6753101"
             BuildableName = "Pods_NZAirQuality.framework"
             BlueprintName = "Pods-NZAirQuality"
             ReferencedContainer = "container:Pods.xcodeproj">
