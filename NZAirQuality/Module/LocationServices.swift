@@ -21,7 +21,6 @@ class Location: NSObject, CLLocationManagerDelegate {
     typealias Callback = (Result<Location>) -> Void
     
     var requests: Array <Callback> = Array <Callback>()
-    
     var location: CLLocation? { return sharedLocationManager.location  }
     
     lazy var sharedLocationManager: CLLocationManager = {

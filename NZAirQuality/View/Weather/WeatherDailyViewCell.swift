@@ -29,7 +29,10 @@ class WeatherDailyViewCell: UITableViewCell, UICollectionViewDelegate, UICollect
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "infoCell", for: indexPath) as? WeatherDailyInfoCollectionViewCell else {
             return UICollectionViewCell()
         }
-        cell.statuImage.text = String(utf8String: "\(XML.iconByName(name: "wi_day_sunny")!)")
+        if let yahooConditionCode = weatherData?.data.channel.item?.forecast?[indexPath.row].code,
+            let iconName = XML.iconByName(name: "wi_yahoo_\(yahooConditionCode)") {
+            cell.statuImage.text = String(utf8String: "\(iconName)")
+        }
         cell.backgroundColor = NZABackgroundColor
         cell.day.text = weatherData?.data.channel.item?.forecast?[indexPath.row].day
         

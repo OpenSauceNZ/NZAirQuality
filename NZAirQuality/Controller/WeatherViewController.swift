@@ -19,7 +19,6 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLL
     override func viewDidLoad() {
         super.viewDidLoad()
         setSearchController()
-        print(XML.iconByName(name: "wi_day_sunny"))
         //fetchWeatherData(byCityName: "Auckland")
         self.tableView.backgroundColor = NZABackgroundColor
         
@@ -100,18 +99,9 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLL
             if let cell = tableView.dequeueReusableCell(withIdentifier: "WDailyCell", for: indexPath) as? WeatherDailyViewCell {
                 cell.backgroundColor = NZABackgroundColor
                 cell.weatherData = currentWeather
-                for family: String in UIFont.familyNames
-                {
-                    print("\(family)")
-                    for names: String in UIFont.fontNames(forFamilyName: family)
-                    {
-                        print("== \(names)")
-                    }
-                }
                 cell.infoDisplayCollectionView.reloadData()
                 return cell
             }
-            
         default:
             return UITableViewCell()
         }
