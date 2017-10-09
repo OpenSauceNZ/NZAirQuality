@@ -24,15 +24,15 @@ class WeatherHeaderViewCell: UITableViewCell {
         self.selectionStyle = .none
         self.backgroundColor = NZABackgroundColor
         
-        self.weatherStatus.adjustsFontSizeToFitWidth = true
-        self.weatherStatus.minimumScaleFactor = 0.2
-        self.weatherStatus.numberOfLines = 0
+        weatherStatus.adjustsFontSizeToFitWidth = true
+        weatherStatus.minimumScaleFactor = 0.2
+        weatherStatus.numberOfLines = 0
+        weatherStatus.adjustsFontSizeToFitWidth = true
         
-        self.tempture.text = "25℃"
-        
+        tempture.text = "25℃"
         tempture.backgroundColor = UIColor.clear
         tempture.textColor = UIColor.white
-        
+        tempture.adjustsFontSizeToFitWidth = true
         tempture.textAlignment = .center
         tempture.numberOfLines = 1
         tempture.layer.shadowColor = UIColor.white.cgColor

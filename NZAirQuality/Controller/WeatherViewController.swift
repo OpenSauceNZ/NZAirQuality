@@ -90,8 +90,9 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLL
                 if let city = currentWeather?.data.channel.location?.city, let _ = currentWeather?.data.channel.location?.country {
                     cell.location.text = "\(city)"
                 }
-                if let weatherCondition = currentWeather?.data.channel.item?.currentCondition?.text {
-                    cell.weatherStatus.text = weatherCondition
+                if let weatherCondition = currentWeather?.data.channel.item?.currentCondition {
+                    cell.weatherStatus.text = weatherCondition.text
+                    cell.tempture.text = cell.convertToCelsius(input: weatherCondition.temp, decimal: 0)
                 }
                 return cell
             }
@@ -118,8 +119,6 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLL
             return 45
         }
     }
-    
-    
     func fetchWeatherData(byCityName name: String) {
         WeatherAPI.shared.requestWeatherInfo(location: name) { (weather, error) in
             guard let currentData = weather else {

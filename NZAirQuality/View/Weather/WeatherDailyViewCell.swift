@@ -39,19 +39,22 @@ class WeatherDailyViewCell: UITableViewCell, UICollectionViewDelegate, UICollect
         if let temperatureUnit = (Locale.current as NSLocale).object(forKey: .measurementSystem) {
             print(temperatureUnit)
         }
-        cell.highTemp.text = convertToCelsius(input: weatherData?.data.channel.item?.forecast?[indexPath.row].high)
-        cell.lowTemp.text = convertToCelsius(input: weatherData?.data.channel.item?.forecast?[indexPath.row].low)
+        cell.highTemp.text = self.convertToCelsius(input: weatherData?.data.channel.item?.forecast?[indexPath.row].high, decimal: 1)
+        cell.lowTemp.text = self.convertToCelsius(input: weatherData?.data.channel.item?.forecast?[indexPath.row].low, decimal: 1)
         
         return cell
     }
-    private func convertToCelsius(input: String?) -> String? {
+}
+
+extension UIView {
+    func convertToCelsius(input: String?, decimal maxDecimal: Int) -> String? {
         guard let value = input, let temp = Double(value) else {
             return nil
         }
         let decimal = NumberFormatter()
         let formatter = MeasurementFormatter()
         let measurement = Measurement(value: temp, unit: UnitTemperature.fahrenheit)
-        decimal.maximumFractionDigits = 1
+        decimal.maximumFractionDigits = maxDecimal
         formatter.numberFormatter = decimal
         let temperature = formatter.string(from: measurement)
         return temperature
