@@ -17,6 +17,8 @@ class WeatherDailyInfoCollectionViewCell: UICollectionViewCell {
         
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.backgroundColor = .clear
+        lowTemp.textColor = NZALightGray
         // Initialization code
     }
 }

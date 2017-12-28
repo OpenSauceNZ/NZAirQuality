@@ -97,9 +97,15 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLL
             }
         case 1:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "WDailyCell", for: indexPath) as? WeatherDailyViewCell {
-                cell.backgroundColor = NZABackgroundColor
+                cell.backgroundColor = NZAGreen
                 cell.weatherData = currentWeather
-                cell.infoDisplayCollectionView.reloadData()
+                cell.infoDisplayCollectionView.reloadData()                
+//                let view = UIView(frame: CGRect(x: 0, y: 0, width: cell.frame.width, height: cell.frame.height))
+//                let gradient = CAGradientLayer()
+//
+//                gradient.frame = view.bounds
+//                gradient.colors = [NZAGreen.cgColor, UIColor(rgb: 0x79C9BB).cgColor, UIColor(rgb: 0xAFDFD7).cgColor, NZAWhite.cgColor]
+//                cell.layer.insertSublayer(gradient, at: 0)
                 return cell
             }
             
@@ -114,7 +120,7 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLL
         case 0:
             return 230
         case 1:
-            return 270
+            return 150
         default:
             return 45
         }
