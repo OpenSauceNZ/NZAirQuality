@@ -17,7 +17,7 @@ class WeatherDailyViewCell: UITableViewCell, UICollectionViewDelegate, UICollect
         super.awakeFromNib()
         infoDisplayCollectionView.delegate = self
         infoDisplayCollectionView.dataSource = self
-        infoDisplayCollectionView.backgroundColor = NZABackgroundColor
+        infoDisplayCollectionView.backgroundColor = .clear
         self.selectionStyle = .none
     }
     
@@ -30,7 +30,7 @@ class WeatherDailyViewCell: UITableViewCell, UICollectionViewDelegate, UICollect
             return UICollectionViewCell()
         }
         cell.statuImage.image = #imageLiteral(resourceName: "021-cloudy-1")
-        cell.backgroundColor = NZABackgroundColor
+        cell.backgroundColor = .clear
         cell.day.text = weatherData?.data.channel.item?.forecast?[indexPath.row].day
         
         if let temperatureUnit = (Locale.current as NSLocale).object(forKey: .measurementSystem) {
