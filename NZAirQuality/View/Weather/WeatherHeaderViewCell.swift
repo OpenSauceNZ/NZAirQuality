@@ -18,6 +18,8 @@ class WeatherHeaderViewCell: UITableViewCell {
     
     @IBOutlet weak var location: UILabel!
     @IBOutlet weak var weatherStatus: UILabel!
+    
+    var weatherData: Weather?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -39,13 +41,17 @@ class WeatherHeaderViewCell: UITableViewCell {
         tempture.layer.shadowOffset = CGSize(width: 3, height: 3)
         tempture.layer.shadowOpacity = 0.8
         tempture.layer.shadowRadius = 6
-        
     }
-    override func layoutIfNeeded() {
-        super.layoutIfNeeded()
+    func loadContent() {
+        if let city = weatherData?.data.channel.location?.city, let _ = weatherData?.data.channel.location?.country {
+            location.text = "\(city)"
+        }
+        if let weatherCondition = weatherData?.data.channel.item?.currentCondition?.text {
+            weatherStatus.text = weatherCondition
+        }
+        if let temp = weatherData?.data.channel.item?.currentCondition?.temp, let tempF = Float(temp) {
+            tempture.text = String(format: "%.0f℃", fahrenheitToCelsius(feh: tempF))
+        }
 
-    }
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
     }
 }

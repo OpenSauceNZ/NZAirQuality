@@ -22,17 +22,21 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLL
         //fetchWeatherData(byCityName: "Auckland")
         self.tableView.backgroundColor = NZABackgroundColor
         
-        let adjustForTabbarInsets: UIEdgeInsets = UIEdgeInsetsMake(20, 0, self.tabBarController?.tabBar.frame.height ?? 0, 0) // 20 for search bar
+        let adjustForTabbarInsets: UIEdgeInsets = UIEdgeInsetsMake(20, 0, 0, 0) // 20 for search bar
         self.tableView.contentInset = adjustForTabbarInsets
         self.tableView.scrollIndicatorInsets = adjustForTabbarInsets
         self.tableView.tableHeaderView = self.searchController.searchBar
         self.tableView.separatorStyle = .none
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         locManager.requestWhenInUseAuthorization()
         if CLLocationManager.locationServicesEnabled() {
             locManager.delegate = self
             locManager.startUpdatingLocation()
         }
+        self.tableView.reloadData()
     }
     
     func setGradientBackground() {
@@ -89,12 +93,8 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLL
         switch indexPath.row {
         case 0:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "WHeaderCell", for: indexPath) as? WeatherHeaderViewCell {
-                if let city = currentWeather?.data.channel.location?.city, let _ = currentWeather?.data.channel.location?.country {
-                    cell.location.text = "\(city)"
-                }
-                if let weatherCondition = currentWeather?.data.channel.item?.currentCondition?.text {
-                    cell.weatherStatus.text = weatherCondition
-                }
+                cell.weatherData = currentWeather
+                cell.loadContent()
                 return cell
             }
         case 1:
@@ -114,19 +114,12 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLL
             if let cell = tableView.dequeueReusableCell(withIdentifier: "WDetailsCell", for: indexPath) as? WeatherDetailsTableViewCell {
                 cell.backgroundColor = NZAGreen
                 cell.weatherData = currentWeather
-                print(currentWeather)
-//                cell.infoDisplayCollectionView.reloadData()
-                //                let view = UIView(frame: CGRect(x: 0, y: 0, width: cell.frame.width, height: cell.frame.height))
-                //                let gradient = CAGradientLayer()
-                //
-                //                gradient.frame = view.bounds
-                //                gradient.colors = [NZAGreen.cgColor, UIColor(rgb: 0x79C9BB).cgColor, UIColor(rgb: 0xAFDFD7).cgColor, NZAWhite.cgColor]
-                //                cell.layer.insertSublayer(gradient, at: 0)
+                cell.loadContent()
                 return cell
             }
             
         default:
-            return UITableViewCell()
+            return UITableViewCell() //assert error
         }
         return UITableViewCell()
     }
@@ -143,6 +136,12 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLL
             return 45
         }
     }
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return CGFloat.leastNormalMagnitude
+    }
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return CGFloat.leastNormalMagnitude
+    }
     
     func fetchWeatherData(byCityName name: String) {
         WeatherAPI.shared.requestWeatherInfo(location: name) { (weather, error) in
@@ -157,4 +156,3 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLL
         }
     }
 }
-

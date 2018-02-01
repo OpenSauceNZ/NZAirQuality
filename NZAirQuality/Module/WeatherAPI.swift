@@ -47,3 +47,8 @@ class WeatherAPI: NSObject {
         RunLoop.main.run()
     }
 }
+
+func fahrenheitToCelsius(feh f:Float) -> Float {
+    return roundf(Float((f - 32)) * (5/9))
+}
+
