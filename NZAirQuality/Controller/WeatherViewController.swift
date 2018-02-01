@@ -26,6 +26,8 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLL
         self.tableView.contentInset = adjustForTabbarInsets
         self.tableView.scrollIndicatorInsets = adjustForTabbarInsets
         self.tableView.tableHeaderView = self.searchController.searchBar
+        self.tableView.separatorStyle = .none
+        
         locManager.requestWhenInUseAuthorization()
         if CLLocationManager.locationServicesEnabled() {
             locManager.delegate = self
@@ -112,6 +114,7 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLL
             if let cell = tableView.dequeueReusableCell(withIdentifier: "WDetailsCell", for: indexPath) as? WeatherDetailsTableViewCell {
                 cell.backgroundColor = NZAGreen
                 cell.weatherData = currentWeather
+                print(currentWeather)
 //                cell.infoDisplayCollectionView.reloadData()
                 //                let view = UIView(frame: CGRect(x: 0, y: 0, width: cell.frame.width, height: cell.frame.height))
                 //                let gradient = CAGradientLayer()
@@ -140,7 +143,6 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLL
             return 45
         }
     }
-    
     
     func fetchWeatherData(byCityName name: String) {
         WeatherAPI.shared.requestWeatherInfo(location: name) { (weather, error) in
