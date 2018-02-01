@@ -42,8 +42,14 @@ class WeatherDetailsTableViewCell: UITableViewCell {
         setLabelStyle(self.sunriseLabel)
         setLabelStyle(self.sunsetLabel)
         setLabelStyle(self.sunsetTime)
+        sunriseLabel.text = "Sunrise"
+        sunsetLabel.text = "Sunset"
+        sendibleLabel.text = "Feels Like"
+        sunriseImage.image = #imageLiteral(resourceName: "sunrise")
+        sunsetImage.image = #imageLiteral(resourceName: "sunset")
+        sendibleTempImage.image = #imageLiteral(resourceName: "feellike")
+        self.selectionStyle = .none
         
-        loadContent()
     }
     
     func setLabelStyle(_ label:UILabel) {
@@ -56,9 +62,7 @@ class WeatherDetailsTableViewCell: UITableViewCell {
     }
     
     func loadContent() {
-        sunriseLabel.text = "Sunrise"
-        sunsetLabel.text = "Sunset"
-        sendibleLabel.text = "Feels Like"
+
         
         sunriseTime.text = weatherData?.data.channel.astronomy?.sunrise
         sunsetTime.text = weatherData?.data.channel.astronomy?.sunset
@@ -68,7 +72,7 @@ class WeatherDetailsTableViewCell: UITableViewCell {
             let windSpeedMeterPerSecond = windSpeedFloat * 0.44704
             let e = (humidtyFloat/100) * 6.105 * exp((17.27 * windSpeedMeterPerSecond)/(237.7 + windSpeedMeterPerSecond))
             let AT = 1.07 * tempFloat + 0.2 * e - 0.65 * windSpeedMeterPerSecond - 2.7
-            sendibleTemp.text = String(format: "%.0f", AT)
+            sendibleTemp.text = String(format: "%.0f°C", fahrenheitToCelsius(feh: AT))
         }
 
         

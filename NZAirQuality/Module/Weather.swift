@@ -68,6 +68,11 @@ struct YWWind: Decodable {
 struct YWItem: Decodable {
     let currentCondition: YWCondition?
     let forecast: [YWCondition]?
+    
+    private enum CodingKeys : String, CodingKey {
+        case forecast
+        case currentCondition = "condition"
+    }
 }
 
 struct YWCondition: Decodable {
@@ -79,4 +84,5 @@ struct YWCondition: Decodable {
     let high: String?
     let low: String?
 }
+
 

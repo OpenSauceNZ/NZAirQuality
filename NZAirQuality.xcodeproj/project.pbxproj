@@ -281,7 +281,7 @@
 				TargetAttributes = {
 					0522E2851F0BC61200A155AB = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = V7QHHUD2M5;
+						DevelopmentTeam = 8436A3G9R2;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -603,11 +603,11 @@
 			baseConfigurationReference = 0DAA50EA11F35164955D48CE /* Pods-NZAirQuality.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V7QHHUD2M5;
+				DEVELOPMENT_TEAM = 8436A3G9R2;
 				INFOPLIST_FILE = NZAirQuality/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "liguo-jiao.NZAirQuality";
+				PRODUCT_BUNDLE_IDENTIFIER = "liguo-jiao.NZAirQuality.co";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -619,11 +619,11 @@
 			baseConfigurationReference = 8DC0A91D382E1F975572A3D1 /* Pods-NZAirQuality.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V7QHHUD2M5;
+				DEVELOPMENT_TEAM = 8436A3G9R2;
 				INFOPLIST_FILE = NZAirQuality/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "liguo-jiao.NZAirQuality";
+				PRODUCT_BUNDLE_IDENTIFIER = "liguo-jiao.NZAirQuality.co";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
