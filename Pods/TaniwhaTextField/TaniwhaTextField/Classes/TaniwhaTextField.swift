@@ -47,8 +47,8 @@ import UIKit
     override open func draw(_ rect: CGRect) {
         super.draw(rect)
         self.drawLine()
-        NotificationCenter.default.addObserver(self, selector: #selector(didBeginTextEdit), name: NSNotification.Name.UITextFieldTextDidBeginEditing, object: self)
-        NotificationCenter.default.addObserver(self, selector: #selector(didTextEditFinish), name: NSNotification.Name.UITextFieldTextDidChange, object: self)
+        NotificationCenter.default.addObserver(self, selector: #selector(didBeginTextEdit), name: UITextField.textDidBeginEditingNotification, object: self)
+        NotificationCenter.default.addObserver(self, selector: #selector(didTextEditFinish), name: UITextField.textDidChangeNotification, object: self)
     }
     
     override open func drawPlaceholder(in rect: CGRect) {
@@ -67,7 +67,7 @@ import UIKit
         placeholderLabelView.alpha = placeholderAlphaBefore
         
         self.addSubview(placeholderLabelView)
-        self.bringSubview(toFront: placeholderLabelView)
+        self.bringSubviewToFront(placeholderLabelView)
     }
     
     override open func drawText(in rect: CGRect) {
@@ -118,7 +118,7 @@ import UIKit
         isMoveUp = true
         
         self.addSubview(placeholderLabelView)
-        self.bringSubview(toFront: placeholderLabelView)
+        self.bringSubviewToFront(placeholderLabelView)
     }
     
     // MARK: - Delegate

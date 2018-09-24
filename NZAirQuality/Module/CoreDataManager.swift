@@ -69,7 +69,7 @@ class CoreDataManager: NSObject {
             for item in fetchResult {
                 let newCountry = country(name: item.name ?? "", city: item.city ?? "")
                 aray.append(newCountry)
-                print("\(newCountry.city) \(newCountry.name)")
+                print("\(String(describing: newCountry.city)) \(String(describing: newCountry.name))")
             }
         } catch {
             print(error.localizedDescription)

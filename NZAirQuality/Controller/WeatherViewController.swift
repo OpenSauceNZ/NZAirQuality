@@ -22,7 +22,7 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLL
         //fetchWeatherData(byCityName: "Auckland")
         self.tableView.backgroundColor = NZABackgroundColor
         
-        let adjustForTabbarInsets: UIEdgeInsets = UIEdgeInsetsMake(20, 0, 0, 0) // 20 for search bar
+        let adjustForTabbarInsets: UIEdgeInsets = UIEdgeInsets.init(top: 20, left: 0, bottom: 0, right: 0) // 20 for search bar
         self.tableView.contentInset = adjustForTabbarInsets
         self.tableView.scrollIndicatorInsets = adjustForTabbarInsets
         self.tableView.tableHeaderView = self.searchController.searchBar
@@ -52,7 +52,7 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLL
     }
     
     func updateSearchResults(for searchController: UISearchController) {
-        guard let searchBarText = searchController.searchBar.text else {
+        guard searchController.searchBar.text != nil else {
             return
         }
     }
@@ -68,7 +68,7 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLL
         searchResultController.tableView.dataSource = self
         searchController = UISearchController(searchResultsController: searchResultController)
         searchController.searchResultsUpdater = self
-        searchController.searchBar.searchBarStyle = UISearchBarStyle.prominent
+        searchController.searchBar.searchBarStyle = UISearchBar.Style.prominent
         searchController.searchBar.backgroundImage = UIImage()
         searchController.searchBar.barTintColor = NZABackgroundColor
         searchController.searchBar.tintColor = NZATabBarTintColor
@@ -77,6 +77,7 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLL
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
+        let haha = CAKeyframeAnimation(keyPath: "dss")
         return 1
     }
 
