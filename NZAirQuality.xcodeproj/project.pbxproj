@@ -282,13 +282,13 @@
 					0522E2851F0BC61200A155AB = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 8436A3G9R2;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					0522E29C1F0BC61300A155AB = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = V7QHHUD2M5;
-						LastSwiftMigration = 0900;
+						DevelopmentTeam = 8436A3G9R2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0522E2851F0BC61200A155AB;
 					};
@@ -610,7 +610,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "liguo-jiao.NZAirQuality.co";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -626,7 +626,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "liguo-jiao.NZAirQuality.co";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -636,13 +636,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = V7QHHUD2M5;
+				DEVELOPMENT_TEAM = 8436A3G9R2;
 				INFOPLIST_FILE = NZAirQualityTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "liguo-jiao.NZAirQualityTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NZAirQuality.app/NZAirQuality";
 			};
 			name = Debug;
@@ -653,13 +653,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = V7QHHUD2M5;
+				DEVELOPMENT_TEAM = 8436A3G9R2;
 				INFOPLIST_FILE = NZAirQualityTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "liguo-jiao.NZAirQualityTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NZAirQuality.app/NZAirQuality";
 			};
 			name = Release;

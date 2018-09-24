@@ -81,9 +81,9 @@ class AQIContentTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
             let contentWidth = collectionView.frame.size.width - collectionView.contentInset.left - collectionView.contentInset.right
             if (totalCellWidth < contentWidth) {
                 let padding = (contentWidth - totalCellWidth) / 2.0
-                return UIEdgeInsetsMake(0, padding, 0, padding)
+                return UIEdgeInsets.init(top: 0, left: padding, bottom: 0, right: padding)
             } else {
-                return UIEdgeInsetsMake(0, 40, 0, 40)
+                return UIEdgeInsets.init(top: 0, left: 40, bottom: 0, right: 40)
             }
         }
         return UIEdgeInsets.zero

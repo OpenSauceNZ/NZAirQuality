@@ -36,7 +36,7 @@ class AQIViewController: UITableViewController, UISearchBarDelegate, CLLocationM
         
         setSearchController()
         
-        let adjustForTabbarInsets: UIEdgeInsets = UIEdgeInsetsMake(20, 0, self.tabBarController?.tabBar.frame.height ?? 0, 0) // 20 for search bar
+        let adjustForTabbarInsets: UIEdgeInsets = UIEdgeInsets.init(top: 20, left: 0, bottom: self.tabBarController?.tabBar.frame.height ?? 0, right: 0) // 20 for search bar
         self.tableView.contentInset = adjustForTabbarInsets
         self.tableView.scrollIndicatorInsets = adjustForTabbarInsets
         self.tableView.tableHeaderView = self.searchController.searchBar
@@ -100,7 +100,7 @@ class AQIViewController: UITableViewController, UISearchBarDelegate, CLLocationM
     }
     
     fileprivate func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
+        return UITableView.automaticDimension
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -178,7 +178,7 @@ extension AQIViewController : UISearchResultsUpdating {
         
         searchController = UISearchController(searchResultsController: searchResultController)
         searchController.searchResultsUpdater = self
-        searchController.searchBar.searchBarStyle = UISearchBarStyle.prominent
+        searchController.searchBar.searchBarStyle = UISearchBar.Style.prominent
         searchController.searchBar.backgroundImage = UIImage()
         searchController.searchBar.barTintColor = NZABackgroundColor
         searchController.searchBar.tintColor = NZATabBarTintColor
@@ -193,7 +193,7 @@ extension AQIViewController : UISearchResultsUpdating {
         guard let searchBarText = searchController.searchBar.text else {
             return
         }
-        let request = MKLocalSearchRequest()
+        let request = MKLocalSearch.Request()
         request.naturalLanguageQuery = searchBarText
 //        request.region = localRegion!
         let search = MKLocalSearch(request: request)
