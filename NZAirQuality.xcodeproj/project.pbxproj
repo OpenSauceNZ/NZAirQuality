@@ -127,7 +127,7 @@
 		0522E2881F0BC61200A155AB /* NZAirQuality */ = {
 			isa = PBXGroup;
 			children = (
-				05557B201F0BC85F00579BE7 /* Module */,
+				05557B201F0BC85F00579BE7 /* Model */,
 				05557B211F0BC85F00579BE7 /* View */,
 				05557B1F1F0BC85F00579BE7 /* Controller */,
 				0522E2891F0BC61200A155AB /* AppDelegate.swift */,
@@ -181,7 +181,7 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		05557B201F0BC85F00579BE7 /* Module */ = {
+		05557B201F0BC85F00579BE7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				0572D7541F0BD0130026E4E1 /* AirData.swift */,
@@ -193,7 +193,7 @@
 				055AC2301F20514900AAE55D /* CoreDataManager.swift */,
 				05BC7A071F2116B800824348 /* LocationServices.swift */,
 			);
-			path = Module;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		05557B211F0BC85F00579BE7 /* View */ = {
