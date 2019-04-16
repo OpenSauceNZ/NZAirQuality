@@ -11,8 +11,8 @@
 [![codebeat badge](https://codebeat.co/badges/02899446-de2c-42ef-8167-e9ecd185d7dc)](https://codebeat.co/projects/github-com-iceman201-nzairquality-master)
 [![Issues](https://img.shields.io/github/issues/NZSwift/PokeCP-iOS.svg?style=flat
 )](https://github.com/iceman201/NZAirQuality/issues?state=open)
-![MIT License](https://img.shields.io/github/license/mashape/apistatus.svg) 
-
+![GitHub](https://img.shields.io/github/license/OpenSauceNZ/NZAirQuality.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/OpenSauceNZ/NZAirQuality.svg)
 
 **Project is on-going developing now**
 - **Progress**
