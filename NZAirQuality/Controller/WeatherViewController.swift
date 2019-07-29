@@ -15,9 +15,11 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLL
     var searchResultController = UITableViewController()
     var locManager = CLLocationManager()
     var currentLocation: CLLocation!
+    private var dataSourceProvider: WeatherViewDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.dataSourceProvider = WeatherViewDelegate(searchVC: self.searchResultController)
         setSearchController()
         //fetchWeatherData(byCityName: "Auckland")
         self.tableView.backgroundColor = NZABackgroundColor
@@ -27,15 +29,17 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLL
         self.tableView.scrollIndicatorInsets = adjustForTabbarInsets
         self.tableView.tableHeaderView = self.searchController.searchBar
         self.tableView.separatorStyle = .none
+        self.tableView.delegate = self.dataSourceProvider
+        self.tableView.dataSource = self.dataSourceProvider
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        locManager.requestWhenInUseAuthorization()
-        if CLLocationManager.locationServicesEnabled() {
-            locManager.delegate = self
-            locManager.startUpdatingLocation()
-        }
+//        locManager.requestWhenInUseAuthorization()
+//        if CLLocationManager.locationServicesEnabled() {
+//            locManager.delegate = self
+//            locManager.startUpdatingLocation()
+//        }
         self.tableView.reloadData()
     }
     
@@ -64,85 +68,20 @@ class WeatherViewController: UITableViewController, UISearchResultsUpdating, CLL
     }
     
     fileprivate func setSearchController() {
-        searchResultController.tableView.delegate = self
-        searchResultController.tableView.dataSource = self
+        searchResultController.tableView.delegate = self.dataSourceProvider
+        searchResultController.tableView.dataSource = self.dataSourceProvider
+        searchResultController.tableView.backgroundColor = NZABackgroundColor
         searchController = UISearchController(searchResultsController: searchResultController)
         searchController.searchResultsUpdater = self
         searchController.searchBar.searchBarStyle = UISearchBar.Style.prominent
         searchController.searchBar.backgroundImage = UIImage()
         searchController.searchBar.barTintColor = NZABackgroundColor
         searchController.searchBar.tintColor = NZATabBarTintColor
-        searchResultController.tableView.backgroundColor = NZABackgroundColor
+
     }
     // MARK: - Table view data source
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        let haha = CAKeyframeAnimation(keyPath: "dss")
-        return 1
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
-    }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if tableView == searchResultController.tableView {
-            let cell = UITableViewCell()
-//            searchResultCellSetup(indexPath, cell)
-            return cell
-        }
-        switch indexPath.row {
-        case 0:
-            if let cell = tableView.dequeueReusableCell(withIdentifier: "WHeaderCell", for: indexPath) as? WeatherHeaderViewCell {
-                cell.weatherData = currentWeather
-                cell.loadContent()
-                return cell
-            }
-        case 1:
-            if let cell = tableView.dequeueReusableCell(withIdentifier: "WDailyCell", for: indexPath) as? WeatherDailyViewCell {
-                cell.backgroundColor = NZAGreen
-                cell.weatherData = currentWeather
-                cell.infoDisplayCollectionView.reloadData()                
-//                let view = UIView(frame: CGRect(x: 0, y: 0, width: cell.frame.width, height: cell.frame.height))
-//                let gradient = CAGradientLayer()
-//
-//                gradient.frame = view.bounds
-//                gradient.colors = [NZAGreen.cgColor, UIColor(rgb: 0x79C9BB).cgColor, UIColor(rgb: 0xAFDFD7).cgColor, NZAWhite.cgColor]
-//                cell.layer.insertSublayer(gradient, at: 0)
-                return cell
-            }
-        case 2:
-            if let cell = tableView.dequeueReusableCell(withIdentifier: "WDetailsCell", for: indexPath) as? WeatherDetailsTableViewCell {
-                cell.backgroundColor = NZAGreen
-                cell.weatherData = currentWeather
-                cell.loadContent()
-                return cell
-            }
-            
-        default:
-            return UITableViewCell() //assert error
-        }
-        return UITableViewCell()
-    }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        switch indexPath.row {
-        case 0:
-            return 230
-        case 1:
-            return 150
-        case 2:
-            return 229
-        default:
-            return 45
-        }
-    }
-    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return CGFloat.leastNormalMagnitude
-    }
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return CGFloat.leastNormalMagnitude
-    }
     
     func fetchWeatherData(byCityName name: String) {
         WeatherAPI.shared.requestWeatherInfo(location: name) { (weather, error) in

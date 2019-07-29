@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import NZAirQuality
+//@testable import NZAirQuality
 
 class NZAirQualityTests: XCTestCase {
     

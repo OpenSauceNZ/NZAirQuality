@@ -34,6 +34,8 @@
 		05EA2D2E1F1269AF00734544 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA2D2D1F1269AF00734544 /* WeatherAPI.swift */; };
 		1262288940B380A191BA804C /* Pods_NZAirQualityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82C87E037FC534FE9CC1FF6 /* Pods_NZAirQualityTests.framework */; };
 		BA94B7334F1A0B4EABE39E4B /* Pods_NZAirQuality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01830C9123423CF94BF080A6 /* Pods_NZAirQuality.framework */; };
+		EA4640EA22EE637200C6B957 /* WeatherViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4640E922EE637200C6B957 /* WeatherViewDelegate.swift */; };
+		EA46415522EE774700C6B957 /* AQIViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA46415422EE774700C6B957 /* AQIViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		88273C58A65C6B09899368EB /* Pods-NZAirQualityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NZAirQualityTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NZAirQualityTests/Pods-NZAirQualityTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8DC0A91D382E1F975572A3D1 /* Pods-NZAirQuality.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NZAirQuality.release.xcconfig"; path = "Pods/Target Support Files/Pods-NZAirQuality/Pods-NZAirQuality.release.xcconfig"; sourceTree = "<group>"; };
 		C82C87E037FC534FE9CC1FF6 /* Pods_NZAirQualityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NZAirQualityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA4640E922EE637200C6B957 /* WeatherViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WeatherViewDelegate.swift; path = ../../../../../../System/Volumes/Data/Users/ljiao/Project/NZAirQuality/NZAirQuality/Controller/WeatherViewDelegate.swift; sourceTree = "<group>"; };
+		EA46415422EE774700C6B957 /* AQIViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AQIViewDelegate.swift; path = ../../../../../../System/Volumes/Data/Users/ljiao/Project/NZAirQuality/NZAirQuality/Controller/AQIViewDelegate.swift; sourceTree = "<group>"; };
 		EF88092AE3BD0042B4C24548 /* Pods-NZAirQualityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NZAirQualityTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NZAirQualityTests/Pods-NZAirQualityTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,7 +180,9 @@
 			isa = PBXGroup;
 			children = (
 				0557EDAC1F1C82F200058C70 /* AQIViewController.swift */,
+				EA46415422EE774700C6B957 /* AQIViewDelegate.swift */,
 				05ABA0231F1C86A900090411 /* WeatherViewController.swift */,
+				EA4640E922EE637200C6B957 /* WeatherViewDelegate.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -276,19 +282,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Liguo Jiao";
 				TargetAttributes = {
 					0522E2851F0BC61200A155AB = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 8436A3G9R2;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					0522E29C1F0BC61300A155AB = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 8436A3G9R2;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0522E2851F0BC61200A155AB;
 					};
@@ -296,7 +302,7 @@
 			};
 			buildConfigurationList = 0522E2811F0BC61200A155AB /* Build configuration list for PBXProject "NZAirQuality" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -433,6 +439,7 @@
 			files = (
 				0522E2921F0BC61200A155AB /* NZAirQuality.xcdatamodeld in Sources */,
 				052959C21F2B538C00A32214 /* WeatherDailyInfoCollectionViewCell.swift in Sources */,
+				EA4640EA22EE637200C6B957 /* WeatherViewDelegate.swift in Sources */,
 				053FDD581F1F81DD00042AF1 /* AQIContentCollectionViewCell.swift in Sources */,
 				05EA2D2E1F1269AF00734544 /* WeatherAPI.swift in Sources */,
 				052959C01F2B511800A32214 /* WeatherDailyViewCell.swift in Sources */,
@@ -449,6 +456,7 @@
 				0557EDAD1F1C82F200058C70 /* AQIViewController.swift in Sources */,
 				054F1F111F20FDCD0050D140 /* AQIGraphicTableViewCell.swift in Sources */,
 				05582FCE1F1F0ECC005F2737 /* AQIContentTableViewCell.swift in Sources */,
+				EA46415522EE774700C6B957 /* AQIViewDelegate.swift in Sources */,
 				05ABA0241F1C86A900090411 /* WeatherViewController.swift in Sources */,
 				05BC7A081F2116B800824348 /* LocationServices.swift in Sources */,
 				05ABA0261F1C89C800090411 /* AQIHeaderTableViewCell.swift in Sources */,
@@ -497,6 +505,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -507,6 +516,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -514,6 +524,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -553,6 +564,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -563,6 +575,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -570,6 +583,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -609,8 +623,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "liguo-jiao.NZAirQuality.co";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -625,8 +638,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "liguo-jiao.NZAirQuality.co";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -641,8 +653,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "liguo-jiao.NZAirQualityTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NZAirQuality.app/NZAirQuality";
 			};
 			name = Debug;
@@ -658,8 +669,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "liguo-jiao.NZAirQualityTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NZAirQuality.app/NZAirQuality";
 			};
 			name = Release;
